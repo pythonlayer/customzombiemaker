@@ -1,0 +1,304 @@
+        {
+            "aliases": [
+                "WaveManagerProps"
+            ],
+            "objclass": "WaveManagerProperties",
+            "objdata": {
+                "FlagWaveInterval": 7,
+                "WaveCount": 14,
+                "MinNextWaveHealthPercentage": 0.5,
+                "MaxNextWaveHealthPercentage": 0.65,
+                "Waves": [
+                    [
+                        "RTID(Wave1@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave2@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave3@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave4@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave5@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave6@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave7@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave8@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave9@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave10@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave11@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave12@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave13@CurrentLevel)"
+                    ],
+                    [
+                        "RTID(Wave14@CurrentLevel)"
+                    ]
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave1"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(lunar@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave2"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(lunar@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave3"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(lunar_armor1@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave4"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(lunar_armor1@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(foodfight@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave5"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(foodfight_armor2@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave6"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(foodfight_armor1@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(foodfight_armor1@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave7"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(foodfight_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(foodfight_armor1@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(lunar_armor1@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(lunar_armor1@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave8"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(foodfight_armor1@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(foodfight@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave9"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(foodfight_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(foodfight@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave10"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(foodfight_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(lunar_camel_onehump@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(lunar@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave11"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(lunar_armor1@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(lunar_armor1@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(foodfight@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave12"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(foodfight_chefster@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(lunar_camel_onehump@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(lunar_superfanimp@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave13"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(foodfight_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(lunar@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(lunar_camel_onehump@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(foodfight@ZombieTypes)"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "Wave14"
+            ],
+            "objclass": "SpawnZombiesJitteredWaveActionProps",
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "RTID(lunar_camel_twohump@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(foodfight_armor2@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(lunar_armor1@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(lunar@ZombieTypes)"
+                    },
+                    {
+                        "Type": "RTID(lunar@ZombieTypes)"
+                    }
+                ]
+            }
+        }

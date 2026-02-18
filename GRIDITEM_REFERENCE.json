@@ -1,0 +1,120 @@
+{
+  "gridItems": {
+    "Gravestones": {
+      "gravestone_tutorial": "Modern Gravestone",
+      "gravestone_egypt": "Egypt Gravestone",
+      "gravestone_pirate": "Pirate Gravestone",
+      "gravestone_cowboy": "Cowboy Gravestone",
+      "gravestone_future": "Future Gravestone",
+      "gravestone_dark": "Dark Gravestone",
+      "gravestoneSunOnDestruction": "Dark Gravestone (Sun)",
+      "gravestonePlantfoodOnDestruction": "Dark Gravestone (Plant Food)",
+      "gravestone_iceage": "Frostbite Caves Gravestone",
+      "gravestone_lostcity": "Lost City Gravestone",
+      "gravestone_battlez": "Arena Gravestone",
+      "gravestone_battlez_sun": "Arena Gravestone Sun"
+    },
+    "Minecarts": {
+      "railcart_tutorial": "Minecart (Modern)",
+      "railcart_cowboy": "Minecart (Cowboy)",
+      "railcart_egypt": "Egypt Minecart",
+      "railcart_pirate": "Pirate Minecart",
+      "railcart_future": "Future Minecart",
+      "railcart_steam": "Steam Age Minecart"
+    },
+    "Shields & Tiles": {
+      "plank": "Plank",
+      "holoshield": "Infi-nut Shield",
+      "moonflowershield": "Moonflower Shield",
+      "protectorshield": "Shield Zombie Shield",
+      "protectorshieldsegment": "Shield Zombie Shield (Segment)",
+      "goldtile": "Gold Tile",
+      "nosun_goldtile": "Gold Tile (no sun)",
+      "powertile_alpha": "Power Tile (Green)",
+      "powertile_beta": "Power Tile (Red)",
+      "powertile_gamma": "Power Tile (Blue)",
+      "powertile_delta": "Power Tile (Yellow)",
+      "powertile_epsilon": "Power Tile (Purple)"
+    },
+    "Potions": {
+      "zombiepotion_speed": "Potion (Speed)",
+      "zombiepotion_toughness": "Potion (Toughness)",
+      "zombiepotion_speedup": "Potion (Speedup)",
+      "zombiepotion_present": "Potion (Present)",
+      "zombiepotion_invincible": "Potion (Invincibility)"
+    },
+    "Obstacles": {
+      "lilypad": "Lily Pad",
+      "vase": "Vase",
+      "vase_egg": "Eggbreaker Vase",
+      "vase_firework": "Firebreaker Vase",
+      "vase_greed": "Pot of Greed",
+      "surfboard": "Surfboard",
+      "tent": "Tent",
+      "backpack": "Imp Porter's Backpack",
+      "planttarget_squid": "Octopus",
+      "planttarget_iceblock": "Ice Block (Plant)",
+      "zombietarget_iceblock": "Ice Block (Zombie)",
+      "zombietarget_birthday_present": "Birthday Present",
+      "planttarget_sauce": "Caesar's Salad",
+      "zombietarget_stoneblock": "Medusa's Statue"
+    },
+    "Sliders": {
+      "slider_up": "Frostbite Caves Slider (Up)",
+      "slider_down": "Frostbite Caves Slider (Down)",
+      "slider_up_modern": "Modern Day Slider (Up)",
+      "slider_down_modern": "Modern Day Slider (Down)",
+      "invisible_slider_up": "Invisible Slider (Up)",
+      "invisible_slider_down": "Invisible Slider (Down)"
+    },
+    "Hazards": {
+      "sap": "Sap-fling's Sap",
+      "plantfoodsap": "Sap-fling's Sap (Plant Food)",
+      "lava": "Lava Guava Lava Tile",
+      "meteorflower_lava": "Meteor Flower Lava Tile",
+      "wisp": "Jack O' Lantern Wisp",
+      "zomboss_iceage_glacier_block": "Zombot Tuskmaster 10,000 BC's Ice Blocks",
+      "boulder_trap_falling_forward": "Boulder Trap",
+      "zomboss_boulder_trap_falling_forward": "Boulder Trap (Zomboss)",
+      "flame_spreader_trap": "Fire Trap"
+    },
+    "Craters & Misc": {
+      "crater": "Beghouled Crater",
+      "crater_timed": "Timed Crater",
+      "inviscrater": "Invisible Crater",
+      "whitecrater": "White Crater",
+      "speaker": "Speaker",
+      "speaker_zomboss": "Speaker (Zomboss)",
+      "eightiesarcadecabinet": "Arcade Cabinet",
+      "dusklobberflower": "Dusk Lobber's Plant Food Flower",
+      "bombegranateseeds": "Bombegranate's Seeds"
+    },
+    "Boosts": {
+      "boosttile": "PF Tile (1 use)",
+      "boosttile3": "PF Tile (3 uses)",
+      "boosttile5": "PF Tile (5 uses)",
+      "boosttile10": "PF Tile (10 uses)",
+      "boosttile1000": "PF Tile (1000 uses)",
+      "boosttile_invisible": "Invisible PF Tile (1 use)",
+      "score_2x_tile": "Score Tile (x2)",
+      "score_3x_tile": "Score Tile (x3)",
+      "score_5x_tile": "Score Tile (x5)"
+    },
+    "Portals": {
+      "zombieportal_modern": "Modern Day Portal",
+      "zombieportal_eighties": "Neon Mixtape Tour Portal",
+      "zombieportal_dino": "Jurassic Marsh Portal",
+      "zombieportal_lostcity": "Lost City Portal",
+      "zombieportal_beach": "Big Wave Beach Portal",
+      "zombieportal_dark": "Dark Ages Portal",
+      "zombieportal_future": "Far Future Portal",
+      "zombieportal_west": "Wild West Portal",
+      "zombieportal_pirate": "Pirate Seas Portal",
+      "zombieportal_egypt": "Ancient Egypt Portal"
+    },
+    "Other": {
+      "roman_healer_staff": "Healer's Staff",
+      "cloud": "Assault Airspace Cloud"
+    }
+  }
+}

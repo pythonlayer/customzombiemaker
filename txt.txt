@@ -1,0 +1,2051 @@
+Zombies:
+
+Ancient Egypt:
+
+Mummy Zombie - mummy
+Conehead Mummy - mummy_armor1
+Buckethead Mummy - mummy_armor2
+Pyramid-Head Zombie - mummy_armor4
+Egypt Flag Zombie - mummy_flag
+Egypt Rally Zombie - mummy_flag_veteran
+Ra Zombie - ra
+Camel Zombies (Segment) - camel_segment
+Camel Zombies (3 parts) - camel_onehump
+Camel Zombies (4 parts) - camel_twohump
+Camel Zombies (6 parts) - camel_manyhump
+Mummy Memory Camels (Segment) - camel_segment_touch
+Mummy Memory Camels (3 parts) - camel_onehump_touch
+Mummy Memory Camels (4 parts) - camel_twohump_touch
+Mummy Memory Camels (6 parts) - camel_manyhump_touch
+Explorer Zombie - explorer
+Torchlight Zombie - explorer_veteran
+Tomb Raiser Zombie - tomb_raiser
+Pharaoh Zombie - pharaoh
+Imp Mummy - egypt_imp
+Mummified Gargantuar - egypt_gargantuar
+
+
+Pirate Seas:
+
+Pirate Zombie - pirate
+Conehead Pirate - pirate_armor1
+Buckethead Pirate - pirate_armor2
+Barrelhead Zombie - pirate_armor4
+Flag Pirate Zombie - pirate_flag
+Jolly Roger Zombie - pirate_flag_veteran
+Swashbuckler Zombie - swashbuckler
+Swashbuckler Zombie (not swinging) - swashbuckler_basic
+Seagull Zombie - seagull
+Pelican Zombie - pelican
+Barrel Roller Zombie - barrelroller
+Barrel - pirate_barrel
+Powder Keg Roller Zombie - barrelroller_explosive
+Powder Keg - pirate_barrel_explosive
+Imp Pirate Zombie - pirate_imp
+Imp Cannon - cannon
+Pirate Captain Zombie - pirate_captain
+Parrot Zombie - pirate_captain_parrot
+Gargantuar Pirate - pirate_gargantuar
+
+
+Wild West:
+
+Cowboy Zombie - cowboy
+Conehead Cowboy - cowboy_armor1
+Buckethead Cowboy - cowboy_armor2
+Cart-Head Zombie - cowboy_armor4
+Flag Cowboy Zombie - cowboy_flag
+Cowboy Rally Zombie - cowboy_flag_veteran
+Prospector Zombie - prospector
+Pianist Zombie - piano
+Poncho Zombie - poncho
+Poncho Zombie (No plate) - poncho_no_plate
+Poncho Zombie (Always has plate) - poncho_plate
+Chicken Wrangler Zombie - chicken_farmer/chicken_wrangler
+Chicken - chicken
+Zombie Bull - west_bull
+Rodeo Legend Zombie - west_bull_veteran
+Zombie Bull Rider - west_bullrider
+Cowboy Gargantuar - cowboy_gargantuar
+
+
+Far Future:
+
+Future Zombie - future
+Future Conehead - future_armor1
+Future Buckethead - future_armor2
+Holo-Head Zombie - future_armor4
+Future Flag Zombie - future_flag
+Robo-Rally Zombie - future_flag_veteran
+Jetpack Zombie - future_jetpack
+Disco Jetpack Zombie - future_jetpack_disco
+Blastronaut Zombie - future_jetpack_veteran
+Shield Zombie - future_protector
+P0rta-Shield MK. II™ - future_protector_generator/future_protector_shield
+Robo-Cone Zombie - mech_cone/cone_mech
+Bug-Bot Imp - future_imp
+Disco-tron 3000 - disco_mech
+Mecha-Football Zombie - football_mech
+Gargantuar Prime - future_gargantuar
+
+
+Dark Ages:
+
+Peasant Zombie - dark
+Conehead Peasant - dark_armor1
+Buckethead Peasant - dark_armor2
+Knight Zombie - dark_armor3
+Castlehead Zombie - dark_armor4
+Peasant Flag Zombie - dark_flag
+Peasant Rally Zombie - dark_flag_veteran
+Imp Monk Zombie - dark_imp
+Jester Zombie - dark_juggler/dark_jester
+Wizard Zombie - dark_wizard
+Dark Summoner Zombie - dark_wizard_veteran
+Veteran Wizard - dark_wizard_veteran_vanilla
+Zombie King - dark_king
+Bandit Zombie - dark_robber
+Imp Dragon Zombie - dark_imp_dragon
+Dark Ages Gargantuar - dark_gargantuar
+Dark Explorer - dark_explorer
+
+
+Big Wave Beach:
+
+Pompadour Zombie - beach
+Pompadour Conehead - beach_armor1
+Pompadour Buckethead - beach_armor2
+Pompadour Shellhead - beach_armor4
+Bikini Zombie - beach_fem
+Bikini Conehead - beach_fem_armor1
+Bikini Buckethead - beach_fem_armor2
+Bikini Shellhead - beach_fem_armor4
+Pompadour Duckytube Zombie - beach_duckytube
+Pompadour Duckytube Conehead - beach_duckytube_armor1
+Pompadour Duckytube Buckethead - beach_duckytube_armor2
+Pompadour Duckytube Shellhead - beach_duckytube_armor4
+Bikini Duckytube Zombie - beach_fem_duckytube
+Bikini Duckytube Conehead - beach_fem_duckytube_armor1
+Bikini Duckytube Buckethead - beach_fem_duckytube_armor2
+Bikini Duckytube Shellhead - beach_fem_duckytube_armor4
+Beach Flag Zombie - beach_flag
+Beach Rally Zombie - beach_flag_veteran
+Snorkel Zombie - beach_snorkel
+Scuba Zombie - beach_snorkel_veteran
+Scuba Zombie (Used to allow scuba to be seen better in CYS) beach_snorkel_veteran_street (use "RTID(SnorkelStreetModule@LevelModules)" in modules to swap all variants of this zombie with beach_snorkel_veteran)
+Surfer Zombie - beach_surfer
+Imp Mermaid Zombie - beach_imp
+Octo Zombie - beach_octopus
+Fisherman Zombie - beach_fisherman
+Clamshell Zombie - beach_shell
+Hardshell Zombie - beach_shell_shield
+Basic Shell Zombie - beach_shell_basic
+Normal Garbage - beach_garbage_normal
+Weak Garbage - beach_garbage_weak
+Strong Garbage - beach_garbage_strong
+Greaser Imp Garbage (Spawner) - beach_garbage_imp
+Greaser Imp Garbage (Base) - beach_garbage_imp_zombie
+Greaser Imp - beach_greaser_imp/greaser_imp/summer_greaser_imp
+Deep Sea Gargantuar - beach_gargantuar
+
+
+Frostbite Caves/Hypothermic Hollows:
+
+Cave Zombie - iceage
+Cave Conehead - iceage_armor1
+Cave Buckethead - iceage_armor2
+Blockhead Zombie - iceage_armor3
+Tuskhead Zombie - iceage_armor4
+Cave Flag Zombie - iceage_flag
+Cave Rally Zombie - iceage_flag_veteran
+Hunter Zombie - iceage_hunter
+Shellshocked Hunter Zombie - iceage_hunter_veteran
+Dodo Rider Zombie - iceage_dodo
+Robo Dodo - iceage_dodo_veteran
+Yeti Imp - iceage_imp
+Troglobite (3 blocks) - iceage_troglobite
+Troglobite (2 blocks) - iceage_troglobite_2block
+Troglobite (1 block) - iceage_troglobite_1block
+Troglobite (0 blocks) - iceage_troglobite_basic
+Weasel Hoarder - iceage_weaselhoarder
+Weasel Queen - iceage_weaselhoarder_veteran
+Ice Weasel - iceage_weasel
+Permafrost Weasel - iceage_weasel_veteran
+Charred Zombie - iceage_charred
+Chief Icewind Zombie - iceage_chief
+Chief Hailstorm Zombie - iceage_chief_veteran
+Sloth Gargantuar - iceage_gargantuar
+Elder Hailstorm Phase 1 - iceage_chief_miniboss_phase1
+Elder Hailstorm Phase 2 - iceage_chief_miniboss_phase2
+Elder Hailstorm Friend (Spawner) - iceage_chief_miniboss_friend_spawner
+Elder Hailstorm Friend (Base, not hypnotized) - iceage_chief_miniboss_friend
+
+
+Lost City:
+
+Adventurer Zombie - lostcity
+Conehead Adventurer - lostcity_armor1
+Buckethead Adventurer - lostcity_armor2
+Templehead Zombie - lostcity_armor4
+Flag Adventurer - lostcity_flag
+Lost Rally Zombie - lostcity_flag_veteran
+Excavator Zombie - lostcity_excavator
+Parasol Zombie - lostcity_jane
+Lost Pilot Zombie - lostcity_lostpilot
+Lost City Imp - lostcity_imp
+Bug Zombie - lostcity_bug
+Bug Zombie (Conehead) - lostcity_bug_armor1
+Bug Zombie (Buckethead) - lostcity_bug_armor2
+Imp Porter - lostcity_impporter
+Relic Hunter Zombie - lostcity_relichunter
+Relic Hunter Zombie (not swinging) - lostcity_relichunter_basic
+Turquoise Skull Zombie - lostcity_crystalskull
+Magenta Skull Zombie - lostcity_crystalskull_veteran
+Lost Explorer Zombie - lostcity_explorer
+Porter Gargantuar - lostcity_gargantuar
+
+
+Neon Mixtape Tour:
+
+Neon Zombie - eighties
+Neon Conehead - eighties_armor1
+Neon Buckethead - eighties_armor2
+Speakerhead Zombie - eighties_armor4
+Neon Flag Zombie - eighties_flag
+Neon Rally Zombie - eighties_flag_veteran
+Punk Zombie - eighties_punk
+Goth Punk Zombie - eighties_punk_veteran
+Glitter Zombie - eighties_glitter
+MC Zom-B - eighties_mc
+Impunk - eighties_imp
+Breakdancer Zombie - eighties_breakdancer
+Arcade Zombie - eighties_arcade/eighties_arcade_8bit
+Arcade Zombie (no arcade) - eighties_arcade_basic
+8-Bit Zombie - eighties_8bit
+8-Bit Zombie (Conehead) - eighties_8bit_armor1
+8-Bit Zombie (Buckethead) - eighties_8bit_armor2
+Boombox Zombie - eighties_boombox
+Hair Metal Gargantuar - eighties_gargantuar
+Punk Zombie (8bit Jam Ver) - eighties_punk_8bit
+Glitter Zombie (8bit Jam Ver) - eighties_glitter_8bit
+Hair Metal Gargantuar (8bit Jam Ver) - eighties_gargantuar_8bit
+Boombox Zombie (8bit Jam Ver) - eighties_boombox_8bit
+Breakdancer Zombie (8bit Jam Ver) - eighties_breakdancer_8bit
+MC Zom-B (8bit Jam Ver) - eighties_mc_8bit
+Goth Punk Zombie (8bit Jam Ver) - eighties_punk_veteran_8bit
+
+
+Jurassic Marsh:
+
+Jurassic Zombie - dino
+Jurassic Conehead - dino_armor1
+Jurassic Buckethead - dino_armor2
+Jurassic Fossilhead - dino_armor3
+Amberhead Zombie - dino_armor4
+Jurassic Flag Zombie - dino_flag
+Jurassic Rally Zombie - dino_flag_veteran
+Jurassic Imp - dino_imp
+Eggshell Imp - dino_eggshell
+Jurassic Bully - dino_bully
+Jurassic Rockpuncher - dino_bully_veteran
+Jurassic Gargantuar - dino_gargantuar
+Rock Carrier Zombie - dino_pterry
+Egg Stealer Imp - dino_eggstealer
+Jurassic Imposter - dino_imposter/dino_imposter/dino_bully_blue
+
+
+Modern Day:
+
+Basic Zombie - tutorial
+Conehead Zombie - tutorial_armor1
+Buckethead Zombie - tutorial_armor2
+Brickhead Zombie - tutorial_armor4
+Ducky Tube Zombie - duckytube
+Conehead Ducky Tube - duckytube_armor1
+Buckethead Ducky Tube - duckytube_armor2
+Brickhead Ducky Tube - duckytube_armor4
+Flag Zombie - tutorial_flag
+Rally Zombie - tutorial_flag_veteran
+Imp - tutorial_imp
+Gargantuar - tutorial_gargantuar
+Newspaper Zombie - modern_newspaper
+Sunday Edition Zombie - newspaper_veteran
+Balloon Zombie - modern_balloon
+Balloon Zombie Tutorial - tutorial_balloon
+All-Star Zombie - modern_allstar
+All-Star Zombie (Invisighoul) - invisighoul_allstar
+Super-Fan Imp - modern_superfanimp
+Land Fisherman (Currently only has idle anim) - beach_fisherman_land
+Hidden Fisherman (Doesn't show up in cys, swapped with land version for pool) - beach_fisherman_inz/beach_fisherman_hidden | there is no level module for this you'll have to make it yourself
+Aquatic Ascent Fisherman (Use for Aquatic Ascent or Necromancy ambushes, doesn't show up in cys) - pool_fisherman_necro
+Berserker Zombie - modern_berserker/rift_berserker
+Berserker Zombie (Invisighoul) - invisighoul_berserker
+
+
+Valenbrainz:
+
+Valenbrainz Basic - valentines
+Valenbrainz Conehead - valentines_armor1
+Valenbrainz Buckethead - valentines_armor2
+Valenbrainz Flag - valentines_flag
+Valenbrainz Imp - valentines_imp
+Valenbrainz Gargantuar - valentines_gargantuar
+Stupid Cupid-Fan Imp - valentines_superfanimp
+Valenbrella Zombie - valentines_jane
+Luv Zombie - valentines_balloon
+Valenbrainz Boombox - summer_boombox/valentines_boombox
+Valenbrainz Boombox (Ballad Jam Ver) - summer_boombox_ballad/valentines_boombox_ballad
+
+
+Luck 'O the Zombie:
+
+St. Paddy's Zombie - stpatrick
+St. Paddy's Conehead - stpatrick_armor1
+St. Paddy's Buckethead - stpatrick_armor2
+St. Paddy's Flag Zombie - stpatrick_flag
+Leprechaun Imp - leprachaun_imp
+Slamrock Gargantuar - stpatrick_gargantuar
+Slamrock Gargantuar (Metal Jam Ver) - stpatrick_gargantuar_metal
+St. Paddy's Ra Zombie - stpatrick_ra
+Leprechaun Dodo Rider - leprachaun_dodo
+Lepreglitter - stpatrick_glitter
+Lepreglitter (Pop Jam Ver) - stpatrick_glitter_pop
+Leprepunk - stpatrick_punk
+Leprepunk (Punk Jam Ver) - stpatrick_punk_punk
+
+
+The Springening:
+
+Springening Zombie - spring
+Springening Conehead - spring_armor1
+Springening Buckethead - spring_armor2
+Egghead Zombie (blue) - spring_armor4_blue
+Egghead Zombie (red) - spring_armor4_red
+Egghead Zombie (green) - spring_armor4_green
+Springening Flag Zombie - spring_flag
+Springening Imp - spring_imp
+Springening Imp (April Fools) - spring_imp_af
+Springening Camels (Segment) - spring_camel_segment
+Springening Camels (3 parts) - spring_camel_onehump
+Springening Camels (4 parts) - spring_camel_twohump
+Springening Camels (6 parts) - spring_camel_manyhump
+Springening Poncho - spring_poncho
+Springening Poncho (Plate) - spring_poncho_plate
+Springening Poncho (No Plate) - spring_poncho_no_plate
+Springening Wizard - spring_wizard
+Flying Rabbit - spring_prospector
+Springening Troglobite (3 blocks) - easter_troglobite
+Springening Troglobite (2 blocks) - easter_troglobite_2block
+Springening Troglobite (1 block) - easter_troglobite_1block
+Springening Troglobite (0 blocks) - easter_troglobite_basic
+Springening Gargantuar - spring_gargantuar
+Springening Gargantuar (April Fools) - spring_gargantuar_af
+
+
+Birthdayz:
+
+Birthdayz Zombie - birthday
+Birthdayz Conehead - birthday_armor1
+Birthdayz Buckethead - birthday_armor2
+Birthdayz Flag Zombie - birthday_flag
+Birthdayz Pharaoh - birthday_pharaoh
+Birthdayz Barrel - birthday_barrel
+Birthdayz Jetpack - birthday_jetpack
+Birthdayz Jester - birthday_juggler
+Present Imp - birthday_imp
+Present Roller - birthday_barrelroller
+Robo-Present Zombie - birthday_mech_cone/birthday_cone_mech
+Birthdayz Troglobite (3 blocks)  - birthday_troglobite
+Birthdayz Troglobite (2 blocks) - birthday_troglobite_2block
+Birthdayz Troglobite (1 block) - birthday_troglobite_1block
+Birthdayz Troglobite (0 blocks) - birthday_troglobite_basic
+Birthdayz Gargantuar - birthday_gargantuar
+
+
+Children's Day:
+
+Kid Zombie - children_basic/children
+Kid Conehead Zombie - children_armor1
+Kid Buckethead Zombie - children_armor2
+Legohead Zombie - children_armor4
+Kid Flag Zombie - children_flag
+Imp Child - children_imp
+Children Balloon - children_balloon
+Fishy Imp - children_captain
+Toy Car Imp - children_football_mech
+Teddy Imp - childrensday_imp
+Teddy Beargantuar - children_gargantuar
+
+
+Summer Nights:
+
+Summer Zombie - summer_basic/summer
+Summer Conehead - summer_armor1
+Summer Buckethead - summer_armor2
+Summer Flag Zombie - summer_flag
+Lightning Bug - summer_bug
+Lightning Bug (Conehead) - summer_bug_armor1
+Lightning Bug (Buckethead) - summer_bug_armor2
+S'more Zombie - summer_explorer
+Hot Dog Imp - summer_imp
+King of the Grill (Gargantuar) - summer_gargantuar
+
+
+Big Brainz:
+
+Big Head Zombie - bighead
+Big Conehead - bighead_armor1
+Big Buckethead - bighead_armor2
+Big Head Flag Zombie - bighead_flag
+Big Head Imp - bighead_imp
+Big Head Gargantuar - bighead_gargantuar
+Big Head Newspaper - bighead_newspaper
+Big Head Balloon - bighead_balloon
+Big Head All-Star - bighead_allstar
+Big Head Super-Fan Imp - bighead_superfan
+Big Head Lost Pilot - bighead_lostpilot
+Big Brainz Barrel Roller - bighead_barrelroller
+Big Brainz Barrel - bighead_barrel
+
+
+Lawn of Doom:
+
+Spooky Scary Zombie - halloween
+Spooky Scary Conehead - halloween_armor1
+Spooky Scary Buckethead - halloween_armor2
+Spooky Flag Zombie - halloween_flag
+Bride of Frankentuar - halloween_imp
+Frankentuar - halloween_gargantuar
+Haunting Breakdancer - halloween_breakdancer
+Zombie Witch - halloween_witch
+Pumpkin Hunter Zombie - halloween_relichunter
+Pumpkin Hunter Zombie (not swinging) - halloween_relichunter_basic
+Halloween Octo - halloween_octopus
+Haunting Breakdancer (Rap Jam Ver) - halloween_breakdancer_rap
+Zombie Crow - halloween_crow
+Ghost - halloween_ghost
+
+
+Plants vs. Zombies Heroes Event/Meteor Z:
+
+Wannabe Zombie - hero_electricboogaloo/hero
+Wannabe Conehead - hero_armor1
+Wannabe Buckethead - hero_armor2
+Wannabe Flag Zombie - hero_flag
+Hero-Tron 2.0 - hero_disco_mech
+Electric Boogaloo - hero_jetpack_disco
+Impfinity Clone - hero_impfinity
+Impfinity Clone (spawn by ZMech) - hero_impfinity_zmech
+Neptuna Imp - hero_neptuna
+Rustbolt - hero_rustbolt
+Super Brainz - hero_superbrainz
+Immorticia - hero_weaselhoarder
+Zom-Bat - hero_weasel
+Huge-Gigantacus - galaxy_dodo/hero_dodo
+Heroic Barrel Roller - hero_barrelroller
+Heroic Barrel - hero_barrel
+The Smash - hero_smash
+The Smash (Endless) - heroes_gargantuar
+MC DOOM - hero_mc/hero_MC_DOOM
+The Brainiac - hero_repairimp/hero_brainiac
+Stellar Glitter - hero_glitter/hero_stellar_glitter
+HERO Bassloid - hero_bass(_c7/6/4/3)/hero_bassloid
+HERO Bassloid (drop down random column from 3-7) - hero_bass_inz
+HERO Bassloid (no speaker) - hero_bass_basic
+The Grate Mystery - hero_poncho/hero_grate_mystery
+The Grate Mystery (Plate) - hero_poncho_plate
+The Grate Mystery (No Plate) - hero_poncho_no_plate
+Steelwalker - hero_stiltwalker/hero_steelwalker
+Captain Jones - hero_captain/hero_captain_jones
+
+HERO Bassloid (Base) - hero_bass_base
+HERO Bassloid (Death animation) - hero_bass_speaker
+
+
+Food Fight:
+
+Food Fight Zombie - foodfight
+Food Fight Conehead - foodfight_armor1
+Food Fight Buckethead - foodfight_armor2
+Food Fight Flag Zombie - foodfight_flag
+Taco Imp - foodfight_imp
+Food Fighter Prime - foodfight_gargantuar
+Overstuffed Zombie - foodfight_overstuff
+Food Blocker Zombie - foodfight_protector
+Chefster - foodfight_chefster
+Turkey Wrangler - foodfight_gobbler_king
+Turkey - foodfight_turkey
+Turkey Boss - foodfight_turkey_boss
+
+
+Feastivus:
+
+Feastivus Zombie - feastivus
+Feastivus Conehead - feastivus_armor1
+Feastivus Buckethead - feastivus_armor2
+Feastivus Flag Zombie - feastivus_flag
+Feastivus Imp - feastivus_imp
+Elf Imp - holiday_imp
+Feastivus Pianist - feastivus_piano
+Feastivus Swashbuckler - feastivus_swashbuckler
+Feastivus Swashbuckler (not swinging) - feastivus_swashbuckler_basic
+Feastivus Poncho - feastivus_poncho
+Feastivus Poncho (Plate) - feastivus_poncho_plate
+Feastivus Poncho (No Plate) - feastivus_poncho_no_plate
+Reindeer Zombies (Segment) - feastivus_camel_segment
+Reindeer Zombies (3 parts) - feastivus_camel_onehump
+Reindeer Zombies (4 parts) - feastivus_camel_twohump
+Reindeer Zombies (6 parts) - feastivus_camel_manyhump
+Feastivus Troglobite (3 blocks) - feastivus_troglobite
+Feastivus Troglobite (2 blocks) - feastivus_troglobite_2block
+Feastivus Troglobite (1 block) - feastivus_troglobite_1block
+Feastivus Troglobite (0 blocks) - feastivus_troglobite_basic
+Snowball Thrower Zombie - feastivus_hunter
+Festive Fisherman - feastivus_fisherman
+Feastivus Gargantuar - feastivus_gargantuar
+Reindeer Gargantuar - holiday_gargantuar
+Feastivus Treasure Yeti - holiday_treasureyeti_noloot
+
+
+Zcorp:
+
+Zcorp New Hire - zcorp
+Zcorp Conehead - zcorp_armor1
+Zcorp Buckethead - zcorp_armor2
+Zcorp Computerhead - zcorp_armor4
+Zcorp Contractor - zcorp_fem
+Zcorp Contractor Conehead - zcorp_fem_armor1
+Zcorp Contractor Buckethead - zcorp_fem_armor2
+Zcorp Contractor Computerhead - zcorp_fem_armor4
+Zcorp Flag Zombie - zcorp_flag
+Gargimp Legal - zcorp_imp
+Head Office Impgantuar - zcorp_gargantuar
+Zcorp Consultant - zcorp_consultant
+Zcorp Helpdesk - zcorp_helpdesk
+Zcorp Chair Racer - zcorp_racer_chair
+Zcorp Chair Racer Basic - zcorp_racer
+
+
+Holiday Mashup:
+
+Impfinity (Miniboss) - miniboss_impfinity
+Impfinity's Minion - miniboss_impfinity_minion
+#caketank (Miniboss) - birthday_caketank
+Z-Mech (Miniboss) - hero_zmech_phase1/hero_zmech
+Z-Mech (Miniboss - phase 2) - hero_zmech_phase2
+Z-Mech (Miniboss - phase 3) - hero_zmech_phase3
+Professor Brainstorm (Miniboss) - hero_crystalskull/hero_brainstorm/hero_professor/professor_brainstorm
+Zombie Multimplicity (Miniboss - starting layer) - feastivus_multplicity
+Zombie Multimplicity (Miniboss - second layer) - halloween_multplicity
+Zombie Multimplicity (Miniboss - third layer) - birthday_multplicity
+Zombie Multimplicity (Miniboss - fourth layer) - stpaddy_multplicity
+Zombie Multimplicity (Miniboss - fifth layer) - valentines_multplicity
+Zombie Multimplicity (Miniboss - sixth layer) - foodfight_multplicity
+Zombie Multimplicity (Miniboss - seventh layer) - spring_multplicity
+Zombie Multimplicity (Miniboss - eighth layer) - summer_multplicity
+Zombie Multimplicity (Miniboss - nineth layer) - hero_multplicity
+Zombie Multimplicity (Miniboss - tenth layer) - children_multplicity
+Zombie Multimplicity Gremlin (Miniboss - final layer) - bighead_multplicity
+Zombert (Miniboss) - mashup_arcade
+Zombert's Arcade Machine - mashup_arcade_cabinet_miniboss
+
+
+Steam Ages:
+
+Labor Zombie - steam
+Conehead Labor Zombie - steam_armor1
+Buckethead Labor Zombie - steam_armor2
+Flag Labor Zombie - steam_flag
+Industrial Imp - steam_imp
+Foreman Gargantuar - steam_gargantuar
+Foreman Gargantuar (non-backward imp) - steam_gargantuar_reg
+Gentleman Zombie - steam_gentleman
+Gentleman Zombie (350 points) - steam_gentleman_zomboss
+Barrel Zombie - steam_barrel
+Coal Miner Zombie - steam_miner
+Conehead Coal Miner - steam_miner_armor1
+Buckethead Coal Miner - steam_miner_armor2
+Coal - steam_miner_coal
+Coal Miner Cart (invisible) - steam_miner_cart
+Furnace Zombie - steam_furnace
+Inventor Zombie - steam_inventor
+Inventor Zombie (800 points) - steam_inventor_zomboss
+Mechanic Zombie - steam_mechanic
+Mechanic Zombie (Spawner) - steam_mechanic_spawner
+Mechanic Zombie (Base) - steam_mechanic_zombie
+Clockwork Zombie - steam_clockwork
+Clockwork Zombie (Blue) - steam_clockwork_blue
+Clockwork Zombie (Green) - steam_clockwork_green
+Repair Imp - steam_repairimp
+Backwards Labor Zombie - steam_back
+Backwards Conehead Labor Zombie - steam_back_armor1
+Backwards Buckethead Labor Zombie - steam_back_armor2
+Backwards Flag Labor Zombie - steam_back_flag
+Backwards Industrial Imp - steam_back_imp
+Backwards Labor Zombie (Vasebreaker) - steam_back_vase
+Backwards Conehead Labor Zombie (Vasebreaker) - steam_back_armor1_vase
+Backwards Buckethead Labor Zombie (Vasebreaker) - steam_back_armor2_vase
+Coal Train Zombie - steam_miner_train
+Conehead Coal Train Zombie - steam_miner_train_armor1
+Buckethead Coal Train Zombie - steam_miner_train_armor2
+Coal Train (invisible) - steam_train
+
+
+Caliginous Carnival:
+
+Carnie Zombie - carnie
+Carnie Conehead - carnie_armor1
+Carnie Buckethead - carnie_armor2
+Grinderhead Zombie - carnie_armor4
+Carnie Flag - carnie_flag
+The Smiler - carnie_smiler
+Stiltwalker Zombie - carnie_stiltwalker
+Pink Vendor Zombie - carnie_cottoncandy_pink/carnie_pinky
+Blue Vendor Zombie - carnie_cottoncandy_blue/carnie_bluebert
+Trapeze Zombies (Duo) - carnie_trapeze_duo (refer to the trapeze zombies below for instructions on how to use correctly)
+Trapeze Zombies (Trio) - carnie_trapeze_trio (refer to the trapeze zombies below for instructions on how to use correctly)
+Trapeze Zombies (Quad) - carnie_trapeze_quad (refer to the trapeze zombies below for instructions on how to use correctly)
+Trapeze Zombies (Conga) - carnie_trapeze_conga
+Blue Trapeze Zombie - carnie_trapeze_blue (use "RTID(TrapezeStreetModule@LevelModules)" in modules to swap all variants of this zombie with carnie_trapeze_duo)
+Red Trapeze Zombie - carnie_trapeze_red (use "RTID(TrapezeStreetModule@LevelModules)" in modules to swap all variants of this zombie with carnie_trapeze_trio)
+Yellow Trapeze Zombie - carnie_trapeze_yellow (use "RTID(TrapezeStreetModule@LevelModules)" in modules to swap all variants of this zombie with carnie_trapeze_quad)
+Blue Trapeze Zombie (not swinging) - carnie_trapeze_blue_basic
+Red Trapeze Zombie (not swinging) - carnie_trapeze_red_basic
+Yellow Trapeze Zombie (not swinging) - carnie_trapeze_yellow_basic
+Firebreather Zombie - carnie_firebreather
+Mechanical Monkey Zombie - carnie_monkey/carnie_toy_monkey
+Carnie Ball - carnie_toy_ball/carnie_bonus_ball
+Carnie Nibbler - carnie_toy_teeth/carnie_nibble
+Pinky's Personal Candy - jackinthebox_candy_hp/carnie_candy_hp
+Bluebert's Personal Candy - jackinthebox_candy_speed/carnie_candy_speed
+Carnie Imp Twins - carnie_imp_twins
+Carnie Imp Split - carnie_imp_split
+Strongman Gargantuar - carnie_gargantuar
+Strongman Gargantuar (Endless) - carnival_gargantuar
+Funhouse Mirror Zombie - carnie_mirror
+Carnie Cannon - carnie_cannon
+Cannonball Imp - carnie_imp
+Magician Zombie - carnie_magician
+Zombie Dove - carnie_dove
+Prankster Zombie - carnie_prankster (will spawn on another lane if there already is one in the current lane)
+Music Doll Zombie - carnie_musicbox/carnie_musicdoll
+Music Doll Zombie (1000 point, no music play) - carnie_musicbox_zomboss
+Carnie Teddy - carnie_toy_teddy/carnie_freddy
+Carnie Snorter - carnie_toy_sniffer
+Action Gargantuar - carnie_toy_gargantuar
+
+
+Lunar New Year:
+
+Lunar Basic - lunar
+Lunar Conehead - lunar_armor1
+Lunar Buckethead - lunar_armor2
+Lunar Flag - lunar_flag
+Lunar Superfanimp - lunar_superfanimp
+Lunar Camel (3 parts) - lunar_camel_onehump
+Lunar Camel (4 parts) - lunar_camel_twohump
+Lunar Camel (6 parts) - lunar_camel_manyhump
+Lunar Camel (Segment) - lunar_camel_segment
+Lunar Bandit - lunar_bandit
+Lunar Raider - lunar_relichunter
+Lunar Bandit (not swinging) - lunar_bandit_basic
+Lunar Raider (not swinging) - lunar_relichunter_basic
+Wooly Imp - lunar_imp
+Sheepish Gargantuar - lunar_gargantuar
+Money Tree Zombie - lunar_moneytree
+Lion Dancer - lion_dance/lunar_lion_dance/lunar_lion_dancer/lion_dancer
+Wealth God Zombie - lunar_wealth_god/endlesswealth
+
+
+Harvest Festival:
+
+Harvest Zombie - harvest
+Harvest Conehead - harvest_armor1
+Harvest Buckethead - harvest_armor2
+Harvest Flag Zombie - harvest_flag
+Harvest Conehead Flag Zombie - harvest_flag_armor1
+Harvest Buckethead Flag Zombie  - harvest_flag_armor2
+Outhouse Zombie - harvest_outhouse/harvest_pharaoh
+Pitchfork Zombie - harvest_pitchfork/harvest_excavator
+Cage-Free Eggshell Imp - harvest_eggshell
+Harvest Egg Stealer - harvest_eggstealer
+Gourd Carrier Zombie - harvest_pterry
+Harvest Imp - harvest_imp
+Harvest Gargantuar - harvest_gargantuar
+
+
+Backyard Brain Bowl:
+
+Lawnbowl Zombie - sportzball
+Lawnbowl Zombie (foam finger) - sportzball_foam
+Lawnbowl Conehead - sportzball_armor1
+Lawnbowl Conehead (foam finger) - sportzball_armor1_foam
+Lawnbowl Buckethead - sportzball_armor2/sportzball_buckethead
+Lawnbowl Buckethead (foam finger) - sportzball_armor2_foam
+Lawnbowl Flag Zombie - sportzball_flag
+Lawnbowl Conehead Flag Zombie - sportzball_flag_armor1
+Lawnbowl Buckethead Flag Zombie - sportzball_flag_armor2
+Lawnbowl Wizard - sportzball_wizard
+Lawnbowl Balloon - sportzball_balloon
+Lawnbowl Imp - sportzball_imp
+Lawnbowl Gargantuar - sportzball_gargantuar
+Cardio Zombie - sportzball_treadmill/sportzball_cardio/general_treadmill_phase3
+Cardio Zombie (Treadmill Variant 2) - sportzball_treadmill_var2/sportzball_cardio_var2/general_treadmill_phase1
+Cardio Zombie (Treadmill Variant 3) - sportzball_treadmill_var3/sportzball_cardio_var3/general_treadmill_phase2
+
+
+Assault Airspace:
+
+Pilot Zombie - skycity
+Conehead Pilot Zombie - skycity_armor1
+Buckethead Pilot Zombie - skycity_armor2
+Helmet Pilot Zombie - skycity_armor3
+Warhead Pilot Zombie - skycity_armor4
+Pilot Flag Zombie - skycity_flag
+Conehead Pilot Flag Zombie - skycity_flag_armor1
+Buckethead Pilot Flag Zombie - skycity_flag_armor2
+Helmet Pilot Flag Zombie - skycity_flag_armor3
+Warhead Pilot Flag Zombie - skycity_flag_armor4
+Pilot Rally Zombie - skycity_flag_veteran
+Conehead Pilot Rally Zombie - skycity_flag_veteran_armor1
+Buckethead Pilot Rally Zombie - skycity_flag_veteran_armor2
+Helmet Pilot Rally Zombie - skycity_flag_veteran_armor3
+Warhead Pilot Rally Zombie - skycity_flag_veteran_armor4
+Zombie Fighter - skycity_battleplane
+Zombie Fighter (Land Version, the imp won't fall down) - skycity_battleplane_land
+Pelican-1 Aircraft - skycity_pelican (for cys and almanac, will just die when spawned, use special event code)
+F-82 Twin Fighter Zombie - skycity_twinsplane (will spawn on other random lane if spawned on lane 1, spawn row is the bottom cabin) 
+F-82 Twin Fighter Zombie (1000 points) - skycity_twinsplane_endless
+F-82 Twin Fighter Zombie (Land Version) - skycity_twinsplane_land
+Scientist Zombie - skycity_electric
+Gas Pod Imp - skycity_gas (doesn't work properly when spawn normally, needs special event code to spawn)
+Commando Zombie - skycity_rocket (will spawn on another lane if there already is one in the current lane)
+Arbiter-X (spawn row is the lowest point) - skycity_arbiter/invisible_plane
+Arbiter-X (1500 points) - skycity_arbiter_endless
+Arbiter-X (Land Version) - skycity_arbiter_land
+Paratrooper Imp - skycity_imp/skycity_ggtimp (doesn't work properly when spawned normally, need special event code)
+ZACU Protector Zombie - skycity_protector
+ZACU Protector Zombie - skycity_protector_zomboss (500 points, 3000 weight)
+Missile Zombie - skycity_launcher/air_missile_launcher
+Missile Zombie (Base) - skycity_launcher_zombie
+NOTE: Will need a rift swap module to make zombie appear in CYS properly. Level swapper should be skycity_launcher_zombie to skycity_launcher. Spawn skycity_launcher_zombie in the level.
+Colonel Gargantuar - skycity_gargantuar
+
+
+Hitchhiker's Guide to Time Travel/Rift Road:
+
+Construction Zombie - rift
+Construction Conehead Zombie - rift_armor1
+Construction Buckethead Zombie - rift_armor2
+Hourglass-Head Zombie - rift_armor4
+Construction Flag Zombie - rift_flag
+Construction Rally Zombie - rift_flag_veteran
+Para-vator Zombie - rift_excavator
+Exca-sol Zombie - rift_jane
+Gargimp - rift_gargimp
+Tumble-weasel - rift_weasel/fat_weasel
+Peculiar Barrel Roller - rift_barrelroller
+Peculiar Barrel Roller's Barrel - rift_barrel
+Gremlin - rift_gremlin
+The Sniffer - rift_sniffer
+The Sniffer (Ambush) - rift_sniffer_rain
+Construction Imp - rift_imp
+Construction Imp (Sandwich) - rift_imp_sandwich
+Construction Imp (Wrench) - rift_imp_wrench
+Babyface Gargantuar - rift_gargantuar
+
+
+Zombotany:
+
+Peashooter Zombotany - zombotany_peashooter
+Gatling Zombotany - zombotany_gatling
+Wallnut Zombotany - zombotany_wallnut
+Tallnut Zombotany - zombotany_tallnut
+Torchwood Zombotany - zombotany_torchwood
+Jalapeno Zombotany - zombotany_jalapeno
+Potato Chip Zombotany - zombotany_chip
+Kiwibeast Zombotany - zombotany_kiwibeast
+Imppear Zombotany - zombotany_imppear
+Repeater Zombotany - zombotany_repeater
+Fire Peashooter - zombotany_firepeashooter
+Threepeater Zombotany - zombotany_threepeater
+Bloomerang Zombotany - zombotany_bloomerang
+Lotus Root Zombotany - zombotany_lotusroot
+Primal Wallnut Zombotany - zombotany_primalwallnut
+Peanut Zombotany - zombotany_peanut
+Murkadamia Zombotany - zombotany_murkadamia
+Potato Mine Zombotany - zombotany_potatomine
+Phatbeet Zombotany - zombotany_phatbeet
+Snowpea Zombotany - zombotany_snowpea
+Split Pea Zombotany - zombotany_splitpea
+Maypop Mechanic Zombotany - zombotany_passionflower
+Boom Balloon Flower Zombotany - zombotany_boomflower/war_landmine
+Witch Hazel Zombotany - zombotany_witchhazel
+Puffshroom Zombotany - zombotany_puffshroom
+
+
+Plant Zombies:
+
+Zomboid - zoybeanpod_basic
+Carrothead Zomboid - zoybeanpod_armor1
+Melonhead Zomboid - zoybeanpod_armor2
+Gargantuar Zomboid - zoybeanpod_gargantuar
+Turkeypult - turkeypult_basic
+Turkzilla - turkeypult_turkzilla
+Imp Pear Imp - imppear_imp
+The Great Zucchini Zombie - greatzucchini_basic
+The Great Zucchini Gargantuar - greatzucchini_gargantuar
+Tiger Grass's Tiger - tigergrass_tiger
+Gumnut Gum - gum
+Solar Sage Enlightened Zombie - solarsage_enlightened
+
+
+Beghouled Zombies:
+
+Basic Zombie - beghouled
+Conehead Zombie - beghouled_armor1
+Buckethead Zombie - beghouled_armor2
+Newspaper Zombie - beghouled_newspaper
+Mummy Zombie - beghouled_mummy
+Conehead Mummy - beghouled_mummy_armor1
+Buckethead Mummy - beghouled_mummy_armor2
+Pirate Zombie - beghouled_pirate
+Conehead Pirate - beghouled_pirate_armor1
+Buckethead Pirate - beghouled_pirate_armor2
+Cowboy Zombie - beghouled_cowboy
+Conehead Cowboy - beghouled_cowboy_armor1
+Buckethead Cowboy - beghouled_cowboy_armor2
+Future Zombie - beghouled_future
+Future Conehead - beghouled_future_armor1
+Future Buckethead - beghouled_future_armor2
+Peasant Zombie - beghouled_dark
+Conehead Peasant - beghouled_dark_armor1
+Buckethead Peasant - beghouled_dark_armor2
+Pompadour Zombie - beghouled_beach
+Pompadour Conehead - beghouled_beach_armor1
+Pompadour Buckethead - beghouled_beach_armor2
+Bikini Zombie - beghouled_beach_fem
+Bikini Conehead - beghouled_beach_fem_armor1
+Bikini Buckethead - beghouled_beach_fem_armor2
+Cave Zombie - beghouled_iceage
+Cave Conehead - beghouled_iceage_armor1
+Cave Buckethead - beghouled_iceage_armor2
+Adventurer Zombie - beghouled_lostcity
+Conehead Adventurer - beghouled_lostcity_armor1
+Buckethead Adventurer - beghouled_lostcity_armor2
+
+
+Zomboss Mechs:
+
+Zombot Sphinx-inator - zombossmech_egypt
+Zombot Plank Walker - zombossmech_pirate
+Zombot War Wagon - zombossmech_cowboy
+Zombot Tomorrow-tron - zombossmech_future
+Zombot Dark Dragon - zombossmech_dark
+Zombot Sharktronic Sub - zombossmech_beach
+Zombot Tuskmaster 10,000 BC - zombossmech_iceage
+Zombot Aerostatic Gondola - zombossmech_lostcity
+Zombot Multi-stage Masher - zombossmech_eighties
+Zombot Dinotronic Mechasaur - zombossmech_dino
+Zombot Lawn-O-Tron - zombossmech_modern1
+Zombot Seasonal Sleigh-er - zombossmech_holiday
+Zombot Loco-motive - zombossmech_steam
+Zombot Catastro-liope - zombossmech_circus
+
+
+Expansion Zomboss Mechs:
+
+Zombot Sphinx-inator 2.0 - zombossmech_egypt2
+Zombot Plank Walker 2.0 - zombossmech_pirate2
+Zombot War Wagon 2.0 - zombossmech_cowboy2
+Zombot Tomorrow-tron 2.0 - zombossmech_future2
+Zombot Dark Dragon 2.0 - zombossmech_dark2
+Zombot Sharktronic Sub 2.0 - zombossmech_beach2
+Zombot Tuskmaster 10,000 BC 2.0 - zombossmech_iceage2
+Zombot Aerostatic Gondola 2.0 - zombossmech_lostcity2
+Zombot Multi-Stage Masher 2.0 - zombossmech_eighties2
+Zombot Dinotronic Mechasaur 2.0 - zombossmech_dino2
+
+
+Modern Day Finale Zomboss Mechs:
+
+Zombot Sphinx-inator (Modern) - zombossmech_modern_egypt
+Zombot Plank Walker (Modern) - zombossmech_modern_pirate
+Zombot War Wagon (Modern) - zombossmech_modern_cowboy
+Zombot Tomorrow-tron (Modern) - zombossmech_modern_future
+Zombot Dark Dragon (Modern) - zombossmech_modern_dark
+Zombot Sharktronic Sub (Modern) - zombossmech_modern_beach
+Zombot Tuskmaster 10,000 BC (Modern) - zombossmech_modern_iceage
+Zombot Aerostatic Gondola (Modern) - zombossmech_modern_lostcity
+Zombot Multi-stage Masher (Modern) - zombossmech_modern_eighties
+Zombot Dinotronic Mechasaur (Modern) - zombossmech_modern_dino
+
+
+Premium Quest/Epic Realms Zomboss Mechs:
+
+Zombot Tuskmaster 10,000 BC 3.0 - zombossmech_iceage3
+Camotron Vulture Fighter - zombossmech_skycity/camotron_skycity
+
+
+April Fools:
+
+Zombob - spongebob
+Anchorhead Zombob - spongebob_armor1
+Chum Buckethead Zombob - spongebob_armor2
+Rockhead Zombob - spongebob_armor3
+Tikihead Zombob - spongebob_armor4
+Pineapple Zombob - spongebob_armor5
+Spongeflag Zombie - spongebob_flag
+Petoria Flag Zombie - petoria_flag
+The Sniffer - spongebob_sniffer
+The Sniffer (jumpscare) - spongebob_sniffer_ambush
+Superfan Bob - spongebob_superfanimp
+Gary Prime - spongebob_garyprime
+Drippaper Zombie - spongebob_newspaper
+Kelpy G - spongebob_kelpyg
+The Underseer - april_underseer
+Luan Jester - luan_juggler
+Dirty Bubble - dirty_bubble
+N3xt Basic - n3xt_basic
+N3xt Conehead - n3xt_armor1
+N3xt Bucket - n3xt_armor2
+N3xt Basic Fem - n3xt_basic_fem
+N3xt Conehead Fem - n3xt_fem_armor1
+N3xt Bucket Fem - n3xt_fem_armor2
+N3xt DuckyTube - n3xt_duckytube
+N3xt DuckyTube Fem - n3xt_duckytube_fem
+N3xt Flag - n3xt_flag
+N3xt Flag Fem - n3xt_flag_fem
+N3xt Gargantuar - n3xt_gargantuar
+N3xt Imp - n3xt_imp
+N3xt Greaser - n3xt_greaser
+N3xt Bowler - n3xt_bowler
+N3xt Pigeon Feeder - n3xt_pigeonfeeder
+N3xt Pigeon - n3xt_pigeon
+N3xt Swinger - n3xt_swinger
+N3xt Cone Swinger - n3xt_swinger_armor1
+N3xt Bucket Swinger - n3xt_swinger_armor2
+Ourple Guy - spongebob_ourple
+Endoskeleton - spongebob_endo
+Scary Endoskeleton - spongebob_endo_scary
+Happyland Zombie - happyland
+Happy Conehead Zombie - happyland_armor1
+Happy Bucket Zombie - happyland_armor2
+Happy Brickhead Zombie - happyland_armor4
+GMod All-Star - spongebob_allstar_ragdoll
+Vi Zombie - spongebob_vi
+Vi Conehead Zombie - spongebob_vi_armor1
+Vi Buckethead Zombie - spongebob_vi_armor2
+Goblin Wrong - goblin_faker
+Goblin Correct - goblin_answer
+Zombot Security System - zombossmech_spongebob
+Zombot Security System 2.0 - zombossmech_template_spongebob_2 (so we didnt actually make baseline code for him its all just @currentlevel stuff lol!)
+Spongebob - zombossmech_spongebob_evil
+Zombert Spongebob Edition - mashup_arcade_spongebob
+Zombot Seasonal Sleigher - zombossmech_holiday_spongebob
+April Cowboy Garg - april_cowboy_gargantuar
+April Future Garg - april_future_gargantuar
+April Barrel Roller - april_barrelroller
+April Barrel - april_barrel
+April Lost City Bug - april_lostcity_bug
+April Summer Bug - april_summer_bug
+April Hamster Ball - april_hamster_ball
+April Chicken Wrangler - april_chicken_farmer
+April Weasel Hoarder - april_iceage_weaselhoarder
+April Springening Gargantuar - april_spring_gargantuar
+April Springening Gargantuar 2 - april_spring_gargantuar2
+Additional Springening Gargantuar (same properties as Springening Gargantuar) - spring_gargantuar(2-8)
+April Spring Prospector - april_spring_prospector
+April Treadmill - april_treadmill
+April Caesar - april_caesar
+
+
+UniverZ Collides:
+
+Chili Fan Zombie - chili
+Shoehead Chili Fan - chili_armor1
+Buckethead Chili Fan - chili_armor2
+Jarhead Chili Fan - chili_armor4
+Bean Flag Zombie - chili_flag 
+Assault Dove Zombie - valentines_seagull
+Irish Dance Freak - stpatrick_breakdancer
+Irish Dance Freak (8-bit) - stpatrick_breakdancer_8bit
+Lucky Zcorpion Imp - stpatrick_ballista
+Balloon Magician - birthday_magician
+Magic Balloon - magician_balloon
+Sunshine Charmer - summer_ra
+Possessed Excavator - halloween_excavator
+Toymaker Troglobite (Poncho) - toymaker_troglobite
+Toymaker Troglobite (Conehead) - feastivus_troglobite_armor1
+Toymaker Troglobite (Buckethead) - feastivus_troglobite_armor2
+Toymaker Troglobite (Gobbling King) - feastivus_troglobite_gobbler
+Toymaker Troglobite (0 blocks) - toymaker_troglobite_basic
+Parrotrousle Spawner (spawn this guy off-screen with a necromancy, number corresponds to number of parrots) - parrotrousle_(1-10)
+Parrotrousle Parrot - parrotrousle_parrot
+Reanimator Zombie - dark_gravedropper
+Plagued Peasant - dark_infected
+Sea Spill Zombie - beach_toxicwater/renai_toxicwater
+Toxin (visual) - toxin
+Toxin (damage) - toxin_eat
+Bassist Zombie - eighties_bass(_c7/6/4/3)
+Bassist Zombie (no speaker) - eighties_bass_basic
+
+Choco Bomb Spawner - valentines_seagull_spawner
+Choco Boombox - chocolate_boombox (use jam_chocolate)
+Toxin Spawner - toxicwater_setup
+Bassist Zombie (Base) - eighties_bass_base
+Bassist Zombie (Death animation) - eighties_bass_speaker
+AltverZ Portal Spawner (used in UC-15) - zombie_portal_altverz
+Final Crossover Hit (turn every zombies into AltverZ Portal Spawner, used in UC-15) - remix_final
+
+Crossover Hit - remix_(jam1)(jam2)
+jam1: punk/pop/rap/8bit/ballad/metal
+jam2: punk/pop/rap_mc/rap_breakdancer/ballad/balladvet
+
+
+Special Zombies:
+Treasure Yeti - treasureyeti_noloot
+Vase Gargantuar - vase_gargantuar
+Rally Zombie (Raiding Party) - tutorial_swashbuckler_rally
+Rally Zombie (Parachute Rain) - tutorial_lostpilot_rally
+#feastivuscaketank - feastivus_caketank/caketankfeastivus
+15th #caketank - birthday_caketank_15
+Space Dancer - space_dancer
+Space Dancer (8bit Jam Ver) - space_dancer_8bit
+Pianist Imp (Mission Imp-Possible) - imppear_piano
+Magician Imp (Mission Imp-Possible) - imppear_imp_summoner
+The Overseer - imppear_overseer
+
+
+Misc Zombies:
+
+Idiot - idiot (Used for generals to perform actions fast while optimizing load times)
+Game Over - gameover_idiot (Used to spawn a dummy into the game loss area)
+Wave Advancer - general_waveadvancer (used to advance waves)
+Arena Yeti - joustyeti
+Z-Mech (Vanilla) - general_zmech_phase1/2/3
+#caketank (Vanilla) - caketank
+Arena Chicken - chicken_battlez
+Arena Turkey - foodfight_turkey_battlez
+Hamsterball - hamster_ball
+Pet Zombie - pet
+Fire Ball - fire_ball
+Ice Ball - ice_ball
+Sheep - sheep
+Chocolate - chocolate
+Trap Trigger - trap_trigger
+Camel Zombies Almanac - camel_almanac
+Fast Swimmer - beach_fastswimmer
+Powder Keg Roller Almanac - barrelroller_explosive_almanac
+Poncho Almanac - unused_64
+Holiday Drinks Almanac - holiday_drink
+Springening Camel Almanac - spring_camel_almanac
+Springening Poncho Almanac - spring_poncho_almanac
+Birthdayz Barrel Roller Almanac - birthday_barrelroller_almanac
+HeroTron Almanac - hero_disco_mech_almanac
+The Grate Mystery Almanac - hero_poncho_almanac
+Feastivus Camel Almanac - feastivus_camel_almanac
+Feastivus Poncho Almanac - feastivus_poncho_almanac
+Zombert Almanac - mashup_arcade_almanac
+Lunar Camel Almanac - lunar_camel_almanac
+Coal Miner Almanac - steam_miner_almanac
+Kid Conehead Zombie Almanac - children_armor1_almanac
+Kid Buckethead Zombie Almanac - children_armor2_almanac
+Legohead Zombie Almanac - children_armor4_almanac
+Valentines Drink Spawner - holiday_drink_spawner_valentines
+StPatricks Drink Spawner - holiday_drink_spawner_stpatrick
+Spring Drink Spawner - holiday_drink_spawner_spring
+Birthday Drink Spawner - holiday_drink_spawner_birthday
+Children's Day Drink Spawner - holiday_drink_spawner_children
+Summer Drink Spawner - holiday_drink_spawner_summernights
+Bighead Drink Spawner - holiday_drink_spawner_bighead
+Halloween Drink Spawner - holiday_drink_spawner_halloween
+Heros Drink Spawner - holiday_drink_spawner_heroes
+Thanksgiving Drink Spawner - holiday_drink_spawner_foodfight
+Christmas Drink Spawner - holiday_drink_spawner_feastivus
+Cardio Zombie Almanac - sportzball_treadmill_almanac
+Zomboss Portal Spawners (world before Modern Day) - zomboss_portal_(world codename)
+Goblin Graves - grave_spawner_healer
+Weasel Queen's Yodel - weasel_veteran_spawner
+Weasel Queen's Yodel (Permafrosts Weasels) - weasel_veteran_spawner2
+Weasel Queen's Yodel (Off-Screen Weasels) - weasel_veteran_spawner3
+Hailstorm's Rally Storm - iceage_chief_veteran_spawner (one lane) / zombossmech_iceage3_wind (two lanes) / iceage_chief_miniboss_spawner (three lanes)
+Hailstorm's Rally Storm (Just the wind. Needs to be hypnotized to affect zombies) - iceage_chief_veteran_push
+Hailstorm's Frost Breath (Just the wind. Needs to be hypnotized to affect zombies) - iceage_chief_veteran_iceblock
+Tuskmaster 3.0's Red Mist - zombossmech_iceage3_murder
+Friendly Elder Hailstorm Ally spawner - iceage_chief_miniboss_friend_summon_spawner(1-3)
+Friendly Elder Hailstorm Plantfood spawner - iceage_chief_miniboss_friend_plantfood_spawner / iceage_chief_miniboss_friend_plantfood
+Scarecrow Spawner Dummy - halloween_crow_spawner (Zombie that spawns from pumpkin_scarecrow that spawns the crows)
+Ghost Scare Dummy - ghost_scare (Zombie that spawn other dummies to give scare effect for plants when a Ghost is defeated)
+Ghost Scare Dummy 2 - ghost_scare2 (Zombie that throw projectile to give scare effect for plants when a Ghost is defeated)
+Money Tree Spawner Complete - lunar_money_spawner_base1 (Full Yuanbao spawn sequence)
+Money Tree Yuanbao Spawner Type 1 - lunar_money_spawner_type1 (Spawns a yuanbao in its random direction sequence)
+Money Tree Yuanbao Spawner Type 2 - lunar_money_spawner_type2 (Spawns a yuanbao in its random direction sequence)
+Money Tree Yuanbao Spawner Type 3 - lunar_money_spawner_type3 (Spawns a yuanbao in its random direction sequence)
+Money Tree Yuanbao Base Type 1 - lunar_money_type1_base (Hamsterball that spawns lunar_money_type1, use for actions where the regular yuanbao action can't happen, note this is the visuals of the yuanbao too)
+Money Tree Yuanbao Base Type 2 - lunar_money_type2_base (Hamsterball that spawns lunar_money_type2, use for actions where the regular yuanbao action can't happen, note this is the visuals of the yuanbao too)
+Money Tree Yuanbao Base Type 3 - lunar_money_type3_base (Hamsterball that spawns lunar_money_type3, use for actions where the regular yuanbao action can't happen, note this is the visuals of the yuanbao too)
+Money Tree Yuanbao Type 1 - lunar_money_type1 (Roman Healer dummy that drops the griditem yuanbao_type1)
+Money Tree Yuanbao Type 2 - lunar_money_type2 (Roman Healer dummy that drops the griditem yuanbao_type2)
+Money Tree Yuanbao Type 3 - lunar_money_type3 (Roman Healer dummy that drops the griditem yuanbao_type3)
+Holiday Zomboss Rocket - zomboss_holiday_zmech_fire1
+Holiday Zomboss Drink - zomboss_holiday_zmech_drink1
+Wealth God Zombie Rocket (Use the same method as Jetpack Attack, act like moneytree yuanbao) - wealthgod_rocket
+Brainstorm Leprechaun Imp (no falling anim) - brainstorm_leprachaun_imp
+Brainstorm Witch - brainstorm_halloween_witch
+Brainstorm ZCorp Helpdesk (no falling anim) - brainstorm_zcorp_helpdesk
+Brainstorm Springening Imp (no falling anim) - brainstorm_spring_imp
+Brainstorm Birthdayz Jetpack (no falling anim) - brainstorm_birthday_jetpack
+Brainstorm Electric Boogaloo (no falling anim) - brainstorm_hero_jetpack_disco
+Brainstorm Rustbolt (no falling anim) - brainstorm_hero_rustbolt
+Brainstorm Bighead Lost Pilot (no falling anim) - brainstorm_bighead_lostpilot
+Blight of Hand Preview Stiltwalker Zombie - carnie_stiltwalker_preview
+Blight of Hand Preview Firebreather Zombie - carnie_firebreather_preview
+Blight of Hand Preview Lunar Camel Zombie - lunar_camel_preview
+Blight of Hand Preview Strongman Gargantuar - carnie_gargantuar_preview
+Blight of Hand Preview Jack In The Box - carnie_jackinthebox_preview
+Blight of Hand Jack In The Box spawner (CC Night 25) - carnie_jackinthebox_spawner_(1-5)
+Pinky's Personal Candy spawner - jackinthebox_candy_hp_spawner
+Bluebert's Personal Candy spawner - jackinthebox_candy_speed_spawner
+Zombert's Arcade Consultant (move the arcade to different lanes, worked with zombies with ZombieCakeTank class) - mashup_arcade_consultant/mashup_arcade_cabinet_consultant
+Wealth God Consultant (move Wealth God to different lanes, worked with zombies with ZombieGeneralZmech class) - wealth_god_consultant
+Camotron Electrode Fence (top) - skycity_electrodetop (only does electrical fence when spawned by the vulture fighter)
+Camotron Electrode Fence (bottom) - skycity_electrodebottom (only does electrical fence when spawned by the vulture fighter)
+Phase 1/2 Z-Mech Consultant (move phase 1/2 Z-Mech to different lane, worked with zombie with ZombieGeneralZmech class) - hero_zmech_consultant
+Phase 3 Z-Mech Consultant (move phase 3 Z-Mech to different lane and 1 tile ahead, worked with zombie with ZombieGeneralZmech class) - hero_zmech_consultant2
+Phase 3 Z-Mech Summoning Dummy (spawn by phase 3 Z-Mech, summon 5 hero_zmech_phase3_summon2 2 tiles ahead of Z-Mech) - hero_zmech_phase3_summon
+Phase 3 Z-Mech Summoning Zombie (spawn by hero_zmech_phase3_summon, spawn 1 random Hero Zombie 1 tile ahead of Z-Mech) - hero_zmech_phase3_summon2
+Love Bomb (zombies boost) - valentines_lovebomb_boost
+Love Bomb (plants stun) - valentines_lovebomb_stun
+Peculiar Barrel Roller's Barrel Spawner - rift_barrel_dummy/rift_barrel_spawner
+Trapeze Spawners - carnie_trapeze_duo_spawner/carnie_trapeze_trio_spawner/carnie_trapeze_quad_spawner/carnie_trapeze_conga_spawner/carnie_trapeze_spawner1_yellow/carnie_trapeze_spawner1_red/carnie_trapeze_spawner2_yellow/carnie_trapeze_spawner2_blue/carnie_trapeze_spawner3/carnie_trapeze_conga_spawner2
+Mechanical Monkey Jack In The Box Spawner - zomboss_jackinthebox_monkey
+Carnie Ball Jack In The Box Spawner - zomboss_jackinthebox_ball
+Carnie Nibber Jack In The Box Spawner - zomboss_jackinthebox_teeth
+Pinky's Personal Candy Jack In The Box Spawner - zomboss_jackinthebox_candy_hp
+Bluebert's Pesonal Candy Jack In The Box Spawner - zomboss_jackinthebox_candy_speed
+Carnie Teddy Jack In The Box Spawner - zomboss_jackinthebox_teddy
+Carnie Snorter Jack In The Box Spawner - zomboss_jackinthebox_sniffer
+Carnie Action Figure Jack In The Box Spawner - zomboss_jackinthebox_gargantuar
+Rocket Launcher Zombie (Rocket Spawner) - skycity_launcher_dummy
+
+
+Unused Zombies:
+NOTE: These zombies aren't used in the mod, but are allowed for custom levels.
+
+Roman:
+
+Roman Zombie - roman
+Roman Conehead - roman_armor1
+Roman Buckethead - roman_armor2
+Centurion Zombie - roman_armor3
+Bust Head Zombie - roman_armor4
+Roman Flag Zombie - roman_flag
+Roman Shield Zombie (Segment) - roman_segment (NOTE: Armor does not work, only the combined variants do)
+Roman Shield Zombie (Top) - roman_shield_top (NOTE: Armor does not work, only the combined variants do)
+Roman Shield Pair - roman_shield_pair
+Roman Shield Triad - roman_shield_triad
+Healer Zombie - roman_healer
+Roman Imp - roman_imp
+Gladiator Gargantuar - roman_gargantuar
+Zcoprion Zombie - roman_ballista
+Medusa Zombie - roman_medusa
+Medusa Zombie (No statue) - roman_medusa_basic
+Zombie Statue - zombie_statue
+Roman Caesar Zombie - general_caesar_phase1/2/3
+
+
+Ambush Spawners:
+
+Chocolate Launcher 1 (Launches Chocolate in rows 1-5, random columns anywhere) - chocolate_launcher1
+Chocolate Launcher 2 (Launches Chocolate in rows 1-5, random columns middle of the lawn) - chocolate_launcher2
+Chocolate Launcher 3 (Launches Chocolate in rows 1-5, random columns towards house) - chocolate_launcher3
+Chocolate Launcher 4 (Launches Chocolate in rows 1-5, random columns towards zombie side) - chocolate_launcher4
+Chocolate Spawner (First Sequence, spawns the reticle. 1-5 represents row) - chocolate_spawn(1-5)
+Chocolate Reticle (Second sequence, spawns the chocolate. 1-5 represents row) - chocolate_reticle(1-5)
+Raiding Party - zomboss_pirate_veteran_zmech(1-2)
+Relic Hunter Raiding Party - zomboss_lostcity_veteran_zmech(1-2)
+Jetpack Attack - jetpackrain_levelgen_(1-12)/zomboss_modern_veteran_zmech3
+Spider Rain - zomboss_modern_veteran_zmech2
+Parachute Rain - zomboss_modern_veteran_zmech1
+Portal Spawn - zomboss_modern_veteran_zmech(4/5/6/7)
+Tech Support - techsupport_levelgen_(1-12)
+Leprechauns - leprechauns_levelgen_(1-12)
+Egg Raid - eggraid_levelgen_(1-12)
+Parachute Rain (Big Brainz) - bigheadrain_levelgen_(1-12)
+Jetpack Attack 2 (necromancy in x20, use in Inzanity/Endless) - jetpackrain_levelgen_spawner
+Chocolate Rain (necromancy in x20, use in Inzanity/Endless) - chocolaterain_levelgen_spawner
+Bad Moon Rising (necromancy in x20, turn all zombies into stronger zombie in Heroes) - badmoonrising_levelgen_spawner
+Love Bomb (necromancy in x20, use in Inzanity/Endless) - lovebomb_levelgen_spawner
+Love Bomb (Use the same method as Jetpack Attack, spawn 30 tiles from the drop spot) - valentines_lovebomb
+Steam Ages Backward Zombie Ambush (spawn from sewer, create smoke effect, spawn 1-3 backward zombies every 2.5s) - steam_backambush_levelgen_spawner
+Gas Wave (Use in Inzanity/Endless)- gaswave_levelgen
+Cannon Show (Use in Inzanity/Endless) - cannonshow_levelgen
+Trapeze Raiding Party - zomboss_carnie_zmech_trapeze(2-4)
+
+
+Plants:
+
+
+Ancient Egypt:
+
+Bloomerang - bloomerang
+Iceburg Lettuce - iceburg
+Grave Buster - gravebuster
+Bonk Choy - bonkchoy
+Repeater - repeater
+Twin Sunflower - twinsunflower
+Squash - squash
+Snow Pea - snowpea
+
+
+Pirate Seas:
+
+Kernel-pult - kernelpult
+Snapdragon - snapdragon
+Spikeweed - spikeweed
+Coconut Cannon - coconutcannon
+Spring Bean - springbean
+Threepeater - threepeater
+Spikerock - spikerock
+Cherry Bomb - cherry_bomb
+Apple Mortar - applemortar
+Iceweed - iceweed
+
+
+Wild West:
+
+Split Pea - splitpea
+Chili Bean - chilibean
+Lightning Reed - lightningreed
+Tall-nut - tallnut
+Pea Pod - peapod
+Melon-pult - melonpult
+Winter Melon - wintermelon
+Tumbleweed - tumbleweed
+Ultomato - ultomato
+
+
+Far Future:
+
+Laser Bean - laser_bean
+Blover - blover
+Citron - citron
+E.M. Peach - empea
+Infi-nut - holonut
+Magnifying Grass - magnifyinggrass
+Tile Turnip - powerplant
+Zoybean Pod - zoybeanpod
+Starfruit - starfruit
+
+
+Dark Ages:
+
+Sun-shroom - sunshroom
+Puff-shroom - puffshroom
+Fume-shroom - fumeshroom
+Sun Bean - sunbean
+Magnet-shroom - magnetshroom
+Hypno-shroom - hypnoshroom
+Witch Hazel - witchhazel
+
+
+Big Wave Beach:
+
+Lily Pad - lilypad
+Tangle Kelp - tanglekelp
+Bowling Bulb - bowlingbulb
+Guacodile - guacodile
+Banana Launcher - banana
+Chomper - chomper
+Homing Thistle - homingthistle
+
+
+Frostbite Caves: 
+
+Hot Potato - hotpotato
+Pepper-pult - pepperpult
+Chard Guard - chardguard
+Stunion - stunion
+Rotobaga - xshot
+Hurrikale - hurrikale
+Fire Peashooter - firepeashooter
+
+
+Lost City:
+
+Red Stinger - redstinger
+A.K.E.E. - akee
+Endurian - endurian
+Stallia - stallia
+Gold Leaf - goldleaf
+Lava Guava - lavaguava
+Dazey Chain - dazeychain
+
+
+Neon Mixtape Tour:
+
+Phat Beet - phatbeet
+Celery Stalker - celerystalker
+Thyme Warp - thymewarp
+Garlic - garlic
+Spore-shroom - sporeshroom
+Intensive Carrot - intensivecarrot
+Electric Blueberry - electricblueberry
+Gumnut - gumnut
+
+
+Jurassic Marsh:
+
+Primal Peashooter - primalpeashooter
+Primal Wall-nut - primalwallnut
+Perfume-shroom - perfumeshroom
+Primal Sunflower - primalsunflower
+Primal Potato Mine - primalpotatomine
+Hot Date - hotdate
+Parsnip - parsnip
+Hocus Crocus - hocus
+
+
+Modern Day/Tutorial:
+
+Peashooter - peashooter
+Sunflower - sunflower
+Wall-nut - wallnut
+Potato Mine - potatomine
+Cabbage-pult - cabbagepult
+Moonflower - moonflower
+Nightshade - nightshade
+Shadow-shroom - shadowshroom
+Dusk Lobber - dusklobber
+Grimrose - grimrose
+Noctarine - noctarine
+Murkadamia - murkadamia
+Shadow Peashooter - shadowpeashooter
+
+
+Holiday Mashup:
+
+Sap-fling - sapfling
+Ghost Pepper - ghostpepper
+Dandelion - dandelion
+Cactus - cactus
+Jalapeno - jalapeno
+Blooming Heart - bloominghearts
+Sweet Potato - sweetpotato
+Boingsetta - boingsetta
+Strawburst - strawburst
+Jack O' Lantern - jackolantern
+Caulipower - caulipower
+
+
+Steam Ages:
+
+Cattail - unused_47
+Fanilla - unused_43
+Lily of Alchemy - unused_45
+Pea-nut - peanut
+Maypop Mechanic - unused_49
+Lotus Root - unused_46
+
+
+Caliginous Carnival: 
+
+Potato Chip - potatochip
+Caramel Popcorn - caramelpopcorn
+Boom Balloon Flower - boomflower
+Tiger Grass - tigergrass
+Magic-Shroom - magicshroom
+The Great Zucchini - greatzucchini
+
+
+Premium Plants:
+
+Power Lily - powerlily
+Imitater - imitater
+Toadstool - toadstool
+Grapeshot - grapeshot
+Cold Snapdragon - coldsnapdragon
+Shrinking Violet - shrinkingviolet
+Bombegranate - bombegranate
+Escape Root - escaperoot
+Electric Peashooter - electricpeashooter
+Solar Tomato - solartomato
+Missile Toe - missiletoe
+Sling Pea - slingpea
+Wasabi Whip - wasabiwhip
+Explode-O-nut - explodeonut
+Kiwibeast - kiwibeast
+Holly Barrier - hollyknight
+Goo Peashooter - poisonpeashooter
+Snap Pea - snappea
+Blastberry Vine - blastberry
+Electrici-tea - electricitea
+Pumpkin - pumpkin
+Ice Bloom - icebloom
+Dartichoke - dartichoke
+Olive Pit - olivepit
+Turkey-pult - turkeypult
+Puffball - puffball
+Draftodil - draftodil
+Shine Vine - shinevine
+Peavine - pvine
+Stickybomb Rice - stickybombrice
+Inferno - inferno
+Solar Sage - solarsage
+Void Orchid - unused_48
+Headbutter Lettuce - headbutter
+Teleportato Mine - teleportatomine
+Pokra - pokra
+Pyrevine - pyrevine
+Heath Seeker - heathseeker
+Buttercup - buttercup
+Blockoli - blockoli
+Bramble Bush - bramblebush
+Solar Pea - solarpea
+Meteor Flower - meteorflower
+Sweet Pea - sweetpea
+
+
+Quest/Realm Plants:
+
+Torchwood - torchwood
+Electric Currant - electriccurrant
+Aloe - aloe
+Gloom Vine - gloomvine
+Lotus Pod - lotuspod
+Gold Bloom - goldbloom
+Imp Pear - imppear
+Flameweed - hollybarrierleaf
+Acid Lemon - acidlemon
+Aceparagus - asparagus
+Puffapple - pineapple
+Saucer Squash - saucer
+Nispaereo - loquat
+P-15 Peagle Pod - horsebean
+Gatling Pea - gatling
+
+
+Tool Packets:
+
+Power Tile (Alpha) - tool_powertile_alpha
+Power Tile (Beta) - tool_powertile_beta
+Power Tile (Gamma) - tool_powertile_gamma
+Power Tile (Delta) - tool_powertile_delta
+Power Tile (Epsilon) - tool_powertile_epsilon
+Small Bulb - tool_projectile_bowlingbulb1
+Medium Bulb - tool_projectile_bowlingbulb2
+Large Bulb - tool_projectile_bowlingbulb3
+Exploding Bulb - tool_projectile_bowlingbulb_explode
+Gigantic Bulb - tool_projectile_bowlingbulb_mega
+
+
+Misc Plants:
+
+Marigold - marigold
+MD-50 Iceburg Lettuce - iceburg_zomboss
+HM-42 Jack O' Lattern - boostjackolantern
+Present Randomizer - holiday_present_randomizer
+Blueprints - steam_blueprints
+Void Orchid's Gravity Sphere - blackhole
+Void Orchid's PF Gravity Sphere - blackhole_plantfood
+Peashooter (April Fools) - aprilpeashooter
+Icerberg Lettuce (April Fools) - apriliceburg
+Melon-Pult (April Fools) - aprilmelonpult
+Spring Bean (April Fools) - aprilspringbean
+Blover (April Fools) - aprilblover
+OVERPOWERED Winter Melon - wintermelon_op
+Sunflower (Spongebob Age - Day 23) - spongebob23sunflower
+Peashooter (Spongebob Age - Day 23) - spongebob23peashooter
+Primal Potato Mine (Spongebob Age - Day 23) - spongebob23primalpotatomine
+Dusk Lobber (Spongebob Age - Day 23) - spongebob23dusklobber
+Dazey Chain (Spongebob Age - Day 23) - spongebob23dazeychain
+Snap Pea (Spongebob Age - Day 23) - spongebob23snappea
+Hero Sunflower - herosunflower
+Hero Peashooter - heropeashooter
+Hero Wallnut - herowallnut
+Hero Bonkchoy - herobonkchoy
+Hero Torchwood - herotorchwood
+Hero Fumeshroom - herofumeshroom
+Hero Citron - herocitron
+Hero Potatomine - heropotatomine
+Hero Chomper - herochomper
+Hero Redstinger - heroredstinger
+Hero Intensive Carrot - herointensivecarrot
+Note: These heroes costume have no seed packet texture yet.
+The Green Pumpkin - herojackolantern
+3L3CTRO -
+Viltru-nut - herocontestwallnut
+Brainipower - herocaulipower
+Chompsaw PlantJ - herocontestchomper
+The Shockdapper - heroelectricpeashooter
+Sportacore - heroapplemortar
+The Dazeypuff Chains - herodazeychain
+Sprout - sprout
+Burnade - burnade
+Minipeashooter - minipeashooter
+Sunpod - sunpod
+Sungun - sungun
+Holly Barrier's Leaf - hollybarrierleaf2
+Holly Barrier's PF Leaf - hollybarrierleafplantfood2
+Noctarine's Cloud - noctarinecloud
+
+
+Jurassic Marsh Dinos:
+
+Raptor - raptor
+Stegosaurus - stego
+Pterodactyl - ptero
+Rex - tyranno
+Ankylosaurus - ankylo
+
+
+Zombie Conditions:
+
+speedup1
+speedup2
+speedup3
+speedup4
+speeddown1
+speeddown2
+speeddown3
+speeddown4
+potionspeed1
+potionspeed2
+potionspeed3
+potiontoughness1
+potiontoughness2
+potiontoughness3
+terrified
+hungered
+sapped
+stalled
+chilled
+chill
+freeze
+stun
+butter
+bleeding
+lightning
+rush
+tossed
+warpingIn
+warpingOut
+hypnotized
+sunbeaned
+morphedtogargantuar
+damageflash
+zombossstun
+haunted
+icecubed
+unsuspendable
+invincible
+poisoned
+contagiouspoison
+decaypoison
+bloomingheartdebuff
+solarflared
+shrinking
+shrunken
+present_boxed
+knighted
+potionsuper1
+potionsuper2
+potionsuper3
+dazeystunned
+stackableslow
+gummed
+hotedateattraction
+suiciding
+suncarrier50
+suncarrier100
+suncarrier250
+stoneblocked
+petrified
+hasplantfood
+blownoff
+stickybombed
+blockolistunned
+transparent
+saucershrink
+saucerpulled
+loquatstunned
+
+
+Plant Conditions:
+
+icecubed
+squidified
+shadowboosted
+supershadowboosted
+stunnedbyzombielove
+notfiring
+froststage1
+froststage2
+highlighted
+plantfoodflash
+sheeped
+rapidfire
+lifted_off
+swapping
+pvineboosted1
+pvineboosted2
+pvineboosted3
+sauced
+net
+pcharged
+ncharged
+doomed
+chilled
+paralysed
+hyper
+invincible
+stun
+chilled_no_effect
+
+
+Lawns:
+
+Tutorial - TutorialStage
+Pinata Party - FrontLawnStage
+Ancient Egypt - EgyptStage
+Ancient Egypt (No Powerups) - EgyptStageNoPowerUps
+Pirate Seas - PirateStage
+Pirate Seas (use AltverZ alternate wave) - PirateAltverzStage
+Wild West - WestStage
+Far Future - FutureStage
+Dark Ages - DarkStage
+Dark Ages (use AltverZ alternate wave) - DarkAltverzStage
+Big Wave Beach - BeachStage
+Big Wave Beach (No Powerups) - BeachStageNoPowerUps
+Big Wave Beach (use AltverZ alternate wave) - BeachAltverzStage
+Frostbite Caves - IceageStage
+Frostbite Caves (No Powerups) - IceageStageNoPowerUps
+Frostbite Caves (use AltverZ alternate wave) - IceageAltverzStage
+Hypothermic Hollows - IceageVeteranStage
+Lost City - LostCityStage
+Lost City (Jams) - LostCityVeteranStage
+Lost City (No Powerups) - LostCityStageNoPowerUps
+Lost City Night - LostCityNightsStage
+Lost City Night (Jams) - LostCityNightsVeteranStage
+Neon Mixtape Tour - EightiesStage
+Neon Mixtape Tour (use AltverZ Cashewpea) - EightiesAltverzStage
+Jurassic Marsh - DinoStage
+Modern Day - ModernStage
+Modern Day (No Powerups) - ModernStageNoPowerUps
+Modern Day (Day 17) - Modern17Stage
+Modern Day (All Jams) - ModernAllJamsStage
+Modern Night - ModernNightStage
+Modern Night (All Jams) - ModernNightAllJamsStage
+Modern Pool - ModernPoolStage (Note: fishermen and snorkels will be forced into pool lanes if set to spawn in any lane)
+Valenbrainz - ValentineStage
+St. Patricks - PaddysStage
+Springening - SpringStage
+Birthdayz - BirthdayStage
+Birthdayz (Pvz1) - BirthdayPvZ1Stage
+Childrens Day - ChildStage
+Summer Nights - SummerStage
+Summer Dayz - SummerDayzStage
+Big Brainz - BigheadStage
+Big Brainz (Old) - BigheadOldStage
+Lawn of Doom - HalloweenStage
+Heroes Event Stage - HeroesStage
+Food Fight - FoodStage
+Feastivus - XmasStage
+Feastivus (Night) - XmasNightStage
+Holiday Mashup - MashupStage
+Steam Ages - SteamStage
+Caliginous Carnival - CarnivalStage
+Front Lawn Far Future Teaser - FrontLawnFutureStage
+Front Lawn Dark Ages Teaser - FrontLawnDarkStage
+Front Lawn Big Wave Beach Teaser - FrontLawnBeachStage
+Front Lawn Frostbite Caves Teaser - FrontLawnIceageStage
+Front Lawn Lost City Teaser - FrontLawnLostCityStage
+Front Lawn Neon Mixtape Tour Teaser - FrontLawnEightiesStage
+Front Lawn Jurassic Marsh Teaser - FrontLawnDinoStage
+Front Lawn Steam Ages Teaser - FrontLawnSteamTeaseStage
+Front Lawn Caliginous Carnival Teaser - FrontLawnCarnivalStage
+Lunar New Year (Day) - LunarDayStage
+Lunar New Year (Night) - LunarStage
+Harvest - HarvestStage
+Backyard Brain Bowl - SportzballStage
+Anniversary - AnniversaryStage
+Assault Airspace - SkyCityStage
+MeteorZ - MeteorZStage
+Rift Road - RiftStage
+Arena - JoustStage
+Spongebob Age (Good) - SpongebobGoodStage
+Spongebob Age (Bad) - SpongebobShitStage
+Spongebob Age (Mall) - SpongebobMallStage
+April Fools Lawn - SpringFoolsStage
+Dave's House - N3XTDaveStage
+Campgrounds - N3XTCampgroundsStage
+Iconic Jungle - N3XTJungleStage
+Braking Bad - BreakingStages
+Breakin Goblin - BreakingStagesGoblin
+Freddy Fazbear's Pizza - FNAFStage
+Five Riddles at Goblin's - FNAFStageGoblin
+Happyland - HappyLandStage
+Mesopotamia Spongebob Age - MesopotamiaStage
+Spongebob Age 2.0 - Spongebob24GoodStage
+Breaking Bad Solar - LunarSolarStage
+Five Nebulas at Freddy's - LunarNebulaStage
+Happyland Vortex - LunarVortexStage
+Mesopotamia Stardust - LunarStardustStage
+The Calamity Calendar Valenbrainz - ValentineEndlessStage
+The Calamity Calendar St. Patricks - PaddysEndlessStage
+The Calamity Calendar Springening - SpringEndlessStage
+The Calamity Calendar Birthdayz - BirthdayEndlessStage
+The Calamity Calendar Childrens Day - ChildEndlessStage
+The Calamity Calendar Big Brainz - BigheadEndlessStage
+The Calamity Calendar Lawn of Doom - HalloweenEndlessStage
+The Calamity Calendar Heroes Event - HeroesEndlessStage
+The Calamity Calendar Food Fight - FoodEndlessStage
+The Calamity Calendar Summer Nights - SummerEndlessStage
+The Calamity Calendar Feastivus - XmasEndlessStage
+The Calamity Calendar Holiday Mashup - MashupLevelGenStage
+
+
+Lawn Mowers:
+
+Tutorial - TutorialMowers
+Pinata Party - FrontLawnMowers
+Tutorial Ancient Egypt - EgyptTutorialMowers
+Ancient Egypt - EgyptMowers
+Pirate Seas - PirateMowers
+Wild West - WestMowers
+Far Future - FutureMowers
+Dark Ages - DarkMowers
+Big Wave Beach - BeachMowers
+Frostbite Caves - IceageMowers
+Frostbite Caves (Zomboss Fight) - IceageZombossMowers
+Lost City - LostCityMowers
+Neon Mixtape Tour - EightiesMowers
+Neon Mixtape Tour (Zomboss Fight) - EightiesZombossMowers
+Jurassic Marsh - DinoMowers
+Modern Day - ModernMowers
+Pool - PoolMowers
+Holiday Mashup - HolidayMowers
+Steam Ages - SteamMowers
+Caliginous Carnival - CarnivalMowers
+Arena - JoustDarkMowers
+Rift Road - RiftMowers
+
+
+Grid Items:
+
+Modern Gravestone - gravestone_tutorial
+Egypt Gravestone - gravestone_egypt
+Pirate Gravestone - gravestone_pirate
+Cowboy Gravestone - gravestone_cowboy
+Future Gravestone - gravestone_future
+Dark Gravestone - gravestone_dark
+Dark Gravestone (Sun) - gravestoneSunOnDestruction
+Dark Gravestone (Plant Food) - gravestonePlantfoodOnDestruction
+Frostbite Caves Gravestone - gravestone_iceage
+Lost City Gravestone - gravestone_lostcity
+Arena Gravestone - gravestone_battlez
+Arena Gravestone Sun - gravestone_battlez_sun
+Minecart (Modern) - railcart_tutorial
+Minecart (Cowboy) - railcart_cowboy
+Egypt Minecart - railcart_egypt
+Pirate Minecart - railcart_pirate
+Future Minecart - railcart_future
+Steam Age Minecart - railcart_steam
+Plank - plank
+Infi-nut Shield - holoshield
+Moonflower Shield - moonflowershield
+Shield Zombie Shield - protectorshield
+Shield Zombie Shield (Segment) - protectorshieldsegment
+Gold Tile - goldtile
+Gold Tile (no sun) - nosun_goldtile
+Power Tile (Green) - powertile_alpha
+Power Tile (Red) - powertile_beta
+Power Tile (Blue) - powertile_gamma
+Power Tile (Yellow) - powertile_delta
+Power Tile (Purple) - powertile_epsilon
+Potion (Speed) - zombiepotion_speed
+Potion (Toughness) - zombiepotion_toughness
+Potion (Speedup) - zombiepotion_speedup
+Potion (Present) - zombiepotion_present
+Potion (Invincibility) - zombiepotion_invincible
+Lily Pad - lilypad
+Vase - vase
+Eggbreaker Vase - vase_egg
+Firebreaker Vase - vase_firework
+Pot of Greed - vase_greed
+Surfboard - surfboard
+Tent - tent
+Imp Porter's Backpack - backpack
+Octopus - planttarget_squid
+Ice Block (Plant) - planttarget_iceblock
+Ice Block (Zombie) - zombietarget_iceblock
+Birthday Present - zombietarget_birthday_present
+Caesar's Salad - planttarget_sauce
+Medusa's Statue - zombietarget_stoneblock
+Frostbite Caves Slider (Up) - slider_up
+Frostbite Caves Slider (Down) - slider_down
+Modern Day Slider (Up) - slider_up_modern
+Modern Day Slider (Down) - slider_down_modern
+Invisible Slider (Up) - invisible_slider_up
+Invisible Slider (Down) - invisible_slider_down
+Sap-fling's Sap - sap
+Sap-fling's Sap (Plant Food) - plantfoodsap
+Lava Guava Lava Tile - lava
+Meteor Flower Lava Tile - meteorflower_lava
+Jack O' Lantern Wisp - wisp
+Zombot Tuskmaster 10,000 BC's Ice Blocks - zomboss_iceage_glacier_block
+Boulder Trap - boulder_trap_falling_forward
+Boulder Trap (Zomboss) - zomboss_boulder_trap_falling_forward
+Fire Trap - flame_spreader_trap
+Beghouled Crater - crater
+Timed Crater - crater_timed
+Invisible Crater - inviscrater 
+White Crater (use to prevent potion, drink spawn) - whitecrater
+Speaker - speaker
+Speaker (Zomboss) - speaker_zomboss
+Arcade Cabinet - eightiesarcadecabinet
+Dusk Lobber's Plant Food Flower - dusklobberflower
+Bombegranate's Seeds - bombegranateseeds
+PF Tile (1 use) - boosttile
+PF Tile (3 uses) - boosttile3
+PF Tile (5 uses) - boosttile5
+PF Tile (10 uses) - boosttile10
+PF Tile (1000 uses) - boosttile1000
+Invisible PF Tile (1 use) - boosttile_invisible
+Score Tile (x2) - score_2x_tile
+Score Tile (x3) - score_3x_tile
+Score Tile (x5) - score_5x_tile
+Healer's Staff - roman_healer_staff
+Modern Day Portal - zombieportal_modern
+Modern Day Portal (MD 48 1) - zombieportal_modern_1_modern41
+Modern Day Portal (MD 48 2) - zombieportal_modern_2_modern41
+Modern Day Portal (MD 48 3) - zombieportal_modern_3_modern41
+Modern Day Portal (MD 48 4) - zombieportal_modern_4_modern41
+Neon Mixtape Tour Portal - zombieportal_eighties
+Neon Mixtape Tour Portal (MD 48) - zombieportal_eighties_modern41
+Jurassic Marsh Portal - zombieportal_dino
+Jurassic Marsh Portal (MD 48) - zombieportal_dino_modern41
+Lost City Portal - zombieportal_lostcity
+Frostbite Caves Portal - zombieportal_iceage
+Hypothermic Hollows Portal - zombieportal_iceage_hollows
+Additional Hypothermic Hollows Portal - zombieportal_iceage_hollows_2
+Big Wave Beach Portal - zombieportal_beach
+Dark Ages Portal - zombieportal_dark
+Dark Ages Portal (MD 48) - zombieportal_dark_modern41
+Far Future Portal - zombieportal_future
+Far Future Portal (Time Twister) - zombieportal_future_2
+Other Far Future Portal - zombieportal_future_3
+Wild West Portal - zombieportal_west
+Wild West Portal (MD 48) - zombieportal_west_modern41
+Pirate Seas Portal - zombieportal_pirate
+Pirate Seas Portal (MD 48) - zombieportal_pirate_modern41
+Wild West Portal (MD 50) - zombieportal_west_md50
+Ancient Egypt Portal - zombieportal_egypt
+Other Ancient Egypt Portal - zombieportal_egypt_2
+Holiday Mashup Portal - zombieportal_holiday
+Additional Holiday Mashup Portal - zombieportal_holiday_(1-18)
+Holidays Mashup Portal - zombieportal_holidays
+Holidays Mashup Portal - zombieportal_holidays_3
+Holiday Mashup Portal (endless) - zombieportal_dangerroom_holiday_1
+Mashup Portal - zombieportal_mashup
+Steam Ages Portal - zombieportal_steam
+Additional Steam Ages Portal - zombieportal_steam_(1/2/3)
+Steam Ages Backwards Portal - zombieportal_steam_backwards
+Additional Steam Ages Backwards Portal 2 - zombieportal_steam_backwards_(2/3/4)
+Ancient Egypt Portal (Endless) - zombieportal_dangerroom_egypt
+Ancient Egypt Portal (Endless) (New) - zombieportal_dangerroom_egypt_new
+Ancient Egypt Portal (Endless 2) - zombieportal_dangerroom_egypt_2
+Pirate Seas Portal (Endless) - zombieportal_dangerroom_pirate
+Pirate Seas Portal (Endless) (New) - zombieportal_dangerroom_pirate_new
+Pirate Seas Portal (Endless 2) - zombieportal_dangerroom_pirate_2
+Wild West Portal (Endless) - zombieportal_dangerroom_west
+Wild West Portal (Endless) (New) - zombieportal_dangerroom_west_new
+Wild West Portal (Endless 2) - zombieportal_dangerroom_west_2
+Far Future Portal (Endless) - zombieportal_dangerroom_future
+Far Future Portal (Endless) (New) - zombieportal_dangerroom_future_new
+Far Future Portal (Endless 2) - zombieportal_dangerroom_future_2
+Dark Ages Portal (Endless) - zombieportal_dangerroom_dark
+Dark Ages Portal (Endless) (New) - zombieportal_dangerroom_dark_new
+Dark Ages Portal (Endless 2) - zombieportal_dangerroom_dark_2
+Big Wave Beach Portal (Endless) - zombieportal_dangerroom_beach
+Big Wave Beach Portal (Endless) (New) - zombieportal_dangerroom_beach_new
+Big Wave Beach Portal (Endless 2) - zombieportal_dangerroom_beach_2
+Frostbite Caves Portal (Endless) - zombieportal_dangerroom_iceage
+Frostbite Caves Portal (Endless) (New) - zombieportal_dangerroom_iceage_new
+Frostbite Caves Portal (Endless 2) - zombieportal_dangerroom_iceage_2
+Lost City Portal (Endless) - zombieportal_dangerroom_lostcity
+Lost City Portal (Endless) (New) - zombieportal_dangerroom_lostcity_new
+Lost City Portal (Endless 2) - zombieportal_dangerroom_lostcity_2
+Neon Mixtape Tour Portal (Endless) - zombieportal_dangerroom_eighties
+Neon Mixtape Tour Portal (Endless) (New) - zombieportal_dangerroom_eighties_new
+Neon Mixtape Tour Portal (Endless 2) - zombieportal_dangerroom_eighties_2
+Jurassic Marsh Portal (Endless) - zombieportal_dangerroom_dino
+Jurassic Marsh Portal (Endless) (New) - zombieportal_dangerroom_dino_new
+Jurassic Marsh Portal (Endless 2) - zombieportal_dangerroom_dino_2
+Ancient Egypt Portal (Veteran) - zombieportal_veteran_egypt
+Pirate Seas Portal (Veteran) - zombieportal_veteran_pirate
+Wild West Portal (Veteran) - zombieportal_veteran_west
+Neon Mixtape Tour Portal (Veteran) - zombieportal_veteran_eighties
+Jurassic Marsh Portal (Veteran) - zombieportal_veteran_dino
+Lost City Portal (Veteran) - zombieportal_veteran_lostcity
+Frostbite Caves Portal (Veteran) - zombieportal_veteran_iceage
+Big Wave Beach Portal (Veteran) - zombieportal_veteran_beach
+Dark Ages Portal (Veteran) - zombieportal_veteran_dark
+Far Future Portal (Veteran) - zombieportal_veteran_future
+Modern Day Portal (Rally Zombie) - zombieportal_modern_rally
+Neon Mixtape Tour Portal (Holiday Mashup stages) - zombieportal_eighties_8bit
+Paraody Insanity Portal - zombieportal_modern_parody1 
+Hypothermic Hollows Portal - zombieportal_iceage_hollows
+Other Hypothermic Hollows Portal - zombieportal_iceage_hollows_2
+Pirate Barrel Rollers Portal - zombieportal_pirate_rollers
+Other Pirate Portal - zombieportal_pirate_2
+Future Shields Portal - zombieportal_future_shields
+Other Future Portal - zombieportal_future_4
+Dark Ages Flaming Portal - zombieportal_dark_flames
+Other Dark Ages Portal - zombieportal_dark_2
+Modern Day Lurkers Portal - zombieportal_modern_lurkers
+Modern Ducky Tube Portal - zombieportal_modern_ducky
+Big Beach Brawl Portal (Garbage) - zombieportal_beach_garbage
+Big Beach Brawl Portal (Clam) - zombieportal_beach_clam
+Backward Holiday Portal - zombieportal_holiday_back
+AltverZ Portal (Used in UC-15) - zombieportal_altverz
+Caliginous Carnival Portal - zombieportal_carnie
+Another Caliginous Carnival Portal - zombieportal_carnie_cc
+Additional Caliginous Carnival Portal - zombieportal_carnie_(2-8)
+Caliginous Carnival Trapeze Portal - zombieportal_carnie_trapeze
+Caliginous Carnival Toys Portal - zombieportal_carnie_toys
+Additional Caliginous Carnival Toys Portal - zombieportal_carnie_toys_(2/3)
+Caliginous Carnival Act 1 Portal - zombieportal_carnie_act1
+Caliginous Carnival Act 2 Portal - zombieportal_carnie_act2
+Backyard Big Top Portal - zombieportal_carnie_bbt
+Sniffers Portal - zombieportal_sniffers
+Balls Portal - zombieportal_bonus_balls
+Blank Portal - zombieportal_blank
+Hitchhikers Portal - zombieportal_hitchhikers
+Additional Hitchhikers Portal - zombieportal_hitchhikers_2
+Zombotany Portal - zombieportal_hitchhikers_zombotany
+Additional Zombotany Portal - zombieportal_hitchhikers_zombotany_(2-15)
+Poison Tile (Goo Peashooter) - poison_tile
+Olive Pit Oil - oil
+Buttercup Butter - butter
+Buttercup PF Butter - plantfoodbutter
+Tar - tar
+Rock Carrier's Rock - rock
+Egg Stealer's Egg - stealer_egg (NOTE: Will spawn an Eggshell Imp when placed)
+Gourd Carrier's Gourd - harvest_rock
+Harvest Egg Stealer's Egg - harvest_stealer_egg (NOTE: Will spawn a Harvest Eggshell Imp when placed)
+Feastivus Present (Sun) - presentSunOnDestruction
+Feastivus Present (Plant Food) - presentPlantfoodOnDestruction
+Feastivus Present (Plant) - presentPlantOnDestruction
+Feastivus Present (Zombie, used in UC-15) - presentZombieOnDestruction
+Valenbrainz Present (Sun) - presentSunOnDestruction_valentines
+Valenbrainz Present (Plant Food) - presentPlantfoodOnDestruction_valentines
+Valenbrainz Present (Plant) - presentPlantOnDestruction_valentines
+Valenbrainz Present (Zombie, used in UC-15) - presentZombieOnDestruction_valentines
+Birthdayz Present (Sun) - presentSunOnDestruction_birthdayz
+Birthdayz Present (Plant Food) - presentPlantfoodOnDestruction_birthdayz
+Birthdayz Present (Plant) - presentPlantOnDestruction_birthdayz
+Birthdayz Present (Zombie, used in UC-15) - presentZombieOnDestruction_birthdayz
+Lollipop - gravestone_holiday
+Sewer - steam_sewer
+Sewer (additional pipelines) steam_sewer2, steam_sewer3, steam_sewer4, steam_sewer5
+Effect Dummy (spawn on sewer placements) - sewer_effects_dummy
+Repairimp's Teslabox - steam_backpack
+(Pre-1.1.4) Sewer (Lid On) (GridItemEntityTargeting Class) - steam_sewer_start
+(Pre-1.1.4) Sewer (Lid On) (GridItem_HealerStaff Class) - steam_sewer_start2
+(Pre-1.1.4) Sewer (Lid Popping Off) (GridItemEntityTargeting Class) - steam_sewer_spawn
+(Pre-1.1.4) Sewer (Lid Popping Off) (GridItem_HealerStaff Class) - steam_sewer_spawn2
+(Pre-1.1.4) Sewer (Opened) (GridItemEntityTargeting Class) - steam_sewer_repeat
+(Pre-1.1.4) Sewer (Opened) (GridItem_HealerStaff Class) - steam_sewer_repeat2
+(Pre-1.1.4) Sewer (Constant Steam) - steam_sewer_endless
+Perfume - holidaydrink_valentines
+Shamrock Shake - holidaydrink_stpatrick
+ZCorp Egg Juice - holidaydrink_spring
+Zhampange - holidaydrink_birthday
+ZCorp Juice Box - holidaydrink_children
+Taste of Big Wave Beach - holidaydrink_summernights
+Brain Juice - holidaydrink_bighead
+Witch's Brew - holidaydrink_halloween
+Super Brainz™️ Energy Drink - holidaydrink_heroes
+Gramma's Zoup - holidaydrink_foodfight
+ZCorp Egg Nog - holidaydrink_feastivus
+Piercing Cold Traptile (place in x20) - traptile_cold
+Vertical Piercing Cold Traptile (place in y7, used in UC-15) - traptile_cold_2
+Fireworks - fireworks
+Reanimator's Grave - gravestone_gravedropper
+Goo Lagoon Goo - icetile
+FNaF Door - fnaf_door
+N3XT Fog Setup - pvz3_fog_setup
+Grapes of Wrath - pvz3_grape_of_wrath
+Correct Answer Goblin - correct_answer_tile
+HM Zombot's Snow (place in x8y0) - holiday_zomboss_snow
+Scarecrow - pumpkin_scarecrow
+Buff Tile (Toughness) - bufftile_attack
+Buff Tile (Speed) - bufftile_speed
+Buff Tile (Invincibility) - bufftile_shield
+Yuanbao (Variant 1)- yuanbao_type1
+Yuanbao (Variant 2)- yuanbao_type2
+Yuanbao (Variant 3)- yuanbao_type3
+Closed Tarot Card - carnie_card_unactivated
+Sunify Tarot Card - carnie_card_sunify
+PFify Tarot Card - carnie_card_PFify
+Basic Zombie Tarot Card - carnie_card_basic
+Buckethead Tarot Card - carnie_card_armor2
+Grinderhead Tarot Card - carnie_card_armor4
+Freeze Tarot Card - carnie_card_freeze
+Invincible Tarot Card - carnie_card_god
+Mirror Tarot Card - carnie_card_mirror
+Flag Tarot Card - carnie_card_flag
+Zomboss Tarot Card - carnie_card_zomboss
+Jack In The Box (Teeth) - jackinthebox_teeth
+Jack In The Box (Ball) - jackinthebox_balls
+Jack In The Box (Monkey) - jackinthebox_monkeys
+Jack In The Box (Pinky's candy) - jackinthebox_candy_hp
+Jack In The Box (Bluebert's candy) - jackinthebox_candy_speed
+Jack In The Box (Teddy) - jackinthebox_teddy
+Jack In The Box (Snorter) - jackinthebox_sniffer
+Jack In The Box (Action Figure) - jackinthebox_gargantuar
+Jumpscare Jack In The Box (Teeth) - jackinthebox_teeth_jumpscare
+Jumpscare Jack In The Box (Ball) - jackinthebox_balls_jumpscare
+Jumpscare Jack In The Box (Monkey) - jackinthebox_monkeys_jumpscare
+Jumpscare Jack In The Box (Pinky's candy) - jackinthebox_candy_hp_jumpscare
+Jumpscare Jack In The Box (Bluebert's candy) - jackinthebox_candy_speed_jumpscare
+Jumpscare Jack In The Box (Teddy) - jackinthebox_teddy_jumpscare
+Jumpscare Jack In The Box (Snorter) - jackinthebox_sniffer_jumpscare
+Jumpscare Jack In The Box (Action Figure) - jackinthebox_gargantuar_jumpscare
+Assault Airspace Cloud - cloud
+The Brainiac's Incubation Tank - hero_backpack
+Effect Nighttime (place in x4y2) - effect_nighttime
+Rain Effect 1 (place in x-1y2, x3y2, x7y2) - lostcityraineffect/pirateraineffect
+Rain Effect 2 (place in x1y2, x5y2) - lostcityraineffect2/pirateraineffect2
+Offscreen Rain Effect (place in x3y2)- lostcityoffscreenraineffect/piraterainoffscreeneffect
+Thunderstorm (place in x4y-1) - pirate_thunderstorm
+Invisible Puddle - invispotholepuddle
+
+
+
+#COMMENT: The following grid items do not work or are really buggy. The team does not suggest using these in custom levels.
+
+Unused:
+
+Zombie Gravestone - gravestoneZombieOnDestruction
+Time Spawner Gravestone - gravestoneZombieTimeSpawner
+Time Spawner Gravestone (Conehead) - gravestoneZombieTimeSpawner_cone
+Time Spawner Gravestone (Buckethead) - gravestoneZombieTimeSpawner_bucket
+Shortcut Gravestone - gravestoneShortcut
+Beach Gravestone - gravestone_beach
+Jurassic Gravestone - gravestone_dino
+Neon Gravestone - gravestone_eighties
+??? (DO NOT USE) - futureshift
+??? (DO NOT USE) - futureclone
+Whack-a-Zombie Puddle - whack_puddle
+
+
+Music Types:
+
+Ultimate Battle - MiniGame_A
+Demonstration Minigame - MiniGame_B
+Cerebrawl - MiniGame_C
+Cerebrawl (Player's House, use MD stage/suffix) - MiniGame_C2
+Miniboss Music - MiniGame_MiniBoss (ONLY WORKS IN HOLIDAY MASHUP, RIFT ROAD AND ANY FBC STAGE)

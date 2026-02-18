@@ -1,0 +1,5547 @@
+[
+	
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"lris_bird"
+			],
+			"objdata": {
+				"TypeName": "lris_bird",
+				"ZombieClass": "ZombieTurkeypultBasic",
+				"Properties": "RTID(ZombieLrisBasicDefault@ZombieProperties)",
+				"ResourceGroups": [
+					"PlantLris"
+				],
+				"AnimRigClass": "ZombieAnimRig_Chicken",
+				"PopAnim": "POPANIM_PLANT_LRIS_BIRD",
+				"Placeable": false,
+				"HomeWorld": "modern"
+			}
+		},
+		{
+			"aliases": [
+				"ZombieLrisBasicDefault"
+			],
+			"objclass": "ZombiePropertySheet",
+			"objdata": {
+				"SoundOnDeath": "Play_Bird_Explo",
+				"ArmDropFraction": -1,
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 40,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": false,
+				"Cost": 150,
+				"EatDPS": 50,
+				"TimeToKillInSeconds": 20,
+				"ElectrocutePAMName": "POPANIM_EFFECTS_ZOMBIE_TURKEY_SHOCK",
+				"GroundTrackName": "none",
+				"HitRect": {
+					"mHeight": 60,
+					"mWidth": 42,
+					"mX": 0,
+					"mY": 10
+				},
+				"Hitpoints": 800,
+				"HypnoshroomEffectOffset": {
+					"x": 0,
+					"y": 43
+				},
+				"IsValidPinchTarget": false,
+				"ChillInsteadOfFreeze": true,
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.2
+				},
+				"ShadowScaling": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"SkipHeadDropState": true,
+				"Size": "chicken",
+				"Speed": 2,
+				"WavePointCost": 10,
+				"Weight": 0,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness0"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed5"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"lris_bird_pf"
+			],
+			"objdata": {
+				"TypeName": "lris_bird_pf",
+				"ZombieClass": "ZombieTurkeypultBasic",
+				"Properties": "RTID(ZombieLrisPFDefault@ZombieProperties)",
+				"ResourceGroups": [
+					"PlantLris"
+				],
+				"AnimRigClass": "ZombieAnimRig_Chicken",
+				"PopAnim": "POPANIM_PLANT_LRIS_BIRD",
+				"Placeable": false,
+				"HomeWorld": "modern"
+			}
+		},
+		{
+			"aliases": [
+				"ZombieLrisPFDefault"
+			],
+			"objclass": "ZombiePropertySheet",
+			"objdata": {
+				"SoundOnDeath": "Play_Bird_Explo",
+				"ArtScale": 1.25,
+				"ArmDropFraction": -1,
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 40,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": false,
+				"Cost": 150,
+				"EatDPS": 70,
+				"ElectrocutePAMName": "POPANIM_EFFECTS_ZOMBIE_TURKEY_SHOCK",
+				"GroundTrackName": "none",
+				"HitRect": {
+					"mHeight": 60,
+					"mWidth": 42,
+					"mX": 0,
+					"mY": 10
+				},
+				"Hitpoints": 1200,
+				"HypnoshroomEffectOffset": {
+					"x": 0,
+					"y": 43
+				},
+				"IsValidPinchTarget": false,
+				"ChillInsteadOfFreeze": true,
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.2
+				},
+				"ShadowScaling": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"SkipHeadDropState": true,
+				"Size": "chicken",
+				"Speed": 2,
+				"WavePointCost": 10,
+				"Weight": 0,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness0"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed5"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"plantagenet"
+			],
+			"objdata": {
+				"TypeName": "plantagenet",
+				"ZombieClass": "ZombieBasic",
+				"Properties": "RTID(ZombieTutorialDefault@ZombieProperties)",
+				"ResourceGroups": [
+					"ZombiePlantagenetBasicGroup"
+				],
+				"AudioGroups": [],
+				"AnimRigClass": "ZombieAnimRig_Tutorial",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_PLANTAGENET_BASIC",
+				"HomeWorld": "travellog",
+				"AlmanacBackdropName": "market",
+				"IsBasicZombie": true
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"plantagenet_armor1"
+			],
+			"objdata": {
+				"TypeName": "plantagenet_armor1",
+				"ZombieClass": "ZombieBasic",
+				"Properties": "RTID(ZombieTutorialArmor1Default@ZombieProperties)",
+				"ResourceGroups": [
+					"ZombiePlantagenetBasicGroup"
+				],
+				"AudioGroups": [],
+				"AnimRigClass": "ZombieAnimRig_Tutorial",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_PLANTAGENET_BASIC",
+				"HomeWorld": "travellog",
+				"AlmanacBackdropName": "market",
+				"IsBasicZombie": true
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"plantagenet_armor2"
+			],
+			"objdata": {
+				"TypeName": "plantagenet_armor2",
+				"ZombieClass": "ZombieBasic",
+				"Properties": "RTID(ZombieTutorialArmor2Default@ZombieProperties)",
+				"ResourceGroups": [
+					"ZombiePlantagenetBasicGroup"
+				],
+				"AudioGroups": [],
+				"AnimRigClass": "ZombieAnimRig_Tutorial",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_PLANTAGENET_BASIC",
+				"HomeWorld": "travellog",
+				"AlmanacBackdropName": "market",
+				"IsBasicZombie": true
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"plantagenet_flag"
+			],
+			"objdata": {
+				"TypeName": "plantagenet_flag",
+				"ZombieClass": "ZombieBasic",
+				"Properties": "RTID(ZombieTutorialFlagDefault@ZombieProperties)",
+				"ResourceGroups": [
+					"ZombiePlantagenetFlagGroup"
+				],
+				"AudioGroups": [],
+				"AnimRigClass": "ZombieAnimRig_Tutorial",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_PLANTAGENET_FLAG",
+				"HomeWorld": "travellog",
+				"AlmanacBackdropName": "market",
+				"IsBasicZombie": true,
+				"FlagType": "flag_normal"
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"plantagenet_gargantuar"
+			],
+			"objdata": {
+				"TypeName": "plantagenet_gargantuar",
+				"ZombieClass": "ZombieGargantuar",
+				"Properties": "RTID(ZombiePlantagenetGargantuar@ZombieProperties)",
+				"ResourceGroups": [
+					"ZombieCuteMaidGroup",
+					"ZombiePlantagenetGargantuarGroup",
+					"ZombieWestBullRiderGroup",
+					"ZombieGargantuarEffects",
+					"ZombieBronzeEffects"
+				],
+				"AudioGroups": [
+					"ZombieDarkAgesGargantuarAudio",
+					"ZombieDarkAgesImp",
+					"ZombieGlobalGargantuarAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_Gargantuar",
+				"PopAnim": "POPANIM_ZOMBIE_PLANTAGENET_GARGANTUAR",
+				"HomeWorld": "travellog",
+				"AlmanacBackdropName": "market",
+				"Placeable": true
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"travellog_market_gargantuar"
+			],
+			"objdata": {
+				"TypeName": "travellog_market_gargantuar",
+				"DisplayTypeName": "plantagenet_gargantuar",
+				"ZombieClass": "ZombieGargantuar",
+				"Properties": "RTID(ZombiePlantagenetGargantuar@ZombieProperties)",
+				"ResourceGroups": [
+					"ZombieCuteMaidGroup",
+					"ZombiePlantagenetGargantuarGroup",
+					"ZombieWestBullRiderGroup",
+					"ZombieGargantuarEffects",
+					"ZombieBronzeEffects"
+				],
+				"AudioGroups": [
+					"ZombieDarkAgesGargantuarAudio",
+					"ZombieDarkAgesImp",
+					"ZombieGlobalGargantuarAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_Gargantuar",
+				"PopAnim": "POPANIM_ZOMBIE_PLANTAGENET_GARGANTUAR",
+				"HomeWorld": "travellog",
+				"AlmanacBackdropName": "market",
+				"Placeable": true
+			}
+		},
+		{
+			"aliases": [
+				"ZombiePlantagenetGargantuar"
+			],
+			"objclass": "ZombieGargantuarProps",
+			"objdata": {
+				"AlmanacOffset": {
+					"x": 20,
+					"y": 70
+				},
+				"AlmanacScale": 0.8,
+				"ArmDropFraction": -1,
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 30,
+					"mX": 0,
+					"mY": 10
+				},
+				"ConditionImmunities": [
+					{
+						"Condition": "affectEatdps"
+					}
+				],
+				"CanBeFlickedOff": false,
+				"CanSpawnPlantFood": false,
+				"Cost": 150,
+				"EatDPS": 0,
+				"ExplodesWhenMowed": true,
+				"FlickIsLaneRestricted": true,
+				"GroundTrackName": "ground_swatch",
+				"HealthThresholdToImpAmmoLayers": [
+					{
+						"HealthPercentThrowImp": 0.5,
+						"ProjectileLayersToHide": [
+							"zombie_imp_skull",
+							"zombie_imp_jaw",
+							"Zombie_gargantuar_whiterope",
+							"zombie_imp_arm_inner_lower",
+							"zombie_imp_arm_inner_upper",
+							"zombie_imp_arm_outer_lower",
+							"zombie_imp_arm_outer_upper_01",
+							"zombie_imp_arm_outer_upper_02",
+							"zombie_imp_arms_outer_upper",
+							"zombie_imp_eye",
+							"zombie_imp_eye_sm",
+							"zombie_imp_hand_inner",
+							"zombie_imp_hand_outer",
+							"zombie_imp_leg_inner_lower",
+							"zombie_imp_leg_inner_upper",
+							"zombie_imp_leg_outer_lower",
+							"zombie_imp_leg_outer_upper",
+							"zombie_imp_pupil",
+							"zombie_imp_torso",
+							"zombie_imp_waist",
+							"zombie_imp_toe_outer",
+							"zombie_imp_toe_inner"
+						]
+					}
+				],
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 62,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 3600,
+				"HypnoshroomEffectOffset": {
+					"x": 0,
+					"y": 120
+				},
+				"ImpApex": 250,
+				"ImpFlightTime": 1.5,
+				"ImpSpawnOffset": {
+					"x": -100,
+					"y": 2,
+					"z": 115
+				},
+				"ImpTargetColumn": 2,
+				"ImpType": "plantagenet_imp",
+				"IsValidPinchTarget": false,
+				"MinPosXThrowImp": 400,
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "SmashDamage"
+					}
+				],
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 1.4
+				},
+				"Size": "large",
+				"SkipHeadDropState": true,
+				"SmashDamage": 1500,
+				"SmashDuration": 2,
+				"SoundOnAsh": "Play_Zomb_Global_Gargantuar_Mvmt_Death_Ash",
+				"SoundOnElectrocute": "Play_Zomb_Global_Gargantuar_Mvmt_Shock",
+				"SoundOnIdle": "Play_Zomb_Tutorial_Gargantuar_Mvmt_Idle",
+				"Speed": 0.24,
+				"ZombieArmorProps": [
+					"RTID(GargantuarJawFix@ArmorTypes)"
+				],
+				"StaticArtImageAsset": "IMAGE_GARGANTUAR",
+				"ThrowImpDuration": 1,
+				"WavePointCost": 1500,
+				"Weight": 3000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness7"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed3"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"plantagenet_imp"
+			],
+			"objdata": {
+				"TypeName": "plantagenet_imp",
+				"ZombieClass": "ZombieImp",
+				"Properties": "RTID(ZombieTutorialImpDefault@ZombieProperties)",
+				"ResourceGroups": [
+					"ZombieCuteMaidGroup"
+				],
+				"AudioGroups": [
+					"ZombieGlobalGargantuarAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_Imp",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_CUTE_MAID",
+				"HomeWorld": "travellog",
+				"AlmanacBackdropName": "market",
+				"Placeable": true
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"plantagenet_wine",
+				"plantagenet_winetasting",
+				"plantagenet_winetasting_weak"
+			],
+			"objdata": {
+				"TypeName": "plantagenet_wine",
+				"ZombieClass": "ZombieIceAgeHunter",
+				"Properties": "RTID(ZombiePlantagenetWineDefault@ZombieProperties)",
+				"ResourceGroups": [
+					"ZombiePlantagenetWinetastingGroup",
+					"PlantBlockoli",
+					"PlantConvallariaChemist",
+					"GridItemZombiePotion"
+				],
+				"AudioGroups": [
+					"GridItemZombiePotionAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_Hunter",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_PLANTAGENET_WINETASTING",
+				"HomeWorld": "travellog",
+				"AlmanacBackdropName": "market"
+			}
+		},
+		{
+			"objclass": "ZombieIceAgeHunterProps",
+			"aliases": [
+				"ZombiePlantagenetWineDefault"
+			],
+			"objdata": {
+				"Actions": [
+					"RTID(ZombiePlantagenetWineAction@ZombieActions)"
+				],
+				"NearAttackRange": 0,
+				"FarAttackRange": 8,
+				"SnowballsPerBarrage": 1,
+				"Speed": 0.22,
+				"Hitpoints": 470,
+				"EatDPS": 100,
+				"CanSpawnPlantFood": true,
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 7,
+					"mY": 10
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": -2,
+					"mY": 0
+				},
+				"ConditionImmunities": [
+					{
+						"Condition": "sunbeaned"
+					},
+					{
+						"Condition": "affectEatdps"
+					}
+				],
+				"ArtScale": 0.85,
+				"Cost": 150,
+				"WavePointCost": 400,
+				"Weight": 3000,
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"AlmanacScale": 0.85,
+				"AlmanacOffset": {
+					"x": 25,
+					"y": 25
+				},
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.2
+				},
+				"GroundTrackName": "ground_swatch",
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness3"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieProjectileActionDefinition",
+			"aliases": [
+				"ZombiePlantagenetWineAction"
+			],
+			"objdata": {
+				"TimeBeforeFirst": {
+					"Min": 4.0,
+					"Max": 7.0
+				},
+				"TimeBetween": {
+					"Min": 0.5,
+					"Max": 0.5
+				},
+				"TimeBetweenBarrages": {
+					"Min": 6.0,
+					"Max": 8.0
+				},
+				"Projectile": "RTID(PlantagenetWine@ProjectileTypes)",
+				"SoundOnStart": "",
+				"SpawnOffset": {
+					"x": -20.0,
+					"y": 0,
+					"z": 45.0
+				},
+				"ApexHeight": 100,
+				"TimeUntilHit": 0.75
+			}
+		},
+		{
+			"objclass": "PlantConditionProjectileProps",
+			"aliases": [
+				"PlantagenetWine"
+			],
+			"objdata": {
+				"ClassName": "PlantConditionProjectile",
+				"BaseDamage": 25,
+				"CannotAffectInvinciblePlants": true,
+				"DamageFlags": [
+					"shooter"
+				],
+				"CollisionFlags": [
+					"normal_plants",
+					"tall_plants",
+					"ground",
+					"ground_zombies",
+					"off_ground_zombies"
+				],
+				"InitialVelocity": [
+					{
+						"Min": -300.0,
+						"Max": -300.0
+					},
+					{
+						"Min": 0.0,
+						"Max": 0.0
+					},
+					{
+						"Min": 0.0,
+						"Max": 0.0
+					}
+				],
+				"PlantConds": [
+					{
+						"Condition": "stun",
+						"Duration": {
+							"Min": 5,
+							"Max": 5
+						}
+					},
+					{
+						"Condition": "plantfoodflash",
+						"Duration": {
+							"Min": 5,
+							"Max": 5
+						}
+					}
+				],
+				"Conditions": [
+					{
+						"Condition": "stun",
+						"Duration": {
+							"Min": 5,
+							"Max": 5
+						}
+					},
+					{
+						"Condition": "blockolistunned",
+						"Duration": {
+							"Min": 5,
+							"Max": 5
+						}
+					}
+				],
+				"CannotAffectPlants": {
+					"ListType": "excludelist",
+					"List": [
+						"thymewarp",
+						"noctarinecloud",
+						"teleportatomine",
+						"steam_blueprints",
+						"blackhole",
+						"blackhole_plantfood",
+						"holiday_present_randomizer",
+						"snapdragon_hmzomboss",
+						"carnie_minigame_coconutcannon"
+					]
+				},
+				"RenderImage": "IMAGE_ZOMBIE_PLANTAGENET_WINETASTING_WINEGLASS_40X59",
+				"InitialScale": {
+					"Min": 1.15,
+					"Max": 1.15
+				},
+				"InitialAngularVelocity": {
+					"Min": 10.0,
+					"Max": 20.0
+				},
+				"CollisionRect": {
+					"mX": -15.0,
+					"mY": -15.0,
+					"mWidth": 30.0,
+					"mHeight": 30.0
+				},
+				"ImpactSoundEvent": "Play_Plant_Potion_Crushed_Glass",
+				"ImpactSoundThrottleTimer": 0.075,
+				"ImpactPAM": "POPANIM_EFFECTS_CONVALLARIACHEMIST_EXPLODE",
+				"ImpactPAMAnimationToPlay": [
+					"anim3"
+				],
+				"ImpactOffset": [
+					{
+						"Min": 0.0,
+						"Max": 0.0
+					},
+					{
+						"Min": 0.0,
+						"Max": 0.0
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"plantagenet_noblewoman"
+			],
+			"objdata": {
+				"TypeName": "plantagenet_noblewoman",
+				"ZombieClass": "ZombieIceAgeHunter",
+				"Properties": "RTID(ZombiePlantagenetNobleWomanDefault@ZombieProperties)",
+				"ResourceGroups": [
+					"ZombiePlantagenetNobleWomanGroup",
+					"SnowstormGroup",
+					"SandstormGroup"
+				],
+				"AudioGroups": [
+					"ZombieIceAgeHunterAudio",
+					"ZombieLostCityJaneAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_Hunter",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_PLANTAGENET_NOBLEWOMAN_PURPLE",
+				"HomeWorld": "travellog",
+				"AlmanacBackdropName": "market",
+				"Placeable": true
+			}
+		},
+		{
+			"aliases": [
+				"ZombiePlantagenetNobleWomanDefault"
+			],
+			"objclass": "ZombieIceAgeHunterProps",
+			"objdata": {
+				"Actions": [
+					"RTID(ZombieNobleWomanAction@ZombieActions)"
+				],
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"AlmanacOffset": {
+					"x": 5
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"Hitpoints": 700,
+				"EatDPS": 100,
+				"NearAttackRange": 1,
+				"FarAttackRange": 9,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 10,
+					"y": 0,
+					"z": 1.2
+				},
+				"SnowballsPerBarrage": 1,
+				"Speed": 0.12,
+				"WavePointCost": 750,
+				"Weight": 2000,
+				"SoundOnDeath": "Play_Zomb_LostCity_Jane_VO_Die",
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness4"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed0"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieProjectileActionDefinition",
+			"aliases": [
+				"ZombieNobleWomanAction"
+			],
+			"objdata": {
+				"TimeBeforeFirst": {
+					"Min": 14.0,
+					"Max": 16.0
+				},
+				"TimeBetween": {
+					"Min": 0.5,
+					"Max": 0.5
+				},
+				"TimeBetweenBarrages": {
+					"Min": 13.0,
+					"Max": 16.0
+				},
+				"Projectile": "RTID(PlantagenetNobleStorm@ProjectileTypes)",
+				"SoundOnStart": "Play_UI_PowerUp_Flick",
+				"SpawnOffset": {
+					"x": -20.0,
+					"y": 0,
+					"z": 45.0
+				},
+				"ApexHeight": 100,
+				"TimeUntilHit": 0.75
+			}
+		},
+		{
+			"objclass": "ProjectilePropertySheet",
+			"aliases": [
+				"PlantagenetNobleStorm"
+			],
+			"objdata": {
+				"ClassName": "SpeakerProjectile",
+				"BaseDamage": 0,
+				"CollisionFlags": [
+					"ground",
+					"plants",
+					"normal_plants",
+					"tall_plants",
+					"ground_zombies",
+					"off_ground_zombies"
+				],
+				"DamageFlags": [
+					"none"
+				],
+				"DiesOnImpact": true,
+				"HasShadow": false,
+				"InitialVelocity": [
+					{
+						"Min": -300.0,
+						"Max": -300.0
+					},
+					{
+						"Min": 0.0,
+						"Max": 0.0
+					},
+					{
+						"Min": 0.0,
+						"Max": 0.0
+					}
+				],
+				"AttachedPAM": "POPANIM_EFFECTS_SNOWSTORM_TOP",
+				"AttachedPAMOffset": {
+					"x": -100.0,
+					"y": -100.0
+				},
+				"AttachedPAMAnimationToPlay": [
+					"loop"
+				],
+				"RenderColor": {
+					"mRed": 95,
+					"mGreen": 35,
+					"mBlue": 100
+				},
+				"CollisionRect": {
+					"mX": -10.0,
+					"mY": -10.0,
+					"mWidth": 20.0,
+					"mHeight": 20.0
+				}
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"plantagenet_princess"
+			],
+			"objdata": {
+				"TypeName": "plantagenet_princess",
+				"ZombieClass": "ZombieGeneralTreadmill",
+				"Properties": "RTID(ZombiePlantagenetPrincess@ZombieProperties)",
+				"ResourceGroups": [
+					"ZombiePlantagenetNobleWomanGroup",
+					"PlantBloomingHearts",
+					"ZombieTreadmillBrainGroup",
+					"ZombieTreadmillGroup"
+				],
+				"AudioGroups": [
+					"PlantBloomingHeartsAudio",
+					"ZombieLostCityJaneAudio",
+					"ZombieDarkAgesKingAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_GeneralTreadmill",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_PLANTAGENET_NOBLEWOMAN_PINK",
+				"HomeWorld": "travellog",
+				"AlmanacBackdropName": "market",
+				"Placeable": true
+			}
+		},
+		{
+			"aliases": [
+				"ZombiePlantagenetPrincess"
+			],
+			"objclass": "ZombieGeneralTreadmillProps",
+			"objdata": {
+				"Actions": [
+					"RTID(ZombiePlantagenetPrincessWalkOn@ZombieActions)",
+					"RTID(ZombiePlantagenetPrincessIdle@ZombieActions)",
+					"RTID(ZombiePlantagenetPrincessAction@ZombieActions)",
+					"RTID(ZombiePlantagenetPrincessDying@ZombieActions)",
+					"RTID(ZombieGeneralWalkOff@ZombieActions)",
+					"RTID(ZombiePlantagenetPrincessTaunt@ZombieActions)"
+				],
+				"LifetimeSeconds": 999999999,
+				"GeneralPhase": 0,
+				"PowerDrinkTargetRect": {
+					"mX": 4,
+					"mY": 0,
+					"mWidth": 4,
+					"mHeight": 5
+				},
+				"StreetSize": {
+					"x": 3,
+					"y": 2
+				},
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"AlmanacOffset": {
+					"x": 10
+				},
+				"ShadowOffset": {
+					"x": 10,
+					"y": 0,
+					"z": 1.2
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 60,
+					"mX": 0,
+					"mY": 0
+				},
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 62,
+					"mX": 10,
+					"mY": 10
+				},
+				"ConditionImmunities": [
+					{
+						"Condition": "blockolistunned"
+					},
+					{
+						"Condition": "solarflared"
+                    			},
+					{
+						"Condition": "dazeystunned"
+					},
+					{
+						"Condition": "stalled"
+					}
+				],
+				"CollideHypnotizedZombies": "none",
+				"CanSpawnPlantFood": true,
+				"CanBeFlicked": false,
+				"CanBePlantTossedStrong": false,
+				"CanBePlantTossedWeak": false,
+				"CanSpawnPlantFood": true,
+				"CanSurrender": true,
+				"NormalDeathOnExplosion": true,
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"Hitpoints": 2000,
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					}
+				],
+				"Speed": 0.35,
+				"WavePointCost": 1000,
+				"Weight": 2500,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness6"
+                    			}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieWalkActionDefinition",
+			"aliases": [
+				"ZombiePlantagenetPrincessWalkOn"
+			],
+			"objdata": {
+				"Weight": 1,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"Phase": "Entering",
+				"PhaseAfter": "Attacking",
+				"StopAtColumn": 7,
+				"SoundOnStart": "Play_Zomb_DarkAges_King_Intro_Trumpet",
+				"TransitionAtStart": false,
+				"TransitionAnimation": "idle",
+				"HasTransition": true
+			}
+		},
+		{
+			"objclass": "ZombiePlayAnimationActionDefinition",
+			"aliases": [
+				"ZombiePlantagenetPrincessIdle"
+			],
+			"objdata": {
+				"Weight": 10,
+				"RepeatMin": 2,
+				"RepeatMax": 2,
+				"Phase": "Stunned",
+				"PhaseAfter": "Attacking",
+				"SoundOnStart": "Play_Plant_BloomingHeart_Idle_Wink",
+				"AnimationToPlay": "idle",
+				"CanPickAgain": false
+			}
+		},
+		{
+			"objclass": "ZombieVendorThrowActionDefinition",
+			"aliases": [
+				"ZombiePlantagenetPrincessAction"
+			],
+			"objdata": {
+				"Weight": 99999,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"Phase": "Attacking",
+				"PhaseAfter": "Stunned",
+				"Projectile": "RTID(PlantagenetPrincessFan@ProjectileTypes)",
+				"Priority": 1,
+				"CanTargetSelf": false,
+				"ThrowerKey": "princess",
+				"TargetRect": {
+					"mX": 4,
+					"mY": 0,
+					"mWidth": 4,
+					"mHeight": 5
+				},
+				"AvoidConds": [
+					"present_boxed",
+					"icecubed",
+					"stoneblocked",
+					"hypnotized",
+					"invincible",
+					"transparent"
+				],
+				"Untargetable": {
+					"List": [
+						"plantagenet_princess",
+						"zombossmech_market",
+						"zombossmech_template_market",
+						"general_treadmill_phase1",
+						"general_treadmill_phase2",
+						"general_treadmill_phase3",
+						"servant_flag_buff",
+						"servant_red_flag_buff",
+						"skycity_arbiter",
+						"skycity_arbiter_land",
+						"skycity_arbiter_endless",
+						"chicken",
+						"foodfight_turkey",
+						"turkeypult_basic",
+						"gum",
+						"iceage_weasel",
+						"iceage_weasel_inz",
+						"iceage_weasel_veteran",
+						"iceage_weasel_veteran_inz",
+						"hero_weasel",
+						"carnie_monkey",
+						"carnie_toy_ball",
+						"pirate_barrel",
+						"pirate_barrel_inz",
+						"pirate_barrel_explosive",
+						"pirate_barrel_explosive_inz",
+						"hero_barrel",
+						"birthday_barrel",
+						"bighead_barrel",
+						"steam_miner_cart",
+						"steam_miner_coal",
+						"cannon",
+						"carnie_cannon",
+						"carnie_flag_card",
+						"roman_ballista",
+						"stpatrick_ballista",
+						"zombie_statue",
+						"steam_train",
+						"rift_barrel",
+						"rift_gremlin",
+						"chocolate",
+						"beach_garbage_normal",
+						"beach_garbage_weak",
+						"beach_garbage_strong",
+						"beach_garbage_imp",
+						"beach_garbage_imp_zombie",
+						"beach_garbage_normal_inz",
+						"beach_garbage_weak_inz",
+						"beach_garbage_strong_inz",
+						"beach_garbage_imp_inz",
+						"shikaisen_pot",
+						"skycity_launcher_zombie",
+						"skycity_twinsplanesegment"
+					],
+					"ListType": "excludelist"
+				},
+				"ThrowAnim": "action",
+				"SoundOnStart": "Play_Plant_BloomingHeart_Attack",
+				"SpawnOffset": {
+					"x": -35.0,
+					"y": -15.0,
+					"z": 50.0
+				},
+				"ApexHeight": 300,
+				"TimeUntilHit": 1.0
+			}
+		},
+		{
+			"objclass": "ZombiePlayAnimationActionDefinition",
+			"aliases": [
+				"ZombiePlantagenetPrincessTaunt"
+			],
+			"objdata": {
+				"Weight": 1,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"Phase": "Attacking",
+				"PhaseAfter": "Stunned",
+				"SoundOnStart": "Play_Plant_BloomingHeart_Idle_Wink",
+				"AnimationToPlay": "idle"
+			}
+		},
+		{
+			"objclass": "ZombiePlayAnimationActionDefinition",
+			"aliases": [
+				"ZombiePlantagenetPrincessDying"
+			],
+			"objdata": {
+				"Weight": 1,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"Phase": "Dying",
+				"PhaseAfter": "Destroy",
+				"SoundOnStart": "Play_Zomb_LostCity_Jane_VO_Die",
+				"AnimationToPlay": "walk_off2"
+			}
+		},
+		{
+			"objclass": "ProjectilePropertySheet",
+			"aliases": [
+				"PlantagenetPrincessFan"
+			],
+			"objdata": {
+				"BaseDamage": 0,
+				"CollisionFlags": [
+					"ground",
+					"ground_zombies",
+					"off_ground_zombies"
+				],
+				"DamageFlags": [
+					"no_flash",
+					"bypass_shield",
+					"lobbed",
+					"catapult",
+					"all_zombies"
+				],
+				"Conditions": [
+					{
+						"Condition": "transparent",
+						"Duration": {
+							"Min": 10,
+							"Max": 10
+						}
+					},
+					{
+						"Condition": "speeddown2",
+						"Duration": {
+							"Min": 10,
+							"Max": 10
+						}
+                                        },
+					{
+						"Condition": "bloomingheartdebuff",
+						"Duration": {
+							"Min": 10,
+							"Max": 10
+						}
+					}
+				],
+				"InitialVelocity": [
+					{
+						"Min": 400,
+						"Max": 500
+					},
+					{
+						"Min": -10,
+						"Max": 10
+					},
+					{
+						"Min": 500,
+						"Max": 700
+					}
+				],
+				"InitialAcceleration": [
+					{
+						"Min": 0,
+						"Max": 0
+					},
+					{
+						"Min": 0,
+						"Max": 0
+					},
+					{
+						"Min": -10,
+						"Max": -10
+					}
+				],
+				"InitialScale": {
+					"Min": 1.15,
+					"Max": 1.15
+				},
+				"InitialAngularVelocity": {
+					"Min": 0.25,
+					"Max": 0.5
+				},
+				"RenderImage": "IMAGE_ZOMBIE_ZOMBIE_NOBLEWOMAN_PINK_NOBLEWOMAN_PINK_66X68",
+				"CollisionRect": {
+					"mX": -20.0,
+					"mY": -10.0,
+					"mWidth": 30.0,
+					"mHeight": 20.0
+				},
+				"ImpactShowsAtZombieFeet": true,
+				"ImpactSoundEvent": "Play_Plant_BloomingHeart_Impact_lrg",
+				"ImpactSoundThrottleTimer": 0.075,
+				"ImpactPAM": "POPANIM_EFFECTS_BRAIN_EFFECT",
+				"ImpactPAMAnimationToPlay": [
+					"animation"
+				],
+				"ImpactOffset": [
+					{
+						"Min": 0,
+						"Max": 0
+					},
+					{
+						"Min": -20,
+						"Max": -20
+					}
+				]
+			}
+		},
+	{
+            "objclass": "ZombieType",
+            "aliases": [
+                "servant",
+		"servant_girl"
+            ],
+            "objdata": {
+                "TypeName": "servant",
+                "ZombieClass": "ZombieCowboyBasic",
+                "Properties": "RTID(ZombieServantGirlDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieServantGirlBasicGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieServantGirlAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_SERVANT_GIRL_BASIC",
+		"HomeWorld": "travellog",
+		"AlmanacBackdropName": "market",
+                "IsFemaleZombie": true
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "servant_red",
+		"servant_girl_red"
+            ],
+            "objdata": {
+                "TypeName": "servant_red",
+                "ZombieClass": "ZombieCowboyBasic",
+                "Properties": "RTID(ZombieServantGirlDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieServantGirlRedBasicGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieServantGirlAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_SERVANT_GIRL_RED_BASIC",
+		"HomeWorld": "travellog",
+		"AlmanacBackdropName": "market",
+                "IsFemaleZombie": true
+            }
+        },
+	{
+            "aliases": [
+                "ZombieServantGirlDefault"
+            ],
+            "objclass": "ZombiePropertySheet",
+            "objdata": {
+                "ArtCenter": {
+                    "x": 90,
+                    "y": 125
+                },
+		"AlmanacOffset": {
+		     "x": 5
+		},
+                "AttackRect": {
+                    "mHeight": 95,
+                    "mWidth": 20,
+                    "mX": 15,
+                    "mY": 0
+                },
+                "ConditionImmunities": [
+                    {
+                        "Condition": "poisoned"
+                    },
+                    {
+                        "Condition": "contagiouspoison"
+                    },
+		    {
+			"Condition": "decaypoison"
+                    }
+                ],
+                "CanSpawnPlantFood": true,
+                "Cost": 150,
+                "EatDPS": 100,
+                "GroundTrackName": "ground_swatch",
+                "HitRect": {
+                    "mHeight": 95,
+                    "mWidth": 32,
+                    "mX": 10,
+                    "mY": 10
+                },
+                "Hitpoints": 190,
+                "ScaledProps": [
+                    {
+                        "Arg1": 1.3,
+                        "Arg2": 0.05,
+                        "Formula": "standard",
+                        "Key": "Hitpoints"
+                    },
+                    {
+                        "Arg1": 1.3,
+                        "Arg2": 0.05,
+                        "Formula": "standard",
+                        "Key": "EatDPS"
+                    },
+                    {
+                        "Formula": "constant",
+                        "Key": "Speed"
+                    },
+                    {
+                        "Formula": "constant",
+                        "Key": "WavePointCost"
+                    }
+                ],
+                "ShadowOffset": {
+                    "x": 5,
+                    "y": 0,
+                    "z": 1.4
+                },
+                "Speed": 0.185,
+                "WavePointCost": 100,
+                "Weight": 1000,
+                "ZombieStats": [
+                    {
+                        "Type": "toughness",
+                        "Value": "toughness1"
+                    },
+                    {
+                        "Type": "speed",
+                        "Value": "speed2"
+                    }
+                ]
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "servant_armor1",
+		"servant_girl_armor1"
+            ],
+            "objdata": {
+                "TypeName": "servant_armor1",
+                "ZombieClass": "ZombieCowboyBasic",
+                "Properties": "RTID(ZombieServantGirlArmor1Default@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieServantGirlBasicGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieServantGirlAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_SERVANT_GIRL_BASIC",
+		"HomeWorld": "travellog",
+		"AlmanacBackdropName": "market",
+                "IsFemaleZombie": true
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "servant_red_armor1",
+		"servant_girl_red_armor1"
+            ],
+            "objdata": {
+                "TypeName": "servant_red_armor1",
+                "ZombieClass": "ZombieCowboyBasic",
+                "Properties": "RTID(ZombieServantGirlArmor1Default@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieServantGirlRedBasicGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieServantGirlAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_SERVANT_GIRL_RED_BASIC",
+		"HomeWorld": "travellog",
+		"AlmanacBackdropName": "market",
+                "IsFemaleZombie": true
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "servant_armor2",
+		"servant_girl_armor2"
+            ],
+            "objdata": {
+                "TypeName": "servant_armor2",
+                "ZombieClass": "ZombieCowboyBasic",
+                "Properties": "RTID(ZombieServantGirlArmor2Default@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieServantGirlBasicGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieServantGirlAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_SERVANT_GIRL_BASIC",
+		"HomeWorld": "travellog",
+		"AlmanacBackdropName": "market",
+                "IsFemaleZombie": true
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "servant_red_armor2",
+		"servant_girl_red_armor2"
+            ],
+            "objdata": {
+                "TypeName": "servant_red_armor2",
+                "ZombieClass": "ZombieCowboyBasic",
+                "Properties": "RTID(ZombieServantGirlArmor2Default@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieServantGirlRedBasicGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieServantGirlAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_SERVANT_GIRL_RED_BASIC",
+		"HomeWorld": "travellog",
+		"AlmanacBackdropName": "market",
+                "IsFemaleZombie": true
+            }
+        },
+        {
+            "aliases": [
+                "ZombieServantGirlArmor2Default"
+            ],
+            "objclass": "ZombiePropertySheet",
+            "objdata": {
+                "ArtCenter": {
+                    "x": 90,
+                    "y": 125
+                },
+		"AlmanacOffset": {
+		     "x": 5
+		},
+                "AttackRect": {
+                    "mHeight": 95,
+                    "mWidth": 20,
+                    "mX": 15,
+                    "mY": 0
+                },
+                "ConditionImmunities": [
+                    {
+                        "Condition": "poisoned"
+                    },
+                    {
+                        "Condition": "contagiouspoison"
+                    },
+		    {
+			"Condition": "decaypoison"
+		    }
+                ],
+                "CanSpawnPlantFood": true,
+                "Cost": 150,
+                "EatDPS": 100,
+                "GroundTrackName": "ground_swatch",
+                "HitRect": {
+                    "mHeight": 95,
+                    "mWidth": 32,
+                    "mX": 10,
+                    "mY": 10
+                },
+                "Hitpoints": 190,
+                "ScaledProps": [
+                    {
+                        "Arg1": 1.3,
+                        "Arg2": 0.05,
+                        "Formula": "standard",
+                        "Key": "Hitpoints"
+                    },
+                    {
+                        "Arg1": 1.3,
+                        "Arg2": 0.05,
+                        "Formula": "standard",
+                        "Key": "EatDPS"
+                    },
+                    {
+                        "Formula": "constant",
+                        "Key": "Speed"
+                    },
+                    {
+                        "Formula": "constant",
+                        "Key": "WavePointCost"
+                    }
+                ],
+                "ShadowOffset": {
+                    "x": 5,
+                    "y": 0,
+                    "z": 1.4
+                },
+                "Speed": 0.185,
+                "WavePointCost": 400,
+                "Weight": 4000,
+                "ZombieArmorProps": [
+                    "RTID(BucketDefault@ArmorTypes)"
+                ],
+                "ZombieStats": [
+                    {
+                        "Type": "toughness",
+                        "Value": "toughness5"
+                    },
+                    {
+                        "Type": "speed",
+                        "Value": "speed2"
+                    }
+                ]
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "servant_flag",
+		"servant_girl_flag"
+            ],
+            "objdata": {
+                "TypeName": "servant_flag",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieServantGirlFlagDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieServantGirlFlagGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieServantGirlAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_SERVANT_GIRL_FLAG",
+		"HomeWorld": "travellog",
+		"AlmanacBackdropName": "market",
+                "IsFemaleZombie": true,
+                "FlagType": "flag_normal"
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "servant_red_flag",
+		"servant_girl_red_flag"
+            ],
+            "objdata": {
+                "TypeName": "servant_red_flag",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieServantGirlFlagDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieServantGirlFlagGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieServantGirlAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_SERVANT_GIRL_RED_FLAG",
+		"HomeWorld": "travellog",
+		"AlmanacBackdropName": "market",
+                "IsFemaleZombie": true,
+                "FlagType": "flag_normal"
+            }
+        },
+        {
+            "aliases": [
+                "ZombieServantGirlFlagDefault"
+            ],
+            "objclass": "ZombiePropertySheet",
+            "objdata": {
+                "ArtCenter": {
+                    "x": 90,
+                    "y": 125
+                },
+                "AttackRect": {
+                    "mHeight": 95,
+                    "mWidth": 20,
+                    "mX": 15,
+                    "mY": 0
+                },
+                "ConditionImmunities": [
+                    {
+                        "Condition": "poisoned"
+                    },
+                    {
+                        "Condition": "contagiouspoison"
+                    },
+		    {
+			"Condition": "decaypoison"
+		    }
+                ],
+                "CanSpawnPlantFood": true,
+                "Cost": 150,
+                "EatDPS": 100,
+                "GroundTrackName": "ground_swatch",
+                "HitRect": {
+                    "mHeight": 95,
+                    "mWidth": 32,
+                    "mX": 10,
+                    "mY": 0
+                },
+                "Hitpoints": 320,
+                "ScaledProps": [
+                    {
+                        "Arg1": 1.3,
+                        "Arg2": 0.05,
+                        "Formula": "standard",
+                        "Key": "Hitpoints"
+                    },
+                    {
+                        "Arg1": 1.3,
+                        "Arg2": 0.05,
+                        "Formula": "standard",
+                        "Key": "EatDPS"
+                    },
+                    {
+                        "Formula": "constant",
+                        "Key": "Speed"
+                    },
+                    {
+                        "Formula": "constant",
+                        "Key": "WavePointCost"
+                    }
+                ],
+                "ShadowOffset": {
+                    "x": 5,
+                    "y": 0,
+                    "z": 1.4
+                },
+                "Speed": 0.25,
+                "WavePointCost": 100,
+                "Weight": 0,
+                "ZombieStats": [
+                    {
+                        "Type": "toughness",
+                        "Value": "toughness2"
+                    },
+                    {
+                        "Type": "speed",
+                        "Value": "speed3"
+                    }
+                ]
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "servant_flag_buff",
+		"servant_girl_flag_buff"
+            ],
+            "objdata": {
+                "TypeName": "servant_flag_buff",
+                "ZombieClass": "ZombieWickedhermit",
+                "Properties": "RTID(ZombieServantGirlFlagBuffDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieServantGirlFlagGroup",
+                    "EffectsPowerCards",
+                    "ZombieEightiesMCGroup",
+                    "ZombieDummyGroup",
+                    "ZombieGargantuarEffects"
+                ],
+                "AudioGroups": [
+                    "ZombieServantGirlAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Wickedhermit",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_SERVANT_GIRL_FLAG_BUFF",
+		"HomeWorld": "travellog",
+		"AlmanacBackdropName": "market",
+                "IsFemaleZombie": true,
+                "FlagType": "flag_veteran"
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "servant_red_flag_buff",
+		"servant_girl_red_flag_buff"
+            ],
+            "objdata": {
+                "TypeName": "servant_red_flag_buff",
+                "ZombieClass": "ZombieWickedhermit",
+                "Properties": "RTID(ZombieServantGirlFlagBuffDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieServantGirlFlagGroup",
+                    "EffectsPowerCards",
+                    "ZombieEightiesMCGroup",
+                    "ZombieDummyGroup",
+                    "ZombieGargantuarEffects"
+                ],
+                "AudioGroups": [
+                    "ZombieServantGirlAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Wickedhermit",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_SERVANT_GIRL_RED_FLAG_BUFF",
+		"HomeWorld": "travellog",
+		"AlmanacBackdropName": "market",
+                "IsFemaleZombie": true,
+                "FlagType": "flag_veteran"
+            }
+        },
+        {
+            "objclass": "ZombieWickedhermitProps",
+            "aliases": [
+                "ZombieServantGirlFlagBuffDefault"
+            ],
+            "objdata": {
+                "Hitpoints": 500,
+                "EatDPS": 100,
+		"Speed": 0.25,
+                "CanSpawnPlantFood": true,
+                "HitRect": {
+                    "mX": 10,
+                    "mY": 10,
+                    "mWidth": 32,
+                    "mHeight": 95
+                },
+                "AttackRect": {
+                    "mX": 15,
+                    "mY": 0,
+                    "mWidth": 20,
+                    "mHeight": 95
+                },
+                "FurnaceDestroySpawnZombieType": "maid_condition",
+                "#comment1": "This can decided the Zombie Type that be spawned by fscommond('spawn_owl') when Wickedhermit Zombie's furnace destroy",
+                "FurnaceDestroySpawnZombieNumber": 1,
+                "#comment2": "This can decided how many Zombie Owl will be spawned by fscommond('spawn_owl')",
+                "LandToLayGridItem": "crater_timed",
+                "Cost": 150,
+                "WavePointCost": 400,
+                "Weight": 0,
+                "ConditionImmunities": [
+                    {
+                        "Condition": "chill"
+                    },
+                    {
+                        "Condition": "butter"
+                    },
+                    {
+                        "Condition": "freeze"
+                    },
+                    {
+                        "Condition": "stun"
+                    },
+                    {
+                        "Condition": "stalled"
+                    },
+                    {
+                        "Condition": "sapped"
+                    },
+                    {
+                        "Condition": "poisoned"
+                    },
+                    {
+                        "Condition": "decaypoison"
+                    },
+                    {
+                        "Condition": "stackableslow"
+                    },
+                    {
+                        "Condition": "shrinking"
+                    },
+                    {
+                        "Condition": "shrunken"
+                    },
+                    {
+                        "Condition": "contagiouspoison"
+                    },
+                    {
+                        "Condition": "dazeystunned"
+                    },
+                    {
+                        "Condition": "potionspeed1"
+                    },
+                    {
+                        "Condition": "potionspeed2"
+                    },
+                    {
+                        "Condition": "potionspeed3"
+                    },
+                    {
+                        "Condition": "potiontoughness1"
+                    },
+                    {
+                        "Condition": "potiontoughness2"
+                    },
+                    {
+                        "Condition": "potiontoughness3"
+                    },
+                    {
+                        "Condition": "potionsuper1"
+                    },
+                    {
+                        "Condition": "potionsuper2"
+                    },
+                    {
+                        "Condition": "potionsuper3"
+                    },
+                    {
+                        "Condition": "speedup1"
+                    },
+                    {
+                        "Condition": "speedup2"
+                    },
+                    {
+                        "Condition": "speedup3"
+                    },
+                    {
+                        "Condition": "speedup4"
+                    },
+                    {
+                        "Condition": "speeddown1"
+                    },
+                    {
+                        "Condition": "speeddown2"
+                    },
+                    {
+                        "Condition": "speeddown3"
+                    },
+                    {
+                        "Condition": "speeddown4"
+                    },
+                    {
+                        "Condition": "bloomingheartdebuff"
+                    },
+                    {
+                        "Condition": "hotdateattraction"
+                    },
+                    {
+                        "Condition": "stickybombed"
+                    },
+                    {
+                        "Condition": "petrified"
+                    },
+                    {
+                        "Condition": "gummed"
+                    },
+                    {
+                        "Condition": "invincible"
+                    },
+		    {
+                        "Condition": "affectEatdps"
+                    },
+		    {
+                        "Condition": "begoniachilled"
+                    },
+		    {
+                        "Condition": "begoniafire"
+                    },
+		    {
+                        "Condition": "begoniamixed"
+                    },
+		    {
+			"Condition": "decaypoison"
+		    },
+		    {
+			"Condition": "affectEatdps"
+		    },
+		    {
+			"Condition": "popsmart"
+                    },
+                    {
+			"Condition": "eatdpsUp"
+                    },
+		    {
+			"Condition": "blockolistunned"
+                    },
+                    {
+			"Condition": "solarflared"
+                    },
+                    {
+			"Condition": "transparent"
+                    }
+                ],
+                "ArtCenter": {
+                    "x": 90,
+                    "y": 125
+                },
+                "ShadowOffset": {
+                    "x": 5,
+                    "y": 0,
+                    "z": 1.4
+                },
+                "GroundTrackName": "ground_swatch",
+                "ZombieStats": [
+                    {
+                        "Type": "toughness",
+                        "Value": "toughness3"
+                    },
+                    {
+                        "Type": "speed",
+                        "Value": "speed3"
+                    }
+                ],
+                "ScaledProps": [
+                    {
+                        "Key": "Hitpoints",
+                        "Formula": "standard",
+                        "Arg1": 1.3,
+                        "Arg2": 0.05
+                    },
+                    {
+                        "Key": "EatDPS",
+                        "Formula": "standard",
+                        "Arg1": 1.3,
+                        "Arg2": 0.05
+                    },
+                    {
+                        "Key": "SmashDamage",
+                        "Formula": "standard",
+                        "Arg1": 1.3,
+                        "Arg2": 0.05
+                    },
+                    {
+                        "Key": "EyeLaserTotalDamage",
+                        "Formula": "standard",
+                        "Arg1": 1.3,
+                        "Arg2": 0.05
+                    },
+                    {
+                        "Key": "Speed",
+                        "Formula": "constant"
+                    },
+                    {
+                        "Key": "WavePointCost",
+                        "Formula": "constant"
+                    }
+                ]
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "servant_flag_veteran",
+		"servant_girl_flag_veteran"
+            ],
+            "objdata": {
+                "TypeName": "servant_flag_veteran",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieServantGirlFlagVeteranDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieServantGirlFlagVeteranGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieServantGirlAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_SERVANT_GIRL_FLAG_VET",
+		"HomeWorld": "travellog",
+		"AlmanacBackdropName": "market",
+                "IsFemaleZombie": true,
+                "FlagType": "flag_veteran"
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "servant_red_flag_veteran",
+		"servant_girl_red_flag_veteran"
+            ],
+            "objdata": {
+                "TypeName": "servant_red_flag_veteran",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieServantGirlFlagVeteranDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieServantGirlFlagVeteranGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieServantGirlAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_SERVANT_GIRL_FLAG_RED_VET",
+		"HomeWorld": "travellog",
+		"AlmanacBackdropName": "market",
+                "IsFemaleZombie": true,
+                "FlagType": "flag_veteran"
+            }
+        },
+        {
+            "aliases": [
+                "ZombieServantGirlFlagVeteranDefault"
+            ],
+            "objclass": "ZombiePropertySheet",
+            "objdata": {
+                "ArtCenter": {
+                    "x": 90,
+                    "y": 125
+                },
+                "AttackRect": {
+                    "mHeight": 95,
+                    "mWidth": 20,
+                    "mX": 15,
+                    "mY": 0
+                },
+                "ConditionImmunities": [
+                    {
+                        "Condition": "poisoned"
+                    },
+                    {
+                        "Condition": "contagiouspoison"
+                    },
+		    {
+			"Condition": "decaypoison"
+		    }
+                ],
+                "CanSpawnPlantFood": true,
+                "Cost": 150,
+                "EatDPS": 100,
+                "GroundTrackName": "ground_swatch",
+                "HitRect": {
+                    "mHeight": 95,
+                    "mWidth": 32,
+                    "mX": 10,
+                    "mY": 0
+                },
+                "Hitpoints": 650,
+                "ScaledProps": [
+                    {
+                        "Arg1": 1.3,
+                        "Arg2": 0.05,
+                        "Formula": "standard",
+                        "Key": "Hitpoints"
+                    },
+                    {
+                        "Arg1": 1.3,
+                        "Arg2": 0.05,
+                        "Formula": "standard",
+                        "Key": "EatDPS"
+                    },
+                    {
+                        "Formula": "constant",
+                        "Key": "Speed"
+                    },
+                    {
+                        "Formula": "constant",
+                        "Key": "WavePointCost"
+                    }
+                ],
+                "ShadowOffset": {
+                    "x": 5,
+                    "y": 0,
+                    "z": 1.4
+                },
+                "Speed": 0.5,
+                "WavePointCost": 200,
+                "Weight": 0,
+                "ZombieStats": [
+                    {
+                        "Type": "toughness",
+                        "Value": "toughness4"
+                    },
+                    {
+                        "Type": "speed",
+                        "Value": "speed5"
+                    }
+                ]
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "servant_imp",
+		"servant_girl_imp"
+            ],
+            "objdata": {
+                "TypeName": "servant_imp",
+                "ZombieClass": "ZombieImp",
+                "Properties": "RTID(ZombieServantGirlImpDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieServantGirlImpGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieServantGirlAudio",
+                    "ZombieGlobalGargantuarAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Imp",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_SERVANT_GIRL_IMP",
+		"HomeWorld": "travellog",
+		"AlmanacBackdropName": "market",
+                "IsFemaleZombie": true,
+                "Placeable": true
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "servant_black_imp",
+		"servant_girl_black_imp"
+            ],
+            "objdata": {
+                "TypeName": "servant_black_imp",
+                "ZombieClass": "ZombieImp",
+                "Properties": "RTID(ZombieServantGirlImpDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieServantGirlBlackImpGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieServantGirlAudio",
+                    "ZombieGlobalGargantuarAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Imp",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_SERVANT_GIRL_BLACK_IMP",
+		"HomeWorld": "travellog",
+		"AlmanacBackdropName": "market",
+                "IsFemaleZombie": true,
+                "Placeable": true
+            }
+        },
+        {
+            "aliases": [
+                "ZombieServantGirlImpDefault"
+            ],
+            "objclass": "ZombiePropertySheet",
+            "objdata": {
+                "ArtCenter": {
+                    "x": 102,
+                    "y": 124
+                },
+		"AlmanacOffset": {
+		    "x": 5
+		},
+                "AttackRect": {
+                    "mHeight": 80,
+                    "mWidth": 20,
+                    "mX": 15,
+                    "mY": 0
+                },
+                "CanSpawnPlantFood": false,
+                "Cost": 150,
+                "EatDPS": 100,
+                "GroundTrackName": "ground_swatch",
+                "HitRect": {
+                    "mHeight": 80,
+                    "mWidth": 42,
+                    "mX": 0,
+                    "mY": 10
+                },
+                "Hitpoints": 190,
+                "ConditionImmunities": [
+                    {
+                        "Condition": "poisoned"
+                    },
+                    {
+                        "Condition": "contagiouspoison"
+                    },
+                    {
+                        "Condition": "butter"
+                    },
+                    {
+                        "Condition": "blownoff"
+                    },
+		    {
+			"Condition": "decaypoison"
+		    }
+                ],
+                "HypnoshroomEffectOffset": {
+                    "x": 0,
+                    "y": 48
+                },
+                "ScaledProps": [
+                    {
+                        "Arg1": 1.3,
+                        "Arg2": 0.05,
+                        "Formula": "standard",
+                        "Key": "Hitpoints"
+                    },
+                    {
+                        "Arg1": 1.3,
+                        "Arg2": 0.05,
+                        "Formula": "standard",
+                        "Key": "EatDPS"
+                    },
+                    {
+                        "Formula": "constant",
+                        "Key": "Speed"
+                    },
+                    {
+                        "Formula": "constant",
+                        "Key": "WavePointCost"
+                    }
+                ],
+                "ShadowOffset": {
+                    "x": 5,
+                    "y": 0,
+                    "z": 0.8
+                },
+                "Size": "imp",
+                "Speed": 0.22,
+                "WavePointCost": 100,
+                "Weight": 1000,
+                "ZombieStats": [
+                    {
+                        "Type": "toughness",
+                        "Value": "toughness1"
+                    },
+                    {
+                        "Type": "speed",
+                        "Value": "speed2"
+                    }
+                ]
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "servant_besom",
+		"servant_girl_besom"
+            ],
+            "objdata": {
+                "TypeName": "servant_besom",
+                "ZombieClass": "ZombieRiftJane",
+                "Properties": "RTID(ZombieServantGirlBesomDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieServantGirlBesomGroup",
+                    "ZombieEightiesMCGroup",
+                    "ZombieToolGroup",
+                    "ZombieGargantuarEffects"
+                ],
+                "AudioGroups": [
+                    "ZombieServantGirlAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_SERVANT_GIRL_BESOM",
+                "IsFemaleZombie": true,
+		"HomeWorld": "travellog",
+		"AlmanacBackdropName": "market"
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+		"servant_red_besom",
+                "servant_girl_red_besom"
+            ],
+            "objdata": {
+                "TypeName": "servant_red_besom",
+                "ZombieClass": "ZombieRiftJane",
+                "Properties": "RTID(ZombieServantGirlBesomDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieServantGirlRedBesomGroup",
+                    "ZombieServantGirlBesomGroup",
+                    "ZombieEightiesMCGroup",
+                    "ZombieToolGroup",
+                    "ZombieGargantuarEffects"
+                ],
+                "AudioGroups": [
+                    "ZombieServantGirlAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_SERVANT_GIRL_RED_BESOM",
+                "IsFemaleZombie": true,
+		"HomeWorld": "travellog",
+		"AlmanacBackdropName": "market"
+            }
+        },
+		{
+			"aliases": [
+				"ZombieServantGirlBesomDefault"
+			],
+			"objclass": "ZombieRiftJaneProps",
+			"objdata": {
+				"EatLabel": "eat",
+				"EatActionName": "cannon_fire",
+				"PushDamageToZombies": 1000,
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"HitRect": {
+                    			"mX": 10,
+                    			"mY": 10,
+                    			"mWidth": 32,
+                    			"mHeight": 95
+                		},
+                		"AttackRect": {
+                    			"mX": 15,
+                    			"mY": 0,
+                    			"mWidth": 20,
+                    			"mHeight": 95
+                		},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"Hitpoints": 480,
+				"ConditionImmunities": [
+                    			{
+                        			"Condition": "poisoned"
+                    			},
+                    			{
+                        			"Condition": "contagiouspoison"
+                    			},
+                    			{
+                        			"Condition": "butter"
+					},
+					{
+						"Condition": "affectEatdps"
+					},
+					{
+						"Condition": "decaypoison"
+					}
+                		],
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+                    			"x": 5,
+                    			"y": 0,
+                    			"z": 1.4
+                		},
+				"Speed": 0.2,
+				"WavePointCost": 300,
+				"Weight": 2500,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness3"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "servant_bell",
+		"servant_girl_bell"
+            ],
+            "objdata": {
+                "TypeName": "servant_bell",
+                "ZombieClass": "ZombieCarnieMagician",
+                "Properties": "RTID(ZombieServantGirlBellDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieServantGirlBellGroup",
+                    "ZombieServantGirlImpGroup",
+                    "ZombieServantGirlBlackImpGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieServantGirlAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_SERVANT_GIRL_BELL",
+		"HomeWorld": "travellog",
+		"AlmanacBackdropName": "market",
+                "IsBasicZombie": true
+            }
+        },
+        {
+            "aliases": [
+                "ZombieServantGirlBellDefault"
+            ],
+            "objclass": "ZombieCarnieMagicianProps",
+            "objdata": {
+                "Actions": [
+                    "RTID(ZombieServantGirlBellAction@ZombieActions)",
+                    "RTID(ZombieServantGirlBellAction@ZombieActions)",
+                    "RTID(ZombieServantGirlBellAction@ZombieActions)"
+                ],
+                "TeleportOtherStartTime": 999999,
+                "TeleportSelfStartTime": 9,
+                "DoveSpawnStartTime": 999999,
+                "TimeBetweenTeleportOther": 999999,
+                "TimeBetweenTeleportSelf": 16,
+                "TimeBetweenDoveSpawn": 999999,
+                "TeleportationFailPercentage": 0,
+                "ImmuneToPlantRestrictionSet": {
+                    "List": [],
+                    "ListType": "excludelist"
+                },
+                "ArtCenter": {
+                    "x": 90,
+                    "y": 125
+                },
+		"AlmanacOffset": {
+		    "x": 5
+		},
+                "AttackRect": {
+                    "mHeight": 95,
+                    "mWidth": 20,
+                    "mX": 15,
+                    "mY": 0
+                },
+                "ConditionImmunities": [
+                    {
+                        "Condition": "poisoned"
+                    },
+                    {
+                        "Condition": "contagiouspoison"
+                    },
+                    {
+                        "Condition": "butter"
+                    },
+		    {
+			"Condition": "decaypoison"
+		    }
+                ],
+                "CanSpawnPlantFood": true,
+                "Cost": 150,
+                "EatDPS": 100,
+                "GroundTrackName": "ground_swatch",
+                "HitRect": {
+                    "mHeight": 95,
+                    "mWidth": 32,
+                    "mX": 10,
+                    "mY": 10
+                },
+                "ShadowOffset": {
+                    "x": 5,
+                    "y": 0,
+                    "z": 1.4
+                },
+                "Hitpoints": 480,
+                "ScaledProps": [
+                    {
+                        "Arg1": 1.3,
+                        "Arg2": 0.05,
+                        "Formula": "standard",
+                        "Key": "Hitpoints"
+                    },
+                    {
+                        "Formula": "constant",
+                        "Key": "Speed"
+                    }
+                ],
+                "Speed": 0.19,
+                "WavePointCost": 400,
+                "Weight": 3000,
+                "ZombieStats": [
+                    {
+                        "Type": "toughness",
+                        "Value": "toughness3"
+                    },
+                    {
+                        "Type": "speed",
+                        "Value": "speed2"
+                    }
+                ]
+            }
+        },
+	{
+            "objclass": "ZombieDropZombiesOnBoardActionDefinition",
+            "aliases": [
+                "ZombieServantGirlBellAction"
+            ],
+            "objdata": {
+                "Weight": 5,
+                "RepeatMin": 0,
+                "RepeatMax": 0,
+                "ColumnEnd": 4,
+                "ColumnStart": 4,
+                "MinSpawn": 4,
+                "MaxSpawn": 4,
+                "CenterOnInstigator": true,
+                "ZombieNames": [
+                    "servant_black_imp"
+                ],
+                "ZombieWeights": [
+                    100
+                ],
+                "TimeBeforeSpawn": 2,
+                "ZombieFallTime": 0,
+                "RiseFromGround": true,
+                "RampUpAnimation": "ATSGF_shake",
+                "LoopingAnimation": "idle",
+                "RampDownAnimation": "",
+                "EffectTypeToShow": "",
+                "DropAudioEvent": ""
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "servant_red_bell",
+		"servant_girl_red_bell"
+            ],
+            "objdata": {
+                "TypeName": "servant_red_bell",
+                "ZombieClass": "ZombieCarnieMagician",
+                "Properties": "RTID(ZombieServantGirlRedBellDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieServantGirlRedBellGroup",
+                    "ZombieServantGirlImpGroup",
+                    "ZombieServantGirlBlackImpGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieServantGirlAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_SERVANT_GIRL_RED_BELL",
+		"HomeWorld": "travellog",
+		"AlmanacBackdropName": "market",
+                "IsBasicZombie": true
+            }
+        },
+        {
+            "aliases": [
+                "ZombieServantGirlRedBellDefault"
+            ],
+            "objclass": "ZombieCarnieMagicianProps",
+            "objdata": {
+                "Actions": [
+                    "RTID(ZombieServantGirlRedBellAction@ZombieActions)",
+                    "RTID(ZombieServantGirlRedBellAction@ZombieActions)",
+                    "RTID(ZombieServantGirlRedBellAction@ZombieActions)"
+                ],
+                "TeleportOtherStartTime": 999999,
+                "TeleportSelfStartTime": 9,
+                "DoveSpawnStartTime": 999999,
+                "TimeBetweenTeleportOther": 999999,
+                "TimeBetweenTeleportSelf": 16,
+                "TimeBetweenDoveSpawn": 999999,
+                "TeleportationFailPercentage": 0,
+                "ImmuneToPlantRestrictionSet": {
+                    "List": [],
+                    "ListType": "excludelist"
+                },
+                "ArtCenter": {
+                    "x": 90,
+                    "y": 125
+                },
+		"AlmanacOffset": {
+		    "x": 5
+		},
+                "AttackRect": {
+                    "mHeight": 95,
+                    "mWidth": 20,
+                    "mX": 15,
+                    "mY": 0
+                },
+                "ConditionImmunities": [
+                    {
+                        "Condition": "poisoned"
+                    },
+                    {
+                        "Condition": "contagiouspoison"
+                    },
+                    {
+                        "Condition": "butter"
+                    },
+		    {
+			"Condition": "decaypoison"
+		    }
+                ],
+                "CanSpawnPlantFood": true,
+                "Cost": 150,
+                "EatDPS": 100,
+                "GroundTrackName": "ground_swatch",
+                "HitRect": {
+                    "mHeight": 95,
+                    "mWidth": 32,
+                    "mX": 10,
+                    "mY": 10
+                },
+                "ShadowOffset": {
+                    "x": 5,
+                    "y": 0,
+                    "z": 1.4
+                },
+                "Hitpoints": 480,
+                "ScaledProps": [
+                    {
+                        "Arg1": 1.3,
+                        "Arg2": 0.05,
+                        "Formula": "standard",
+                        "Key": "Hitpoints"
+                    },
+                    {
+                        "Formula": "constant",
+                        "Key": "Speed"
+                    }
+                ],
+                "Speed": 0.19,
+                "WavePointCost": 400,
+                "Weight": 1500,
+                "ZombieStats": [
+                    {
+                        "Type": "toughness",
+                        "Value": "toughness3"
+                    },
+                    {
+                        "Type": "speed",
+                        "Value": "speed2"
+                    }
+                ]
+            }
+        },
+        {
+            "objclass": "ZombieDropZombiesOnBoardActionDefinition",
+            "aliases": [
+                "ZombieServantGirlRedBellAction"
+            ],
+            "objdata": {
+                "Weight": 5,
+                "RepeatMin": 0,
+                "RepeatMax": 0,
+                "ColumnEnd": 4,
+                "ColumnStart": 4,
+                "MinSpawn": 4,
+                "MaxSpawn": 4,
+                "CenterOnInstigator": true,
+                "ZombieNames": [
+                    "servant_imp"
+                ],
+                "ZombieWeights": [
+                    100
+                ],
+                "TimeBeforeSpawn": 2,
+                "ZombieFallTime": 0,
+                "RiseFromGround": true,
+                "RampUpAnimation": "ATSGF_shake",
+                "LoopingAnimation": "idle",
+                "RampDownAnimation": "",
+                "EffectTypeToShow": "",
+                "DropAudioEvent": ""
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "servant_tea",
+		"servant_girl_tea"
+            ],
+            "objdata": {
+                "TypeName": "servant_tea",
+                "ZombieClass": "ZombieWickedhermit",
+                "Properties": "RTID(ZombieServantGirlTeaDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieServantGirlTeaGroup",
+                    "ZombieServantGirlRedTeaGroup",
+                    "ZombieDummyGroup",
+                    "HypnoShroomEffects",
+                    "ZombieTreadmillBrainGroup",
+                    "ZombieTreadmillGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieServantGirlAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Wickedhermit",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_SERVANT_GIRL_TEA",
+                "IsFemaleZombie": true,
+		"HomeWorld": "travellog",
+		"AlmanacBackdropName": "market"
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+		"servant_red_tea",
+                "servant_girl_red_tea"
+            ],
+            "objdata": {
+                "TypeName": "servant_red_tea",
+                "ZombieClass": "ZombieWickedhermit",
+                "Properties": "RTID(ZombieServantGirlTeaDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieServantGirlTeaGroup",
+                    "ZombieServantGirlRedTeaGroup",
+                    "ZombieDummyGroup",
+                    "HypnoShroomEffects",
+                    "ZombieTreadmillBrainGroup",
+                    "ZombieTreadmillGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieServantGirlAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Wickedhermit",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_SERVANT_GIRL_RED_TEA",
+                "IsFemaleZombie": true,
+		"HomeWorld": "travellog",
+		"AlmanacBackdropName": "market"
+            }
+        },
+        {
+            "aliases": [
+                "ZombieServantGirlTeaDefault"
+            ],
+            "objclass": "ZombieWickedhermitProps",
+            "objdata": {
+                "FurnaceDestroySpawnZombieType": "tea_speedup_for_zombies",
+                "FurnaceDestroySpawnZombieNumber": 1,
+                "LandToLayGridItem": "whitecrater",
+                "ArtCenter": {
+                    "x": 90,
+                    "y": 125
+                },
+		"AlmanacOffset": {
+		    "x": 5
+		},
+                "AttackRect": {
+                    "mHeight": 95,
+                    "mWidth": 20,
+                    "mX": 15,
+                    "mY": 0
+                },
+                "ConditionImmunities": [
+                    {
+                        "Condition": "poisoned"
+                    },
+                    {
+                        "Condition": "contagiouspoison"
+                    },
+		    {
+			"Condition": "decaypoison"
+                    },
+                    {
+                        "Condition": "butter"
+                    }
+                ],
+                "CanSpawnPlantFood": true,
+                "Cost": 150,
+                "EatDPS": 100,
+                "GroundTrackName": "ground_swatch",
+                "HitRect": {
+                    "mHeight": 95,
+                    "mWidth": 32,
+                    "mX": 10,
+                    "mY": 10
+                },
+                "Hitpoints": 480,
+                "ScaledProps": [
+                    {
+                        "Arg1": 1.3,
+                        "Arg2": 0.05,
+                        "Formula": "standard",
+                        "Key": "Hitpoints"
+                    },
+                    {
+                        "Arg1": 1.3,
+                        "Arg2": 0.05,
+                        "Formula": "standard",
+                        "Key": "EatDPS"
+                    },
+                    {
+                        "Formula": "constant",
+                        "Key": "Speed"
+                    },
+                    {
+                        "Formula": "constant",
+                        "Key": "WavePointCost"
+                    }
+                ],
+                "ShadowOffset": {
+                    "x": 5,
+                    "y": 0,
+                    "z": 1.4
+                },
+                "Speed": 0.24,
+                "WavePointCost": 650,
+                "Weight": 3000,
+                "ZombieStats": [
+                    {
+                        "Type": "toughness",
+                        "Value": "toughness3"
+                    },
+                    {
+                        "Type": "speed",
+                        "Value": "speed3"
+                    }
+                ]
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+		"servant_fly",
+                "servant_girl_fly"
+            ],
+            "objdata": {
+                "TypeName": "servant_fly",
+                "ZombieClass": "ZombieMarketFlyingServant",
+                "Properties": "RTID(ZombieServantGirlFlyDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieServantGirlFlyGroup",
+                    "ZombieToolGroup",
+                    "ZombieLostCityBugEffectsGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieServantGirlAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_FlyingServant",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_SERVANT_GIRL_FLY",
+                "IsFemaleZombie": true,
+		"HomeWorld": "travellog",
+		"AlmanacBackdropName": "market",
+                "Placeable": true
+            }
+        },
+        {
+            "aliases": [
+                "ZombieServantGirlFlyDefault"
+            ],
+            "objclass": "ZombieBugProps",
+            "objdata": {
+                "#comment": "ShadowOffset is synced to the shadow of the basic that is dropped.  Please maintain sync.",
+                "ArmDropFraction": -1,
+                "ArtCenter": {
+                    "x": 90,
+                    "y": 125
+                },
+		"AlmanacOffset": {
+		    "x": 20
+		},
+                "MaxTideLoweredPercent": 0.001,
+                "CanSpawnPlantFood": true,
+                "IsSpawnedFlying": true,
+                "Cost": 150,
+                "DamageAmountWhichAlsoKillsBasic": 114514,
+                "DamageFraction": 0,
+                "EatDPS": 100,
+                "GroundTrackName": "ground_swatch",
+                "AttackRect": {
+                    "mHeight": 95,
+                    "mWidth": 20,
+                    "mX": 15,
+                    "mY": 0
+                },
+                "ConditionImmunities": [
+                    {
+                        "Condition": "poisoned"
+                    },
+                    {
+                        "Condition": "contagiouspoison"
+                    },
+                    {
+                        "Condition": "blownoff"
+                    },
+                    {
+                        "Condition": "butter"
+                    },
+		    {
+			"Condition": "decaypoison"
+		    }
+                ],
+                "HitRect": {
+                    "mHeight": 95,
+                    "mWidth": 32,
+                    "mX": 10,
+                    "mY": 10
+                },
+                "Hitpoints": 310,
+                "NormalDeathWhenMowed": false,
+                "PlantsWhichAlsoKillBasic": {
+                    "List": [],
+                    "ListType": "includelist"
+                },
+                "ScaledProps": [
+                    {
+                        "Arg1": 1.3,
+                        "Arg2": 0.05,
+                        "Formula": "standard",
+                        "Key": "Hitpoints"
+                    },
+                    {
+                        "Arg1": 1.3,
+                        "Arg2": 0.05,
+                        "Formula": "standard",
+                        "Key": "EatDPS"
+                    },
+                    {
+                        "Formula": "constant",
+                        "Key": "Speed"
+                    },
+                    {
+                        "Formula": "constant",
+                        "Key": "WavePointCost"
+                    }
+                ],
+                "ShadowOffset": {
+                    "x": 5,
+                    "y": 0,
+                    "z": 1.4
+                },
+                "SkipHeadDropState": true,
+                "SpawnedZombieName": "servant_fly_basic",
+                "Speed": 0.3,
+                "WavePointCost": 650,
+                "Weight": 1500,
+                "ZombieStats": [
+                    {
+                        "Type": "toughness",
+                        "Value": "toughness3"
+                    },
+                    {
+                        "Type": "speed",
+                        "Value": "speed4"
+                    }
+                ]
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+		"servant_fly_black",
+                "servant_girl_fly_black",
+                "servant_girl_black_fly"
+            ],
+            "objdata": {
+                "TypeName": "servant_fly_black",
+                "ZombieClass": "ZombieMarketFlyingServant",
+                "Properties": "RTID(ZombieServantGirlFlyBlackDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieServantGirlFlyBlackGroup",
+                    "ZombieToolGroup",
+                    "ZombieLostCityBugEffectsGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieServantGirlAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_FlyingServant",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_SERVANT_GIRL_FLY_BLACK",
+                "IsFemaleZombie": true,
+		"HomeWorld": "travellog",
+		"AlmanacBackdropName": "market",
+                "Placeable": true
+            }
+        },
+        {
+            "aliases": [
+                "ZombieServantGirlFlyBlackDefault"
+            ],
+            "objclass": "ZombieBugProps",
+            "objdata": {
+                "#comment": "ShadowOffset is synced to the shadow of the basic that is dropped.  Please maintain sync.",
+                "ArmDropFraction": -1,
+                "ArtCenter": {
+                    "x": 90,
+                    "y": 125
+                },
+                "CanSpawnPlantFood": true,
+                "IsSpawnedFlying": true,
+                "Cost": 150,
+                "DamageAmountWhichAlsoKillsBasic": 114514,
+                "DamageFraction": 0,
+                "EatDPS": 100,
+                "MaxTideLoweredPercent": 0.001,
+                "GroundTrackName": "ground_swatch",
+                "AttackRect": {
+                    "mHeight": 95,
+                    "mWidth": 20,
+                    "mX": 15,
+                    "mY": 0
+                },
+                "ConditionImmunities": [
+                    {
+                        "Condition": "poisoned"
+                    },
+                    {
+                        "Condition": "contagiouspoison"
+                    },
+                    {
+                        "Condition": "butter"
+                    },
+                    {
+                        "Condition": "blownoff"
+                    },
+		    {
+			"Condition": "decaypoison"
+		    }
+                ],
+                "HitRect": {
+                    "mHeight": 95,
+                    "mWidth": 32,
+                    "mX": 10,
+                    "mY": -20
+                },
+                "Hitpoints": 310,
+                "NormalDeathWhenMowed": false,
+                "PlantsWhichAlsoKillBasic": {
+                    "List": [],
+                    "ListType": "includelist"
+                },
+                "ScaledProps": [
+                    {
+                        "Arg1": 1.3,
+                        "Arg2": 0.05,
+                        "Formula": "standard",
+                        "Key": "Hitpoints"
+                    },
+                    {
+                        "Arg1": 1.3,
+                        "Arg2": 0.05,
+                        "Formula": "standard",
+                        "Key": "EatDPS"
+                    },
+                    {
+                        "Formula": "constant",
+                        "Key": "Speed"
+                    },
+                    {
+                        "Formula": "constant",
+                        "Key": "WavePointCost"
+                    }
+                ],
+                "ShadowOffset": {
+                    "x": 5,
+                    "y": 0,
+                    "z": 1.4
+                },
+                "SkipHeadDropState": true,
+                "SpawnedZombieName": "servant_fly_black_basic",
+                "Speed": 0.3,
+                "WavePointCost": 650,
+                "Weight": 1500,
+                "ZombieStats": [
+                    {
+                        "Type": "toughness",
+                        "Value": "toughness3"
+                    },
+                    {
+                        "Type": "speed",
+                        "Value": "speed4"
+                    }
+                ]
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+		"servant_fly_basic",
+                "servant_girl_fly_basic"
+            ],
+            "objdata": {
+                "TypeName": "servant_fly_basic",
+		"DisplayTypeName": "servant_fly",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieServantGirlFlyBasicDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieServantGirlFlyGroup",
+                    "ZombieToolGroup",
+                    "ZombieLostCityBugEffectsGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieServantGirlAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_SERVANT_GIRL_FLY_BASIC",
+                "IsFemaleZombie": true,
+		"HomeWorld": "travellog",
+		"AlmanacBackdropName": "market",
+                "IsBasicZombie": true
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+		"servant_fly_black_basic",
+                "servant_girl_fly_black_basic"
+            ],
+            "objdata": {
+                "TypeName": "servant_fly_black_basic",
+		"DisplayTypeName": "servant_fly_black",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieServantGirlFlyBasicDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieServantGirlFlyBlackGroup",
+                    "ZombieToolGroup",
+                    "ZombieLostCityBugEffectsGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieServantGirlAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_SERVANT_GIRL_FLY_BLACK_BASIC",
+                "IsFemaleZombie": true,
+		"HomeWorld": "travellog",
+		"AlmanacBackdropName": "market",
+                "IsBasicZombie": true
+            }
+        },
+	{
+            "aliases": [
+                "ZombieServantGirlFlyBasicDefault"
+            ],
+            "objclass": "ZombiePropertySheet",
+            "objdata": {
+                "ArtCenter": {
+                    "x": 90,
+                    "y": 125
+                },
+                "AttackRect": {
+                    "mHeight": 95,
+                    "mWidth": 20,
+                    "mX": 15,
+                    "mY": 0
+                },
+                "ConditionImmunities": [
+                    {
+                        "Condition": "poisoned"
+                    },
+                    {
+                        "Condition": "contagiouspoison"
+                    },
+                    {
+                        "Condition": "butter"
+                    },
+		    {
+			"Condition": "decaypoison"
+                    }
+                ],
+                "CanSpawnPlantFood": true,
+                "Cost": 150,
+                "EatDPS": 100,
+                "GroundTrackName": "ground_swatch",
+                "HitRect": {
+                    "mHeight": 95,
+                    "mWidth": 32,
+                    "mX": 10,
+                    "mY": 10
+                },
+                "Hitpoints": 170,
+                "ScaledProps": [
+                    {
+                        "Arg1": 1.3,
+                        "Arg2": 0.05,
+                        "Formula": "standard",
+                        "Key": "Hitpoints"
+                    },
+                    {
+                        "Arg1": 1.3,
+                        "Arg2": 0.05,
+                        "Formula": "standard",
+                        "Key": "EatDPS"
+                    },
+                    {
+                        "Formula": "constant",
+                        "Key": "Speed"
+                    },
+                    {
+                        "Formula": "constant",
+                        "Key": "WavePointCost"
+                    }
+                ],
+                "ShadowOffset": {
+                    "x": 5,
+                    "y": 0,
+                    "z": 1.4
+                },
+                "Speed": 0.185,
+                "WavePointCost": 100,
+                "Weight": 1000,
+                "ZombieStats": [
+                    {
+                        "Type": "toughness",
+                        "Value": "toughness1"
+                    },
+                    {
+                        "Type": "speed",
+                        "Value": "speed2"
+                    }
+                ]
+            }
+        },
+        {
+			"objclass": "ZombieType",
+			"aliases": [
+				"desire_shikaisen",
+				"shikaisen"
+			],
+			"objdata": {
+				"TypeName": "desire_shikaisen",
+				"ZombieClass": "ZombieWickedhermit",
+				"Properties": "RTID(ZombieShikaisenDefault@ZombieProperties)",
+				"ResourceGroups": [
+					"ZombieEightiesMCGroup",
+					"ZombieToolGroup",
+					"ModernPortalGroup",
+					"ZombieHamsterBallGroup",
+					"ZombieTouhouShikaisenGroup"
+				],
+				"AudioGroups": [
+					"VaseBreakerAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_Wickedhermit",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_TOUHOU_SHIKAISEN",
+				"HomeWorld": "travellog",
+				"AlmanacBackdropName": "market"
+			}
+		},
+		{
+            "objclass": "ZombieWickedhermitProps",
+            "aliases": [
+                "ZombieShikaisenDefault"
+            ],
+            "objdata": {
+                "ArmDropFraction": -1,
+                "Hitpoints": 670,
+                "EatDPS": 100,
+		"Speed": 0.185,
+                "CanSpawnPlantFood": true,
+                "FurnaceDestroySpawnZombieType": "shikaisen_pot",
+                "#comment1": "This can decided the Zombie Type that be spawned by fscommond('spawn_owl') when Wickedhermit Zombie's furnace destroy",
+                "FurnaceDestroySpawnZombieNumber": 1,
+                "#comment2": "This can decided how many Zombie Owl will be spawned by fscommond('spawn_owl')",
+                "LandToLayGridItem": "whitecrater",
+                "HitRect": {
+                    "mX": 10,
+                    "mY": 10,
+                    "mWidth": 32,
+                    "mHeight": 95
+                },
+                "AttackRect": {
+                    "mX": 15,
+                    "mY": 0,
+                    "mWidth": 20,
+                    "mHeight": 95
+                },
+                "Cost": 150,
+                "WavePointCost": 500,
+                "Weight": 3000,
+                "ArtCenter": {
+                    "x": 90,
+                    "y": 125
+                },
+                "ShadowOffset": {
+                    "x": 5,
+                    "y": 0,
+                    "z": 1.4
+                },
+                "ConditionImmunities": [
+                    {
+                        "Condition": "shrunken"
+                    },
+                    {
+                        "Condition": "shrinking"
+                    }
+                ],
+                "GroundTrackName": "ground_swatch",
+                "ScaledProps": [
+                    {
+                        "Key": "Hitpoints",
+                        "Formula": "standard",
+                        "Arg1": 1.3,
+                        "Arg2": 0.05
+                    },
+                    {
+                        "Key": "EatDPS",
+                        "Formula": "standard",
+                        "Arg1": 1.3,
+                        "Arg2": 0.05
+                    },
+                    {
+                        "Key": "Speed",
+                        "Formula": "constant"
+                    },
+                    {
+                        "Key": "WavePointCost",
+                        "Formula": "constant"
+                    }
+                ],
+		"ZombieStats": [
+                    {
+                        "Type": "toughness",
+                        "Value": "toughness4"
+                    },
+                    {
+                        "Type": "speed",
+                        "Value": "speed2"
+                    }
+                ]
+            }
+        },
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"shikaisen_basic"
+			],
+			"objdata": {
+				"TypeName": "shikaisen_basic",
+				"DisplayTypeName": "desire_shikaisen",
+				"ZombieClass": "ZombieBasic",
+				"Properties": "RTID(ZombieShikaisenBasicDefault@ZombieProperties)",
+				"ResourceGroups": [
+					"ZombieEightiesMCGroup",
+					"ZombieTouhouShikaisenGroup"
+				],
+				"AudioGroups": [],
+				"AnimRigClass": "ZombieAnimRig_Tutorial",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_TOUHOU_SHIKAISEN_NORMAL",
+				"HomeWorld": "travellog",
+				"AlmanacBackdropName": "market"
+			}
+		},
+	{
+            "aliases": [
+                "ZombieShikaisenBasicDefault"
+            ],
+            "objclass": "ZombiePropertySheet",
+            "objdata": {
+                "ArtCenter": {
+                    "x": 90,
+                    "y": 125
+                },
+                "AttackRect": {
+                    "mHeight": 95,
+                    "mWidth": 20,
+                    "mX": 15,
+                    "mY": 0
+                },
+                "CanSpawnPlantFood": true,
+                "Cost": 150,
+                "EatDPS": 150,
+                "GroundTrackName": "ground_swatch",
+                "HitRect": {
+                    "mHeight": 95,
+                    "mWidth": 32,
+                    "mX": 10,
+                    "mY": 10
+                },
+                "ConditionImmunities": [
+                    {
+                        "Condition": "shrunken"
+                    },
+                    {
+                        "Condition": "shrinking"
+                    }
+                ],
+                "Hitpoints": 355,
+                "ScaledProps": [
+                    {
+                        "Arg1": 1.3,
+                        "Arg2": 0.05,
+                        "Formula": "standard",
+                        "Key": "Hitpoints"
+                    },
+                    {
+                        "Arg1": 1.3,
+                        "Arg2": 0.05,
+                        "Formula": "standard",
+                        "Key": "EatDPS"
+                    },
+                    {
+                        "Formula": "constant",
+                        "Key": "Speed"
+                    },
+                    {
+                        "Formula": "constant",
+                        "Key": "WavePointCost"
+                    }
+                ],
+                "ShadowOffset": {
+                    "x": 5,
+                    "y": 0,
+                    "z": 1.4
+                },
+                "Speed": 0.23,
+                "WavePointCost": 100,
+                "Weight": 1000,
+                "ZombieStats": [
+                    {
+                        "Type": "toughness",
+                        "Value": "toughness1"
+                    },
+                    {
+                        "Type": "speed",
+                        "Value": "speed2"
+                    }
+                ]
+            }
+        },
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"shikaisen_pot"
+			],
+			"objdata": {
+				"TypeName": "shikaisen_pot",
+				"DisplayTypeName": "desire_shikaisen",
+				"ZombieClass": "ZombieGeneralBase",
+				"Properties": "RTID(ZombiePotDefault@ZombieProperties)",
+				"ResourceGroups": [
+					"ZombieEightiesMCGroup",
+					"ZombieTouhouShikaisenGroup"
+				],
+				"AudioGroups": [
+					"VaseBreakerAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_GeneralBase",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_TOUHOU_SHIKAISEN_POT",
+				"HomeWorld": "travellog",
+				"AlmanacBackdropName": "market"
+			}
+		},
+	{
+            "objclass": "ZombieGeneralProps",
+            "aliases": [
+                "ZombiePotDefault"
+            ],
+            "objdata": {
+                "Speed": 0.185,
+                "Hitpoints": 1000,
+                "EatDPS": 100,
+                "CanSpawnPlantFood": false,
+                "CanTriggerZombieWin": false,
+                "CanBePlantTossedStrong": false,
+                "CanBePlantTossedWeak": false,
+                "Actions": [
+                    "RTID(ShikaisenPotDrop@ZombieActions)",
+                    "RTID(ShikaisenPotIdle@ZombieActions)",
+                    "RTID(ShikaisenConjure@ZombieActions)",
+                    "RTID(SpawnShikensenBasic@ZombieActions)",
+                    "RTID(GridItemPotDying@ZombieActions)"
+                ],
+                "LifetimeSeconds": "infinity",
+                "GeneralPhase": 0,
+                "CollidePlants": "ignore",
+                "CollideHypnotizedZombies": "ignore",
+                "HitRect": {
+                    "mX": 10,
+                    "mY": 10,
+                    "mWidth": 32,
+                    "mHeight": 95
+                },
+                "AttackRect": {
+                    "mX": 99999,
+                    "mY": 99999,
+                    "mWidth": 20,
+                    "mHeight": 95
+                },
+                "Cost": 150,
+                "WavePointCost": 0,
+                "Weight": 0,
+                "ArtCenter": {
+                    "x": 90,
+                    "y": 125
+                },
+                "ShadowOffset": {
+                    "x": 5,
+                    "y": 0,
+                    "z": 1.4
+                },
+                "GroundTrackName": "none",
+                "ZombieStats": [
+                    {
+                        "Type": "toughness",
+                        "Value": "toughness5"
+                    },
+                    {
+                        "Type": "speed",
+                        "Value": "speed0"
+                    }
+                ],
+                "ConditionImmunities": [
+                    {
+                        "Percent": 0,
+                        "Condition": "chill"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "freeze"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "stun"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "butter"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "bleeding"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "lightning"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "rush"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "speedup1"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "speedup2"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "speedup3"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "speedup4"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "tossed"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "blownoff"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "warpingIn"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "warpingOut"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "potionspeed1"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "potionspeed2"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "potionspeed3"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "potiontoughness1"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "potiontoughness2"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "potiontoughness3"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "hypnotized"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "sunbeaned"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "morphedtogargantuar"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "knighted"
+                    },
+                    {
+                        "Percent": 1,
+                        "Condition": "damageflash"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "zombossstun"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "haunted"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "icecubed"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "present_boxed"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "sapped"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "stalled"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "speeddown1"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "speeddown2"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "speeddown3"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "speeddown4"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "invincible"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "poisoned"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "contagiouspoison"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "bloomingheartdebuff"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "gummed"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "stoneblocked"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "potionsuper1"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "potionsuper2"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "potionsuper3"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "dazeystunned"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "shrinking"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "shrunken"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "decaypoison"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "hasplantfood"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "iceblocked"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "stickybombed"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "hotdateattraction"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "terrified"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "petrified"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "invisibleslow"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "stackableslow"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "concealmintdamagescale"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "poweredconcealmintdamagescalepowered"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "corpseexplosion"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "suiciding"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "solarflared"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "suncarrier50"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "suncarrier100"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "suncarrier250"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "blockolistunned"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "bramblebushstunned"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "bramblebushgrabbed"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "levitaterflicked"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "tombtanglerdrag"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "affectEatdps"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "buzzbuttonelectrified"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "buzzbuttoncharged"
+                    },
+                    {
+                        "Percent": 0,
+                        "Condition": "unsuspendable"
+                    },
+		    {
+			"Condition": "affectEatdps"
+		    },
+		    {
+			"Condition": "begoniachilled"
+		    },
+		    {
+			"Condition": "begoniafire"
+		    },
+		    {
+			"Condition": "begoniamixed"
+		    },
+		    {
+			"Condition": "popsmart"
+                    },
+                    {
+			"Condition": "eatdpsUp"
+                    }
+                ],
+                "ScaledProps": [
+                    {
+                        "Key": "Hitpoints",
+                        "Formula": "standard",
+                        "Arg1": 1.3,
+                        "Arg2": 0.05
+                    },
+                    {
+                        "Key": "EatDPS",
+                        "Formula": "standard",
+                        "Arg1": 1.3,
+                        "Arg2": 0.05
+                    },
+                    {
+                        "Key": "Speed",
+                        "Formula": "constant"
+                    },
+                    {
+                        "Key": "WavePointCost",
+                        "Formula": "constant"
+                    },
+                    {
+                        "Key": "LifetimeSeconds",
+                        "Formula": "constant"
+                    },
+                    {
+                        "Key": "GeneralPhase",
+                        "Formula": "constant"
+                    }
+                ]
+            }
+        },
+	{
+            "objclass": "ZombiePlayAnimationActionDefinition",
+            "aliases": [
+                "ShikaisenPotDrop"
+            ],
+            "objdata": {
+                "Weight": 1,
+                "RepeatMin": 0,
+                "RepeatMax": 0,
+                "SoundOnStart": "",
+                "Phase": "Entering",
+                "PhaseAfter": "Attacking",
+                "AnimationToPlay": "pot_drop"
+            }
+        },
+        {
+            "objclass": "ZombieIdleActionDefinition",
+            "aliases": [
+                "ShikaisenPotIdle"
+            ],
+            "objdata": {
+                "Weight": 1,
+                "RepeatMin": 0,
+                "RepeatMax": 0,
+                "CanPickAgain": true,
+                "Phase": "Attacking",
+                "PhaseAfter": "Stunned",
+                "MinDuration": 10.0,
+                "MaxDuration": 10.0
+            }
+        },
+        {
+            "objclass": "ZombiePlayAnimationActionDefinition",
+            "aliases": [
+                "ShikaisenConjure"
+            ],
+            "objdata": {
+                "Weight": 1,
+                "RepeatMin": 0,
+                "RepeatMax": 0,
+                "Invulnerable": true,
+                "SoundOnStart": "",
+                "Phase": "Stunned",
+                "PhaseAfter": "RetreatInjured",
+                "AnimationToPlay": "pot_conjure"
+            }
+        },
+        {
+            "objclass": "ZombieDropActionDefinition",
+            "aliases": [
+                "SpawnShikensenBasic"
+            ],
+            "objdata": {
+                "Weight": 1,
+                "RepeatMin": 0,
+                "RepeatMax": 0,
+                "Phase": "RetreatInjured",
+                "PhaseAfter": "Destroy",
+                "Animation": "",
+                "AwardDrop": "RTID(SpawnShikaisenBasicDrop@.)",
+                "EffectPam": "",
+                "EffectAnim": "",
+                "EffectOffsetX": 30,
+                "EffectOffsetY": 99999
+            }
+        },
+        {
+            "objclass": "ZombieDropProps",
+            "aliases": [
+                "SpawnShikaisenBasicDrop"
+            ],
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "shikaisen_basic",
+                        "Hypnotized": false,
+                        "TossGridXDelta": 0,
+                        "TossGridYDelta": 0,
+                        "SpawnGridXDelta": 0,
+                        "SpawnGridYDelta": 0,
+                        "SpawnGridZDelta": 0,
+                        "TossDuration": 0,
+                        "TossApexHeight": 0
+                    }
+                ]
+            }
+        },
+        {
+            "objclass": "ZombiePlayAnimationActionDefinition",
+            "aliases": [
+                "GridItemPotDying"
+            ],
+            "objdata": {
+                "Weight": 1,
+                "RepeatMin": 0,
+                "RepeatMax": 0,
+                "Phase": "Dying",
+                "PhaseAfter": "Destroy",
+                "AnimationToPlay": "die"
+            }
+        },
+        	{
+			"objclass": "ZombieType",
+			"aliases": [
+				"desire_emperor",
+				"emperor"
+			],
+			"objdata": {
+				"TypeName": "desire_emperor",
+				"ZombieClass": "ZombieEmperor",
+				"Properties": "RTID(ZombieEmperorDefault@ZombieProperties)",
+				"ResourceGroups": [
+					"ZombieAsukaHaozuGroup",
+					"PlantCabbagepult",
+					"PlantKernelpult",
+					"PlantMelonpult",
+					"PlantWinterMelon",
+					"ZombieDarkKingKnightEffect",
+					"ZombieDarkWizardGroup",
+					"ZombieEmperorEffectsGroup"
+				],
+				"AudioGroups": [
+					"ZombieDarkAgesKingAudio",
+					"AudioTenDesires"
+				],
+				"AnimRigClass": "ZombieAnimRig_Emperor",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_ASUKA_HAOZU",
+				"HomeWorld": "travellog",
+				"AlmanacBackdropName": "market"
+			}
+		},
+	{
+            "objclass": "ZombieEmperorProps",
+            "aliases": [
+                "ZombieEmperorDefault"
+            ],
+            "objdata": {
+                "Actions": [
+                    "RTID(ZombieEmperorRankAction@ZombieActions)",
+                    "RTID(ZombieEmperorDemoteAction@ZombieActions)"
+                ],
+                "#comment": "these are actions of Emperor Zombie, similar to Magician Zombie",
+                "RankStartTime": 8,
+                "#comment1": "this is the first time to use the first action in Actions(similar to that in Magician Zombie's softcode",
+                "RankBetweenTime": 15,
+                "#comment2": "this is the interval time to use the first action in Actions(similar to that in Magician Zombie's softcode",
+                "DemoteStartTime": 17,
+                "#comment3": "this is the first time to use the second action in Actions(similar to that in Magician Zombie's softcode",
+                "DemoteBetweenTime": 20,
+                "#comment4": "this is the interval time to use the second action in Actions(similar to that in Magician Zombie's softcode",
+                "Speed": 0.175,
+                "Hitpoints": 910,
+                "EatDPS": 100,
+                "CanSpawnPlantFood": true,
+                "ArmDropFraction": -1,
+                "SkipHeadDropState": true,
+                "ArtCenter": {
+                    "x": 96,
+                    "y": 130
+                },
+		"AlmanacOffset": {
+		    "y": 15
+		},
+                "AttackRect": {
+                    "mHeight": 80,
+                    "mWidth": 20,
+                    "mX": 15,
+                    "mY": 0
+                },
+                "Cost": 150,
+                "HitRect": {
+                    "mHeight": 80,
+                    "mWidth": 32,
+                    "mX": 10,
+                    "mY": 10
+                },
+                "HypnoshroomEffectOffset": {
+                    "x": -6,
+                    "y": 36
+                },
+                "WavePointCost": 800,
+                "Weight": 2500,
+                "ShadowOffset": {
+                    "x": 5,
+                    "y": 0,
+                    "z": 0.7
+                },
+                "GroundTrackName": "ground_swatch",
+                "ScaledProps": [
+                    {
+                        "Key": "Hitpoints",
+                        "Formula": "standard",
+                        "Arg1": 1.3,
+                        "Arg2": 0.05
+                    },
+                    {
+                        "Key": "EatDPS",
+                        "Formula": "standard",
+                        "Arg1": 1.3,
+                        "Arg2": 0.05
+                    },
+                    {
+                        "Key": "Speed",
+                        "Formula": "constant"
+                    },
+                    {
+                        "Key": "WavePointCost",
+                        "Formula": "constant"
+                    }
+                ],
+		"ZombieStats": [
+                    {
+                        "Type": "toughness",
+                        "Value": "toughness5"
+                    },
+                    {
+                        "Type": "speed",
+                        "Value": "speed2"
+                    }
+                ]
+            }
+        },
+        {
+            "objclass": "ZombieEmperorRankActionDefinition",
+            "aliases": [
+                "ZombieEmperorRankAction"
+            ],
+            "objdata": {
+                "#comment0": "animation of this action named 'rank'",
+                "NumOfGivingRankToZombies": 3,
+                "#comment": "this is maximum number of zombies can be given rank at once",
+                "TargetableZombie": {
+					"ListType": "includelist",
+					"List": [
+						"tutorial",
+						"tutorial_armor1",
+						"mummy",
+						"mummy_armor1",
+						"pirate",
+						"pirate_armor1",
+						"cowboy",
+						"cowboy_armor1",
+						"future",
+						"future_armor1",
+						"dark",
+						"dark_armor1",
+						"beach",
+						"beach_armor1",
+						"beach_fem",
+						"beach_fem_armor1",
+						"beach_duckytube",
+						"beach_duckytube_armor1",
+						"beach_fem_duckytube",
+						"beach_fem_duckytube_armor1",
+						"iceage",
+						"iceage_armor1",
+						"iceage_charred",
+						"lostcity",
+						"lostcity_armor1",
+						"eighties",
+						"eighties_armor1",
+						"eighties_flag",
+						"eighties_flag_armor1",
+						"eighties_8bit",
+						"eighties_8bit_armor1",
+						"dino",
+						"dino_armor1",
+						"dino_flag",
+						"dino_flag_armor1",
+						"dino_flag_veteran",
+						"dino_flag_veteran_armor1",
+						"duckytube",
+						"duckytube_armor1",
+						"steam",
+						"steam_armor1",
+						"steam_back",
+						"steam_back_armor1",
+						"steam_miner",
+						"steam_miner_armor1",
+						"steam_miner_train",
+						"steam_miner_train_armor1",
+						"steam_barrel",
+						"roman",
+						"roman_armor1",
+						"roman_flag",
+						"roman_flag_armor1",
+						"skycity",
+						"skycity_armor1",
+						"skycity_flag",
+						"skycity_flag_armor1",
+						"skycity_flag_veteran",
+						"skycity_flag_veteran_armor1",
+						"zcorp",
+						"zcorp_armor1",
+						"zcorp_fem",
+						"zcorp_fem_armor1",
+						"zcorp_flag",
+						"zcorp_flag_armor1",
+						"rift",
+						"rift_armor1",
+						"servant",
+						"servant_armor1",
+						"servant_red",
+						"servant_red_armor1",
+						"plantagenet",
+						"plantagenet_armor1",
+						"valentines",
+						"valentines_armor1",
+						"stpatrick",
+						"stpatrick_armor1",
+						"spring",
+						"spring_armor1",
+						"birthday",
+						"birthday_armor1",
+						"children_armor1",
+						"summer_basic",
+						"summer_armor1",
+						"bighead",
+						"bighead_armor1",
+						"halloween",
+						"halloween_armor1",
+						"hero_electricboogaloo",
+						"hero_armor1",
+						"foodfight",
+						"foodfight_armor1",
+						"feastivus",
+						"feastivus_armor1",
+						"lunar",
+						"lunar_armor1",
+						"harvest",
+						"harvest_armor1",
+						"sportzball",
+						"sportzball_armor1",
+						"sportzball_foam",
+						"sportzball_armor1_foam",
+						"summer_flag",
+						"summer_flag_armor1",
+						"sportzball_flag",
+						"sportzball_flag_armor1",
+						"harvest_flag_armor1",
+						"zombotany_peashooter",
+						"zombotany_gatling",
+						"zombotany_wallnut",
+						"zombotany_jalapeno",
+						"zombotany_repeater",
+						"zombotany_firepeashooter",
+						"zombotany_phatbeet",
+						"zombotany_snowpea",
+						"zombotany_splitpea",
+						"zombotany_boomflower",
+						"zombotany_puffshroom",
+						"zombotany_cheesestrawberry"
+					]
+				},
+		"#comment2": "this is list of zombies can be given rank",
+                "ProjectilePopAnim": "POPANIM_EFFECTS_EFFECTS_EMPEROR_LIGHTNINGBOLT",
+                "#comment3": "this is animation of rank projectile to zombie, this is similar to that in Action of Wizard "
+            }
+        },
+        {
+            "objclass": "ZombieEmperorDemoteActionDefinition",
+            "aliases": [
+                "ZombieEmperorDemoteAction"
+            ],
+            "objdata": {
+                "#comment0": "animation of this action named 'demote'",
+                "NumOfGivingRankToPlants": 3,
+                "#comment": "this is maximum number of plants can be demoted rank at once",
+                "TargetablePlant": {
+					"ListType": "excludelist",
+					"List": [
+						"sunflower",
+						"iceburg",
+						"gravebuster",
+						"aloe",
+						"powerlily",
+						"twinsunflower",
+						"springbean",
+						"wallnut",
+						"tallnut",
+						"holonut",
+						"blover",
+						"powerplant",
+						"empea",
+						"saucer",
+						"pineapple",
+						"zoybeanpod",
+						"imitater",
+						"chilibean",
+						"marigold",
+						"sunshroom",
+						"sunbean",
+						"hypnoshroom",
+						"magnetshroom",
+						"lilypad",
+						"hotpotato",
+						"chardguard",
+						"stunion",
+						"hurrikale",
+						"stallia",
+						"goldleaf",
+						"thymewarp",
+						"garlic",
+						"intensivecarrot",
+						"gumnut",
+						"primalwallnut",
+						"primalsunflower",
+						"perfumeshroom",
+						"moonflower",
+						"shadowshroom",
+						"murkadamia",
+						"noctarine",
+						"noctarinecloud",
+						"sapfling",
+						"sweetpotato",
+						"boingsetta",
+						"caulipower",
+						"unused_43",
+						"torchwood",
+						"goldbloom",
+						"imppear",
+						"shrinkingviolet",
+						"solartomato",
+						"missiletoe",
+						"pumpkin",
+						"shinevine",
+						"olivepit",
+						"solarsage"
+					]
+				},
+		"#comment2": "this is list of plants can be demoted",
+		"DamageReductionPercentage": 0.5,
+		"#comment3": "this is damage reduction percentage of projectiles from demoted plants; For example, Pea shooted from demoted Pea Shooter can only damage 10",
+                "ProjectilePopAnim": "POPANIM_EFFECTS_DARK_WIZARD_LIGHTNINGBOLT",
+	        "DemotePopAnim": "POPANIM_EFFECTS_EFFECTS_EMPEROR_HUISE",
+		"#comment4": "this can decide what demote animation on each plant",
+                "RankArtPosition": {
+                    "x": 90,
+                    "y": 90
+                },
+		"#comment5": "this decide where demote animation is on each plant"
+            }
+        },
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"zombossmech_market",
+				"greedymech_market",
+				"zombossmech_goon"
+			],
+			"objdata": {
+				"TypeName": "zombossmech_market",
+				"ZombieClass": "ZombieZombossMech_Goon",
+				"Properties": "RTID(ZombieZombossMechMarket@ZombieProperties)",
+				"ResourceGroups": [
+					"ZombieEgyptZombossVeteranGroup",
+					"ZombieGreedyKleptomatonGroup",
+					"ZombossCommonGroup",
+					"ZombieSkyCityBattlePlaneGroup",
+					"Pooyan",
+					"HeianWind"
+				],
+				"AudioGroups": [
+					"ZombossGlobalAudio",
+					"ZombieGreedyKleptomatonAudio",
+					"ZombossFutureAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_ZombossMech_Goon",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_GREEDY_KLEPTOMATON",
+				"HomeWorld": "travellog",
+				"AlmanacBackdropName": "market",
+				"Placeable": false
+			}
+		},
+		{
+			"aliases": [
+				"ZombieZombossMechMarket"
+			],
+			"objclass": "ZombieZombossMechGoonProps",
+			"objdata": {
+				"AlmanacOffset": {
+					"x": 10,
+					"y": 75
+				},
+				"AlmanacScale": 0.9,
+				"ArtCenter": {
+					"x": 50,
+					"y": 137
+				},
+				"AttackRect": {
+					"mHeight": 125,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"HitRect": {
+					"mHeight": 340,
+					"mWidth": 115,
+					"mX": 30,
+					"mY": 10
+				},
+				"GridExtents": {
+					"mX": 3,
+					"mY": 2
+				},
+				"ShadowOffset": {
+					"x": 35,
+					"y": 0,
+					"z": 1
+				},
+				"ShadowScaling": {
+					"x": 3,
+					"y": 3
+				},
+				"GroundTrackName": "ground_swatch",
+				"CanBeFlicked": false,
+				"CanBePlantTossedStrong": false,
+				"CanBePlantTossedWeak": false,
+				"CanSpawnPlantFood": false,
+				"CanTriggerZombieWin": false,
+				"HideDuringIntro": true,
+				"IsValidPinchTarget": false,
+				"ArmDropFraction": -1,
+				"SkipHeadDropState": true,
+				"CrosshairAnimation": "missile_lock_reticle",
+				"CrosshairPopAnim": "POPANIM_EFFECTS_ZOMBOSS_MISSILE_EXPLOSION_EGYPT_VETERAN",
+				"RocketAnimation": "missile",
+				"RocketExplosionAnimation": "missile_explosion",
+				"MaxColumn": 7,
+				"MinColumn": 5,
+				"PowerUpDamageModifier": 0.25,
+				"FoeEatDamageReflectPct": 4,
+				"Speed": 0.1,
+				"SquashGridItems": false,
+				"SquashZombies": true,
+				"ConditionImmunities": [
+					{
+						"Condition": "chill"
+					},
+					{
+						"Condition": "freeze"
+					},
+					{
+						"Condition": "stun"
+					},
+					{
+						"Condition": "stalled"
+					},
+					{
+						"Condition": "potionsuper2"
+					},
+					{
+						"Condition": "transparent"
+					},
+					{
+						"Condition": "affectEatdps"
+					},
+					{
+						"Condition": "begoniachilled"
+					},
+					{
+						"Condition": "begoniafire"
+					},
+					{
+						"Condition": "begoniamixed"
+					},
+					{
+						"Condition": "eatdpsUp"
+					},
+					{
+						"Condition": "popsmart"
+					}
+				],
+				"AuraAction": "RTID(ZombossMarketAura@ZombieActions)",
+				"Stages": [
+					{
+						"Actions": [
+							"RTID(ZombossMarketWalk1@ZombieActions)",
+							"RTID(ZombossMarketJump1@ZombieActions)",
+							"RTID(ZombossMarketSpawn1@ZombieActions)",
+							"RTID(ZombossMarketSpawnBack1@ZombieActions)",
+							"RTID(ZombossMarketCardSpawn1@ZombieActions)",
+							"RTID(ZombossMarketFire1@ZombieActions)"
+						],
+						"AnimRateModifier": 1,
+						"ChilledDurationFromFrozen": 10,
+						"DamageIndexFull": 0,
+						"DamageIndexHalf": 0,
+						"HitPoints": 4000,
+						"IdleTime": {
+							"Max": 0.7,
+							"Min": 0.7
+						},
+						"RetreatAction": "RTID(ZombossMarketRetreatJump@ZombieActions)",
+						"StunDamageScale": 1.5,
+						"StunStaggerBackMovement": 80,
+						"StunStaggerBackTime": 0.4,
+						"StunTime": 4
+					},
+					{
+						"Actions": [
+							"RTID(ZombossMarketJump2@ZombieActions)",
+							"RTID(ZombossMarketSpawn2@ZombieActions)",
+							"RTID(ZombossMarketSpawn2Alt@ZombieActions)",
+							"RTID(ZombossMarketSpawnBack2@ZombieActions)",
+							"RTID(ZombossMarketCardSpawn2@ZombieActions)",
+							"RTID(ZombossMarketTableSpawn2@ZombieActions)",
+							"RTID(ZombossMarketBlower2@ZombieActions)",
+							"RTID(ZombossMarketGunUp@ZombieActions)",
+							"RTID(ZombossMarketGunDown@ZombieActions)"
+						],
+						"AnimRateModifier": 1.5,
+						"ChilledDurationFromFrozen": 10,
+						"DamageIndexFull": 3,
+						"DamageIndexHalf": 3,
+						"HitPoints": 9000,
+						"IdleTime": {
+							"Max": 0.4,
+							"Min": 0.4
+						},
+						"RetreatAction": "RTID(ZombossMarketRetreatJump@ZombieActions)",
+						"StunDamageScale": 1.5,
+						"StunStaggerBackMovement": 80,
+						"StunStaggerBackTime": 0.4,
+						"StunTime": 3
+					},
+					{
+						"Actions": [
+							"RTID(ZombossMarketSpawn3@ZombieActions)",
+							"RTID(ZombossMarketSpawn3Alt@ZombieActions)",
+							"RTID(ZombossMarketSpawnBack3@ZombieActions)",
+							"RTID(ZombossMarketGunMid@ZombieActions)",
+							"RTID(ZombossMarketRush3@ZombieActions)",
+							"RTID(ZombossMarketCardSpawn3@ZombieActions)",
+							"RTID(ZombossMarketTableSpawn3@ZombieActions)",
+							"RTID(ZombossMarketJump2@ZombieActions)",
+							"RTID(ZombossMarketFire3@ZombieActions)"
+						],
+						"AnimRateModifier": 2,
+						"ChilledDurationFromFrozen": 10,
+						"DamageIndexFull": 6,
+						"DamageIndexHalf": 6,
+						"HitPoints": 10000,
+						"IdleTime": {
+							"Max": 0.1,
+							"Min": 0.1
+						},
+						"RetreatAction": "RTID(ZombossMarketRetreatJump@ZombieActions)",
+						"StunDamageScale": 1.5,
+						"StunStaggerBackMovement": 80,
+						"StunStaggerBackTime": 0.4,
+						"StunTime": 2
+					}
+				],
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness8"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed3"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieLayerDisableActionDefinition",
+			"aliases": [
+				"ZombossMarketAura"
+			],
+			"objdata": {
+				"Weight": 4,
+				"RepeatMin": 1,
+				"RepeatMax": 2,
+				"WalkVerticalChance": 0.5,
+				"AnimToPlay": "phase3stun",
+				"LayersToDisable": [
+					"cigarette",
+					"cigaretteglow"
+				]
+			}
+		},
+		{
+			"objclass": "ZombossGoonWalkActionDefinition",
+			"aliases": [
+				"ZombossMarketWalk1"
+			],
+			"objdata": {
+				"Weight": 3,
+				"RepeatMin": 1,
+				"RepeatMax": 2,
+				"WalkVerticalChance": 0.5
+			}
+		},
+		{
+			"objclass": "ZombossGoonJumpActionDefinition",
+			"aliases": [
+				"ZombossMarketJump1"
+			],
+			"objdata": {
+				"Weight": 4,
+				"RepeatMin": 1,
+				"RepeatMax": 2,
+				"JumpHeight": 200,
+				"JumpHangTime": 1.5
+			}
+		},
+		{
+			"objclass": "ZombossGoonJumpActionDefinition",
+			"aliases": [
+				"ZombossMarketJump2"
+			],
+			"objdata": {
+				"Weight": 3,
+				"RepeatMin": 1,
+				"RepeatMax": 1,
+				"JumpHeight": 200,
+				"JumpHangTime": 1.5
+			}
+		},
+		{
+			"objclass": "ZombossGoonJumpActionDefinition",
+			"aliases": [
+				"ZombossMarketRetreatJump"
+			],
+			"objdata": {
+				"Weight": 5,
+				"RepeatMin": 1,
+				"RepeatMax": 1,
+				"JumpHeight": 300,
+				"JumpHangTime": 1.5
+			}
+		},
+		{
+			"objclass": "ZombieDropZombiesOnBoardActionDefinition",
+			"aliases": [
+				"ZombossMarketSpawn1"
+			],
+			"objdata": {
+				"Weight": 10,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"ColumnEnd": "7",
+				"ColumnStart": "6",
+				"MinSpawn": "3",
+				"MaxSpawn": "4",
+				"ZombieNames": [
+					"plantagenet",
+					"plantagenet_armor1",
+					"plantagenet_armor2",
+					"desire_shikaisen"
+				],
+				"ZombieWeights": [
+					90,
+					80,
+					30,
+					60
+				],
+				"TimeBeforeSpawn": 1,
+				"ZombieFallTime": 1.5,
+				"RiseFromGround": true,
+				"RampUpAnimation": "",
+				"LoopingAnimation": "zombie_spawn",
+				"RampDownAnimation": "",
+				"EffectTypeToShow": "",
+				"DropAudioEvent": ""
+			}
+		},
+		{
+			"objclass": "ZombieDropZombiesOnBoardActionDefinition",
+			"aliases": [
+				"ZombossMarketSpawnBack1"
+			],
+			"objdata": {
+				"Weight": 7,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"ColumnEnd": "10",
+				"ColumnStart": "10",
+				"MinSpawn": "2",
+				"MaxSpawn": "2",
+				"ZombieNames": [
+					"plantagenet_wine"
+				],
+				"ZombieWeights": [
+					100
+				],
+				"TimeBeforeSpawn": 2,
+				"ZombieFallTime": 1.5,
+				"RiseFromGround": true,
+				"RampUpAnimation": "",
+				"LoopingAnimation": "zombie_spawn",
+				"RampDownAnimation": "",
+				"EffectTypeToShow": "",
+				"DropAudioEvent": ""
+			}
+		},
+		{
+			"objclass": "ZombieDropZombiesOnBoardActionDefinition",
+			"aliases": [
+				"ZombossMarketCardSpawn1"
+			],
+			"objdata": {
+				"Weight": 6,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"ColumnEnd": "7",
+				"ColumnStart": "5",
+				"MinSpawn": "2",
+				"MaxSpawn": "2",
+				"ZombieNames": [
+					"zomboss_marketbox_greedymarket",
+					"zomboss_marketbox_highvoltagepoles",
+					"zomboss_marketbox_speedracermower"
+				],
+				"ZombieWeights": [
+					50,
+					50,
+					60
+				],
+				"TimeBeforeSpawn": 0,
+				"ZombieFallTime": 1.5,
+				"RampUpAnimation": "",
+				"LoopingAnimation": "stomp",
+				"RampDownAnimation": "",
+				"EffectTypeToShow": "",
+				"DropAudioEvent": ""
+			}
+		},
+		{
+			"objclass": "ZombieDropZombiesOnBoardActionDefinition",
+			"aliases": [
+				"ZombossMarketSpawn2"
+			],
+			"objdata": {
+				"Weight": 8,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"ColumnEnd": "7",
+				"ColumnStart": "6",
+				"MinSpawn": "4",
+				"MaxSpawn": "5",
+				"ZombieNames": [
+					"servant",
+					"servant_armor1",
+					"servant_armor2",
+					"servant_fly",
+					"servant_besom",
+					"servant_tea"
+				],
+				"ZombieWeights": [
+					30,
+					70,
+					60,
+					20,
+					20,
+					20		
+				],
+				"TimeBeforeSpawn": 1,
+				"ZombieFallTime": 1.5,
+				"RiseFromGround": true,
+				"RampUpAnimation": "",
+				"LoopingAnimation": "zombie_spawn",
+				"RampDownAnimation": "",
+				"EffectTypeToShow": "",
+				"DropAudioEvent": ""
+			}
+		},
+		{
+			"objclass": "ZombieDropZombiesOnBoardActionDefinition",
+			"aliases": [
+				"ZombossMarketSpawn2Alt"
+			],
+			"objdata": {
+				"Weight": 8,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"ColumnEnd": "7",
+				"ColumnStart": "6",
+				"MinSpawn": "4",
+				"MaxSpawn": "5",
+				"ZombieNames": [
+					"servant_red",
+					"servant_red_armor1",
+					"servant_red_armor2",
+					"servant_fly_black",
+					"servant_red_besom",
+					"servant_red_tea"
+				],
+				"ZombieWeights": [
+					30,
+					70,
+					60,
+					20,
+					20,
+					20	
+				],
+				"TimeBeforeSpawn": 1,
+				"ZombieFallTime": 1.5,
+				"RiseFromGround": true,
+				"RampUpAnimation": "",
+				"LoopingAnimation": "zombie_spawn",
+				"RampDownAnimation": "",
+				"EffectTypeToShow": "",
+				"DropAudioEvent": ""
+			}
+		},
+		{
+			"objclass": "ZombieDropZombiesOnBoardActionDefinition",
+			"aliases": [
+				"ZombossMarketSpawnBack2"
+			],
+			"objdata": {
+				"Weight": 7,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"ColumnEnd": "10",
+				"ColumnStart": "10",
+				"MinSpawn": "2",
+				"MaxSpawn": "3",
+				"ZombieNames": [
+					"servant_bell",
+					"servant_red_bell",
+					"plantagenet_noblewoman"
+				],
+				"ZombieWeights": [
+					50,
+					50,
+					50
+				],
+				"TimeBeforeSpawn": 2,
+				"ZombieFallTime": 1.5,
+				"RiseFromGround": true,
+				"RampUpAnimation": "",
+				"LoopingAnimation": "zombie_spawn",
+				"RampDownAnimation": "",
+				"EffectTypeToShow": "",
+				"DropAudioEvent": ""
+			}
+		},
+		{
+			"objclass": "ZombieDropZombiesOnBoardActionDefinition",
+			"aliases": [
+				"ZombossMarketCardSpawn2"
+			],
+			"objdata": {
+				"Weight": 5,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"ColumnEnd": "7",
+				"ColumnStart": "5",
+				"MinSpawn": "2",
+				"MaxSpawn": "3",
+				"ZombieNames": [
+					"zomboss_marketbox_gumexplosion",
+					"zomboss_marketbox_yetihaunted",
+					"zomboss_marketbox_peashootervacation"
+				],
+				"ZombieWeights": [
+					50,
+					60,
+					50
+				],
+				"TimeBeforeSpawn": 0,
+				"ZombieFallTime": 1.5,
+				"RampUpAnimation": "",
+				"LoopingAnimation": "stomp",
+				"RampDownAnimation": "",
+				"EffectTypeToShow": "",
+				"DropAudioEvent": ""
+			}
+		},
+		{
+			"objclass": "ZombieDropZombiesOnBoardActionDefinition",
+			"aliases": [
+				"ZombossMarketTableSpawn2"
+			],
+			"objdata": {
+				"Weight": 6,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"ColumnEnd": "6",
+				"ColumnStart": "4",
+				"MinSpawn": "3",
+				"MaxSpawn": "3",
+				"ZombieNames": [
+					"zomboss_servant_table_bell",
+					"zomboss_servant_table_besom",
+					"zomboss_servant_table_tea"
+				],
+				"ZombieWeights": [
+					50,
+					50,
+					50
+				],
+				"TimeBeforeSpawn": 0,
+				"ZombieFallTime": 1.5,
+				"RampUpAnimation": "",
+				"LoopingAnimation": "stomp",
+				"RampDownAnimation": "",
+				"EffectTypeToShow": "",
+				"DropAudioEvent": ""
+			}
+		},
+		{
+			"objclass": "ZombieDropZombiesOnBoardActionDefinition",
+			"aliases": [
+				"ZombossMarketSpawn3"
+			],
+			"objdata": {
+				"Weight": 10,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"ColumnEnd": "7",
+				"ColumnStart": "6",
+				"MinSpawn": "6",
+				"MaxSpawn": "6",
+				"ZombieNames": [
+					"plantagenet_armor1",
+					"plantagenet_armor2",
+					"servant_tea",
+					"servant_armor2",
+					"servant_red_tea",
+					"servant_red_armor2",
+					"desire_emperor",
+					"desire_shikaisen"
+				],
+				"ZombieWeights": [
+					80,
+					60,
+					80,
+					60,
+					80,
+					60,
+					30,
+					50		
+				],
+				"TimeBeforeSpawn": 1,
+				"ZombieFallTime": 1.5,
+				"RiseFromGround": true,
+				"RampUpAnimation": "",
+				"LoopingAnimation": "zombie_spawn",
+				"RampDownAnimation": "",
+				"EffectTypeToShow": "",
+				"DropAudioEvent": ""
+			}
+		},
+		{
+			"objclass": "ZombieDropZombiesOnBoardActionDefinition",
+			"aliases": [
+				"ZombossMarketSpawn3Alt"
+			],
+			"objdata": {
+				"Weight": 6,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"ColumnEnd": "7",
+				"ColumnStart": "5",
+				"MinSpawn": "8",
+				"MaxSpawn": "8",
+				"ZombieNames": [
+					"plantagenet_gargantuar",
+					"plantagenet_imp",
+					"servant_imp",
+					"servant_black_imp",
+					"desire_emperor"
+				],
+				"ZombieWeights": [
+					10,
+					120,
+					120,
+					120,
+					30
+				],
+				"TimeBeforeSpawn": 1,
+				"ZombieFallTime": 1.5,
+				"RiseFromGround": true,
+				"RampUpAnimation": "",
+				"LoopingAnimation": "zombie_spawn",
+				"RampDownAnimation": "",
+				"EffectTypeToShow": "",
+				"DropAudioEvent": ""
+			}
+		},
+		{
+			"objclass": "ZombieDropZombiesOnBoardActionDefinition",
+			"aliases": [
+				"ZombossMarketSpawnBack3"
+			],
+			"objdata": {
+				"Weight": 5,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"ColumnEnd": "10",
+				"ColumnStart": "10",
+				"MinSpawn": "1",
+				"MaxSpawn": "1",
+				"ZombieNames": [
+					"plantagenet_princess"
+				],
+				"ZombieWeights": [
+					50
+				],
+				"TimeBeforeSpawn": 2,
+				"ZombieFallTime": 1.5,
+				"RampUpAnimation": "",
+				"LoopingAnimation": "zombie_spawn",
+				"RampDownAnimation": "",
+				"EffectTypeToShow": "",
+				"DropAudioEvent": ""
+			}
+		},
+		{
+			"objclass": "ZombieDropZombiesOnBoardActionDefinition",
+			"aliases": [
+				"ZombossMarketCardSpawn3"
+			],
+			"objdata": {
+				"Weight": 5,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"ColumnEnd": "7",
+				"ColumnStart": "5",
+				"MinSpawn": "3",
+				"MaxSpawn": "3",
+				"ZombieNames": [
+					"zomboss_marketbox_popsmart",
+					"zomboss_marketbox_iceburgfrenzy",
+					"zomboss_marketbox_buildaline",
+					"zomboss_marketbox_greedymarket"
+				],
+				"ZombieWeights": [
+					30,
+					60,
+					20,
+					50
+				],
+				"TimeBeforeSpawn": 0,
+				"ZombieFallTime": 1.5,
+				"RampUpAnimation": "",
+				"LoopingAnimation": "stomp",
+				"RampDownAnimation": "",
+				"EffectTypeToShow": "",
+				"DropAudioEvent": ""
+			}
+		},
+		{
+			"objclass": "ZombieDropZombiesOnBoardActionDefinition",
+			"aliases": [
+				"ZombossMarketTableSpawn3"
+			],
+			"objdata": {
+				"Weight": 5,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"ColumnEnd": "6",
+				"ColumnStart": "4",
+				"MinSpawn": "3",
+				"MaxSpawn": "3",
+				"ZombieNames": [
+					"zomboss_servant_table_bell",
+					"zomboss_servant_table_besom",
+					"zomboss_servant_table_tea"
+				],
+				"ZombieWeights": [
+					50,
+					50,
+					50
+				],
+				"TimeBeforeSpawn": 0,
+				"ZombieFallTime": 1.5,
+				"RampUpAnimation": "",
+				"LoopingAnimation": "stomp",
+				"RampDownAnimation": "",
+				"EffectTypeToShow": "",
+				"DropAudioEvent": ""
+			}
+		},
+		{
+			"objclass": "ZombossGoonStompActionDefinition",
+			"aliases": [
+				"ZombossMarketStomp1"
+			],
+			"objdata": {
+				"Weight": 11,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"RangeInTiles": 3
+			}
+		},
+		{
+			"objclass": "ZombossGoonRushActionDefinition",
+			"aliases": [
+				"ZombossMarketRush3"
+			],
+			"objdata": {
+				"Weight": 4,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"RushTime": 1.25,
+				"RushStartAnim": "charge_start",
+				"RushLoopAnim": "charge_loop",
+				"RushEndAnim": "charge_end"
+			}
+		},
+		{
+			"objclass": "ZombossGoonBlowActionDefinition",
+			"aliases": [
+				"ZombossMarketBlower2"
+			],
+			"objdata": {
+				"Weight": 5,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"Projectile": "RTID(ZombossMarketWind@ProjectileTypes)",
+				"BlowDuration": 2.0,
+				"BlowSpeed": 0.75,
+				"BlowMinColumn": 2.5,
+				"BlowMaxColumn": 9.0
+			}
+		},
+		{
+			"objclass": "ZombossGoonShootActionDefinition",
+			"aliases": [
+				"ZombossMarketGunMid"
+			],
+			"objdata": {
+				"Weight": 8,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"ShootAnimStart": "gun_attack_middle_start",
+				"ShootAnimLoop": "gun_attack_middle_loop",
+				"ShootAnimEnd": "gun_attack_middle_end",
+				"Bullet": "RTID(ZombossMarketBullet@ProjectileTypes)",
+				"BulletCount": 70,
+				"ShootDuration": 2,
+				"ShotAngleDeg": 180,
+				"AngleVarianceDeg": 15,
+				"SpawnOffset": {
+					"x": 40.0,
+					"y": -35.0,
+					"z": 50.0
+				}
+			}
+		},
+		{
+			"objclass": "ZombossGoonShootActionDefinition",
+			"aliases": [
+				"ZombossMarketGunUp"
+			],
+			"objdata": {
+				"Weight": 6,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"ShootAnimStart": "gun_attack_upper_start",
+				"ShootAnimLoop": "gun_attack_upper_loop",
+				"ShootAnimEnd": "gun_attack_upper_end",
+				"Bullet": "RTID(ZombossMarketBulletUp@ProjectileTypes)",
+				"BulletCount": 70,
+				"ShootDuration": 2,
+				"ShotAngleDeg": 155,
+				"AngleVarianceDeg": 15,
+				"SpawnOffset": {
+					"x": -25.0,
+					"y": -95.0,
+					"z": 50.0
+				},
+				"CannotUseInRows": [
+					0,
+					1
+				]
+			}
+		},
+		{
+			"objclass": "ZombossGoonShootActionDefinition",
+			"aliases": [
+				"ZombossMarketGunDown"
+			],
+			"objdata": {
+				"Weight": 6,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"ShootAnimStart": "gun_attack_lower_start",
+				"ShootAnimLoop": "gun_attack_lower_loop",
+				"ShootAnimEnd": "gun_attack_lower_end",
+				"Bullet": "RTID(ZombossMarketBulletDown@ProjectileTypes)",
+				"BulletCount": 70,
+				"ShootDuration": 2,
+				"ShotAngleDeg": 205,
+				"AngleVarianceDeg": 15,
+				"SpawnOffset": {
+					"x": 65.0,
+					"y": 0.0,
+					"z": 50.0
+				},
+				"CannotUseInRows": [
+					3,
+					4
+				]
+			}
+		},
+		{
+			"objclass": "ZombossFireActionDefinition",
+			"aliases": [
+				"ZombossMarketFire1"
+			],
+			"objdata": {
+				"Weight": 4,
+				"RepeatMin": 0,
+				"RepeatMax": 1,
+				"FireMinColumn": 0,
+				"FireMaxColumn": 4,
+				"FireRowRange": 3,
+				"FireTargetTilesWeight": 0,
+				"FireTargetPlantWeight": 1,
+				"FireTargetEmptyWeight": 0,
+				"FireRocketHitTime": 0.75,
+				"FireRocketSpeed": 500,
+				"FireRocketDropSound": "Play_Zomb_Egypt_Zomboss_Attack_Projectile_Impact_Whistle",
+				"FireRocketCount": {
+					"Min": 1,
+					"Max": 1
+				}
+			}
+		},
+		{
+			"objclass": "ZombossFireActionDefinition",
+			"aliases": [
+				"ZombossMarketFire3"
+			],
+			"objdata": {
+				"Weight": 4,
+				"RepeatMin": 0,
+				"RepeatMax": 1,
+				"FireMinColumn": 0,
+				"FireMaxColumn": 4,
+				"FireRowRange": 3,
+				"FireTargetTilesWeight": 0,
+				"FireTargetPlantWeight": 1,
+				"FireTargetEmptyWeight": 0,
+				"FireRocketHitTime": 0.75,
+				"FireRocketSpeed": 500,
+				"FireRocketDropSound": "Play_Zomb_Egypt_Zomboss_Attack_Projectile_Impact_Whistle",
+				"FireRocketCount": {
+					"Min": 2,
+					"Max": 2
+				}
+			}
+		},
+		{
+			"objclass": "ProjectilePropertySheet",
+			"aliases": [
+				"ZombossMarketBullet"
+			],
+			"objdata": {
+				"BaseDamage": 25,
+				"HasShadow": false,
+				"CollisionFlags": [
+					"plants"
+				],
+				"DamageFlags": [
+					"shooter"
+				],
+				"InitialVelocity": [
+					{
+						"Min": -350,
+						"Max": -350
+					},
+					{
+						"Min": 0,
+						"Max": 0
+					},
+					{
+						"Min": 0,
+						"Max": 0
+					}
+				],
+				"InitialScale": {
+					"Min": 1.27,
+					"Max": 1.27
+				},
+				"AttachedPAM": "POPANIM_EFFECTS_BATTLEPLANE_BULLET",
+				"AttachedPAMOffset": {
+					"x": -90,
+					"y": -95
+				},
+				"AttachedPAMAnimationToPlay": [
+					"attack"
+				],
+				"CollisionRect": {
+					"mX": -15,
+					"mY": -15,
+					"mWidth": 30,
+					"mHeight": 30
+				},
+				"ImpactSoundEvent": "Play_Ignite",
+				"ImpactSoundThrottleTimer": 0.075,
+				"ImpactPAM": "POPANIM_EFFECTS_BATTLEPLANE_BULLET_HIT",
+				"ImpactPAMAnimationToPlay": [
+					"effect_allattack"
+				],
+				"ImpactOffset": [
+					{
+						"Min": 0,
+						"Max": 0
+					},
+					{
+						"Min": 0,
+						"Max": 0
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ProjectilePropertySheet",
+			"aliases": [
+				"ZombossMarketBulletUp"
+			],
+			"objdata": {
+				"BaseDamage": 25,
+				"HasShadow": false,
+				"CollisionFlags": [
+					"plants"
+				],
+				"DamageFlags": [
+					"shooter"
+				],
+				"InitialVelocity": [
+					{
+						"Min": -350,
+						"Max": -350
+					},
+					{
+						"Min": 0,
+						"Max": 0
+					},
+					{
+						"Min": 0,
+						"Max": 0
+					}
+				],
+				"InitialRotation": {
+					"Min": -0.45,
+					"Max": -0.45
+				},
+				"InitialScale": {
+					"Min": 1.27,
+					"Max": 1.27
+				},
+				"AttachedPAM": "POPANIM_EFFECTS_BATTLEPLANE_BULLET",
+				"AttachedPAMOffset": {
+					"x": -90,
+					"y": -95
+				},
+				"AttachedPAMAnimationToPlay": [
+					"attack"
+				],
+				"CollisionRect": {
+					"mX": -15,
+					"mY": -15,
+					"mWidth": 30,
+					"mHeight": 30
+				},
+				"ImpactSoundEvent": "Play_Ignite",
+				"ImpactSoundThrottleTimer": 0.075,
+				"ImpactPAM": "POPANIM_EFFECTS_BATTLEPLANE_BULLET_HIT",
+				"ImpactPAMAnimationToPlay": [
+					"effect_allattack"
+				],
+				"ImpactOffset": [
+					{
+						"Min": 0,
+						"Max": 0
+					},
+					{
+						"Min": 0,
+						"Max": 0
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ProjectilePropertySheet",
+			"aliases": [
+				"ZombossMarketBulletDown"
+			],
+			"objdata": {
+				"BaseDamage": 25,
+				"HasShadow": false,
+				"CollisionFlags": [
+					"plants"
+				],
+				"DamageFlags": [
+					"shooter"
+				],
+				"InitialVelocity": [
+					{
+						"Min": -350,
+						"Max": -350
+					},
+					{
+						"Min": 0,
+						"Max": 0
+					},
+					{
+						"Min": 0,
+						"Max": 0
+					}
+				],
+				"InitialRotation": {
+					"Min": 0.45,
+					"Max": 0.45
+				},
+				"InitialScale": {
+					"Min": 1.27,
+					"Max": 1.27
+				},
+				"AttachedPAM": "POPANIM_EFFECTS_BATTLEPLANE_BULLET",
+				"AttachedPAMOffset": {
+					"x": -90,
+					"y": -95
+				},
+				"AttachedPAMAnimationToPlay": [
+					"attack"
+				],
+				"CollisionRect": {
+					"mX": -15,
+					"mY": -15,
+					"mWidth": 30,
+					"mHeight": 30
+				},
+				"ImpactSoundEvent": "Play_Ignite",
+				"ImpactSoundThrottleTimer": 0.075,
+				"ImpactPAM": "POPANIM_EFFECTS_BATTLEPLANE_BULLET_HIT",
+				"ImpactPAMAnimationToPlay": [
+					"effect_allattack"
+				],
+				"ImpactOffset": [
+					{
+						"Min": 0,
+						"Max": 0
+					},
+					{
+						"Min": 0,
+						"Max": 0
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ProjectilePropertySheet",
+			"aliases": [
+				"ZombossMarketWind"
+			],
+			"objdata": {
+				"ClassName": "LeafBlowerProjectile",
+				"BaseDamage": 0,
+				"CollisionFlags": [
+					"ground",
+					"plants",
+					"normal_plants",
+					"tall_plants"
+				],
+				"DamageFlags": [
+					"none"
+				],
+				"DiesOnImpact": true,
+				"HasShadow": false,
+				"InitialVelocity": [
+					{
+						"Min": -300.0,
+						"Max": -300.0
+					},
+					{
+						"Min": 0.0,
+						"Max": 0.0
+					},
+					{
+						"Min": 0.0,
+						"Max": 0.0
+					}
+				],
+				"AttachedPAM": "POPANIM_EFFECTS_HEIAN_TORNADO",
+				"InitialScale": {
+					"Min": 1.35,
+					"Max": 1.35
+				},
+				"AttachedPAMOffset": {
+					"x": -112.5,
+					"y": -111.5
+				},
+				"AttachedPAMAnimationToPlay": [
+					"idle"
+				],
+				"CollisionRect": {
+					"mX": -10.0,
+					"mY": -10.0,
+					"mWidth": 20.0,
+					"mHeight": 20.0
+				}
+			}
+		}
+]
