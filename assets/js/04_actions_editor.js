@@ -144,7 +144,11 @@
                             setupZombieAutocomplete(actionName);
                             renderZombieDropList(actionName);
                         }, 0);
-                    } else if (actionClass === 'ZombossSpawnActionDefinition') {
+                    } else if (
+                        actionClass === 'ZombossSpawnActionDefinition' ||
+                        actionClass === 'ZombossSummonActionDefinition' ||
+                        Object.prototype.hasOwnProperty.call(actionData || {}, 'SpawnZombieTypes')
+                    ) {
                         actionHtml += `<div style="margin-bottom: 15px; padding: 10px; background: #2a3a2a; border-left: 3px solid #6a8a4a;">
                             <h5 style="color: #aaffaa; margin-top: 0; font-size: 0.9em;">Spawn Zombie Types</h5>
                             <div id="spawnZombieList_${actionName}" style="margin-bottom: 10px;"></div>

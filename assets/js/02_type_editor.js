@@ -18,7 +18,7 @@
                         <input type="text" data-type-key="${key}" value="${propName}" 
                                onchange="updatePropertiesField(this)">
                     `;
-                } else if (key === 'AttackRect' || key === 'HitRect') {
+                } else if (isRectObject(value)) {
                     let rectHtml = `<label>${key}</label><div class="rect-fields">`;
                     const rect = value || { mHeight: 0, mWidth: 0, mX: 0, mY: 0 };
                     
@@ -212,6 +212,14 @@
                 applyTemplateTypeLock();
             }, 0);
         }
+
+        function isRectObject(obj) {
+            if (typeof obj !== 'object' || obj === null || Array.isArray(obj)) return false;
+            const keys = Object.keys(obj);
+            const rectKeys = ['mHeight', 'mWidth', 'mX', 'mY'];
+            return keys.length === 4 && rectKeys.every(k => keys.includes(k));
+        }
+
         function renderAliases() {
             const cont = document.getElementById('aliasesContainer');
             if (!cont) return;

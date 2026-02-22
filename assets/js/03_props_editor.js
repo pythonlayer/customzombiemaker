@@ -90,7 +90,50 @@
                     </div></div>`;
                     
                     group.innerHTML = condHtml;
-                } else if (key === 'AttackRect' || key === 'HitRect') {
+                } else if (isIncludeExcludeListObject(value)) {
+                    const listObj = value && typeof value === 'object' ? value : { List: [], ListType: 'includelist' };
+                    const listValues = Array.isArray(listObj.List) ? listObj.List : [];
+                    const listTypeRaw = typeof listObj.ListType === 'string' ? listObj.ListType : 'includelist';
+                    const listTypeNorm = listTypeRaw.toLowerCase();
+                    const includeSelected = listTypeNorm !== 'excludelist';
+                    const excludeSelected = listTypeNorm === 'excludelist';
+                    const customTypeOption =
+                        listTypeNorm !== 'includelist' && listTypeNorm !== 'excludelist'
+                            ? `<option value="${listTypeRaw}" selected>${listTypeRaw}</option>`
+                            : '';
+
+                    let listHtml = `<label>${key}</label><div style="display: flex; flex-direction: column; gap: 8px;">`;
+                    listHtml += `<div style="display: flex; gap: 8px; align-items: center;">
+                        <label style="min-width: 70px;">ListType</label>
+                        <select data-props-key="${key}" onchange="updateIncludeExcludeListType(this)"
+                                style="padding: 6px; background: #3a3a3a; border: 1px solid #4a4a4a; color: #e0e0e0;">
+                            <option value="includelist" ${includeSelected ? 'selected' : ''}>includelist</option>
+                            <option value="excludelist" ${excludeSelected ? 'selected' : ''}>excludelist</option>
+                            ${customTypeOption}
+                        </select>
+                    </div>`;
+
+                    listValues.forEach((item, index) => {
+                        listHtml += `<div style="display: flex; gap: 5px;">
+                            <input type="text" value="${item}" data-props-key="${key}" data-list-index="${index}"
+                                   onchange="updateIncludeExcludeListItem(this)"
+                                   style="flex: 1; padding: 5px; background: #3a3a3a; border: 1px solid #4a4a4a; color: #e0e0e0;">
+                            <button onclick="removeIncludeExcludeListItem('${key}', ${index})" style="padding: 5px 10px;">Remove</button>
+                        </div>`;
+                    });
+
+                    if (listValues.length === 0) {
+                        listHtml += `<div style="color: #999; font-size: 0.85em;">No entries in list</div>`;
+                    }
+
+                    listHtml += `<div style="display: flex; gap: 5px;">
+                        <input type="text" placeholder="Add list entry"
+                               style="flex: 1; padding: 5px; background: #3a3a3a; border: 1px solid #4a4a4a; color: #e0e0e0;">
+                        <button onclick="addIncludeExcludeListItem('${key}', this)" style="padding: 5px 10px;">Add</button>
+                    </div></div>`;
+
+                    group.innerHTML = listHtml;
+                } else if (isRectObject(value)) {
                     let rectHtml = `<label>${key}</label><div class="rect-fields">`;
                     const rect = value || { mHeight: 0, mWidth: 0, mX: 0, mY: 0 };
                     
@@ -458,11 +501,79 @@
             buildPropsForm();
         }
 
+        function isIncludeExcludeListObject(obj) {
+            if (typeof obj !== 'object' || obj === null || Array.isArray(obj)) return false;
+            return Array.isArray(obj.List) && (typeof obj.ListType === 'string' || obj.ListType === undefined);
+        }
+
+        function ensureIncludeExcludeListObject(key) {
+            let obj = editedPropsData[key];
+            if (typeof obj !== 'object' || obj === null || Array.isArray(obj)) {
+                obj = {};
+            }
+            if (!Array.isArray(obj.List)) {
+                obj.List = [];
+            }
+            if (typeof obj.ListType !== 'string') {
+                obj.ListType = 'includelist';
+            }
+            editedPropsData[key] = obj;
+            return obj;
+        }
+
+        function updateIncludeExcludeListType(element) {
+            const key = element.dataset.propsKey;
+            if (!key) return;
+            const listObj = ensureIncludeExcludeListObject(key);
+            listObj.ListType = element.value || 'includelist';
+        }
+
+        function updateIncludeExcludeListItem(element) {
+            const key = element.dataset.propsKey;
+            const listIndex = parseInt(element.dataset.listIndex, 10);
+            if (!key || Number.isNaN(listIndex)) return;
+
+            const listObj = ensureIncludeExcludeListObject(key);
+            while (listObj.List.length <= listIndex) {
+                listObj.List.push('');
+            }
+            listObj.List[listIndex] = element.value;
+        }
+
+        function addIncludeExcludeListItem(key, buttonElement) {
+            if (!key) return;
+            const listObj = ensureIncludeExcludeListObject(key);
+            const input = buttonElement?.previousElementSibling;
+            const value = (input?.value || '').trim();
+            if (!value) {
+                alert('Enter a value');
+                return;
+            }
+
+            listObj.List.push(value);
+            buildPropsForm();
+        }
+
+        function removeIncludeExcludeListItem(key, listIndex) {
+            if (!key) return;
+            const listObj = ensureIncludeExcludeListObject(key);
+            if (listIndex < 0 || listIndex >= listObj.List.length) return;
+            listObj.List.splice(listIndex, 1);
+            buildPropsForm();
+        }
+
         function isCoordinateObject(obj) {
             if (typeof obj !== 'object' || obj === null) return false;
             const keys = Object.keys(obj);
             const coordKeys = ['x', 'y', 'z'];
             return keys.every(k => coordKeys.includes(k)) && keys.length > 0 && keys.length <= 3;
+        }
+
+        function isRectObject(obj) {
+            if (typeof obj !== 'object' || obj === null || Array.isArray(obj)) return false;
+            const keys = Object.keys(obj);
+            const rectKeys = ['mHeight', 'mWidth', 'mX', 'mY'];
+            return keys.length === 4 && rectKeys.every(k => keys.includes(k));
         }
 
         function isMinMaxObject(obj) {
