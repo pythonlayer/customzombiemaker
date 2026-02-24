@@ -94,6 +94,10 @@
 
                         for (const [key, value] of Object.entries(actionData)) {
                             if (['ZombieNames', 'ZombieWeights'].includes(key)) continue;
+                            if (isCommentKey(key)) {
+                                actionHtml += makeCommentFieldHTML(key, value);
+                                continue;
+                            }
 
                             const valueType = typeof value;
                             let input;
@@ -161,6 +165,10 @@
 
                         for (const [key, value] of Object.entries(actionData)) {
                             if (['SpawnZombieTypes'].includes(key)) continue;
+                            if (isCommentKey(key)) {
+                                actionHtml += makeCommentFieldHTML(key, value);
+                                continue;
+                            }
 
                             const valueType = typeof value;
                             let input;
@@ -206,6 +214,11 @@
                         }, 0);
                     } else {
                         for (const [key, value] of Object.entries(actionData)) {
+                            if (isCommentKey(key)) {
+                                actionHtml += makeCommentFieldHTML(key, value);
+                                continue;
+                            }
+
                             const valueType = typeof value;
                             let input;
 

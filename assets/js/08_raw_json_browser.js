@@ -2,6 +2,8 @@
             'ZOMBIETYPES_UPDATED.json',
             'ZOMBIEPROPERTIES_UPDATED.json',
             'ZombieActions.json',
+            'ARMORTYPES.json',
+            'PROJECTILES.json',
             'PT.json'
         ];
 

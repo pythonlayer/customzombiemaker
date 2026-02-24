@@ -4,6 +4,14 @@ let allZombieTypes = [];
         let allPopAnims = [];
         let allResourceGroups = [];
         let allAudioGroups = [];
+        let allArmorSheets = [];
+        let allProjectileSheets = [];
+        let armorTemplateObject = null;
+        let projectileTemplateObject = null;
+        let armorTypeOptions = [];
+        let armorFlagOptions = [];
+        let projectileCollisionFlags = [];
+        let projectileDamageFlags = [];
         let selectedZombie = null;
         let selectedZombieProperties = null;
         let editedTypeData = {};
@@ -82,6 +90,111 @@ let allZombieTypes = [];
 
         function makeRTID(name, type) {
             return `RTID(${name}@${type})`;
+        }
+
+        function escapeHtml(value) {
+            return String(value ?? '')
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
+        }
+
+        function isCommentKey(key) {
+            return typeof key === 'string' && key.trim().startsWith('#');
+        }
+
+        function commentValueToText(value) {
+            if (value === null || value === undefined) {
+                return '';
+            }
+            if (typeof value === 'string') {
+                return value;
+            }
+            try {
+                return JSON.stringify(value, null, 2);
+            } catch (e) {
+                return String(value);
+            }
+        }
+
+        function makeCommentFieldHTML(key, value) {
+            const label = escapeHtml(key || '#comment');
+            const text = escapeHtml(commentValueToText(value));
+            const body = text || '<span class="comment-empty">(empty comment)</span>';
+            return `<div class="form-group comment-field"><label>${label}</label><div class="comment-text">${body}</div></div>`;
+        }
+
+        function getDefaultArmorTemplateObject() {
+            return {
+                objclass: 'ArmorPropertySheet',
+                aliases: ['ArmorPropertySheetTemplate'],
+                objdata: {
+                    ArmorType: 'Unknown',
+                    BaseHealth: 0.0,
+                    ArmorFlags: ['none'],
+                    ArmorLayers: [],
+                    ArmorLayerHealth: [],
+                    ParticleLayerOverride: []
+                }
+            };
+        }
+
+        function getDefaultProjectileTemplateObject() {
+            return {
+                objclass: 'ProjectilePropertySheet',
+                aliases: ['ProjectilePropertySheetTemplate'],
+                objdata: {
+                    BaseDamage: 0.0,
+                    HealAmount: 0.0,
+                    SplashDamage: 0.0,
+                    SplashRadius: 0.0,
+                    ShakeBoardOnSplash: false,
+                    CollisionFlags: ['none'],
+                    '#comment CollisionFlags': 'none, ground_zombies, off_ground_zombies, dying_zombies, griditems, plants, ground, all_zombies, everything',
+                    DamageFlags: ['none'],
+                    '#comment DamageFlags': 'none, bypass_shield, hits_shield_and_body, hits_only_shield, lightning, no_flash, doesnt_leave_body, fire, rolling, lobbed, shooter',
+                    '#comment DamageFlags Rules': " 'shooter' and 'catapult' should be mutually exclusive. 'lobbed' and 'shooter' can coexist, or not. 'catapult' should be a strict subset of 'lobbed'.",
+                    '#comment DamageFlags Examples': 'See bloomerang (lobbed, shooter), banana (lobbed only), cabbagepult (lobbed, catapult), and peashooter (shooter only) for examples.',
+                    DiesOnImpact: true,
+                    InitialVelocity: [
+                        { Min: 0.0, Max: 0.0 },
+                        { Min: 0.0, Max: 0.0 },
+                        { Min: 0.0, Max: 0.0 }
+                    ],
+                    InitialAcceleration: [
+                        { Min: 0.0, Max: 0.0 },
+                        { Min: 0.0, Max: 0.0 },
+                        { Min: 0.0, Max: 0.0 }
+                    ],
+                    InitialVelocityScale: [
+                        { Min: 1.0, Max: 1.0 },
+                        { Min: 1.0, Max: 1.0 },
+                        { Min: 1.0, Max: 1.0 }
+                    ],
+                    InitialHeight: { Min: 0.0, Max: 0.0 },
+                    InitialRotation: { Min: 0.0, Max: 0.0 },
+                    InitialAngularVelocity: { Min: 0.0, Max: 0.0 },
+                    InitialScale: { Min: 1.0, Max: 1.0 },
+                    AttachedPAM: '',
+                    AttachedPAMAnimRigClass: '',
+                    RenderImage: '',
+                    AttachedPAMOffset: { x: 0.0, y: 0.0 },
+                    CollisionRect: {
+                        mX: 0.0,
+                        mY: 0.0,
+                        mWidth: 0.0,
+                        mHeight: 0.0
+                    },
+                    ImpactPAM: '',
+                    ImpactOffset: [
+                        { Min: 0.0, Max: 0.0 },
+                        { Min: 0.0, Max: 0.0 }
+                    ],
+                    '#comment ImpactOffset': 'This ImpactOffset affects both the particle and the PAM'
+                }
+            };
         }
 
         function makeUniqueActionAlias(baseAlias) {
@@ -184,6 +297,32 @@ let allZombieTypes = [];
                     console.warn('PT.json file not found (optional)');
                 }
 
+                // Optional: load armor references/templates
+                try {
+                    const armorResponse = await fetch('ARMORTYPES.json');
+                    const armorData = await armorResponse.json();
+                    allArmorSheets = Array.isArray(armorData.objects) ? armorData.objects : [];
+                    extractArmorReferenceData();
+                    console.log('Loaded ARMORTYPES.json with', allArmorSheets.length, 'objects');
+                } catch (e) {
+                    console.warn('ARMORTYPES.json file not found (optional)');
+                    allArmorSheets = [];
+                    extractArmorReferenceData();
+                }
+
+                // Optional: load projectile references/templates
+                try {
+                    const projectileResponse = await fetch('PROJECTILES.json');
+                    const projectileData = await projectileResponse.json();
+                    allProjectileSheets = Array.isArray(projectileData.objects) ? projectileData.objects : [];
+                    extractProjectileReferenceData();
+                    console.log('Loaded PROJECTILES.json with', allProjectileSheets.length, 'objects');
+                } catch (e) {
+                    console.warn('PROJECTILES.json file not found (optional)');
+                    allProjectileSheets = [];
+                    extractProjectileReferenceData();
+                }
+
                 extractAllArmors();
                 extractPopAnimsAndGroups();
                 setupSearchFunctionality();
@@ -220,6 +359,87 @@ let allZombieTypes = [];
             allAudioGroups = Array.from(allAudioGroups).sort();
             
             console.log('Extracted', allPopAnims.length, 'PopAnims,', allResourceGroups.length, 'ResourceGroups,', allAudioGroups.length, 'AudioGroups');
+        }
+
+        function extractArmorReferenceData() {
+            const armorLikeObjects = (allArmorSheets || []).filter(obj => {
+                const cls = String(obj?.objclass || '').toLowerCase();
+                return cls.includes('armorpropertysheet') && !cls.includes('utils');
+            });
+
+            const typeSet = new Set();
+            const flagSet = new Set();
+
+            armorLikeObjects.forEach(obj => {
+                const data = obj?.objdata || {};
+                const armorType = data.ArmorType;
+                if (typeof armorType === 'string' && armorType.trim()) {
+                    typeSet.add(armorType.trim());
+                }
+                const flags = Array.isArray(data.ArmorFlags) ? data.ArmorFlags : [];
+                flags.forEach(flag => {
+                    if (typeof flag === 'string' && flag.trim()) {
+                        flagSet.add(flag.trim());
+                    }
+                });
+            });
+
+            armorTypeOptions = Array.from(typeSet).sort((a, b) => a.localeCompare(b));
+            armorFlagOptions = Array.from(flagSet).sort((a, b) => a.localeCompare(b));
+
+            armorTemplateObject = armorLikeObjects.find(obj => {
+                const aliases = Array.isArray(obj?.aliases) ? obj.aliases : [];
+                return aliases.some(a => String(a).toLowerCase().includes('template'));
+            }) || armorLikeObjects[0] || getDefaultArmorTemplateObject();
+
+            if (armorTypeOptions.length === 0) {
+                armorTypeOptions = ['Unknown', 'Cone', 'Bucket', 'CowboyHat'];
+            }
+            if (armorFlagOptions.length === 0) {
+                armorFlagOptions = ['none', 'droppable', 'helm', 'shield'];
+            }
+        }
+
+        function extractProjectileReferenceData() {
+            const projectileObjects = (allProjectileSheets || []).filter(obj => {
+                const cls = String(obj?.objclass || '').toLowerCase();
+                return cls === 'projectilepropertysheet' || cls.includes('projectilepropertysheet');
+            });
+
+            const collisionSet = new Set();
+            const damageSet = new Set();
+
+            projectileObjects.forEach(obj => {
+                const data = obj?.objdata || {};
+                const collisionFlags = Array.isArray(data.CollisionFlags) ? data.CollisionFlags : [];
+                const damageFlags = Array.isArray(data.DamageFlags) ? data.DamageFlags : [];
+
+                collisionFlags.forEach(flag => {
+                    if (typeof flag === 'string' && flag.trim()) {
+                        collisionSet.add(flag.trim());
+                    }
+                });
+                damageFlags.forEach(flag => {
+                    if (typeof flag === 'string' && flag.trim()) {
+                        damageSet.add(flag.trim());
+                    }
+                });
+            });
+
+            projectileCollisionFlags = Array.from(collisionSet).sort((a, b) => a.localeCompare(b));
+            projectileDamageFlags = Array.from(damageSet).sort((a, b) => a.localeCompare(b));
+
+            projectileTemplateObject = projectileObjects.find(obj => {
+                const aliases = Array.isArray(obj?.aliases) ? obj.aliases : [];
+                return aliases.some(a => String(a).toLowerCase().includes('template'));
+            }) || projectileObjects[0] || getDefaultProjectileTemplateObject();
+
+            if (projectileCollisionFlags.length === 0) {
+                projectileCollisionFlags = ['none', 'ground_zombies', 'off_ground_zombies', 'dying_zombies', 'griditems', 'plants', 'ground', 'all_zombies', 'everything'];
+            }
+            if (projectileDamageFlags.length === 0) {
+                projectileDamageFlags = ['none', 'bypass_shield', 'hits_shield_and_body', 'hits_only_shield', 'lightning', 'no_flash', 'doesnt_leave_body', 'fire', 'rolling', 'lobbed', 'shooter', 'catapult'];
+            }
         }
 
         function setupSearchFunctionality() {

@@ -26,6 +26,13 @@
 
                 const group = document.createElement('div');
                 group.className = 'form-group';
+
+                if (isCommentKey(key)) {
+                    group.className = 'form-group comment-field';
+                    group.innerHTML = `<label>${escapeHtml(key)}</label><div class="comment-text">${escapeHtml(commentValueToText(value))}</div>`;
+                    container.appendChild(group);
+                    continue;
+                }
                 
                 // Special handling for ZombieArmorProps
                 if (key === 'ZombieArmorProps') {

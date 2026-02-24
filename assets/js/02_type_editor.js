@@ -9,6 +9,13 @@
                 
                 const group = document.createElement('div');
                 group.className = 'form-group';
+
+                if (isCommentKey(key)) {
+                    group.className = 'form-group comment-field';
+                    group.innerHTML = `<label>${escapeHtml(key)}</label><div class="comment-text">${escapeHtml(commentValueToText(value))}</div>`;
+                    container.appendChild(group);
+                    continue;
+                }
                 
                 // Special handling for Properties field
                 if (key === 'Properties') {
@@ -119,7 +126,8 @@
             advancedTypeDetails.style.marginTop = '10px';
             advancedTypeDetails.style.border = '1px solid #4a4a4a';
             advancedTypeDetails.style.borderRadius = '4px';
-            advancedTypeDetails.style.padding = '8px';
+            advancedTypeDetails.style.padding = '10px';
+            advancedTypeDetails.style.background = '#2b2b2b';
             advancedTypeDetails.innerHTML = `<summary style="cursor:pointer;color:#ddd;font-weight:bold;">Advanced Type Options</summary>`;
             const advancedTypeBody = document.createElement('div');
             advancedTypeBody.style.marginTop = '10px';
@@ -129,16 +137,25 @@
             // Add PopAnim selector with autocomplete
             const popAnimGroup = document.createElement('div');
             popAnimGroup.className = 'form-group';
-            const popAnimVal = editedTypeData['PopAnim'] || '';
+            const originalPopAnim = selectedZombie?.objdata?.PopAnim || '';
+            const currentPopAnim = editedTypeData['PopAnim'] || '';
+            const showCurrentPopAnim = currentPopAnim && currentPopAnim !== originalPopAnim;
+            const popAnimInputValue = showCurrentPopAnim ? currentPopAnim : '';
+            const popAnimPlaceholder = originalPopAnim ? `Original: ${originalPopAnim}` : 'Type to search or leave blank...';
             let popAnimHtml = `<label>PopAnim</label>`;
-            if (selectedZombie && selectedZombie.objdata && selectedZombie.objdata.PopAnim) {
-                popAnimHtml += `<div style="padding:6px;background:#2a3a2a;border:1px solid #3a5a3a;border-radius:3px;margin-bottom:6px;font-size:0.9em;"><strong>Original:</strong> ${selectedZombie.objdata.PopAnim}</div>`;
-            }
             popAnimHtml += `
-                <div class="search-box" style="display: flex; gap: 5px;">
-                    <input type="text" id="popAnimInput" value="${popAnimVal}" placeholder="Type to search or leave blank..." class="search-input" style="flex: 1;">
+                <div class="search-box" style="display: flex; gap: 5px; margin-bottom: 8px;">
+                    <input type="text" id="popAnimInput" value="${escapeHtml(popAnimInputValue)}" placeholder="${escapeHtml(popAnimPlaceholder)}" class="search-input" style="flex: 1;">
                     <div id="popAnimSuggestions" class="suggestions"></div>
-                    <button onclick="setPopAnim()" style="padding:6px 12px;background:#3a5a3a;border:1px solid #4a6a4a;color:#e0e0e0;cursor:pointer;border-radius:3px;">Set</button>
+                    <button onclick="setPopAnim()" style="padding:6px 12px;background:#3a5a3a;border:1px solid #4a6a4a;color:#e0e0e0;cursor:pointer;border-radius:3px;">Apply</button>
+                </div>
+                <div style="margin-top:10px;">
+                    <label style="font-size:0.85em;color:#aaa;">Or add from another zombie:</label>
+                    <div class="search-box" style="margin-top:6px;">
+                        <input type="text" id="bulkAddZombieInputPopAnim" placeholder="Type zombie name..." class="search-input">
+                        <div id="bulkAddZombieInputPopAnimSuggestions" class="suggestions"></div>
+                    </div>
+                    <button onclick="bulkAddPopAnimFromZombie()" style="padding:6px 12px;background:#3a5a3a;border:1px solid #4a6a4a;color:#e0e0e0;cursor:pointer;border-radius:3px;margin-top:6px;width:100%;">Use PopAnim</button>
                 </div>
             `;
             popAnimGroup.innerHTML = popAnimHtml;
@@ -205,6 +222,7 @@
             // Setup autocompletes
             setTimeout(() => {
                 setupPopAnimAutocomplete();
+                setupBulkAddPopAnimZombieAutocomplete();
                 setupResourceGroupAutocomplete();
                 setupAudioGroupAutocomplete();
                 setupBulkAddZombieAutocomplete();
@@ -245,7 +263,19 @@
 
         function setPopAnim() {
             const inp = document.getElementById('popAnimInput');
+            if (!inp) return;
             const val = inp.value.trim();
+            const original = selectedZombie?.objdata?.PopAnim || '';
+            if (!val) {
+                editedTypeData['PopAnim'] = original || '';
+                inp.value = '';
+                return;
+            }
+            if (original && val === original) {
+                editedTypeData['PopAnim'] = original;
+                inp.value = '';
+                return;
+            }
             editedTypeData['PopAnim'] = val;
         }
 
@@ -254,14 +284,11 @@
             const suggBox = document.getElementById('popAnimSuggestions');
             if (!inp || !suggBox) return;
 
-            inp.addEventListener('input', (e) => {
-                const q = e.target.value.toLowerCase();
+            const renderSuggestions = (query) => {
+                const q = query.toLowerCase();
+                const source = q ? allPopAnims.filter(a => a.toLowerCase().includes(q)) : allPopAnims.slice();
+                const matches = source.slice(0, 30);
                 suggBox.innerHTML = '';
-                if (q.length === 0) {
-                    suggBox.classList.remove('active');
-                    return;
-                }
-                const matches = allPopAnims.filter(a => a.toLowerCase().includes(q)).slice(0, 30);
                 if (matches.length === 0) {
                     suggBox.classList.remove('active');
                     return;
@@ -278,10 +305,73 @@
                     suggBox.appendChild(div);
                 });
                 suggBox.classList.add('active');
+            };
+
+            inp.addEventListener('input', (e) => {
+                renderSuggestions(e.target.value || '');
+            });
+
+            inp.addEventListener('focus', () => {
+                renderSuggestions(inp.value || '');
+            });
+
+            inp.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    setPopAnim();
+                    suggBox.classList.remove('active');
+                }
             });
 
             document.addEventListener('click', (e) => {
-                if (!e.target.closest('#popAnimInput')) {
+                if (!e.target.closest('#popAnimInput') && !e.target.closest('#popAnimSuggestions')) {
+                    suggBox.classList.remove('active');
+                }
+            });
+        }
+
+        function setupBulkAddPopAnimZombieAutocomplete() {
+            const inp = document.getElementById('bulkAddZombieInputPopAnim');
+            const suggBox = document.getElementById('bulkAddZombieInputPopAnimSuggestions');
+            if (!inp || !suggBox) return;
+
+            inp.addEventListener('input', (e) => {
+                const q = e.target.value.toLowerCase();
+                suggBox.innerHTML = '';
+                if (q.length === 0) {
+                    suggBox.classList.remove('active');
+                    return;
+                }
+
+                const matches = allZombieTypes.filter(zombie => {
+                    if (!zombie || !zombie.objdata || !zombie.objdata.PopAnim) return false;
+                    if (!Array.isArray(zombie.aliases)) return false;
+                    return zombie.aliases.some(alias => alias.toLowerCase().includes(q));
+                }).slice(0, 15);
+
+                if (matches.length === 0) {
+                    suggBox.classList.remove('active');
+                    return;
+                }
+
+                matches.forEach(z => {
+                    const alias = z.aliases?.[0] || 'Unknown';
+                    const label = `${alias} (${z.objdata.PopAnim})`;
+                    const div = document.createElement('div');
+                    div.className = 'suggestion-item';
+                    div.textContent = label;
+                    div.title = z.objdata.PopAnim;
+                    div.onclick = () => {
+                        inp.value = alias;
+                        suggBox.classList.remove('active');
+                    };
+                    suggBox.appendChild(div);
+                });
+                suggBox.classList.add('active');
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('#bulkAddZombieInputPopAnim') && !e.target.closest('#bulkAddZombieInputPopAnimSuggestions')) {
                     suggBox.classList.remove('active');
                 }
             });
@@ -721,6 +811,30 @@
             input.value = '';
             renderResourceGroups();
             alert(`Added ${added.length} ResourceGroups: ${added.join(', ')}`);
+        }
+
+        function bulkAddPopAnimFromZombie() {
+            const input = document.getElementById('bulkAddZombieInputPopAnim');
+            const popAnimInput = document.getElementById('popAnimInput');
+            const selectedAlias = input?.value.trim();
+            if (!selectedAlias) {
+                alert('Enter a zombie name');
+                return;
+            }
+            const zombie = allZombieTypes.find(z => z.aliases && z.aliases[0] === selectedAlias);
+            const popAnim = zombie?.objdata?.PopAnim;
+            if (!popAnim) {
+                alert('Zombie not found or has no PopAnim');
+                return;
+            }
+
+            editedTypeData['PopAnim'] = popAnim;
+            if (popAnimInput) {
+                popAnimInput.value = popAnim;
+            }
+            if (input) {
+                input.value = '';
+            }
         }
 
         function renderAudioGroups() {

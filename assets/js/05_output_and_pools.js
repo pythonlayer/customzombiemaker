@@ -141,6 +141,22 @@
                 });
             }
 
+            // Include custom armor/projectile entries from dedicated tabs in main export.
+            const armorEntries = (typeof customArmorEntries !== 'undefined' && Array.isArray(customArmorEntries)) ? customArmorEntries : [];
+            const projectileEntries = (typeof customProjectileEntries !== 'undefined' && Array.isArray(customProjectileEntries)) ? customProjectileEntries : [];
+            if (armorEntries.length > 0) {
+                armorEntries.forEach(entry => {
+                    if (!entry || typeof entry !== 'object') return;
+                    outputObjects.push(JSON.parse(JSON.stringify(entry)));
+                });
+            }
+            if (projectileEntries.length > 0) {
+                projectileEntries.forEach(entry => {
+                    if (!entry || typeof entry !== 'object') return;
+                    outputObjects.push(JSON.parse(JSON.stringify(entry)));
+                });
+            }
+
             // Format as comma-separated JSON objects (with trailing comma on each)
             const jsonOutput = outputObjects.map(obj => JSON.stringify(obj, null, 2) + ',').join('\n');
 
@@ -160,6 +176,26 @@
             alert('Copied!');
         }
 
+        function getOutputAliasForFilename() {
+            const candidates = [
+                Array.isArray(editedTypeAliases) ? editedTypeAliases[0] : '',
+                selectedZombie?.aliases?.[0],
+                extractRTIDName(editedTypeData?.Properties || ''),
+                'custom-zombie'
+            ];
+            const chosen = candidates.find(v => typeof v === 'string' && v.trim().length > 0) || 'custom-zombie';
+            return chosen.trim();
+        }
+
+        function sanitizeOutputFilename(name) {
+            return String(name || 'custom-zombie')
+                .replace(/\.json$/i, '')
+                .replace(/[<>:"/\\|?*\x00-\x1F]/g, '_')
+                .replace(/\s+/g, '_')
+                .replace(/\.+$/g, '')
+                .slice(0, 120) || 'custom-zombie';
+        }
+
         function downloadJSON() {
             const textarea = document.getElementById('output');
             if (!textarea.value) {
@@ -169,7 +205,8 @@
 
             const element = document.createElement('a');
             element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(textarea.value));
-            element.setAttribute('download', 'custom-zombie.json');
+            const filename = `${sanitizeOutputFilename(getOutputAliasForFilename())}.json`;
+            element.setAttribute('download', filename);
             element.style.display = 'none';
             document.body.appendChild(element);
             element.click();
@@ -248,6 +285,69 @@
             return false;
         }
 
+        function isArmorLikeImportObject(entry) {
+            const cls = String(entry?.objclass || '').toLowerCase();
+            return cls.includes('armorpropertysheet') && !cls.includes('utils');
+        }
+
+        function isProjectileLikeImportObject(entry) {
+            const cls = String(entry?.objclass || '').toLowerCase();
+            return cls.includes('projectilepropertysheet');
+        }
+
+        function applyImportedCustomAssetEntries(armorObjects, projectileObjects) {
+            const armorList = Array.isArray(armorObjects) ? armorObjects : [];
+            const projectileList = Array.isArray(projectileObjects) ? projectileObjects : [];
+            const hasArmorImports = armorList.length > 0;
+            const hasProjectileImports = projectileList.length > 0;
+            const canUseArmorState = typeof customArmorEntries !== 'undefined' && Array.isArray(customArmorEntries);
+            const canUseProjectileState = typeof customProjectileEntries !== 'undefined' && Array.isArray(customProjectileEntries);
+
+            let importedArmorCount = 0;
+            let importedProjectileCount = 0;
+
+            if (hasArmorImports && canUseArmorState) {
+                customArmorEntries.length = 0;
+                armorList.forEach(entry => {
+                    if (!entry || typeof entry !== 'object') return;
+                    const cloned = deepCloneJSON(entry);
+                    if (typeof normalizeArmorEntry === 'function') {
+                        normalizeArmorEntry(cloned);
+                    }
+                    customArmorEntries.push(cloned);
+                });
+                importedArmorCount = customArmorEntries.length;
+                if (typeof selectedCustomArmorIndex !== 'undefined') {
+                    selectedCustomArmorIndex = importedArmorCount > 0 ? 0 : -1;
+                }
+                if (typeof renderCustomArmorList === 'function') renderCustomArmorList();
+                if (typeof renderCustomArmorEditor === 'function') renderCustomArmorEditor();
+            }
+
+            if (hasProjectileImports && canUseProjectileState) {
+                customProjectileEntries.length = 0;
+                projectileList.forEach(entry => {
+                    if (!entry || typeof entry !== 'object') return;
+                    const cloned = deepCloneJSON(entry);
+                    if (typeof normalizeProjectileEntry === 'function') {
+                        normalizeProjectileEntry(cloned);
+                    }
+                    customProjectileEntries.push(cloned);
+                });
+                importedProjectileCount = customProjectileEntries.length;
+                if (typeof selectedCustomProjectileIndex !== 'undefined') {
+                    selectedCustomProjectileIndex = importedProjectileCount > 0 ? 0 : -1;
+                }
+                if (typeof renderCustomProjectileList === 'function') renderCustomProjectileList();
+                if (typeof renderCustomProjectileEditor === 'function') renderCustomProjectileEditor();
+            }
+
+            return {
+                importedArmorCount,
+                importedProjectileCount
+            };
+        }
+
         function selectImportedPropsObject(propsCandidates, typeObject) {
             const wantedAlias = typeObject ? extractRTIDName(typeObject.objdata?.Properties || '') : '';
             if (wantedAlias) {
@@ -290,6 +390,8 @@
             const typeObjects = [];
             const propsCandidates = [];
             const actionObjects = [];
+            const armorObjects = [];
+            const projectileObjects = [];
 
             importedObjects.forEach(entry => {
                 if (!entry || typeof entry !== 'object') return;
@@ -300,6 +402,14 @@
                 if (!entry.objdata || !Array.isArray(entry.aliases) || entry.aliases.length === 0) {
                     return;
                 }
+                if (isArmorLikeImportObject(entry)) {
+                    armorObjects.push(entry);
+                    return;
+                }
+                if (isProjectileLikeImportObject(entry)) {
+                    projectileObjects.push(entry);
+                    return;
+                }
                 if (isActionLikeImportObject(entry, actionClasses)) {
                     actionObjects.push(entry);
                 } else {
@@ -307,10 +417,28 @@
                 }
             });
 
+            const importedAssets = applyImportedCustomAssetEntries(armorObjects, projectileObjects);
+
             let importedTypeObject = typeObjects[0] || null;
             const importedPropsObject = selectImportedPropsObject(propsCandidates, importedTypeObject);
 
             if (!importedPropsObject) {
+                if (importedAssets.importedArmorCount > 0 || importedAssets.importedProjectileCount > 0) {
+                    const importedParts = [];
+                    if (importedAssets.importedArmorCount > 0) {
+                        importedParts.push(`${importedAssets.importedArmorCount} armor(s)`);
+                    }
+                    if (importedAssets.importedProjectileCount > 0) {
+                        importedParts.push(`${importedAssets.importedProjectileCount} projectile(s)`);
+                    }
+                    if (importedAssets.importedArmorCount > 0 && typeof switchTab === 'function') {
+                        switchTab('armor');
+                    } else if (importedAssets.importedProjectileCount > 0 && typeof switchTab === 'function') {
+                        switchTab('projectile');
+                    }
+                    alert(`Imported ${importedParts.join(', ')}. No zombie props/type found, so current zombie data was kept.`);
+                    return;
+                }
                 alert('Import failed: no props object found in pasted JSON.');
                 return;
             }
@@ -450,7 +578,10 @@
             buildPropertyForms();
             switchTab('props');
 
-            alert(`Imported JSON: ${importedTypeObject ? 1 : 0} type, 1 props, ${actionObjects.length} action object(s).`);
+            alert(
+                `Imported JSON: ${importedTypeObject ? 1 : 0} type, 1 props, ${actionObjects.length} action object(s), ` +
+                `${importedAssets.importedArmorCount} armor object(s), ${importedAssets.importedProjectileCount} projectile object(s).`
+            );
         }
 
         function addNewAction() {
@@ -540,15 +671,13 @@
 
             const suggestionsList = document.createElement('div');
             suggestionsList.id = `suggestions_${actionName}`;
-            suggestionsList.style.position = 'absolute';
-            suggestionsList.style.maxHeight = '200px';
+            suggestionsList.className = 'autocomplete-suggestions';
             suggestionsList.style.overflowY = 'auto';
-            suggestionsList.style.background = '#3a3a3a';
-            suggestionsList.style.border = '1px solid #4a4a4a';
             suggestionsList.style.display = 'none';
-            suggestionsList.style.zIndex = '100';
-            suggestionsList.style.width = '250px';
+            suggestionsList.style.zIndex = '4000';
+            suggestionsList.style.width = '100%';
             suggestionsList.style.marginTop = '2px';
+            suggestionsList.style.left = '0';
             input.parentElement.style.position = 'relative';
             input.parentElement.appendChild(suggestionsList);
 
@@ -575,12 +704,9 @@
 
                 matches.forEach(zombie => {
                     const div = document.createElement('div');
+                    div.className = 'autocomplete-item';
                     div.textContent = zombie;
-                    div.style.padding = '8px';
                     div.style.cursor = 'pointer';
-                    div.style.borderBottom = '1px solid #2a2a2a';
-                    div.onmouseover = () => div.style.background = '#4a4a4a';
-                    div.onmouseout = () => div.style.background = '';
                     div.onclick = () => {
                         input.value = zombie;
                         suggestionsList.style.display = 'none';
@@ -659,7 +785,7 @@
             if (suggestions.length > 0) {
                 const ul = document.createElement('ul');
                 ul.id = `spawnZombieDropdown_${actionName}`;
-                ul.style.cssText = 'position: absolute; background: #2a2a2a; border: 1px solid #4a4a4a; list-style: none; padding: 0; margin: 0; max-height: 150px; overflow-y: auto; z-index: 1000; width: 200px;';
+                ul.style.cssText = 'position: absolute; top: calc(100% + 2px); left: 0; background: #2a2a2a; border: 1px solid #4a4a4a; list-style: none; padding: 0; margin: 0; max-height: 220px; overflow-y: auto; z-index: 4000; width: 100%;';
                 suggestions.forEach(z => {
                     const li = document.createElement('li');
                     li.textContent = z;
