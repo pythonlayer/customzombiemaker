@@ -39,6 +39,8 @@
                         <div class="tab active" onclick="switchTab('type')">Zombie Type</div>
                         <div class="tab" onclick="switchTab('props')">Properties</div>
                         <div class="tab" onclick="switchTab('actions')">Actions</div>
+                        <div class="tab" onclick="switchTab('armor')">Armors</div>
+                        <div class="tab" onclick="switchTab('projectile')">Projectiles</div>
                         <div class="tab" onclick="switchTab('output')">Generated JSON</div>
                         <div class="tab" onclick="switchTab('raw')">Raw JSON Files</div>
                     </div>
@@ -56,6 +58,16 @@
                     <!-- Actions Tab -->
                     <div id="actionsTab" class="tab-content">
                         <div class="properties-container" id="actionsProperties"></div>
+                    </div>
+
+                    <!-- Armors Tab -->
+                    <div id="armorTab" class="tab-content">
+                        <div id="armorProperties"></div>
+                    </div>
+
+                    <!-- Projectiles Tab -->
+                    <div id="projectileTab" class="tab-content">
+                        <div id="projectileProperties"></div>
                     </div>
 
                     <!-- Generated JSON Tab -->
@@ -101,6 +113,7 @@
     <script src="assets/js/05_output_and_pools.js"></script>
     <script src="assets/js/06_stages_editor.js"></script>
     <script src="assets/js/08_raw_json_browser.js"></script>
+    <script src="assets/js/09_custom_assets_editor.js"></script>
     <script src="assets/js/07_init.js"></script>
 </body>
 </html>
