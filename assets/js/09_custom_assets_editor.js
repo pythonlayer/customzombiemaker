@@ -49,6 +49,7 @@
                 '#comment DamageFlags',
                 '#comment DamageFlags Rules',
                 '#comment DamageFlags Examples',
+                'Conditions',
                 'DiesOnImpact',
                 'InitialVelocity',
                 'InitialAcceleration',
@@ -121,6 +122,34 @@
                     if (typeof value === 'string' && value.trim()) {
                         sets[field].add(value.trim());
                     }
+                });
+            });
+
+            const limit = Number.isFinite(Number(maxItems)) ? Number(maxItems) : 400;
+            const output = {};
+            fields.forEach(field => {
+                output[field] = Array.from(sets[field]).sort((a, b) => a.localeCompare(b)).slice(0, limit);
+            });
+            return output;
+        }
+
+        function collectProjectileStringArrayFieldOptions(fieldNames, maxItems) {
+            const refs = getProjectileReferenceEntries();
+            const fields = Array.isArray(fieldNames) ? fieldNames : [];
+            const sets = {};
+            fields.forEach(field => {
+                sets[field] = new Set();
+            });
+
+            refs.forEach(ref => {
+                const data = ref?.obj?.objdata || {};
+                fields.forEach(field => {
+                    const values = data[field];
+                    if (!Array.isArray(values)) return;
+                    values.forEach(value => {
+                        const text = String(value || '').trim();
+                        if (text) sets[field].add(text);
+                    });
                 });
             });
 
@@ -274,19 +303,34 @@
             ensureProjectileGuidanceComments(o);
             const numFields = ['BaseDamage', 'HealAmount', 'SplashDamage', 'SplashRadius', 'ImpactSoundThrottleTimer'];
             numFields.forEach(field => {
-                if (o[field] === undefined || o[field] === null || o[field] === '') {
-                    o[field] = 0.0;
-                }
+                const num = Number(o[field]);
+                o[field] = Number.isFinite(num) ? num : 0.0;
             });
 
             if (o.ShakeBoardOnSplash === undefined) o.ShakeBoardOnSplash = false;
             if (o.DiesOnImpact === undefined) o.DiesOnImpact = true;
             if (!Array.isArray(o.CollisionFlags)) o.CollisionFlags = ['none'];
             if (!Array.isArray(o.DamageFlags)) o.DamageFlags = ['none'];
+            if (!Array.isArray(o.Conditions)) o.Conditions = [];
+            o.Conditions = o.Conditions.map(cond => {
+                const item = (cond && typeof cond === 'object' && !Array.isArray(cond)) ? { ...cond } : {};
+                if (typeof item.Condition !== 'string') item.Condition = '';
+                item.Duration = normalizeMinMax(item.Duration, 0.0, 0.0);
+                return item;
+            });
             if (typeof o.RenderImage !== 'string') o.RenderImage = '';
             if (typeof o.AttachedPAM !== 'string') o.AttachedPAM = '';
             if (typeof o.AttachedPAMAnimRigClass !== 'string') o.AttachedPAMAnimRigClass = '';
+            if (typeof o.ImpactSoundEvent !== 'string') o.ImpactSoundEvent = '';
             if (typeof o.ImpactPAM !== 'string') o.ImpactPAM = '';
+            if (!Array.isArray(o.AttachedPAMAnimationToPlay)) o.AttachedPAMAnimationToPlay = [];
+            o.AttachedPAMAnimationToPlay = o.AttachedPAMAnimationToPlay
+                .map(v => String(v || '').trim())
+                .filter(Boolean);
+            if (!Array.isArray(o.ImpactPAMAnimationToPlay)) o.ImpactPAMAnimationToPlay = [];
+            o.ImpactPAMAnimationToPlay = o.ImpactPAMAnimationToPlay
+                .map(v => String(v || '').trim())
+                .filter(Boolean);
             if (typeof o.AttachedPAMOffset !== 'object' || o.AttachedPAMOffset === null || Array.isArray(o.AttachedPAMOffset)) {
                 o.AttachedPAMOffset = { x: 0.0, y: 0.0 };
             }
@@ -952,6 +996,15 @@
             const attachedPamAnimRigOptionsHtml = (projectileStringOptions.AttachedPAMAnimRigClass || []).map(v => `<option value="${escapeHtml(v)}"></option>`).join('');
             const impactPamOptionsHtml = (projectileStringOptions.ImpactPAM || []).map(v => `<option value="${escapeHtml(v)}"></option>`).join('');
             const impactSoundOptionsHtml = (projectileStringOptions.ImpactSoundEvent || []).map(v => `<option value="${escapeHtml(v)}"></option>`).join('');
+            const projectileStringArrayOptions = collectProjectileStringArrayFieldOptions([
+                'AttachedPAMAnimationToPlay',
+                'ImpactPAMAnimationToPlay'
+            ], 300);
+            const attachedPamAnimationOptionsHtml = (projectileStringArrayOptions.AttachedPAMAnimationToPlay || []).map(v => `<option value="${escapeHtml(v)}"></option>`).join('');
+            const impactPamAnimationOptionsHtml = (projectileStringArrayOptions.ImpactPAMAnimationToPlay || []).map(v => `<option value="${escapeHtml(v)}"></option>`).join('');
+            const conditionOptionsHtml = (CONDITION_LIST || []).slice(0, 500)
+                .map(v => `<option value="${escapeHtml(v)}"></option>`)
+                .join('');
 
             const collisionFlagsHtml = obj.CollisionFlags.map((flag, i) => `
                 <div class="asset-chip">
@@ -966,6 +1019,29 @@
                     <button onclick="removeCustomProjectileDamageFlag(${i})">x</button>
                 </div>
             `).join('');
+            const conditionsHtml = obj.Conditions.map((cond, i) => {
+                const duration = normalizeMinMax(cond?.Duration, 0.0, 0.0);
+                return `
+                    <div class="asset-layer-row" style="grid-template-columns: 1fr 120px 120px auto;">
+                        <input type="text" list="customProjectileConditionOptions" value="${escapeHtml(cond?.Condition || '')}" placeholder="Condition" onchange="updateCustomProjectileConditionField(${i}, 'Condition', this.value)">
+                        <input type="number" step="0.01" value="${Number(duration.Min)}" placeholder="Duration Min" onchange="updateCustomProjectileConditionDuration(${i}, 'Min', this.value)">
+                        <input type="number" step="0.01" value="${Number(duration.Max)}" placeholder="Duration Max" onchange="updateCustomProjectileConditionDuration(${i}, 'Max', this.value)">
+                        <button onclick="removeCustomProjectileCondition(${i})">Remove</button>
+                    </div>
+                `;
+            }).join('');
+            const attachedPamAnimationsHtml = (obj.AttachedPAMAnimationToPlay || []).map((name, i) => `
+                <div class="asset-chip">
+                    <span>${escapeHtml(name)}</span>
+                    <button onclick="removeCustomProjectileStringArrayItem('AttachedPAMAnimationToPlay', ${i})">x</button>
+                </div>
+            `).join('');
+            const impactPamAnimationsHtml = (obj.ImpactPAMAnimationToPlay || []).map((name, i) => `
+                <div class="asset-chip">
+                    <span>${escapeHtml(name)}</span>
+                    <button onclick="removeCustomProjectileStringArrayItem('ImpactPAMAnimationToPlay', ${i})">x</button>
+                </div>
+            `).join('');
             const collisionCommentHtml = makeCommentFieldHTML('#comment CollisionFlags', obj['#comment CollisionFlags']);
             const damageCommentHtml = [
                 makeCommentFieldHTML('#comment DamageFlags', obj['#comment DamageFlags']),
@@ -976,8 +1052,9 @@
             const baseProjectileKeys = new Set([
                 'BaseDamage', 'HealAmount', 'SplashDamage', 'SplashRadius',
                 'ShakeBoardOnSplash', 'DiesOnImpact',
-                'RenderImage', 'AttachedPAM', 'AttachedPAMAnimRigClass', 'ImpactPAM', 'ImpactSoundEvent',
-                'CollisionFlags', 'DamageFlags',
+                'RenderImage', 'AttachedPAM', 'AttachedPAMAnimRigClass', 'AttachedPAMAnimationToPlay',
+                'ImpactPAM', 'ImpactPAMAnimationToPlay', 'ImpactSoundEvent', 'ImpactSoundThrottleTimer',
+                'CollisionFlags', 'DamageFlags', 'Conditions',
                 'InitialVelocity', 'InitialAcceleration', 'InitialVelocityScale',
                 'InitialScale', 'InitialHeight', 'InitialRotation', 'InitialAngularVelocity',
                 'AttachedPAMOffset', 'ImpactOffset', 'CollisionRect',
@@ -1061,6 +1138,10 @@
                         <input type="text" list="customProjectileImpactSoundOptions" value="${escapeHtml(obj.ImpactSoundEvent || '')}" onchange="updateCustomProjectileStringField('ImpactSoundEvent', this.value)">
                         <datalist id="customProjectileImpactSoundOptions">${impactSoundOptionsHtml}</datalist>
                     </div>
+                    <div class="form-group">
+                        <label>ImpactSoundThrottleTimer</label>
+                        <input type="number" step="0.001" value="${obj.ImpactSoundThrottleTimer ?? 0}" onchange="updateCustomProjectileNumberField('ImpactSoundThrottleTimer', this.value)">
+                    </div>
                 </div>
 
                 <div class="asset-section">
@@ -1082,6 +1163,38 @@
                         <select id="newCustomProjectileDamageFlagSelect">${damageOptionsHtml || '<option value="">none</option>'}</select>
                         <input id="newCustomProjectileDamageFlagCustomInput" type="text" placeholder="Or type custom flag">
                         <button onclick="addCustomProjectileDamageFlag()">Add Flag</button>
+                    </div>
+                </div>
+
+                <div class="asset-section">
+                    <h4>Conditions</h4>
+                    <datalist id="customProjectileConditionOptions">${conditionOptionsHtml}</datalist>
+                    <div>${conditionsHtml || '<span class="asset-muted">No conditions</span>'}</div>
+                    <div class="asset-inline-add">
+                        <input id="newCustomProjectileConditionNameInput" type="text" list="customProjectileConditionOptions" placeholder="Condition">
+                        <input id="newCustomProjectileConditionDurationMin" type="number" step="0.01" placeholder="Duration Min">
+                        <input id="newCustomProjectileConditionDurationMax" type="number" step="0.01" placeholder="Duration Max">
+                        <button onclick="addCustomProjectileCondition()">Add Condition</button>
+                    </div>
+                </div>
+
+                <div class="asset-section">
+                    <h4>AttachedPAMAnimationToPlay</h4>
+                    <div class="asset-chip-list">${attachedPamAnimationsHtml || '<span class="asset-muted">No animations</span>'}</div>
+                    <div class="asset-inline-add">
+                        <input id="newCustomProjectileAttachedPamAnimationInput" type="text" list="customProjectileAttachedPamAnimationOptions" placeholder="Animation name">
+                        <datalist id="customProjectileAttachedPamAnimationOptions">${attachedPamAnimationOptionsHtml}</datalist>
+                        <button onclick="addCustomProjectileStringArrayItem('AttachedPAMAnimationToPlay', 'newCustomProjectileAttachedPamAnimationInput')">Add Animation</button>
+                    </div>
+                </div>
+
+                <div class="asset-section">
+                    <h4>ImpactPAMAnimationToPlay</h4>
+                    <div class="asset-chip-list">${impactPamAnimationsHtml || '<span class="asset-muted">No animations</span>'}</div>
+                    <div class="asset-inline-add">
+                        <input id="newCustomProjectileImpactPamAnimationInput" type="text" list="customProjectileImpactPamAnimationOptions" placeholder="Animation name">
+                        <datalist id="customProjectileImpactPamAnimationOptions">${impactPamAnimationOptionsHtml}</datalist>
+                        <button onclick="addCustomProjectileStringArrayItem('ImpactPAMAnimationToPlay', 'newCustomProjectileImpactPamAnimationInput')">Add Animation</button>
                     </div>
                 </div>
 
@@ -1227,6 +1340,103 @@
             const entry = getSelectedCustomProjectile();
             if (!entry) return;
             entry.objdata.DamageFlags.splice(index, 1);
+            renderCustomProjectileEditor();
+        }
+
+        function ensureCustomProjectileStringArrayField(obj, field) {
+            if (!obj || typeof obj !== 'object') return [];
+            if (!Array.isArray(obj[field])) obj[field] = [];
+            obj[field] = obj[field]
+                .map(v => String(v || '').trim())
+                .filter(Boolean);
+            return obj[field];
+        }
+
+        function addCustomProjectileStringArrayItem(field, inputId) {
+            const entry = getSelectedCustomProjectile();
+            const input = document.getElementById(inputId);
+            if (!entry || !input || !field) return;
+            const value = String(input.value || '').trim();
+            if (!value) return;
+            const arr = ensureCustomProjectileStringArrayField(entry.objdata, field);
+            if (!arr.includes(value)) arr.push(value);
+            input.value = '';
+            renderCustomProjectileEditor();
+        }
+
+        function removeCustomProjectileStringArrayItem(field, index) {
+            const entry = getSelectedCustomProjectile();
+            if (!entry || !field) return;
+            const arr = ensureCustomProjectileStringArrayField(entry.objdata, field);
+            if (index < 0 || index >= arr.length) return;
+            arr.splice(index, 1);
+            renderCustomProjectileEditor();
+        }
+
+        function ensureCustomProjectileConditionEntry(obj, index) {
+            if (!obj || typeof obj !== 'object') return null;
+            if (!Array.isArray(obj.Conditions)) obj.Conditions = [];
+            while (obj.Conditions.length <= index) {
+                obj.Conditions.push({ Condition: '', Duration: { Min: 0.0, Max: 0.0 } });
+            }
+            if (typeof obj.Conditions[index] !== 'object' || obj.Conditions[index] === null || Array.isArray(obj.Conditions[index])) {
+                obj.Conditions[index] = { Condition: '', Duration: { Min: 0.0, Max: 0.0 } };
+            }
+            if (typeof obj.Conditions[index].Condition !== 'string') obj.Conditions[index].Condition = '';
+            obj.Conditions[index].Duration = normalizeMinMax(obj.Conditions[index].Duration, 0.0, 0.0);
+            return obj.Conditions[index];
+        }
+
+        function updateCustomProjectileConditionField(index, field, value) {
+            const entry = getSelectedCustomProjectile();
+            if (!entry || !entry.objdata) return;
+            const item = ensureCustomProjectileConditionEntry(entry.objdata, index);
+            if (!item || field !== 'Condition') return;
+            item.Condition = String(value || '').trim();
+        }
+
+        function updateCustomProjectileConditionDuration(index, minmaxField, value) {
+            const entry = getSelectedCustomProjectile();
+            if (!entry || !entry.objdata) return;
+            const item = ensureCustomProjectileConditionEntry(entry.objdata, index);
+            if (!item || !['Min', 'Max'].includes(minmaxField)) return;
+            const num = parseFloat(value);
+            item.Duration[minmaxField] = Number.isFinite(num) ? num : 0.0;
+        }
+
+        function addCustomProjectileCondition() {
+            const entry = getSelectedCustomProjectile();
+            if (!entry || !entry.objdata) return;
+            if (!Array.isArray(entry.objdata.Conditions)) entry.objdata.Conditions = [];
+
+            const nameInput = document.getElementById('newCustomProjectileConditionNameInput');
+            const minInput = document.getElementById('newCustomProjectileConditionDurationMin');
+            const maxInput = document.getElementById('newCustomProjectileConditionDurationMax');
+
+            const conditionName = String(nameInput?.value || '').trim();
+            if (!conditionName) return;
+
+            const minValue = parseFloat(String(minInput?.value || '').trim());
+            const maxValue = parseFloat(String(maxInput?.value || '').trim());
+            entry.objdata.Conditions.push({
+                Condition: conditionName,
+                Duration: {
+                    Min: Number.isFinite(minValue) ? minValue : 0.0,
+                    Max: Number.isFinite(maxValue) ? maxValue : 0.0
+                }
+            });
+
+            if (nameInput) nameInput.value = '';
+            if (minInput) minInput.value = '';
+            if (maxInput) maxInput.value = '';
+            renderCustomProjectileEditor();
+        }
+
+        function removeCustomProjectileCondition(index) {
+            const entry = getSelectedCustomProjectile();
+            if (!entry || !Array.isArray(entry.objdata.Conditions)) return;
+            if (index < 0 || index >= entry.objdata.Conditions.length) return;
+            entry.objdata.Conditions.splice(index, 1);
             renderCustomProjectileEditor();
         }
 

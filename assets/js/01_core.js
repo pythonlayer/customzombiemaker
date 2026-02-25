@@ -157,6 +157,7 @@ let allZombieTypes = [];
                     '#comment DamageFlags': 'none, bypass_shield, hits_shield_and_body, hits_only_shield, lightning, no_flash, doesnt_leave_body, fire, rolling, lobbed, shooter',
                     '#comment DamageFlags Rules': " 'shooter' and 'catapult' should be mutually exclusive. 'lobbed' and 'shooter' can coexist, or not. 'catapult' should be a strict subset of 'lobbed'.",
                     '#comment DamageFlags Examples': 'See bloomerang (lobbed, shooter), banana (lobbed only), cabbagepult (lobbed, catapult), and peashooter (shooter only) for examples.',
+                    Conditions: [],
                     DiesOnImpact: true,
                     InitialVelocity: [
                         { Min: 0.0, Max: 0.0 },
@@ -181,13 +182,17 @@ let allZombieTypes = [];
                     AttachedPAMAnimRigClass: '',
                     RenderImage: '',
                     AttachedPAMOffset: { x: 0.0, y: 0.0 },
+                    AttachedPAMAnimationToPlay: [],
                     CollisionRect: {
                         mX: 0.0,
                         mY: 0.0,
                         mWidth: 0.0,
                         mHeight: 0.0
                     },
+                    ImpactSoundEvent: '',
+                    ImpactSoundThrottleTimer: 0.0,
                     ImpactPAM: '',
+                    ImpactPAMAnimationToPlay: [],
                     ImpactOffset: [
                         { Min: 0.0, Max: 0.0 },
                         { Min: 0.0, Max: 0.0 }
