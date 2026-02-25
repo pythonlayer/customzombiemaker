@@ -405,11 +405,26 @@ let allZombieTypes = [];
             }
         }
 
+        function isProjectileLikeObject(entry) {
+            if (!entry || typeof entry !== 'object') return false;
+            const cls = String(entry?.objclass || '').toLowerCase();
+            if (cls.includes('utils')) return false;
+            if (cls.includes('projectile')) return true;
+            if (cls.includes('leafprops')) return true;
+
+            const data = entry?.objdata;
+            if (!data || typeof data !== 'object' || Array.isArray(data)) return false;
+            return (
+                Array.isArray(data.CollisionFlags) ||
+                Array.isArray(data.DamageFlags) ||
+                Array.isArray(data.InitialVelocity) ||
+                Object.prototype.hasOwnProperty.call(data, 'BaseDamage') ||
+                Object.prototype.hasOwnProperty.call(data, 'ImpactPAM')
+            );
+        }
+
         function extractProjectileReferenceData() {
-            const projectileObjects = (allProjectileSheets || []).filter(obj => {
-                const cls = String(obj?.objclass || '').toLowerCase();
-                return cls === 'projectilepropertysheet' || cls.includes('projectilepropertysheet');
-            });
+            const projectileObjects = (allProjectileSheets || []).filter(obj => isProjectileLikeObject(obj));
 
             const collisionSet = new Set();
             const damageSet = new Set();

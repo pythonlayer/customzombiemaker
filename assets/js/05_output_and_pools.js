@@ -291,8 +291,12 @@
         }
 
         function isProjectileLikeImportObject(entry) {
+            if (typeof isProjectileLikeObject === 'function') {
+                return isProjectileLikeObject(entry);
+            }
             const cls = String(entry?.objclass || '').toLowerCase();
-            return cls.includes('projectilepropertysheet');
+            if (cls.includes('utils')) return false;
+            return cls.includes('projectile') || cls.includes('leafprops');
         }
 
         function applyImportedCustomAssetEntries(armorObjects, projectileObjects) {

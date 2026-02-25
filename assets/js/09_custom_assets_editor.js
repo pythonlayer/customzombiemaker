@@ -207,8 +207,14 @@
 
         function getProjectileReferenceEntries() {
             const refs = (allProjectileSheets || []).filter(obj => {
+                if (typeof isProjectileLikeObject === 'function') {
+                    return isProjectileLikeObject(obj);
+                }
                 const cls = String(obj?.objclass || '').toLowerCase();
-                return cls.includes('projectilepropertysheet');
+                if (cls.includes('utils')) return false;
+                if (cls.includes('projectile')) return true;
+                if (cls.includes('leafprops')) return true;
+                return false;
             });
 
             const map = new Map();
