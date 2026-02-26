@@ -1,240 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>PvZ2 RFL Dialogue Maker</title>
-<!-- Basic description + Open Graph for Discord previews -->
-<meta name="description" content="PvZ2 RFL Dialogue Maker - create and preview NPC dialogue scenes. Made by Samine in collaboration with Slimmy & Co.">
-<meta property="og:title" content="PvZ2 RFL Dialogue Maker">
-<meta property="og:description" content="Create and preview NPC dialogue scenes for PvZ2. Built by Samine in collaboration with Slimmy & Co.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://rflnpc.netlify.app/">
-<link rel="canonical" href="https://rflnpc.netlify.app/">
-<!-- Optional: set an image path if you have one -->
-<!-- <meta property="og:image" content="https://example.com/preview.png"> -->
-<link rel="stylesheet" href="style.css?v=20260225b">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Zombie Maker</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-<!-- Collapsible site description to clarify purpose and authorship -->
-<details id="siteAbout" style="background:#1f1f1f;border:1px solid #444;padding:10px;margin:10px;border-radius:6px;color:#ddd;">
-    <summary style="font-weight:600;cursor:pointer;">About this site - click to expand</summary>
-    <div style="margin-top:8px;line-height:1.4;color:#ccc;">
-        <p style="margin:6px 0;">Goal: This tool helps you create, preview, and test NPC dialogue scenes (fonts, images, voice lines) for Plants vs Zombies 2-style videos.</p>
-        <p style="margin:6px 0;">Authors: Created by <strong>Samine</strong> got idea from Plants10K in collaboration with <strong>Slimmy &amp; Co.</strong></p>
-    </div>
-</details>
-
-<div id="editor">
-    <h2>Dialogue Maker</h2>
-
-    <!-- Custom NPC Creator Section (hidden by default; toggle with button) -->
-    <button id="toggleNpcCreatorBtn" style="width:100%; padding:8px; margin-bottom:8px; background:#3a3a3a; color:#ddd; border:1px solid #444; cursor:pointer;">Show Custom NPC Creator</button>
-    <div id="npcCreatorSection" style="display:none; background: #2a2a2a; padding: 10px; margin-bottom: 15px; border: 1px solid #555;">
-        <h3 style="margin-top: 0;">Create Custom NPC</h3>
-        <label>NPC Name</label>
-        <input type="text" id="customNpcName" placeholder="e.g., Super Brainz, Treemymotes" style="width: 100%; margin-top: 5px; padding: 6px; background: #333; color: white; border: 1px solid #444; font-size: 14px; box-sizing: border-box;">
-        
-        <label style="margin-top: 10px;">NPC Image(s) (PNG) - upload multiple images for emotions (name with _SAY/_SHOUT/_EXCITED etc.)</label>
-        <input type="file" id="customNpcImage" accept="image/png" multiple style="width: 100%; margin-top: 5px; padding: 6px; background: #333; color: white; border: 1px solid #444; font-size: 14px; box-sizing: border-box;">
-        
-        <label style="margin-top: 10px;">Font Name (or upload TTF/OTF)</label>
-        <select id="customNpcFontSelect" style="width: 100%; margin-top: 5px; padding: 6px; background: #333; color: white; border: 1px solid #444; font-size: 14px; box-sizing: border-box;">
-            <option value="Arial">Arial (Default)</option>
-            <option value="BrianneHand">Brianne's Hand</option>
-            <option value="AshleyScript">Ashley Script</option>
-            <option value="ROGLyonsType">ROG Lyons Type</option>
-            <option value="KrustyKrab">Krusty Krab (SpongeBob)</option>
-            <option value="custom-upload">Upload Custom Font</option>
-        </select>
-        
-        <input type="file" id="customNpcFontFile" accept=".ttf,.otf" style="display: none; width: 100%; margin-top: 5px; padding: 6px; background: #333; color: white; border: 1px solid #444; font-size: 14px; box-sizing: border-box;">
-        
-        <label style="margin-top: 10px;">Text Color (Theme)</label>
-        <input type="color" id="customNpcTextColor" value="#FFFFFF" style="width: 100%; margin-top: 5px; padding: 4px; height: 40px; cursor: pointer;">
-        
-        <label style="margin-top: 10px;">Position / Type</label>
-        <select id="customNpcPosition" style="width: 100%; margin-top: 5px; padding: 6px; background: #333; color: white; border: 1px solid #444; font-size: 14px; box-sizing: border-box;">
-            <option value="back">Back NPC (top, like Zomboss)</option>
-            <option value="front">Front NPC (bottom, like Dave/Penny)</option>
-            <option value="abs">ABS (AntiBully Squad) - uses per-emotion PNGs (3 images)</option>
-        </select>
-        
-        <label style="margin-top: 10px;">Intro Sound (OGG) - Optional</label>
-        <input type="file" id="customNpcIntroFile" accept="audio/ogg" style="width: 100%; margin-top: 5px; padding: 6px; background: #333; color: white; border: 1px solid #444; font-size: 14px; box-sizing: border-box;">
-        
-        <label style="margin-top: 10px;">Background Music (MP3/OGG) - Optional</label>
-        <input type="file" id="customNpcBgMusicFile" accept="audio/mpeg,audio/ogg" style="width: 100%; margin-top: 5px; padding: 6px; background: #333; color: white; border: 1px solid #444; font-size: 14px; box-sizing: border-box;">
-        
-        <label style="margin-top: 10px;">Voice Lines (MP3/OGG - Zip or drag files)</label>
-        <div id="voiceLinesContainer" style="background: #2a2a2a; border: 2px dashed #555; padding: 10px; margin-top: 5px; text-align: center; cursor: pointer; border-radius: 4px;">
-            <p style="margin: 5px; color: #888;">Drag voice files or click to select (SAY1.mp3, SHOUT1.mp3, etc.)</p>
-            <input type="file" id="voiceFilesInput" multiple accept="audio/*,.zip" style="display: none; width: 100%;">
+    <div class="container">
+        <div class="header">
+            <h1>Custom Zombie Maker</h1>
+            <p>Edit PvZ2 zombie properties</p>
         </div>
-        <div id="voiceFilesList" style="margin-top: 5px; font-size: 12px;"></div>
-        
-        <button id="createNpcBtn" style="width: 100%; margin-top: 10px; padding: 8px; background: #4CAF50; color: white; border: 1px solid #45a049; font-size: 14px; cursor: pointer; border-radius: 4px;"> Create NPC</button>
-    </div>
 
-    <details class="editor-collapse">
-        <summary>Manage Custom NPCs</summary>
-        <div id="npcManagementSection" style="background: #2a2a2a; padding: 10px; margin-top: 8px; margin-bottom: 15px; border: 1px solid #555;">
-            <div id="customNpcList" style="max-height: 200px; overflow-y: auto; background: #1f1f1f; border: 1px solid #444; padding: 8px; border-radius: 4px; margin-bottom: 10px;">
-                <p style="color: #888; margin: 0; text-align: center;">No custom NPCs created yet</p>
+        <div class="content">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="section">
+                    <h2>Select Base</h2>
+                    <div class="search-box">
+                        <input 
+                            type="text" 
+                            id="zombieSearch" 
+                            class="search-input" 
+                            placeholder="Search zombie ..."
+                        >
+                        <div id="suggestions" class="suggestions"></div>
+                    </div>
+                    <div id="selectedInfo" class="selected-info"></div>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="main">
+                <div id="editorContainer" class="hidden">
+                    <div class="tabs">
+                        <div class="tab active" onclick="switchTab('type')">Zombie Type</div>
+                        <div class="tab" onclick="switchTab('props')">Properties</div>
+                        <div class="tab" onclick="switchTab('actions')">Actions</div>
+                        <div class="tab" onclick="switchTab('armor')">Armors</div>
+                        <div class="tab" onclick="switchTab('projectile')">Projectiles</div>
+                        <div class="tab" onclick="switchTab('output')">Generated JSON</div>
+                        <div class="tab" onclick="switchTab('raw')">Raw JSON Files</div>
+                    </div>
+
+                    <!-- Zombie Type Tab -->
+                    <div id="typeTab" class="tab-content active">
+                        <div class="properties-container" id="typeProperties"></div>
+                    </div>
+
+                    <!-- Properties Tab -->
+                    <div id="propsTab" class="tab-content">
+                        <div class="properties-container" id="propsProperties"></div>
+                    </div>
+
+                    <!-- Actions Tab -->
+                    <div id="actionsTab" class="tab-content">
+                        <div class="properties-container" id="actionsProperties"></div>
+                    </div>
+
+                    <!-- Armors Tab -->
+                    <div id="armorTab" class="tab-content">
+                        <div id="armorProperties"></div>
+                    </div>
+
+                    <!-- Projectiles Tab -->
+                    <div id="projectileTab" class="tab-content">
+                        <div id="projectileProperties"></div>
+                    </div>
+
+                    <!-- Generated JSON Tab -->
+                    <div id="outputTab" class="tab-content">
+                        <textarea id="output" class="output-textarea" placeholder="Click Generate JSON to see output..."></textarea>
+                        <div class="button-group" style="margin-top: 10px;">
+                            <button onclick="generateJSON()" style="padding: 10px 20px; background: #2a5a2a; color: #e0e0e0; border: 1px solid #3a7a3a; cursor: pointer; border-radius: 3px; font-weight: bold; flex: 1;">Generate JSON</button>
+                            <button onclick="importOutputJSON()" style="padding: 10px 20px; background: #5a4a2a; color: #e0e0e0; border: 1px solid #7a6a3a; cursor: pointer; border-radius: 3px; margin-left: 5px;">Import JSON</button>
+                            <button onclick="copyToClipboard()" style="padding: 10px 20px; background: #3a3a5a; color: #e0e0e0; border: 1px solid #4a4a6a; cursor: pointer; border-radius: 3px; margin-left: 5px;">Copy</button>
+                            <button onclick="downloadJSON()" style="padding: 10px 20px; background: #3a3a5a; color: #e0e0e0; border: 1px solid #4a4a6a; cursor: pointer; border-radius: 3px; margin-left: 5px;">Download</button>
+                        </div>
+                    </div>
+
+                    <!-- Raw JSON Files Tab -->
+                    <div id="rawTab" class="tab-content">
+                        <div style="margin-bottom: 10px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">
+                            <select id="rawJsonFileSelect" style="padding: 8px; background: #3a3a3a; border: 1px solid #4a4a4a; color: #e0e0e0; min-width: 240px;"></select>
+                            <button onclick="loadRawJsonFile()">Load</button>
+                            <button onclick="copyRawJsonViewer()">Copy</button>
+                            <button onclick="downloadRawJsonViewer()">Download</button>
+                        </div>
+                        <div style="margin-bottom: 8px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">
+                            <input type="text" id="rawJsonSearchInput" class="search-input" placeholder="Find in file (Enter next, Shift+Enter previous)" style="min-width: 260px; flex: 1;">
+                            <label style="display: flex; align-items: center; gap: 6px; font-size: 0.85em; color: #ccc; white-space: nowrap;">
+                                <input type="checkbox" id="rawJsonSearchCase">
+                                Match case
+                            </label>
+                            <button onclick="findInRawJson(-1)">Previous</button>
+                            <button onclick="findInRawJson(1)">Next</button>
+                            <span id="rawJsonSearchInfo" style="font-size: 0.82em; color: #999; min-width: 120px;"></span>
+                        </div>
+                        <div id="rawJsonStatus" style="margin-bottom: 8px; font-size: 0.82em; color: #999;">Pick a file and click Load.</div>
+                        <textarea id="rawJsonViewer" class="output-textarea" style="height: 450px;" placeholder="Raw JSON content will appear here..."></textarea>
+                    </div>
+                </div>
             </div>
         </div>
-    </details>
-
-    <details class="editor-collapse" open>
-        <summary>Playback and Stage</summary>
-        <div id="globalControls" style="background: #1f1f1f; padding: 10px; margin-top: 8px; margin-bottom: 15px; border: 1px solid #444;">
-            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
-                <label style="display:block; font-weight:bold;">Playback Options</label>
-                <button id="clearAllDataBtn" style="padding:6px 12px; background:#c44; color:white; border:1px solid #844; border-radius:4px; cursor:pointer; font-weight:bold; font-size:12px;">Clear All Data</button>
-            </div>
-            <label style="margin-top:6px;"><input type="checkbox" id="enableMusic" checked> Enable music/background</label>
-            <label style="margin-top:6px;"><input type="checkbox" id="enableSfx" checked> Enable NPC sounds (voice/spawn/leave)</label>
-            <label style="margin-top:10px; display:block;">Import Lawn (PNG)</label>
-            <input type="file" id="importLawnFile" accept="image/png" style="width:100%; margin-top:6px; padding:6px; background:#333; color:white; border:1px solid #444;">
-            <label style="margin-top:10px; display:block;">Import Background Music (MP3/OGG)</label>
-            <input type="file" id="importBgMusicFile" accept="audio/mpeg,audio/ogg" style="width:100%; margin-top:6px; padding:6px; background:#333; color:white; border:1px solid #444;">
-        </div>
-    </details>
-
-    <label>Speaker</label>
-    <select id="speaker">
-        <optgroup label="Main NPCs">
-            <option value="dave">Crazy Dave</option>
-            <option value="penny">Penny</option>
-            <option value="spongebob">SpongeBob</option>
-            <option value="zomboss">Zomboss</option>
-            <option value="zombert">Zombert</option>
-            <option value="camo">Captain Camo</option>
-            <option value="lucky">Lucky</option>
-            <option value="nanny">Nanny</option>
-            <option value="missinfo">Miss Information</option>
-            <option value="huntaria">Huntaria</option>
-            <option value="greedy">Greedy</option>
-            <option value="antibullysquad">AntiBullySquad (ABS)</option>
-            <option value="plankton">Plankton</option>
-            <option value="douglas">Douglas</option>
-            <option value="tugboat">Tugboat</option>
-        </optgroup>
-        <optgroup label="Custom / Added NPCs">
-            <option value="chimanta">Chimanta</option>
-        </optgroup>
-    </select>
-
-    <label id="skinLabel" style="display:none;">Skin</label>
-    <select id="skinVariant" style="display:none;">
-        <option value="default">Default</option>
-    </select>
-
-    <label id="voiceVariantLabel" style="display:none;">Voice Variant</label>
-    <select id="voiceVariant" style="display:none;">
-        <option value="default">Default</option>
-        <option value="old">Birthday</option>
-    </select>
-
-    <label>Emotion</label>
-    <select id="emotion">
-        <option value="SAY">SAY</option>
-        <option value="SHOUT">SHOUT</option>
-        <option value="EXCITED">EXCITED</option>
-        <option value="TIRED">TIRED</option>
-        <option value="PLAYFUL">PLAYFUL</option>
-        <option value="SILENT">SILENT (no voice, SFX only)</option>
-    </select>
-
-    <label>Text</label>
-    <textarea id="text"></textarea>
-
-    <label>Sound Effect (SFX) - Optional</label>
-    <select id="sfxSelect">
-        <option value="">-- None --</option>
-        <option value="applaud">applaud</option>
-        <option value="laught">laughter</option>
-        <option value="sitcom-laughter-applause-gaming-sound-effect-hd">sitcom laughter & applause</option>
-        <option value="sitcom-ooh">sitcom ooh</option>
-        <option value="carcrash">car crash</option>
-        <option value="wrong-buzzer-sound-effect">wrong buzzer</option>
-        <option value="siren">police siren</option>
-        <option value="censor-beep-sound-effect">censor beep</option>
-        <option value="dj-airhorn-sound-effect">DJ air horn</option>
-        <option value="dramatic-moment">dramatic moment</option>
-        <option value="flashback-sound-effect">flashback effect</option>
-        <option value="cash-register-cha-ching-sound-effect">cash register cha-ching</option>
-    </select>
-    <label style="margin-top: 10px;">Import Custom SFX (MP3/OGG/WAV)</label>
-    <input type="file" id="importCustomSfxFiles" accept="audio/*" multiple style="width:100%; margin-top:6px; padding:6px; background:#333; color:white; border:1px solid #444;">
-    <div id="customSfxList" style="margin-top:5px; font-size:12px; color:#888;">No custom SFX imported</div>
-
-    <div id="actionButtons">
-        <button id="addLineBtn">Add Line</button>
-        <button id="addEnterBtn">Enter</button>
-        <button id="addLeaveBtn">Leave</button>
-        <button id="playBtn" class="primary">Play</button>
     </div>
-
-    <details class="editor-collapse">
-        <summary>Script JSON</summary>
-        <textarea id="scriptJson" style="width: 100%; height: 300px; margin-top: 8px; padding: 6px; background: #333; color: white; border: 1px solid #444; font-family: monospace; font-size: 12px;"></textarea>
-    </details>
-</div>
-
-<div id="game">
-    <div id="lawn"></div>
-
-    <!-- NPCs -->
-    <img id="dave" class="npc" src="dave.png">
-    <img id="penny" class="npc" src="weenie.png">
-    <img id="chimanta" class="npc" src="Chimanta.png" style="display:none;">
-    <img id="spongebob" class="npc" src="Spongebob/say.png">
-    <img id="zomboss" class="npc" src="zomboss.png">
-    <img id="zombert" class="npc" src="zombert.png">
-    <img id="camo" class="npc" src="camo.png">
-    <img id="lucky" class="npc" src="lucky.png">
-    <img id="nanny" class="npc" src="nanny.png">
-    <img id="missinfo" class="npc" src="missinfo.png">
-    <img id="huntaria" class="npc" src="huntaria.png">
-    <img id="greedy" class="npc" src="greedy.png">
-    <img id="antibullysquad" class="npc" src="antibullysquad/say.png">
-    <img id="plankton" class="npc" src="plankton/Plankton.png">
-    <img id="douglas" class="npc" src="douglas/Douglas.png">
-    <img id="tugboat" class="npc" src="tugboat/say.png">
-
-    <!-- Dialogue -->
-    <!-- Dave speech bubble (left) -->
-
-    <div id="speech_bubble_left" class="speechBubble">
-        <img id="speech_bubble_left_img" src="" alt="Dave speech bubble" class="bubbleImage">
-        <span id="speech_bubble_left_text" class="bubbleText"></span>
-    </div>
-    
-    <!-- Penny speech bubble (right) -->
-    <div id="speech_bubble_right" class="speechBubble">
-        <img id="speech_bubble_right_img" src="" alt="Penny speech bubble" class="bubbleImage">
-        <span id="speech_bubble_right_text" class="bubbleText"></span>
-    </div>
-    
-    <!-- Back NPCs use text boxes (original style) -->
-    <div id="bottomDialogue" class="dialogue" style="display: none;"><span id="bottomText"></span></div>
-    <div id="topDialogue" class="dialogue"><span id="topText"></span></div>
-
-</div>
-
-<!-- Persistent audio elements for NPC sounds -->
-<audio id="daveAudio" preload="auto"></audio>
-<audio id="pennyAudio" preload="auto"></audio>
-<audio id="camoAudio" preload="auto"></audio>
-<audio id="sfxAudio" preload="auto"></audio>
-<audio id="introAudio" preload="auto"></audio>
-<audio id="bgAudio" preload="auto"></audio>
-
-<script src="script.js?v=20260225b"></script>
+    <script src="assets/js/01_core.js"></script>
+    <script src="assets/js/02_type_editor.js"></script>
+    <script src="assets/js/03_props_editor.js"></script>
+    <script src="assets/js/04_actions_editor.js"></script>
+    <script src="assets/js/05_output_and_pools.js"></script>
+    <script src="assets/js/06_stages_editor.js"></script>
+    <script src="assets/js/08_raw_json_browser.js"></script>
+    <script src="assets/js/09_custom_assets_editor.js"></script>
+    <script src="assets/js/07_init.js"></script>
 </body>
 </html>
+
+
 
