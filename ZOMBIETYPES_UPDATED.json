@@ -18208,6 +18208,466 @@
                 "AlmanacBackdropName": "lunar",
                 "HomeWorld": "holiday"
             }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale"
+            ],
+            "objdata": {
+                "TypeName": "fairytale",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieFairyTaleDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleBasicGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_BASIC",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": true
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_flag"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_flag",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieFairyTaleFlagDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleBasicGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_FLAG",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": true,
+                "FlagType": "flag_normal"
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_flag_veteran"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_flag_veteran",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieFairyTaleFlagVeteran@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleBasicGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_RALLY",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": true,
+                "FlagType": "flag_veteran"
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_chesire",
+                "fairytale_cheshire"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_chesire",
+                "ZombieClass": "ZombieFairytaleChesire",
+                "Properties": "RTID(ZombieFairytaleChesireDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleChesireGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieGlobalGargantuarAudio",
+                    "ZombieFairyTaleChesireAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Imp",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_CHESIRE",
+                "HomeWorld": "fairytale"
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_cavalry"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_cavalry",
+                "ZombieClass": "ZombieCavalry",
+                "Properties": "RTID(ZombieFairytaleCavalryDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleCavalryGroup",
+                    "ZombieCavalryGroup",
+                    "ZombieDarkBasicGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieFairyTaleCavalryAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Cavalry",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_CAVALRY",
+                "HomeWorld": "fairytale"
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_armor3_cavalry"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_armor3_cavalry",
+                "ZombieClass": "ZombieCavalryKnight",
+                "Properties": "RTID(ZombieFairytaleCavalryKnightDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleCavalryGroup",
+                    "ZombieDarkBasicGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieFairyTaleCavalryAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_CavalryKnight",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_CAVALRY",
+                "HomeWorld": "fairytale"
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_gargantuar"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_gargantuar",
+                "ZombieClass": "ZombieFairytaleGargantuar",
+                "Properties": "RTID(ZombieFairytaleGargantuar@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleGargantuarGroup",
+                    "ZombieFairyTaleImpGroup",
+                    "ZombieGargantuarEffects",
+                    "ZombieBronzeEffects",
+                    "ZombieFairyTaleCavalryGroup",
+                    "ZombieCavalryGroup",
+                    "ZombieDarkBasicGroup"
+                ],
+                "AudioGroups": [
+                    "ZombiePirateGargantuarAudio",
+                    "ZombiePirateImpAudio",
+                    "ZombieCowboyGargantuarAudio",
+                    "ZombieCowboyBullRiderAudio",
+                    "ZombieGlobalGargantuarAudio",
+                    "ZombieRomanShieldAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Gargantuar",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_GARGANTUAR",
+                "HomeWorld": "fairytale"
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_imp"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_imp",
+                "ZombieClass": "ZombieFairytaleImp",
+                "Properties": "RTID(ZombieFairytaleImpDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleImpGroup",
+                    "ZombieFairyTaleCavalryGroup",
+                    "ZombieCavalryGroup",
+                    "ZombieDarkBasicGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieGlobalGargantuarAudio",
+                    "ZombieFairyTaleImpAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Imp",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_IMP",
+                "HomeWorld": "fairytale",
+                "Placeable": true
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_mirrorqueen"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_mirrorqueen",
+                "ZombieClass": "ZombieFairytaleMirror",
+                "Properties": "RTID(ZombieFairytaleMirrorQueenDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieMirrorQueenGroup",
+                    "SleepingPlantEffect"
+                ],
+                "AudioGroups": [
+                    "PlantHeadbutterAudio",
+                    "ZombieMirrorQueenAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_FairytaleMirror",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_MIRROR_QUEEN",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": true
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_mirrorqueen_veteran"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_mirrorqueen_veteran",
+                "ZombieClass": "ZombieFairytaleMirror",
+                "Properties": "RTID(ZombieFairytaleMirrorQueenVeteranDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieMirrorQueenGroup",
+                    "EffectsPowerCards",
+                    "SleepingPlantEffect"
+                ],
+                "AudioGroups": [
+                    "PlantHeadbutterAudio",
+                    "ZombieMirrorQueenAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_FairytaleMirror",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_MIRROR_QUEEN_ELITE",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": true
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_wolf"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_wolf",
+                "ZombieClass": "ZombieFairytaleWolf",
+                "Properties": "RTID(ZombieFairytaleWolfDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleWolfGroup",
+                    "FairyTaleHouses",
+                    "ZombieFairyTaleThreeLittlePigsGroup",
+                    "ZombieChiefEffects"
+                ],
+                "AudioGroups": [
+                    "ZombieIceAgeTroglobiteAudio",
+                    "ZombieIceAgeChiefAudio",
+                    "ZombieCarnieGargantuarAudio",
+                    "ZombieRomanMedusaAudio",
+                    "ZombieFairyTaleWolfAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Troglobite",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_WOLF",
+                "HomeWorld": "fairytale",
+                "Placeable": true
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_witch"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_witch",
+                "ZombieClass": "ZombieFairytaleWitch",
+                "Properties": "RTID(ZombieFairytaleWitchDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleWitchGroup",
+                    "ZombieDarkWizardGroup",
+                    "PlantWitchFrog"
+                ],
+                "AudioGroups": [
+                    "ZombieFairyTaleWitchAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_FairytaleWitch",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_WITCH",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": true
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_imp_miniboss_phase1"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_imp_miniboss_phase1",
+                "ZombieClass": "ZombieGeneralCaesar",
+                "Properties": "RTID(ZombieFairytaleImpMinibossPhase1@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleCardQueenGroup",
+                    "FairyTaleFog",
+                    "SleepingPlantEffect",
+                    "ZombieFairyTaleCavalryGroup",
+                    "ZombieCavalryGroup",
+                    "ZombieDarkBasicGroup",
+                    "ZombieFairyTaleChesireGroup",
+                    "GridItemFairyTaleCards",
+                    "CarnieMinigameGroup",
+                    "ZombieFairyTaleBasicGroup",
+                    "PlantPuffshroom",
+                    "PlantBlockoli",
+                    "PlantSapfling",
+                    "PlantStallia",
+                    "PlantStalliaEffects",
+                    "PlantWitchHazel",
+                    "PlantWitchHazelEffects",
+                    "ZombieDummyGroup"
+                ],
+                "AudioGroups": [
+                    "AudioJoust",
+                    "ZombieGlobalGargantuarAudio",
+                    "ZombieCarnieMagicianAudio",
+                    "CarnieGeneralAudioGroup",
+                    "ZombieRomanMedusaAudio",
+                    "PlantPuffShroomAudio",
+                    "PlantStalliaAudio",
+                    "ZombieSkyCityBattlePlaneAudio",
+                    "ZombieRomanCaesarAudio",
+                    "ZombieDarkAgesKingAudio",
+                    "ZombieFairyTaleImpAudio",
+                    "ZombieFairyTaleChesireAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_GeneralCaesar",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_IMP_MINIBOSS",
+                "HomeWorld": "fairytale",
+                "Placeable": true
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_imp_miniboss_phase2"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_imp_miniboss_phase2",
+                "DisplayTypeName": "fairytale_imp_miniboss_phase1",
+                "ZombieClass": "ZombieFairytaleImpQueen",
+                "Properties": "RTID(ZombieFairytaleImpMinibossPhase2@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleCardQueenGroup",
+                    "ZombieFairyTaleCavalryGroup",
+                    "ZombieCavalryGroup",
+                    "ZombieDarkBasicGroup"
+                ],
+                "AudioGroups": [
+                    "AudioJoust",
+                    "ZombieGlobalGargantuarAudio",
+                    "ZombieFairyTaleImpAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Imp",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_IMP_MINIBOSS",
+                "HomeWorld": "fairytale",
+                "Placeable": true
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "zombossmech_fairytale"
+            ],
+            "objdata": {
+                "TypeName": "zombossmech_fairytale",
+                "ZombieClass": "ZombieZombossMech_Hydra",
+                "Properties": "RTID(ZombieZombossMechFairytale@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieZombossMech_HydraGroup",
+                    "ZombossCommonGroup",
+                    "PlantWitchHazel",
+                    "PlantWitchHazelEffects",
+                    "FairyTaleFog",
+                    "SleepingPlantEffect",
+                    "GridItemFairyTaleCards",
+                    "CarnieMinigameGroup",
+                    "GridItemCarnieCards",
+                    "ZombieFairyTaleBasicGroup",
+                    "PlantPuffshroom",
+                    "PlantBlockoli",
+                    "ZombieFairyTaleWitchGroup",
+                    "ZombieDarkWizardGroup",
+                    "PlantWitchFrog",
+                    "ZombieDummyGroup"
+                ],
+                "AudioGroups": [
+                    "ZombossGlobalAudio",
+                    "ZombossDarkAgesAudio",
+                    "ZombieCarnieMagicianAudio",
+                    "PlantPuffShroomAudio",
+                    "CarnieGeneralAudioGroup",
+                    "ZombieZombossMech_HydraAudio",
+                    "ZombossBeachAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_ZombossMech_Hydra",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBOSS_HYDRA",
+                "HomeWorld": "fairytale",
+                "AlmanacBackdropName": "fairytalenight",
+                "Placeable": false
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "zombossmech_fairytale_head_top"
+            ],
+            "objdata": {
+                "TypeName": "zombossmech_fairytale_head_top",
+                "ZombieClass": "ZombossHydraHeadTop",
+                "Properties": "RTID(ZombossMechFairytaleHeadTop@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieZombossMech_HydraGroup",
+                    "ZombossCommonGroup",
+                    "FairyTaleFog",
+                    "SleepingPlantEffect"
+                ],
+                "AudioGroups": [
+                    "ZombossGlobalAudio",
+                    "ZombossDarkAgesAudio",
+                    "ZombieZombossMech_HydraAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_HydraHeadTop",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBOSS_HYDRA_HEAD1",
+                "HomeWorld": "fairytale",
+                "Placeable": false
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "zombossmech_fairytale_head_bottom"
+            ],
+            "objdata": {
+                "TypeName": "zombossmech_fairytale_head_bottom",
+                "ZombieClass": "ZombossHydraHeadBottom",
+                "Properties": "RTID(ZombossMechFairytaleHeadBottom@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieZombossMech_HydraGroup",
+                    "ZombossCommonGroup",
+                    "PlantWitchHazel",
+                    "PlantWitchHazelEffects",
+                    "FairyTaleFog",
+                    "SleepingPlantEffect",
+                    "GridItemFairyTaleCards",
+                    "CarnieMinigameGroup",
+                    "ZombieFairyTaleBasicGroup",
+                    "PlantPuffshroom",
+                    "PlantBlockoli",
+                    "ZombieDummyGroup"
+                ],
+                "AudioGroups": [
+                    "ZombossGlobalAudio",
+                    "ZombossDarkAgesAudio",
+                    "ZombieCarnieMagicianAudio",
+                    "PlantPuffShroomAudio",
+                    "CarnieGeneralAudioGroup",
+                    "ZombieZombossMech_HydraAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_HydraHeadBottom",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBOSS_HYDRA_HEAD2",
+                "HomeWorld": "fairytale",
+                "Placeable": false
+            }
         }
     ]
 }

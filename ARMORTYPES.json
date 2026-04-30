@@ -1092,6 +1092,104 @@
                 "ImpactSoundEvent": "Play_Plant_HeadbutterLettuce_Attack",
                 "DropSoundEvent": "Play_Zomb_Premium_Caketank_Explode_Tier_04"
             }
+        },
+        {
+            "objclass": "ArmorPropertySheet",
+            "aliases": [
+                "FairytaleHatDefault"
+            ],
+            "objdata": {
+                "ArmorType": "CowboyHat",
+                "BaseHealth": 40.0,
+                "ArmorFlags": [
+                    "droppable",
+                    "passdamage",
+                    "helm"
+                ],
+                "ArmorLayers": [
+                    "_zombie_armor_hat_states"
+                ],
+                "ArmorLayerHealth": [
+                    1.0
+                ],
+                "ParticleLayerOverride": [
+                    "_zombie_armor_hat_states"
+                ]
+            }
+        },
+        {
+            "objclass": "ArmorPropertySheet",
+            "aliases": [
+                "GuardgantuarCrownDefault"
+            ],
+            "objdata": {
+                "ArmorType": "Crown",
+                "BaseHealth": 1800.0,
+                "ArmorFlags": [
+                    "damageable",
+                    "droppable",
+                    "metallic",
+                    "helm",
+                    "corrosive"
+                ],
+                "ArmorLayers": [
+                    "Zombie_gargantuar_helmet",
+                    "Zombie_gargantuar_helmet_damage1"
+                ],
+                "ArmorLayerHealth": [
+                    0.5
+                ],
+                "ImpactSoundEvent": "Play_impact_shieldhit",
+                "DropSoundEvent": "Play_Zomb_Roman_Shield_Break"
+            }
+        },
+        {
+            "objclass": "ArmorPropertySheet",
+            "aliases": [
+                "GuardgantuarShieldDefault"
+            ],
+            "objdata": {
+                "ArmorType": "CowboyHat",
+                "BaseHealth": 1800.0,
+                "ArmorFlags": [
+                    "droppable",
+                    "passdamage",
+                    "helm",
+                    "corrosive"
+                ],
+                "ArmorLayers": [
+                    "Zombie_gargantuar_shield_attached"
+                ],
+                "ArmorLayerHealth": [
+                    1.0
+                ],
+                "ParticleLayerOverride": [
+                    "particle_shield"
+                ],
+                "DropSoundEvent": "Play_Zomb_Roman_Shield_Break"
+            }
+        },
+        {
+            "objclass": "ArmorPropertySheet",
+            "aliases": [
+                "GuardgantuarShieldBeltDefault"
+            ],
+            "objdata": {
+                "ArmorType": "CowboyHat",
+                "BaseHealth": 1800.0,
+                "ArmorFlags": [
+                    "passdamage",
+                    "helm",
+                    "droppable",
+                    "corrosive"
+                ],
+                "ArmorLayers": [
+                    "Zombie_gargantuar_shieldbelt"
+                ],
+                "ArmorLayerHealth": [
+                    1.0
+                ]
+            }
         }
     ]
 }
