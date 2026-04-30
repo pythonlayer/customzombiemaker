@@ -67202,6 +67202,33 @@
                     }
                 ]
             }
+        },
+        {
+            "objclass": "NewspaperArmorPropertySheet",
+            "aliases": [
+                "LunarNewspaperDefault"
+            ],
+            "objdata": {
+                "ClassName": "NewspaperArmor",
+                "ArmorType": "Newspaper",
+                "BaseHealth": 800.0,
+                "ArmorFlags": [
+                    "damageable",
+                    "corrosive"
+                ],
+                "ArmorLayers": [
+                    "_zombie_newspaper",
+                    "_zombie_newspaper_dmg1",
+                    "_zombie_newspaper_dmg2"
+                ],
+                "ArmorLayerHealth": [
+                    0.666,
+                    0.333
+                ],
+                "FireLayer": "",
+                "ImpactSoundEvent": "Play_Zomb_Modern_Newspaper_Paper_Impact",
+                "DropSoundEvent": ""
+            }
         }
     ],
     "version": 1
