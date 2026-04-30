@@ -1,0 +1,19 @@
+# To build for Android:
+# 1. Install Kivy: pip install kivy
+# 2. Install buildozer: pip install buildozer
+# 3. Create buildozer.spec: buildozer init
+# 4. Edit buildozer.spec:
+#    - title = PVZ2 Level Generator
+#    - package.name = pvz2levelgen
+#    - package.domain = com.example
+#    - source.dir = .
+#    - source.include_exts = py,json
+#    - requirements = kivy
+#    - android.permissions = WRITE_EXTERNAL_STORAGE, READ_EXTERNAL_STORAGE
+# 5. Put all data files (templates, ZOMBIETYPES_UPDATED.json, etc.) in the same folder as mobile_app.py
+# 6. Run: buildozer android debug
+# 7. This will create an APK in bin/
+
+# Note: Writing to the game's internal storage may not be possible without root.
+# The app will try to save to the game path if accessible, else to the app's folder.
+# You may need to manually copy the file to the game directory.

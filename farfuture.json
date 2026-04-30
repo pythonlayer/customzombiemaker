@@ -1,0 +1,203 @@
+{
+  "#comment": "Modern Day template with weighted ambush selection and portal spawn support.",
+  "comment": "Modern Day | ELM: Ver-14 [RFL v1.4.1]",
+  "level_name": "Faaar Future",
+  "output_file": "future1.json",
+  "json_indent": 2,
+  "zombie_sources": {
+    "types_file": "ZOMBIETYPES_UPDATED.json",
+    "props_file": "ZOMBIEPROPERTIES_UPDATED.json"
+  },
+  "wave_settings": {
+    "flag_interval": 8,
+    "flag_count": 3,
+    "starting_points": 1,
+    "point_increment": 1.5,
+    "flag_bonus": 5,
+    "greediness_range": [0.4, 0.7],
+    "plantfood_mode": "interval_jittered",
+    "plantfood_interval": 8,
+    "plantfood_per_interval": 1,
+    "starting_sun": 50,
+    "spawn_row_range": [
+      1,
+      5
+    ],
+    "force_spawn_each_zombie_once": false
+  },
+  "zombie_pool": [
+    "future",
+    "future_armor1",
+    "future_armor2",
+    "future_armor4",
+    "future_flag",
+    "future_flag_veteran",
+    "future_jetpack",
+    "future_jetpack_veteran",
+    "future_protector",
+    "future_protector_generator",
+    "mech_cone",
+    "future_imp",
+    "disco_mech",
+    "football_mech",
+    "future_gargantuar"
+  ],
+  "events": {
+    "ambush_chance": 0.35,
+    "max_per_wave": 2,
+    "market": {
+      "enabled": false
+    },
+    "raidpty": {
+      "enabled": false,
+      "weight": 0.45,
+      "raidpty_alias_prefix": "RaidingParty",
+      "swashbuckler_point_cost": 1.5,
+      "min_swashbucklers": 2,
+      "max_swashbucklers": 6,
+      "group_size": 1,
+      "time_between_groups_range": [
+        0.25,
+        2.25
+      ]
+    },
+    "Parrotrousle": {
+      "enabled": false
+    },
+    "sun_crash": {
+      "enabled": false
+    },
+    "imp_ambushes": [
+      {
+        "enabled": true,
+        "weight": 0.7,
+        "event_name": "spider_rain",
+        "alias_prefix": "SpiderRain",
+        "zombie_pool": ["future_imp"],
+        "zombies_per_spawner_range": [1,4],
+        "point_cost": 1,
+        "column_start_range": [3,5],
+        "column_end": 8,
+        "group_size": 1,
+        "time_between_groups": "0.35",
+        "zombie_fall_time": "2.0",
+        "wave_start_message": "BotSwarm!",
+        "consume_wave_points": true
+      }
+    ]
+  },
+  "aliases": {
+    "seed_bank": "SeedBank",
+    "escalation": "Escalation",
+    "wave_manager_module": "NewWaves",
+    "wave_manager": "WaveManager",
+    "wave_prefix": "Wave"
+  },
+  "level_definition": {
+    "Description": "{PLAYER}'s Trip to Modern Day!",
+    "FirstRewardParam": "moneybag",
+    "AddBonusStartingSun": true,
+    "NormalPresentTable": "egypt_normal_01",
+    "ShinyPresentTable": "egypt_shiny_01",
+    "Loot": "RTID(DefaultLoot@LevelModules)",
+    "ResourceGroupNames": [
+      "DelayLoad_Background_Beach",
+      "ZombieTreadmillBrainGroup",
+      "DelayLoad_Background_Beach_Compressed",
+      "PlantMoonFlowerEffects",
+      "Tombstone_Dark_Special",
+      "Tombstone_Dark_Effects",
+      "GridItemCarnieCards",
+      "UI_GameOver"
+    ],
+    "Modules": [
+      "RTID(OffScreenZombiesCoinOverride@LevelModules)",
+      "RTID(FutureMowers@LevelModules)",
+      "RTID(StandardIntro@LevelModules)",
+      "RTID(SeedBank@CurrentLevel)",
+      "RTID(Escalation@CurrentLevel)",
+      "RTID(NewWaves@CurrentLevel)",
+      "RTID(DefaultSunDropper@LevelModules)",
+      "RTID(ZombiesDeadWinCon@LevelModules)",
+      "RTID(DefaultZombieWinCondition@LevelModules)"
+    ],
+    "StageModule": "RTID(FutureStage@LevelModules)"
+  },
+  "seed_bank": {
+    "PresetPlantList": [],
+    "PlantIncludeList": [],
+    "PlantExcludeList": [],
+    "SelectionMethod": "chooser"
+  },
+  "escalation": {
+    "PlantfoodToSpawnCount": 0,
+    "StartingPoints": 0,
+    "PointIncrementPerWave": 0
+  },
+  "wave_manager_module": {},
+  "wave_manager": {
+    "SuppressFlagZombie": false
+  },
+  "initial_grid_items": {
+    "enabled": true,
+    "alias": "GI",
+    "module_rtid": "RTID(GI@CurrentLevel)",
+    "allow_overlap": false,
+    "x_range": [
+      0,
+      8
+    ],
+    "y_range": [
+      0,
+      4
+    ],
+    "total_count_range": [
+      4,
+      10
+    ],
+    "disallowed_total_counts": [
+      1
+    ],
+    "types": [
+      {
+        "type_options": [
+          {
+            "type_name": "powertile_beta",
+            "weight": 1
+          },
+          {
+            "type_name": "powertile_alpha",
+            "weight": 1
+          },
+          {
+            "type_name": "powertile_gamma",
+            "weight": 1
+          },
+          {
+            "type_name": "powertile_delta",
+            "weight": 1
+          }
+        ],
+        "count_range": [
+          0,
+          8
+        ],
+        "disallowed_counts": [
+          1
+        ],
+        "placement_mode": "pattern_columns",
+        "patterns": [
+          "10101",
+          "01010",
+          "10001"
+        ],
+        "column_regions": [
+          "back",
+          "middle"
+        ]
+      }
+    ]
+  },
+  "append_empty_object": true,
+  "version": 1
+}

@@ -1,0 +1,1341 @@
+{
+  "#comment": "Big Wave Beach | ELM: Ver-14 [RFL v1.4.1]",
+  "#zombies": "beach, beach_armor1, beach_armor2, beach_armor4, beach_fisherman, beach_flag, beach_flag_veteran, beach_gargantuar, beach_imp, beach_octopus, beach_shell, beach_shell_shield, beach_snorkel, beach_snorkel_veteran, beach_surfer",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Description": "{PLAYER}'s Trip to Big Wave Beach!",
+        "FirstRewardParam": "moneybag",
+        "AddBonusStartingSun": true,
+        "NormalPresentTable": "egypt_normal_01",
+        "ShinyPresentTable": "egypt_shiny_01",
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "ResourceGroupNames": [
+          "DelayLoad_Background_Beach",
+          "ZombieTreadmillBrainGroup",
+          "DelayLoad_Background_Beach_Compressed",
+          "Tombstone_Dark_Special",
+          "Tombstone_Dark_Effects",
+          "UI_GameOver"
+        ],
+        "Modules": [
+          "RTID(OffScreenZombiesCoinOverride@LevelModules)",
+          "RTID(BeachMowers@LevelModules)",
+          "RTID(StandardIntro@LevelModules)",
+          "RTID(SeedBank@CurrentLevel)",
+          "RTID(Escalation@CurrentLevel)",
+          "RTID(NewWaves@CurrentLevel)",
+          "RTID(DefaultSunDropper@LevelModules)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(GI@CurrentLevel)",
+          "RTID(InitialTide@CurrentLevel)",
+          "RTID(PowerTileModule@LevelModules)",
+          "RTID(GoldTileModule@LevelModules)"
+        ],
+        "StageModule": "RTID(BeachStage@LevelModules)",
+        "Name": "Big Wave Beach",
+        "StartingSun": 100,
+        "MusicType": "MiniGame_B"
+      }
+    },
+    {
+      "aliases": [
+        "SeedBank"
+      ],
+      "objclass": "SeedBankProperties",
+      "objdata": {
+        "PresetPlantList": [],
+        "PlantIncludeList": [],
+        "PlantExcludeList": [],
+        "SelectionMethod": "chooser"
+      }
+    },
+    {
+      "aliases": [
+        "Escalation"
+      ],
+      "objclass": "LevelEscalationModuleProperties",
+      "objdata": {
+        "PlantfoodToSpawnCount": 0,
+        "StartingPoints": 0,
+        "PointIncrementPerWave": 0,
+        "FlagCount": 2,
+        "WavesPerFlag": 8,
+        "WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+        "ZombiePool": [
+          "RTID(beach@ZombieTypes)",
+          "RTID(beach_armor1@ZombieTypes)",
+          "RTID(beach_armor2@ZombieTypes)",
+          "RTID(beach_armor4@ZombieTypes)",
+          "RTID(beach_flag@ZombieTypes)",
+          "RTID(beach_flag_veteran@ZombieTypes)",
+          "RTID(beach_imp@ZombieTypes)",
+          "RTID(beach_snorkel@ZombieTypes)",
+          "RTID(beach_snorkel_veteran@ZombieTypes)",
+          "RTID(beach_surfer@ZombieTypes)",
+          "RTID(beach_octopus@ZombieTypes)",
+          "RTID(beach_fisherman@ZombieTypes)",
+          "RTID(beach_shell@ZombieTypes)",
+          "RTID(beach_shell_shield@ZombieTypes)",
+          "RTID(beach_gargantuar@ZombieTypes)"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "NewWaves"
+      ],
+      "objclass": "WaveManagerModuleProperties",
+      "objdata": {}
+    },
+    {
+      "aliases": [
+        "WaveManager"
+      ],
+      "objclass": "WaveManagerProperties",
+      "objdata": {
+        "SuppressFlagZombie": false,
+        "FlagWaveInterval": 8,
+        "WaveCount": 16,
+        "Waves": [
+          [
+            "RTID(Wave1@.)"
+          ],
+          [
+            "RTID(Wave2@.)",
+            "RTID(Tide2_1_intense_pullback@.)",
+            "RTID(Tide2_3_slight_pullback@.)",
+            "RTID(Tide2_4_slight_pullback@.)"
+          ],
+          [
+            "RTID(Wave3@.)",
+            "RTID(LowTide3_shoreline_shuffle_beach@.)",
+            "RTID(Tide3_1_slight_pullback@.)",
+            "RTID(LowTide3_shoreline_shuffle_beach_2@.)",
+            "RTID(Tide3_3_intense_pullback@.)"
+          ],
+          [
+            "RTID(Wave4@.)",
+            "RTID(LowTide4_shoreline_shuffle_beach@.)",
+            "RTID(Tide4_1_intense_pullback@.)",
+            "RTID(LowTide4_shoreline_shuffle_beach_2@.)",
+            "RTID(Tide4_3_intense_pullback@.)",
+            "RTID(Tide4_5_intense_pullback@.)"
+          ],
+          [
+            "RTID(Wave5@.)",
+            "RTID(Tide5_1_deep_pullback@.)",
+            "RTID(Tide5_2_slight_pullback@.)"
+          ],
+          [
+            "RTID(Wave6@.)",
+            "RTID(LowTide6_shoreline_shuffle_beachimp@.)",
+            "RTID(Tide6_1_intense_pullback@.)"
+          ],
+          [
+            "RTID(Wave7@.)",
+            "RTID(LowTide7_shoreline_shuffle_beach@.)",
+            "RTID(LowTide7_shoreline_shuffle_beachimp@.)",
+            "RTID(Tide7_1_deep_pullback@.)",
+            "RTID(Tide7_3_gentle_pullback@.)"
+          ],
+          [
+            "RTID(Wave8@.)"
+          ],
+          [
+            "RTID(Wave9@.)",
+            "RTID(Tide9_1_intense_pullback@.)",
+            "RTID(LowTide9_shoreline_shuffle_beachimp@.)",
+            "RTID(LowTide9_shoreline_shuffle_beacharmor1@.)",
+            "RTID(Tide9_3_intense_pullback@.)",
+            "RTID(LowTide9_shoreline_shuffle_beachimp_2@.)",
+            "RTID(LowTide9_shoreline_shuffle_beach@.)",
+            "RTID(Tide9_5_deep_pullback@.)"
+          ],
+          [
+            "RTID(Wave10@.)",
+            "RTID(LowTide10_shoreline_shuffle_beacharmor1@.)",
+            "RTID(LowTide10_shoreline_shuffle_beachimp@.)",
+            "RTID(Tide10_1_intense_pullback@.)",
+            "RTID(LowTide10_shoreline_shuffle_beach@.)",
+            "RTID(Tide10_3_intense_pullback@.)"
+          ],
+          [
+            "RTID(Wave11@.)"
+          ],
+          [
+            "RTID(Wave12@.)"
+          ],
+          [
+            "RTID(Wave13@.)",
+            "RTID(LowTide13_shoreline_shuffle_beacharmor1@.)",
+            "RTID(LowTide13_shoreline_shuffle_beachimp@.)",
+            "RTID(Tide13_1_intense_pullback@.)"
+          ],
+          [
+            "RTID(Wave14@.)",
+            "RTID(Tide14_1_slight_pullback@.)",
+            "RTID(Tide14_2_deep_pullback@.)"
+          ],
+          [
+            "RTID(Wave15@.)",
+            "RTID(LowTide15_shoreline_shuffle_beachimp@.)",
+            "RTID(LowTide15_shoreline_shuffle_beacharmor1@.)",
+            "RTID(Tide15_1_intense_pullback@.)"
+          ],
+          [
+            "RTID(Wave16@.)",
+            "RTID(LowTide16_shoreline_shuffle_beachgarbageweak@.)",
+            "RTID(LowTide16_shoreline_shuffle_beachgarbageimp@.)",
+            "RTID(Tide16_1_intense_pullback@.)",
+            "RTID(LowTide16_shoreline_shuffle_beachimp@.)",
+            "RTID(Tide16_3_deep_pullback@.)",
+            "RTID(Tide16_5_gentle_pullback@.)"
+          ]
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave1"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(beach_fem@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave2"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(beach_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(beach_imp@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave3"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(beach_imp@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(beach@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(beach_fem@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(beach_imp@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(beach@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave4"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(beach_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(beach_fem_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave5"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(beach@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(beach_fem_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(beach_fem@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(beach@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(beach_fem@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave6"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "4",
+            "Type": "RTID(beach_snorkel@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(beach_fem@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(beach_imp@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(beach@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(beach_imp@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(beach_imp@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(beach@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(beach_imp@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(beach_fem@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave7"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(beach_imp@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(beach_fem_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(beach_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(beach_fem@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(beach@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(beach@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave8"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(beach_fisherman@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(beach_surfer@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(beach_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(beach_imp@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave9"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Row": "5",
+            "Type": "RTID(beach@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(beach_shell@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(beach_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(beach_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(beach@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(beach_imp@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(beach_fem@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave10"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(beach_armor4@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(beach_surfer@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(beach_snorkel@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(beach_imp@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave11"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(beach_fem_armor4@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(beach_octopus@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave12"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "5",
+            "Type": "RTID(beach_shell_shield@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(beach_surfer@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(beach_surfer@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(beach_imp@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave13"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(beach_shell@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(beach_snorkel@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(beach_snorkel_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(beach_fem_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(beach@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(beach_fem_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(beach_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(beach_imp@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(beach_fem@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave14"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(beach@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(beach_shell@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(beach_snorkel_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(beach_snorkel@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(beach_fem_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(beach_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(beach_fem@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(beach_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(beach@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(beach_imp@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(beach@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(beach_fem@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave15"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(beach_shell_shield@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(beach_fisherman@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(beach_surfer@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(beach_shell@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(beach_imp@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave16"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "4",
+            "Type": "RTID(beach_fisherman@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(beach_gargantuar@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(beach_fisherman@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(beach_flag_veteran@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Tide2_1_intense_pullback"
+      ],
+      "objclass": "TidalChangeWaveActionProps",
+      "objdata": {
+        "TidalChange": {
+          "ChangeAmount": 4,
+          "ChangeType": "absolute"
+        }
+      }
+    },
+    {
+      "aliases": [
+        "Tide2_3_slight_pullback"
+      ],
+      "objclass": "TidalChangeWaveActionProps",
+      "objdata": {
+        "TidalChange": {
+          "ChangeAmount": 7,
+          "ChangeType": "absolute"
+        }
+      }
+    },
+    {
+      "aliases": [
+        "Tide2_4_slight_pullback"
+      ],
+      "objclass": "TidalChangeWaveActionProps",
+      "objdata": {
+        "TidalChange": {
+          "ChangeAmount": 5,
+          "ChangeType": "absolute"
+        }
+      }
+    },
+    {
+      "aliases": [
+        "LowTide3_shoreline_shuffle_beach"
+      ],
+      "objclass": "BeachStageEventZombieSpawnerProps",
+      "objdata": {
+        "ColumnStart": 7,
+        "ColumnEnd": 7,
+        "ZombieCount": 1,
+        "GroupSize": 1,
+        "TimeBetweenGroups": "0.05",
+        "ZombieName": "beach",
+        "WaveStartMessage": "Low Tide!"
+      }
+    },
+    {
+      "aliases": [
+        "Tide3_1_slight_pullback"
+      ],
+      "objclass": "TidalChangeWaveActionProps",
+      "objdata": {
+        "TidalChange": {
+          "ChangeAmount": 6,
+          "ChangeType": "absolute"
+        }
+      }
+    },
+    {
+      "aliases": [
+        "LowTide3_shoreline_shuffle_beach_2"
+      ],
+      "objclass": "BeachStageEventZombieSpawnerProps",
+      "objdata": {
+        "ColumnStart": 7,
+        "ColumnEnd": 7,
+        "ZombieCount": 1,
+        "GroupSize": 1,
+        "TimeBetweenGroups": "0.05",
+        "ZombieName": "beach",
+        "WaveStartMessage": "Low Tide!"
+      }
+    },
+    {
+      "aliases": [
+        "Tide3_3_intense_pullback"
+      ],
+      "objclass": "TidalChangeWaveActionProps",
+      "objdata": {
+        "TidalChange": {
+          "ChangeAmount": 3,
+          "ChangeType": "absolute"
+        }
+      }
+    },
+    {
+      "aliases": [
+        "LowTide4_shoreline_shuffle_beach"
+      ],
+      "objclass": "BeachStageEventZombieSpawnerProps",
+      "objdata": {
+        "ColumnStart": 7,
+        "ColumnEnd": 7,
+        "ZombieCount": 1,
+        "GroupSize": 1,
+        "TimeBetweenGroups": "0.05",
+        "ZombieName": "beach_fem",
+        "WaveStartMessage": "Low Tide!"
+      }
+    },
+    {
+      "aliases": [
+        "Tide4_1_intense_pullback"
+      ],
+      "objclass": "TidalChangeWaveActionProps",
+      "objdata": {
+        "TidalChange": {
+          "ChangeAmount": 4,
+          "ChangeType": "absolute"
+        }
+      }
+    },
+    {
+      "aliases": [
+        "LowTide4_shoreline_shuffle_beach_2"
+      ],
+      "objclass": "BeachStageEventZombieSpawnerProps",
+      "objdata": {
+        "ColumnStart": 7,
+        "ColumnEnd": 7,
+        "ZombieCount": 1,
+        "GroupSize": 1,
+        "TimeBetweenGroups": "0.05",
+        "ZombieName": "beach",
+        "WaveStartMessage": "Low Tide!"
+      }
+    },
+    {
+      "aliases": [
+        "Tide4_3_intense_pullback"
+      ],
+      "objclass": "TidalChangeWaveActionProps",
+      "objdata": {
+        "TidalChange": {
+          "ChangeAmount": 3,
+          "ChangeType": "absolute"
+        }
+      }
+    },
+    {
+      "aliases": [
+        "Tide4_5_intense_pullback"
+      ],
+      "objclass": "TidalChangeWaveActionProps",
+      "objdata": {
+        "TidalChange": {
+          "ChangeAmount": 4,
+          "ChangeType": "absolute"
+        }
+      }
+    },
+    {
+      "aliases": [
+        "Tide5_1_deep_pullback"
+      ],
+      "objclass": "TidalChangeWaveActionProps",
+      "objdata": {
+        "TidalChange": {
+          "ChangeAmount": 5,
+          "ChangeType": "absolute"
+        }
+      }
+    },
+    {
+      "aliases": [
+        "Tide5_2_slight_pullback"
+      ],
+      "objclass": "TidalChangeWaveActionProps",
+      "objdata": {
+        "TidalChange": {
+          "ChangeAmount": 6,
+          "ChangeType": "absolute"
+        }
+      }
+    },
+    {
+      "aliases": [
+        "LowTide6_shoreline_shuffle_beachimp"
+      ],
+      "objclass": "BeachStageEventZombieSpawnerProps",
+      "objdata": {
+        "ColumnStart": 7,
+        "ColumnEnd": 7,
+        "ZombieCount": 2,
+        "GroupSize": 1,
+        "TimeBetweenGroups": "0.05",
+        "ZombieName": "beach_imp",
+        "WaveStartMessage": "Low Tide!"
+      }
+    },
+    {
+      "aliases": [
+        "Tide6_1_intense_pullback"
+      ],
+      "objclass": "TidalChangeWaveActionProps",
+      "objdata": {
+        "TidalChange": {
+          "ChangeAmount": 3,
+          "ChangeType": "absolute"
+        }
+      }
+    },
+    {
+      "aliases": [
+        "LowTide7_shoreline_shuffle_beach"
+      ],
+      "objclass": "BeachStageEventZombieSpawnerProps",
+      "objdata": {
+        "ColumnStart": 7,
+        "ColumnEnd": 7,
+        "ZombieCount": 2,
+        "GroupSize": 1,
+        "TimeBetweenGroups": "0.05",
+        "ZombieName": "beach",
+        "WaveStartMessage": "Low Tide!"
+      }
+    },
+    {
+      "aliases": [
+        "LowTide7_shoreline_shuffle_beachimp"
+      ],
+      "objclass": "BeachStageEventZombieSpawnerProps",
+      "objdata": {
+        "ColumnStart": 7,
+        "ColumnEnd": 7,
+        "ZombieCount": 1,
+        "GroupSize": 1,
+        "TimeBetweenGroups": "0.05",
+        "ZombieName": "beach_imp"
+      }
+    },
+    {
+      "aliases": [
+        "Tide7_1_deep_pullback"
+      ],
+      "objclass": "TidalChangeWaveActionProps",
+      "objdata": {
+        "TidalChange": {
+          "ChangeAmount": 4,
+          "ChangeType": "absolute"
+        }
+      }
+    },
+    {
+      "aliases": [
+        "Tide7_3_gentle_pullback"
+      ],
+      "objclass": "TidalChangeWaveActionProps",
+      "objdata": {
+        "TidalChange": {
+          "ChangeAmount": 4,
+          "ChangeType": "absolute"
+        }
+      }
+    },
+    {
+      "aliases": [
+        "Tide9_1_intense_pullback"
+      ],
+      "objclass": "TidalChangeWaveActionProps",
+      "objdata": {
+        "TidalChange": {
+          "ChangeAmount": 3,
+          "ChangeType": "absolute"
+        }
+      }
+    },
+    {
+      "aliases": [
+        "LowTide9_shoreline_shuffle_beachimp"
+      ],
+      "objclass": "BeachStageEventZombieSpawnerProps",
+      "objdata": {
+        "ColumnStart": 7,
+        "ColumnEnd": 7,
+        "ZombieCount": 1,
+        "GroupSize": 1,
+        "TimeBetweenGroups": "0.05",
+        "ZombieName": "beach_imp",
+        "WaveStartMessage": "Low Tide!"
+      }
+    },
+    {
+      "aliases": [
+        "LowTide9_shoreline_shuffle_beacharmor1"
+      ],
+      "objclass": "BeachStageEventZombieSpawnerProps",
+      "objdata": {
+        "ColumnStart": 7,
+        "ColumnEnd": 7,
+        "ZombieCount": 1,
+        "GroupSize": 1,
+        "TimeBetweenGroups": "0.05",
+        "ZombieName": "beach_armor1"
+      }
+    },
+    {
+      "aliases": [
+        "Tide9_3_intense_pullback"
+      ],
+      "objclass": "TidalChangeWaveActionProps",
+      "objdata": {
+        "TidalChange": {
+          "ChangeAmount": 3,
+          "ChangeType": "absolute"
+        }
+      }
+    },
+    {
+      "aliases": [
+        "LowTide9_shoreline_shuffle_beachimp_2"
+      ],
+      "objclass": "BeachStageEventZombieSpawnerProps",
+      "objdata": {
+        "ColumnStart": 7,
+        "ColumnEnd": 7,
+        "ZombieCount": 2,
+        "GroupSize": 1,
+        "TimeBetweenGroups": "0.05",
+        "ZombieName": "beach_imp",
+        "WaveStartMessage": "Low Tide!"
+      }
+    },
+    {
+      "aliases": [
+        "LowTide9_shoreline_shuffle_beach"
+      ],
+      "objclass": "BeachStageEventZombieSpawnerProps",
+      "objdata": {
+        "ColumnStart": 7,
+        "ColumnEnd": 7,
+        "ZombieCount": 1,
+        "GroupSize": 1,
+        "TimeBetweenGroups": "0.05",
+        "ZombieName": "beach"
+      }
+    },
+    {
+      "aliases": [
+        "Tide9_5_deep_pullback"
+      ],
+      "objclass": "TidalChangeWaveActionProps",
+      "objdata": {
+        "TidalChange": {
+          "ChangeAmount": 5,
+          "ChangeType": "absolute"
+        }
+      }
+    },
+    {
+      "aliases": [
+        "LowTide10_shoreline_shuffle_beacharmor1"
+      ],
+      "objclass": "BeachStageEventZombieSpawnerProps",
+      "objdata": {
+        "ColumnStart": 7,
+        "ColumnEnd": 7,
+        "ZombieCount": 1,
+        "GroupSize": 1,
+        "TimeBetweenGroups": "0.05",
+        "ZombieName": "beach_fem_armor1",
+        "WaveStartMessage": "Low Tide!"
+      }
+    },
+    {
+      "aliases": [
+        "LowTide10_shoreline_shuffle_beachimp"
+      ],
+      "objclass": "BeachStageEventZombieSpawnerProps",
+      "objdata": {
+        "ColumnStart": 7,
+        "ColumnEnd": 7,
+        "ZombieCount": 1,
+        "GroupSize": 1,
+        "TimeBetweenGroups": "0.05",
+        "ZombieName": "beach_imp"
+      }
+    },
+    {
+      "aliases": [
+        "Tide10_1_intense_pullback"
+      ],
+      "objclass": "TidalChangeWaveActionProps",
+      "objdata": {
+        "TidalChange": {
+          "ChangeAmount": 4,
+          "ChangeType": "absolute"
+        }
+      }
+    },
+    {
+      "aliases": [
+        "LowTide10_shoreline_shuffle_beach"
+      ],
+      "objclass": "BeachStageEventZombieSpawnerProps",
+      "objdata": {
+        "ColumnStart": 7,
+        "ColumnEnd": 7,
+        "ZombieCount": 2,
+        "GroupSize": 1,
+        "TimeBetweenGroups": "0.05",
+        "ZombieName": "beach",
+        "WaveStartMessage": "Low Tide!"
+      }
+    },
+    {
+      "aliases": [
+        "Tide10_3_intense_pullback"
+      ],
+      "objclass": "TidalChangeWaveActionProps",
+      "objdata": {
+        "TidalChange": {
+          "ChangeAmount": 4,
+          "ChangeType": "absolute"
+        }
+      }
+    },
+    {
+      "aliases": [
+        "LowTide13_shoreline_shuffle_beacharmor1"
+      ],
+      "objclass": "BeachStageEventZombieSpawnerProps",
+      "objdata": {
+        "ColumnStart": 7,
+        "ColumnEnd": 7,
+        "ZombieCount": 1,
+        "GroupSize": 1,
+        "TimeBetweenGroups": "0.05",
+        "ZombieName": "beach_armor1",
+        "WaveStartMessage": "Low Tide!"
+      }
+    },
+    {
+      "aliases": [
+        "LowTide13_shoreline_shuffle_beachimp"
+      ],
+      "objclass": "BeachStageEventZombieSpawnerProps",
+      "objdata": {
+        "ColumnStart": 7,
+        "ColumnEnd": 7,
+        "ZombieCount": 1,
+        "GroupSize": 1,
+        "TimeBetweenGroups": "0.05",
+        "ZombieName": "beach_imp"
+      }
+    },
+    {
+      "aliases": [
+        "Tide13_1_intense_pullback"
+      ],
+      "objclass": "TidalChangeWaveActionProps",
+      "objdata": {
+        "TidalChange": {
+          "ChangeAmount": 4,
+          "ChangeType": "absolute"
+        }
+      }
+    },
+    {
+      "aliases": [
+        "Tide14_1_slight_pullback"
+      ],
+      "objclass": "TidalChangeWaveActionProps",
+      "objdata": {
+        "TidalChange": {
+          "ChangeAmount": 7,
+          "ChangeType": "absolute"
+        }
+      }
+    },
+    {
+      "aliases": [
+        "Tide14_2_deep_pullback"
+      ],
+      "objclass": "TidalChangeWaveActionProps",
+      "objdata": {
+        "TidalChange": {
+          "ChangeAmount": 3,
+          "ChangeType": "absolute"
+        }
+      }
+    },
+    {
+      "aliases": [
+        "LowTide15_shoreline_shuffle_beachimp"
+      ],
+      "objclass": "BeachStageEventZombieSpawnerProps",
+      "objdata": {
+        "ColumnStart": 7,
+        "ColumnEnd": 7,
+        "ZombieCount": 1,
+        "GroupSize": 1,
+        "TimeBetweenGroups": "0.05",
+        "ZombieName": "beach_imp",
+        "WaveStartMessage": "Low Tide!"
+      }
+    },
+    {
+      "aliases": [
+        "LowTide15_shoreline_shuffle_beacharmor1"
+      ],
+      "objclass": "BeachStageEventZombieSpawnerProps",
+      "objdata": {
+        "ColumnStart": 7,
+        "ColumnEnd": 7,
+        "ZombieCount": 2,
+        "GroupSize": 1,
+        "TimeBetweenGroups": "0.05",
+        "ZombieName": "beach_armor1"
+      }
+    },
+    {
+      "aliases": [
+        "Tide15_1_intense_pullback"
+      ],
+      "objclass": "TidalChangeWaveActionProps",
+      "objdata": {
+        "TidalChange": {
+          "ChangeAmount": 2,
+          "ChangeType": "absolute"
+        }
+      }
+    },
+    {
+      "aliases": [
+        "LowTide16_shoreline_shuffle_beachgarbageweak"
+      ],
+      "objclass": "BeachStageEventZombieSpawnerProps",
+      "objdata": {
+        "ColumnStart": 7,
+        "ColumnEnd": 7,
+        "ZombieCount": 1,
+        "GroupSize": 2,
+        "TimeBetweenGroups": "0.05",
+        "ZombieName": "beach_garbage_weak",
+        "WaveStartMessage": "Low Tide!"
+      }
+    },
+    {
+      "aliases": [
+        "LowTide16_shoreline_shuffle_beachgarbageimp"
+      ],
+      "objclass": "BeachStageEventZombieSpawnerProps",
+      "objdata": {
+        "ColumnStart": 7,
+        "ColumnEnd": 7,
+        "ZombieCount": 1,
+        "GroupSize": 2,
+        "TimeBetweenGroups": "0.05",
+        "ZombieName": "beach_garbage_imp"
+      }
+    },
+    {
+      "aliases": [
+        "Tide16_1_intense_pullback"
+      ],
+      "objclass": "TidalChangeWaveActionProps",
+      "objdata": {
+        "TidalChange": {
+          "ChangeAmount": 4,
+          "ChangeType": "absolute"
+        }
+      }
+    },
+    {
+      "aliases": [
+        "LowTide16_shoreline_shuffle_beachimp"
+      ],
+      "objclass": "BeachStageEventZombieSpawnerProps",
+      "objdata": {
+        "ColumnStart": 7,
+        "ColumnEnd": 7,
+        "ZombieCount": 3,
+        "GroupSize": 1,
+        "TimeBetweenGroups": "0.05",
+        "ZombieName": "beach_imp",
+        "WaveStartMessage": "Low Tide!"
+      }
+    },
+    {
+      "aliases": [
+        "Tide16_3_deep_pullback"
+      ],
+      "objclass": "TidalChangeWaveActionProps",
+      "objdata": {
+        "TidalChange": {
+          "ChangeAmount": 4,
+          "ChangeType": "absolute"
+        }
+      }
+    },
+    {
+      "aliases": [
+        "Tide16_5_gentle_pullback"
+      ],
+      "objclass": "TidalChangeWaveActionProps",
+      "objdata": {
+        "TidalChange": {
+          "ChangeAmount": 6,
+          "ChangeType": "absolute"
+        }
+      }
+    },
+    {
+      "aliases": [
+        "GI"
+      ],
+      "objclass": "InitialGridItemProperties",
+      "objdata": {
+        "InitialGridItemPlacements": [
+          {
+            "GridX": 2,
+            "GridY": 4,
+            "TypeName": "gravestone_pirate2"
+          },
+          {
+            "GridX": 5,
+            "GridY": 2,
+            "TypeName": "gravestone_pirate2"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "InitialTide"
+      ],
+      "objclass": "TideProperties",
+      "objdata": {
+        "StartingWaveLocation": 2,
+        "ShowTideMarker": true
+      }
+    },
+    {}
+  ],
+  "version": 1
+}

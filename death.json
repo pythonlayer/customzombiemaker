@@ -1,0 +1,852 @@
+{
+  "#comment": "DIE | ELM: Ver-13.1 [RFL v1.4]",
+  "#zombies": "desire_emperor, desire_shikaisen, plantagenet, plantagenet_armor1, plantagenet_armor2, plantagenet_gargantuar, plantagenet_imp, plantagenet_noblewoman, plantagenet_princess, plantagenet_wine, servant, servant_armor2, servant_bell, servant_besom, servant_black_imp, servant_fly, servant_fly_black, servant_imp, servant_red, servant_red_armor2, servant_red_bell, servant_red_besom, servant_red_tea, servant_tea, zombotany_cheesestrawberry, zombotany_lightningreed, zombotany_magicshroom",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Description": "WTF Level",
+        "FirstRewardParam": "moneybag",
+        "AddBonusStartingSun": false,
+        "NormalPresentTable": "egypt_normal_01",
+        "ShinyPresentTable": "egypt_shiny_01",
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "ResourceGroupNames": [
+          "DelayLoad_Background_Beach",
+          "ZombieTreadmillBrainGroup",
+          "DelayLoad_Background_Beach_Compressed",
+          "PlantMoonFlowerEffects",
+          "Tombstone_Dark_Special",
+          "Tombstone_Dark_Effects",
+          "GridItemCarnieCards",
+          "UI_GameOver"
+        ],
+        "Modules": [
+          "RTID(OffScreenZombiesCoinOverride@LevelModules)",
+          "RTID(RainbowMarketMowers@LevelModules)",
+          "RTID(StandardIntro@LevelModules)",
+          "RTID(SeedBank@CurrentLevel)",
+          "RTID(Escalation@CurrentLevel)",
+          "RTID(NewWaves@CurrentLevel)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(MarketNight@LevelModules)",
+          "RTID(GI@CurrentLevel)"
+        ],
+        "StageModule": "RTID(MarketNightsStage@LevelModules)",
+        "Name": "DIE",
+        "StartingSun": 200
+      }
+    },
+    {
+      "aliases": [
+        "SeedBank"
+      ],
+      "objclass": "SeedBankProperties",
+      "objdata": {
+        "PresetPlantList": [],
+        "PlantIncludeList": [],
+        "PlantExcludeList": [],
+        "SelectionMethod": "chooser"
+      }
+    },
+    {
+      "aliases": [
+        "Escalation"
+      ],
+      "objclass": "LevelEscalationModuleProperties",
+      "objdata": {
+        "PlantfoodToSpawnCount": 0,
+        "StartingPoints": 0,
+        "PointIncrementPerWave": 0,
+        "FlagCount": 2,
+        "WavesPerFlag": 7,
+        "WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+        "ZombiePool": [
+          "RTID(servant@ZombieTypes)",
+          "RTID(servant_armor2@ZombieTypes)",
+          "RTID(servant_red@ZombieTypes)",
+          "RTID(servant_red_armor2@ZombieTypes)",
+          "RTID(servant_tea@ZombieTypes)",
+          "RTID(servant_red_tea@ZombieTypes)",
+          "RTID(servant_fly@ZombieTypes)",
+          "RTID(servant_fly_black@ZombieTypes)",
+          "RTID(servant_bell@ZombieTypes)",
+          "RTID(servant_red_bell@ZombieTypes)",
+          "RTID(servant_besom@ZombieTypes)",
+          "RTID(servant_red_besom@ZombieTypes)",
+          "RTID(desire_shikaisen@ZombieTypes)",
+          "RTID(desire_emperor@ZombieTypes)",
+          "RTID(servant_black_imp@ZombieTypes)",
+          "RTID(servant_imp@ZombieTypes)",
+          "RTID(plantagenet@ZombieTypes)",
+          "RTID(plantagenet_armor1@ZombieTypes)",
+          "RTID(plantagenet_armor2@ZombieTypes)",
+          "RTID(plantagenet_wine@ZombieTypes)",
+          "RTID(plantagenet_noblewoman@ZombieTypes)",
+          "RTID(plantagenet_princess@ZombieTypes)",
+          "RTID(plantagenet_imp@ZombieTypes)",
+          "RTID(plantagenet_gargantuar@ZombieTypes)",
+          "RTID(zombotany_lightningreed@ZombieTypes)",
+          "RTID(zombotany_magicshroom@ZombieTypes)",
+          "RTID(zombotany_cheesestrawberry@ZombieTypes)"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "NewWaves"
+      ],
+      "objclass": "WaveManagerModuleProperties",
+      "objdata": {}
+    },
+    {
+      "aliases": [
+        "WaveManager"
+      ],
+      "objclass": "WaveManagerProperties",
+      "objdata": {
+        "SuppressFlagZombie": false,
+        "FlagWaveInterval": 7,
+        "WaveCount": 14,
+        "Waves": [
+          [
+            "RTID(Wave1@.)"
+          ],
+          [
+            "RTID(Wave2@.)"
+          ],
+          [
+            "RTID(Wave3@.)"
+          ],
+          [
+            "RTID(Wave4@.)",
+            "RTID(Sandstorm4_C6@.)"
+          ],
+          [
+            "RTID(Wave5@.)"
+          ],
+          [
+            "RTID(Wave6@.)",
+            "RTID(Sandstorm6_C3@.)"
+          ],
+          [
+            "RTID(Wave7@.)",
+            "RTID(Sandstorm7_C4@.)",
+            "RTID(Sandstorm7_C8@.)",
+            "RTID(Sandstorm7_C3@.)"
+          ],
+          [
+            "RTID(Wave8@.)",
+            "RTID(Sandstorm8_C4@.)",
+            "RTID(Sandstorm8_C5@.)"
+          ],
+          [
+            "RTID(Wave9@.)"
+          ],
+          [
+            "RTID(Wave10@.)"
+          ],
+          [
+            "RTID(Wave11@.)"
+          ],
+          [
+            "RTID(Wave12@.)"
+          ],
+          [
+            "RTID(Wave13@.)"
+          ],
+          [
+            "RTID(Wave14@.)",
+            "RTID(Sandstorm14_C7@.)",
+            "RTID(Sandstorm14_C4@.)"
+          ]
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave1"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": []
+      }
+    },
+    {
+      "aliases": [
+        "Wave2"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(plantagenet_noblewoman@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave3"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(zombotany_lightningreed@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(servant_tea@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave4"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(servant_red_besom@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(servant_red_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave5"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(servant_tea@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(servant_tea@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(desire_shikaisen@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave6"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "5",
+            "Type": "RTID(servant_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(servant_tea@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(desire_emperor@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(servant_red_bell@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave7"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "4",
+            "Type": "RTID(plantagenet_gargantuar@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(servant_tea@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(desire_emperor@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(servant@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(servant_tea@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(desire_shikaisen@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(servant@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(servant_besom@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave8"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(zombotany_cheesestrawberry@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(servant_red_besom@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(servant_fly@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(servant@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(servant_red_bell@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave9"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(servant_red_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(servant_red_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(desire_shikaisen@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(servant_fly_black@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(servant_tea@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(servant_bell@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave10"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(servant_red@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(servant_red_besom@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(servant_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(servant_fly@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(servant_red_besom@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(servant_red_besom@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave11"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(desire_emperor@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(servant_red_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(servant_tea@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(servant_red_tea@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(servant_red_bell@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(servant_red_tea@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(desire_shikaisen@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave12"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(plantagenet_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(servant_red_besom@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(desire_emperor@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(servant@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(desire_shikaisen@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(servant_fly_black@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(servant_red_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(servant_red_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave13"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(plantagenet_princess@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(servant_tea@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(servant_red_bell@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(servant_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(servant_besom@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(servant_besom@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(servant@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(servant_red_besom@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave14"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Row": "5",
+            "Type": "RTID(plantagenet@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(servant@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(servant_red_tea@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(servant_red_bell@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(servant_red_bell@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(servant_tea@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(servant_fly@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(servant_besom@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(servant_tea@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(desire_shikaisen@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(servant_red_besom@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(desire_emperor@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Sandstorm4_C6"
+      ],
+      "objclass": "StormZombieSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "Type": "sandstorm",
+        "ColumnStart": 6,
+        "ColumnEnd": 6,
+        "TimeBetweenGroups": 0.5,
+        "GroupSize": 1,
+        "Zombies": [
+          {
+            "Type": "RTID(desire_shikaisen@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Sandstorm6_C3"
+      ],
+      "objclass": "StormZombieSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "Type": "sandstorm",
+        "ColumnStart": 3,
+        "ColumnEnd": 3,
+        "TimeBetweenGroups": 0.5,
+        "GroupSize": 1,
+        "Zombies": [
+          {
+            "Type": "RTID(desire_shikaisen@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(servant_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Sandstorm7_C4"
+      ],
+      "objclass": "StormZombieSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "Type": "sandstorm",
+        "ColumnStart": 4,
+        "ColumnEnd": 4,
+        "TimeBetweenGroups": 0.5,
+        "GroupSize": 1,
+        "Zombies": [
+          {
+            "Type": "RTID(servant_imp@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(plantagenet_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Sandstorm7_C8"
+      ],
+      "objclass": "StormZombieSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "Type": "sandstorm",
+        "ColumnStart": 8,
+        "ColumnEnd": 8,
+        "TimeBetweenGroups": 0.5,
+        "GroupSize": 1,
+        "Zombies": [
+          {
+            "Type": "RTID(plantagenet_armor2@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Sandstorm7_C3"
+      ],
+      "objclass": "StormZombieSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "Type": "sandstorm",
+        "ColumnStart": 3,
+        "ColumnEnd": 3,
+        "TimeBetweenGroups": 0.5,
+        "GroupSize": 1,
+        "Zombies": [
+          {
+            "Type": "RTID(servant_imp@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(servant_imp@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Sandstorm8_C4"
+      ],
+      "objclass": "StormZombieSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "Type": "sandstorm",
+        "ColumnStart": 4,
+        "ColumnEnd": 4,
+        "TimeBetweenGroups": 0.5,
+        "GroupSize": 1,
+        "Zombies": [
+          {
+            "Type": "RTID(desire_shikaisen@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Sandstorm8_C5"
+      ],
+      "objclass": "StormZombieSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "Type": "sandstorm",
+        "ColumnStart": 5,
+        "ColumnEnd": 5,
+        "TimeBetweenGroups": 0.5,
+        "GroupSize": 1,
+        "Zombies": [
+          {
+            "Type": "RTID(servant_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(plantagenet@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Sandstorm14_C7"
+      ],
+      "objclass": "StormZombieSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "Type": "sandstorm",
+        "ColumnStart": 7,
+        "ColumnEnd": 7,
+        "TimeBetweenGroups": 0.5,
+        "GroupSize": 1,
+        "Zombies": [
+          {
+            "Type": "RTID(servant_armor2@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(desire_shikaisen@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Sandstorm14_C4"
+      ],
+      "objclass": "StormZombieSpawnerProps",
+      "objdata": {
+        "AdditionalPlantfood": "0",
+        "Type": "sandstorm",
+        "ColumnStart": 4,
+        "ColumnEnd": 4,
+        "TimeBetweenGroups": 0.5,
+        "GroupSize": 1,
+        "Zombies": [
+          {
+            "Type": "RTID(desire_shikaisen@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "GI"
+      ],
+      "objclass": "InitialGridItemProperties",
+      "objdata": {
+        "InitialGridItemPlacements": [
+          {
+            "GridX": 2,
+            "GridY": 1,
+            "TypeName": "powertile_alpha"
+          },
+          {
+            "GridX": 2,
+            "GridY": 4,
+            "TypeName": "powertile_beta"
+          },
+          {
+            "GridX": 2,
+            "GridY": 0,
+            "TypeName": "powertile_gamma"
+          },
+          {
+            "GridX": 2,
+            "GridY": 3,
+            "TypeName": "powertile_delta"
+          },
+          {
+            "GridX": 2,
+            "GridY": 2,
+            "TypeName": "powertile_epsilon"
+          },
+          {
+            "GridX": 7,
+            "GridY": 0,
+            "TypeName": "bufftile_shield"
+          },
+          {
+            "GridX": 7,
+            "GridY": 3,
+            "TypeName": "bufftile_attack"
+          },
+          {
+            "GridX": 7,
+            "GridY": 4,
+            "TypeName": "bufftile_speed"
+          },
+          {
+            "GridX": 7,
+            "GridY": 2,
+            "TypeName": "steam_backpack"
+          }
+        ]
+      }
+    },
+    {}
+  ],
+  "version": 1
+}

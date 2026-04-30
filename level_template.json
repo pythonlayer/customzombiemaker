@@ -1,0 +1,441 @@
+{
+  "#comment": "Template for merge_zombies.py. Edit this file to control generation.",
+  "comment": "DIE | ELM: Ver-13.1 [RFL v1.4]",
+  "level_name": "DIE",
+  "output_file": "death.json",
+  "json_indent": 2,
+  "zombie_sources": {
+    "types_file": "ZOMBIETYPES_UPDATED.json",
+    "props_file": "ZOMBIEPROPERTIES_UPDATED.json"
+  },
+  "wave_settings": {
+    "flag_interval": 7,
+    "flag_count": 2,
+    "starting_points": 1,
+    "point_increment": 1,
+    "flag_bonus": 5,
+    "greediness": 0.45678,
+    "min_pf": 1,
+    "max_pf": 3,
+    "starting_sun": 200,
+    "spawn_row_range": [
+      1,
+      5
+    ],
+    "force_spawn_each_zombie_once": true
+  },
+  "zombie_pool": [
+    "servant",
+    "servant_armor2",
+    "servant_red",
+    "servant_red_armor2",
+    "servant_tea",
+    "servant_red_tea",
+    "servant_fly",
+    "servant_fly_black",
+    "servant_bell",
+    "servant_red_bell",
+    "servant_besom",
+    "servant_red_besom",
+    "desire_shikaisen",
+    "desire_emperor",
+    "servant_black_imp",
+    "servant_imp",
+    "plantagenet",
+    "plantagenet_armor1",
+    "plantagenet_armor2",
+    "plantagenet_wine",
+    "plantagenet_noblewoman",
+    "plantagenet_princess",
+    "plantagenet_imp",
+    "plantagenet_gargantuar",
+    "zombotany_lightningreed",
+    "zombotany_magicshroom",
+    "zombotany_cheesestrawberry"
+  ],
+  "zombie_variant_groups": {},
+  "events": {
+    "ambush_chance": 0.55,
+    "max_per_wave": 2,
+    "market": {
+      "enabled": false
+    },
+    "raidpty": {
+      "enabled": false,
+      "raidpty_alias_prefix": "RaidingParty",
+      "swashbuckler_point_cost": 1.5,
+      "min_swashbucklers": 2,
+      "max_swashbucklers": 20,
+      "group_size": 1,
+      "time_between_groups_range": [
+        0.25,
+        4.0
+      ]
+    },
+    "Parrotrousle": {
+      "enabled": false,
+      "parrotrousle_alias_prefix": "Parrotrousle",
+      "parrot_point_cost": 3.0,
+      "min_parrots": 1,
+      "max_parrots": 10,
+      "grid_types": [
+        "RTID(crater@GridItemTypes)"
+      ],
+      "wave_start_message": "Parrotrousle!",
+      "zombie_spawn_wait_time": 0,
+      "suppress_if_no_grid_items_found": false,
+      "additional_plantfood": "0"
+    },
+    "sun_crash": {
+      "enabled": false
+    },
+    "imp_ambushes": [],
+    "parachute_rains": [
+      {
+        "enabled": false,
+        "event_name": "pilot_drop",
+        "alias_prefix": "ParaRain",
+        "SpiderZombieName": "lostcity_lostpilot",
+        "SpiderCount": 2,
+        "ColumnStart": 5,
+        "ColumnEnd": 7,
+        "GroupSize": 1,
+        "TimeBetweenGroups": "0.2",
+        "ZombieFallTime": "1.5",
+        "WaveStartMessage": "Parachute Rain!"
+      }
+    ],
+    "sandstorm_ambushes": [
+      {
+        "enabled": true,
+        "event_name": "sandstorm_random",
+        "alias_prefix": "Sandstorm",
+        "storm_type": "sandstorm",
+        "additional_plantfood": "0",
+        "time_between_groups": 0.5,
+        "group_size": 1,
+        "spawners_per_trigger_range": [
+          1,
+          3
+        ],
+        "columns": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "unique_columns_per_trigger": true,
+        "zombies_per_spawner_range": [
+          1,
+          3
+        ],
+        "allow_duplicate_zombies": true,
+        "zombie_choice_greediness": 0.5,
+        "use_wave_points_budget": true,
+        "consume_wave_points": true,
+        "enforce_budget": true,
+        "points_budget_ratio_range": [
+          0.2,
+          0.75
+        ],
+        "zombie_pool": [
+          "rift",
+          "rift_imp",
+          "rift_gremlin",
+          "rift_gargimp",
+          "servant",
+          "servant_armor2",
+          "servant_imp",
+          "desire_shikaisen",
+          "plantagenet",
+          "plantagenet_armor2"
+        ]
+      }
+    ],
+    "snowstorm_ambushes": [
+      {
+        "enabled": false,
+        "event_name": "snowstorm_random",
+        "alias_prefix": "Snowstorm",
+        "storm_type": "snowstorm",
+        "additional_plantfood": "0",
+        "time_between_groups": 0.5,
+        "group_size": 1,
+        "spawners_per_trigger_range": [
+          1,
+          2
+        ],
+        "columns": [
+          5,
+          6,
+          7
+        ],
+        "unique_columns_per_trigger": true,
+        "zombies_per_spawner_range": [
+          1,
+          1
+        ],
+        "allow_duplicate_zombies": true,
+        "use_wave_points_budget": false,
+        "consume_wave_points": false,
+        "zombie_pool": [
+          "iceage",
+          "iceage_armor1",
+          "iceage_troglobite"
+        ]
+      }
+    ],
+    "necromancy_spawns": [
+      {
+        "enabled": false,
+        "event_name": "gravestone_necro",
+        "alias_prefix": "Necro",
+        "grid_types": [
+          "gravestone_tutorial"
+        ],
+        "zombies": [
+          "steam",
+          {
+            "zombie_name": "steam_armor1",
+            "count": 2
+          },
+          "steam_inventor"
+        ],
+        "wave_start_message": "Necromancy!",
+        "zombie_spawn_wait_time": 0,
+        "suppress_if_no_grid_items_found": false,
+        "additional_plantfood": "0"
+      }
+    ]
+  },
+  "aliases": {
+    "seed_bank": "SeedBank",
+    "escalation": "Escalation",
+    "wave_manager_module": "NewWaves",
+    "wave_manager": "WaveManager",
+    "wave_prefix": "Wave"
+  },
+  "level_definition": {
+    "Description": "WTF Level",
+    "FirstRewardParam": "moneybag",
+    "AddBonusStartingSun": false,
+    "NormalPresentTable": "egypt_normal_01",
+    "ShinyPresentTable": "egypt_shiny_01",
+    "Loot": "RTID(DefaultLoot@LevelModules)",
+    "ResourceGroupNames": [
+      "DelayLoad_Background_Beach",
+      "ZombieTreadmillBrainGroup",
+      "DelayLoad_Background_Beach_Compressed",
+      "PlantMoonFlowerEffects",
+      "Tombstone_Dark_Special",
+      "Tombstone_Dark_Effects",
+      "GridItemCarnieCards",
+      "UI_GameOver"
+    ],
+    "Modules": [
+      "RTID(OffScreenZombiesCoinOverride@LevelModules)",
+      "RTID(RainbowMarketMowers@LevelModules)",
+      "RTID(StandardIntro@LevelModules)",
+      "RTID(SeedBank@CurrentLevel)",
+      "RTID(Escalation@CurrentLevel)",
+      "RTID(NewWaves@CurrentLevel)",
+      "RTID(ZombiesDeadWinCon@LevelModules)",
+      "RTID(DefaultZombieWinCondition@LevelModules)",
+      "RTID(MarketNight@LevelModules)"
+    ],
+    "StageModule": "RTID(MarketNightsStage@LevelModules)"
+  },
+  "seed_bank": {
+    "PresetPlantList": [],
+    "PlantIncludeList": [],
+    "PlantExcludeList": [],
+    "SelectionMethod": "chooser"
+  },
+  "escalation": {
+    "PlantfoodToSpawnCount": 0,
+    "StartingPoints": 0,
+    "PointIncrementPerWave": 0
+  },
+  "wave_manager_module": {},
+  "wave_manager": {
+    "SuppressFlagZombie": false
+  },
+  "initial_grid_items": {
+    "enabled": true,
+    "alias": "GI",
+    "module_rtid": "RTID(GI@CurrentLevel)",
+    "allow_overlap": false,
+    "x_range": [
+      2,
+      7
+    ],
+    "y_range": [
+      0,
+      4
+    ],
+    "total_count_range": [
+      9,
+      12
+    ],
+    "pool": [
+      {
+        "type_name": "powertile_alpha",
+        "min_count": 1,
+        "max_count": 2,
+        "weight": 1.2,
+        "x_range": [
+          2,
+          2
+        ],
+        "y_range": [
+          0,
+          4
+        ]
+      },
+      {
+        "type_name": "powertile_beta",
+        "min_count": 1,
+        "max_count": 2,
+        "weight": 1.0,
+        "x_range": [
+          2,
+          2
+        ],
+        "y_range": [
+          0,
+          4
+        ]
+      },
+      {
+        "type_name": "powertile_gamma",
+        "count_range": [
+          1,
+          2
+        ],
+        "weight": 0.8,
+        "x_range": [
+          2,
+          2
+        ],
+        "y_range": [
+          0,
+          4
+        ]
+      },
+      {
+        "type_name": "powertile_delta",
+        "count_range": [
+          1,
+          2
+        ],
+        "weight": 0.8,
+        "x_range": [
+          2,
+          2
+        ],
+        "y_range": [
+          0,
+          4
+        ]
+      },
+      {
+        "type_name": "powertile_epsilon",
+        "count_range": [
+          1,
+          2
+        ],
+        "weight": 0.8,
+        "x_range": [
+          2,
+          2
+        ],
+        "y_range": [
+          0,
+          4
+        ]
+      },
+      {
+        "type_name": "bufftile_shield",
+        "min_count": 1,
+        "max_count": 2,
+        "weight": 1.1,
+        "x_range": [
+          7,
+          7
+        ],
+        "y_range": [
+          0,
+          4
+        ]
+      },
+      {
+        "type_name": "bufftile_attack",
+        "count_range": [
+          1,
+          2
+        ],
+        "weight": 1.0,
+        "x_range": [
+          7,
+          7
+        ],
+        "y_range": [
+          0,
+          4
+        ]
+      },
+      {
+        "type_name": "bufftile_speed",
+        "count_range": [
+          1,
+          2
+        ],
+        "weight": 1.0,
+        "x_range": [
+          7,
+          7
+        ],
+        "y_range": [
+          0,
+          4
+        ]
+      },
+      {
+        "type_name": "steam_backpack",
+        "count_range": [
+          1,
+          2
+        ],
+        "weight": 0.7,
+        "x_range": [
+          7,
+          7
+        ],
+        "y_range": [
+          0,
+          4
+        ]
+      },
+      {
+        "type_name": "tar",
+        "count_range": [
+          0,
+          2
+        ],
+        "weight": 0.6,
+        "x_range": [
+          5,
+          7
+        ],
+        "y_range": [
+          0,
+          4
+        ]
+      }
+    ]
+  },
+  "append_empty_object": true,
+  "version": 1
+}

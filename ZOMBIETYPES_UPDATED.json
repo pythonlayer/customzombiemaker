@@ -6,6 +6,26 @@
             "#comment": "####### Tutorial Zombies #######",
             "objclass": "ZombieType",
             "aliases": [
+                "idiot"
+            ],
+            "objdata": {
+                "TypeName": "tutorial",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieTutorialDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieTutorialGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_TUTORIAL",
+                "HomeWorld": "modern",
+                "IsBasicZombie": true
+            }
+        },
+        {
+            "#comment": "####### Tutorial Zombies #######",
+            "objclass": "ZombieType",
+            "aliases": [
                 "tutorial"
             ],
             "objdata": {
@@ -9340,6 +9360,33 @@
                 "AnimRigClass": "ZombieAnimRig_ZCorpGargantuar",
                 "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_CORPORATE_IMP",
                 "HomeWorld": "modern"
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "servant_gargantuar",
+                "servant_girl_gargantuar"
+            ],
+            "objdata": {
+                "TypeName": "servant_gargantuar",
+                "ZombieClass": "ZombieGargantuar",
+                "Properties": "RTID(ZombieServantGirlGargantuar@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieServantGirlGargantuarGroup",
+                    "ZombieServantGirlImpGroup",
+                    "ZombieGargantuarEffects",
+                    "ZombieBronzeEffects"
+                ],
+                "AudioGroups": [
+                    "ZombieGlobalGargantuarAudio",
+                    "ZombieBeachGargantuarAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Gargantuar",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_SERVANT_GIRL_GARGANTUAR",
+                "HomeWorld": "travellog_market",
+                "Placeable": true,
+                "AlmanacBackdropName": "market"
             }
         },
         {

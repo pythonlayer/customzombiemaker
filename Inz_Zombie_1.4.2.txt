@@ -1,0 +1,555 @@
+
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"summer_shell_shield"
+			],
+			"objdata": {
+				"TypeName": "summer_shell_shield",
+				"ZombieClass": "ZombieBeachShellShield",
+				"Properties": "RTID(ZombieSummerShellShield@ZombieProperties)",
+				"ResourceGroups": [
+					"ZombieSummerShellGroup",
+					"ZombieDummyGroup"
+				],
+				"AudioGroups": [
+					"ZombieRomanMedusaAudio",
+					"ZombieEgyptCamelAudio",
+					"PlantHeadbutterAudio",
+					"ZombiePremiumCakeTank"
+				],
+				"AnimRigClass": "ZombieAnimRig_BeachShellShield",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_SUMMER_SHELL_SHIELD",
+				"AlmanacBackdropName": "summernight",
+				"HomeWorld": "holiday",
+				"IsBasicZombie": false,
+				"Placeable": true
+			}
+		},
+		{
+			"aliases": [
+				"ZombieSummerShellShield"
+			],
+			"objclass": "ZombieBeachShellShieldProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"StreetOffset": {
+					"x": -2,
+					"y": -1
+				},
+				"Hitpoints": 270,
+				"AttackDPS": 0,
+				"HypnoAttackDPS": 0,
+				"EatDPS": 100,
+				"HelmAbsorbsOverflowDamage": true,
+				"NormalDeathWhenMowed": true,
+				"HitRect": {
+					"mX": -5,
+					"mY": 10,
+					"mWidth": 75,
+					"mHeight": 110
+				},
+				"AttackRect": {
+					"mX": -5,
+					"mY": 0,
+					"mWidth": 75,
+					"mHeight": 110
+				},
+				"HitRectLostShell": {
+					"mX": 0,
+					"mY": 10,
+					"mWidth": 42,
+					"mHeight": 125
+				},
+				"AttackRectLostShell": {
+					"mX": 15,
+					"mY": 0,
+					"mWidth": 20,
+					"mHeight": 125
+				},
+				"Cost": 150,
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 1.2
+				},
+				"CanSpawnPlantFood": true,
+				"CanSurrender": true,
+				"CanSpawnPlantFood": true,
+				"CanBePlantTossedStrong": false,
+				"CanBePlantTossedWeak": false,
+				"CanBeFlickedOff": false,
+				"ImmuneInShell": [
+					{
+						"Condition": "butter"
+					},
+					{
+						"Condition": "shrinking"
+					},
+					{
+						"Condition": "shrunken"
+					},
+					{
+						"Condition": "freeze"
+					},
+					{
+						"Condition": "chill"
+					},
+					{
+						"Condition": "begoniafire"
+					},
+					{
+						"Condition": "begoniachilled"
+					},
+					{
+						"Condition": "begoniamixed"
+					},
+					{
+						"Condition": "dazeystunned"
+					},
+					{
+						"Condition": "stalled"
+					},
+					{
+						"Condition": "sapped"
+					},
+					{
+						"Condition": "stun"
+					},
+					{
+						"Condition": "blockolistunned"
+                    },
+					{
+						"Condition": "solarflared"
+					},
+					{
+						"Condition": "speeddown1"
+					},
+					{
+						"Condition": "speeddown2"
+					},
+					{
+						"Condition": "speeddown3"
+					},
+					{
+						"Condition": "speeddown4"
+					},
+					{
+						"Condition": "affectEatdps"
+					},
+                  {
+						"Condition": "eatdpsUp"
+                  }
+				],
+				"ConditionImmunities": [
+					{
+						"Condition": "freeze",
+						"Percent": 0.25
+					},
+					{
+						"Condition": "chill",
+						"Percent": 0.75
+					},
+					{
+						"Condition": "begoniachilled",
+						"Percent": 0.75
+					}
+				],
+				"GroundTrackName": "ground_swatch",
+				"Speed": 0.12,
+				"SpeedLostShell": 0.22,
+				"WavePointCost": 550,
+				"Weight": 3000,
+				"ZombieArmorProps": [
+					"RTID(SummerFishDefault@ArmorTypes)",
+					"RTID(SummerShellShieldDefault@ArmorTypes)"
+				],
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness7"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed0"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ArmorPropertySheet",
+			"aliases": [
+				"SummerFishDefault"
+			],
+			"objdata": {
+				"ArmorType": "CowboyHat",
+				"BaseHealth": 3000.0,
+				"ArmorFlags": [
+					"damageable",
+					"droppable",
+					"passdamage",
+					"corrosive"
+				],
+				"ArmorLayers": [
+					"fish_1",
+					"fish_2",
+					"fish_3"
+				],
+				"ArmorLayerHealth": [
+					0.66,
+					0.33
+				],
+				"ParticleLayerOverride": [
+					"fish_3"
+				]
+			}
+		},
+		{
+            "objclass": "ArmorPropertySheet",
+            "aliases": [
+                "SummerShellShieldDefault"
+            ],
+            "objdata": {
+                "ArmorType": "Sarcophagus",
+                "BaseHealth": 3000.0,
+                "ArmorFlags": [
+                    "damageable",
+                    "absorboverflow",
+                    "body",
+                    "corrosive"
+                ],
+                "ArmorLayers": [
+                    "shell_1",
+                    "shell_2",
+                    "shell_3"
+                ],
+                "ArmorLayerHealth": [
+                    0.666,
+                    0.333
+                ],
+                "ImpactSoundEvent": "Play_Plant_HeadbutterLettuce_Attack",
+                "DropSoundEvent": "Play_Zomb_Premium_Caketank_Explode_Tier_04"
+            }
+        },
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"lunar_newspaper"
+			],
+			"objdata": {
+				"TypeName": "lunar_newspaper",
+				"ZombieClass": "ZombieModernNewspaper",
+				"Properties": "RTID(ZombieLunarNewspaperDefault@ZombieProperties)",
+				"ResourceGroups": [
+					"ZombieLNYNewspaperGroup"
+				],
+				"AudioGroups": [
+					"ZombieModernNewspaperAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_Newspaper",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_LNY_NEWSPAPER",
+				"AlmanacBackdropName": "lunar",
+				"HomeWorld": "holiday"
+			}
+		},
+		{
+			"aliases": [
+				"ZombieLunarNewspaperDefault"
+			],
+			"objclass": "ZombieModernNewspaperProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"EatDPS": 200,
+				"EnragedDamageScale": 4,
+				"EnragedSpeedScale": 4,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 460,
+				"FireDamageMultiplier": 0.5,
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.2
+				},
+				"Speed": 0.22,
+				"WavePointCost": 850,
+				"Weight": 4000,
+				"ZombieArmorProps": [
+					"RTID(LunarNewspaperDefault@ArmorTypes)"
+				],
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness5"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "NewspaperArmorPropertySheet",
+			"aliases": [
+				"LunarNewspaperDefault"
+			],
+			"objdata": {
+				"ClassName": "NewspaperArmor",
+				"ArmorType": "Newspaper",
+				"BaseHealth": 800.0,
+				"ArmorFlags": [
+					"damageable",
+					"corrosive"
+				],
+				"ArmorLayers": [
+					"_zombie_newspaper",
+					"_zombie_newspaper_dmg1",
+					"_zombie_newspaper_dmg2"
+				],
+				"ArmorLayerHealth": [
+					0.666,
+					0.333
+				],
+				"FireLayer": "",
+				"ImpactSoundEvent": "Play_Zomb_Modern_Newspaper_Paper_Impact",
+				"DropSoundEvent": ""
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"servant_gargantuar",
+				"servant_girl_gargantuar"
+			],
+			"objdata": {
+				"TypeName": "servant_gargantuar",
+				"ZombieClass": "ZombieGargantuar",
+				"Properties": "RTID(ZombieServantGirlGargantuar@ZombieProperties)",
+				"ResourceGroups": [
+					"ZombieServantGirlGargantuarGroup",
+					"ZombieServantGirlImpGroup",
+					"ZombieGargantuarEffects",
+					"ZombieBronzeEffects"
+				],
+				"AudioGroups": [
+					"ZombieGlobalGargantuarAudio",
+					"ZombieBeachGargantuarAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_Gargantuar",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_SERVANT_GIRL_GARGANTUAR",
+				"Placeable": true,
+				"HomeWorld": "travellog_market",
+				"AlmanacBackdropName": "market"
+			}
+		},
+		{
+            "aliases": [
+                "ZombieServantGirlGargantuar"
+            ],
+            "objclass": "ZombieGargantuarProps",
+            "objdata": {
+                "AlmanacOffset": {
+                    "x": 20,
+                    "y": 70
+                },
+                "AlmanacScale": 0.8,
+                "ArmDropFraction": -1,
+                "ArtCenter": {
+                    "x": 90,
+                    "y": 125
+                },
+				"StreetOffset": {
+					"x": -2,
+					"y": -1
+				},
+                "AttackRect": {
+                    "mHeight": 95,
+                    "mWidth": 30,
+                    "mX": 0,
+                    "mY": 10
+                },
+                "CanBeFlickedOff": false,
+                "CanSpawnPlantFood": false,
+                "Cost": 150,
+                "EatDPS": 0,
+                "ExplodesWhenMowed": true,
+                "FlickIsLaneRestricted": true,
+                "GroundTrackName": "ground_swatch",
+                "HealthThresholdToImpAmmoLayers": [
+                    {
+                        "HealthPercentThrowImp": 0.5,
+                        "ProjectileLayersToHide": [
+                            "_zombie_imp_head_top",
+                            "zombie_imp_skull",
+                            "zombie_imp_jaw",
+                            "Zombie_gargantuar_whiterope",
+                            "zombie_imp_arm_inner_lower",
+                            "zombie_imp_arm_inner_upper",
+                            "zombie_imp_arm_outer_lower",
+                            "zombie_imp_arm_outer_upper_01",
+                            "zombie_imp_arm_outer_upper_02",
+                            "zombie_imp_arms_outer_upper",
+                            "zombie_imp_eye",
+                            "zombie_imp_eye_sm",
+                            "zombie_imp_hand_inner",
+                            "zombie_imp_hand_outer",
+                            "zombie_imp_leg_inner_lower",
+                            "zombie_imp_leg_inner_upper",
+                            "zombie_imp_leg_outer_lower",
+                            "zombie_imp_leg_outer_upper",
+                            "zombie_imp_pupil",
+                            "zombie_imp_torso",
+                            "zombie_imp_waist",
+                            "zombie_imp_toe_outer",
+                            "zombie_imp_toe_inner"
+                        ]
+                    }
+                ],
+                "HitRect": {
+                    "mHeight": 95,
+                    "mWidth": 62,
+                    "mX": 10,
+                    "mY": 10
+                },
+				"ConditionImmunities": [
+                  {
+						"Condition": "affectEatdps"
+                  },
+                    {
+                        "Condition": "poisoned"
+                    },
+                    {
+                        "Condition": "contagiouspoison"
+                    },
+                    {
+                        "Condition": "butter"
+                    },
+                    {
+                        "Condition": "blownoff"
+                    },
+					{
+						"Condition": "decaypoison"
+					}
+				],
+                "Hitpoints": 3600,
+                "HypnoshroomEffectOffset": {
+                    "x": 0,
+                    "y": 120
+                },
+                "ImpApex": 250,
+                "ImpFlightTime": 1.5,
+                "ImpSpawnOffset": {
+					"x": -75,
+					"y": 0,
+					"z": 160
+				},
+                "ImpTargetColumn": 2,
+                "ImpType": "servant_imp",
+                "IsValidPinchTarget": false,
+                "MinPosXThrowImp": 400,
+                "ScaledProps": [
+                    {
+                        "Arg1": 1.3,
+                        "Arg2": 0.05,
+                        "Formula": "standard",
+                        "Key": "Hitpoints"
+                    },
+                    {
+                        "Arg1": 1.3,
+                        "Arg2": 0.05,
+                        "Formula": "standard",
+                        "Key": "EatDPS"
+                    },
+                    {
+                        "Formula": "constant",
+                        "Key": "Speed"
+                    },
+                    {
+                        "Formula": "constant",
+                        "Key": "WavePointCost"
+                    },
+                    {
+                        "Arg1": 1.3,
+                        "Arg2": 0.05,
+                        "Formula": "standard",
+                        "Key": "SmashDamage"
+                    }
+                ],
+				"ShadowOffset": {
+					"x": 20,
+					"y": -10,
+					"z": 1.4
+				},
+				"ShadowScaling": {
+					"x": 2,
+					"y": 2
+				},
+                "Size": "large",
+                "SkipHeadDropState": true,
+                "SmashDamage": 1500,
+                "SmashDuration": 2,
+                "SoundOnAsh": "Play_Zomb_Global_Gargantuar_Mvmt_Death_Ash",
+                "SoundOnElectrocute": "Play_Zomb_Global_Gargantuar_Mvmt_Shock",
+                "SoundOnIdle": "Play_Zomb_Tutorial_Gargantuar_Mvmt_Idle",
+                "Speed": 0.24,
+				"ZombieArmorProps": [
+					"RTID(GargantuarJawFix@ArmorTypes)"
+				],
+                "StaticArtImageAsset": "IMAGE_GARGANTUAR",
+                "ThrowImpDuration": 1,
+                "WavePointCost": 1500,
+                "Weight": 3000,
+                "ZombieStats": [
+                    {
+                        "Type": "toughness",
+                        "Value": "toughness7"
+                    },
+                    {
+                        "Type": "speed",
+                        "Value": "speed3"
+                    }
+                ]
+            }
+        },

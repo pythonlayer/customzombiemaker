@@ -1,0 +1,4290 @@
+* Basic/Flag/Rally
+
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"fairytale"
+			],
+			"objdata": {
+				"TypeName": "fairytale",
+				"ZombieClass": "ZombieBasic",
+				"Properties": "RTID(ZombieFairyTaleDefault@ZombieProperties)",
+				"ResourceGroups": [
+					"ZombieFairyTaleBasicGroup"
+				],
+				"AudioGroups": [],
+				"AnimRigClass": "ZombieAnimRig_Tutorial",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_BASIC",
+				"HomeWorld": "fairytale",
+				"IsBasicZombie": true
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"fairytale_flag"
+			],
+			"objdata": {
+				"TypeName": "fairytale_flag",
+				"ZombieClass": "ZombieBasic",
+				"Properties": "RTID(ZombieFairyTaleFlagDefault@ZombieProperties)",
+				"ResourceGroups": [
+					"ZombieFairyTaleBasicGroup"
+				],
+				"AudioGroups": [],
+				"AnimRigClass": "ZombieAnimRig_Tutorial",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_FLAG",
+				"HomeWorld": "fairytale",
+				"IsBasicZombie": true,
+				"FlagType": "flag_normal"
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"fairytale_flag_veteran"
+			],
+			"objdata": {
+				"TypeName": "fairytale_flag_veteran",
+				"ZombieClass": "ZombieBasic",
+				"Properties": "RTID(ZombieFairyTaleFlagVeteran@ZombieProperties)",
+				"ResourceGroups": [
+					"ZombieFairyTaleBasicGroup"
+				],
+				"AudioGroups": [],
+				"AnimRigClass": "ZombieAnimRig_Tutorial",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_RALLY",
+				"HomeWorld": "fairytale",
+				"IsBasicZombie": true,
+				"FlagType": "flag_veteran"
+			}
+		},
+		{
+			"aliases": [
+				"ZombieFairyTaleDefault"
+			],
+			"objclass": "ZombiePropertySheet",
+			"objdata": {
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 190,
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 1.4
+				},
+				"Speed": 0.185,
+				"WavePointCost": 100,
+				"Weight": 1000,
+				"ZombieArmorProps": [
+					"RTID(FairytaleHatDefault@ArmorTypes)",
+					"RTID(FairytaleCardHeartsDefault@ArmorTypes)",
+					"RTID(FairytaleCardClubsDefault@ArmorTypes)",
+					"RTID(FairytaleCardDiamondsDefault@ArmorTypes)",
+					"RTID(FairytaleCardSpadesDefault@ArmorTypes)"
+				], (the suit is depend on the 2nd armor)
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness1"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+            "objclass": "ArmorPropertySheet",
+            "aliases": [
+                "FairytaleHatDefault"
+            ],
+            "objdata": {
+                "ArmorType": "CowboyHat",
+                "BaseHealth": 40.0,
+                "ArmorFlags": [
+                    "droppable",
+                    "passdamage",
+                    "helm"
+                ],
+                "ArmorLayers": [
+                    "_zombie_armor_hat_states"
+                ],
+                "ArmorLayerHealth": [
+                    1.0
+                ],
+                "ParticleLayerOverride": [
+                    "_zombie_armor_hat_states"
+                ]
+            }
+        },
+		{
+			"objclass": "ArmorPropertySheet",
+			"aliases": [
+				"FairytaleCardHeartsDefault"
+			],
+			"objdata": {
+				"ArmorType": "ShoulderArmor",
+				"BaseHealth": 1,
+				"ArmorFlags": [
+					"passdamage",
+					"invincible"
+				],
+				"ArmorLayers": [
+					"nothing",
+					"card_hearts",
+					"card_clubs",
+					"card_diamonds",
+					"card_spades"
+				], (if you want a card to show up, remove its layer here)
+				"ArmorLayerHealth": [
+					1.0
+				]
+			}
+		},
+
+
+* Card Imp
+
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"fairytale_imp_hearts"
+			],
+			"objdata": {
+				"TypeName": "fairytale_imp_hearts",
+				"ZombieClass": "ZombieImp",
+				"Properties": "RTID(ZombieTutorialImpDefault@ZombieProperties)",
+				"ResourceGroups": [
+					"ZombieFairyTaleCardImpGroup"
+				],
+				"AudioGroups": [
+					"ZombieGlobalGargantuarAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_Imp",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_IMP_HEARTS", (replace HEARTS with DIAMONDS, SPADES, CLUBS for other suits)
+				"HomeWorld": "fairytale",
+				"Placeable": true
+			}
+		},
+
+
+* Cheshire Imp
+
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"fairytale_chesire",
+				"fairytale_cheshire"
+			],
+			"objdata": {
+				"TypeName": "fairytale_chesire",
+				"ZombieClass": "ZombieFairytaleChesire",
+				"Properties": "RTID(ZombieFairytaleChesireDefault@ZombieProperties)",
+				"ResourceGroups": [
+					"ZombieFairyTaleChesireGroup"
+				],
+				"AudioGroups": [
+					"ZombieGlobalGargantuarAudio",
+					"ZombieFairyTaleChesireAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_Imp",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_CHESIRE",
+				"HomeWorld": "fairytale"
+			}
+		},
+		{
+			"aliases": [
+				"ZombieFairytaleChesireDefault"
+			],
+			"objclass": "ZombieFairytaleChesireProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 102,
+					"y": 124
+				},
+				"AlmanacOffset": {
+					"x": 5
+				},
+				"AttackRect": {
+					"mHeight": 80,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 80,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"HypnoshroomEffectOffset": {
+					"x": 0,
+					"y": 48
+				},
+				"Hitpoints": 250,
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 0.8
+				},
+				"Size": "imp",
+				"Speed": 0.22,
+				"WavePointCost": 450,
+				"Weight": 3000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness2"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+
+
+* Unicorn and Diamond Knight
+
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"fairytale_cavalry"
+			],
+			"objdata": {
+				"TypeName": "fairytale_cavalry",
+				"ZombieClass": "ZombieCavalry",
+				"Properties": "RTID(ZombieFairytaleCavalryDefault@ZombieProperties)",
+				"ResourceGroups": [
+					"ZombieFairyTaleCavalryGroup",
+					"ZombieCavalryGroup",
+					"ZombieDarkBasicGroup"
+				],
+				"AudioGroups": [
+					"ZombieFairyTaleCavalryAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_Cavalry",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_CAVALRY",
+				"HomeWorld": "fairytale"
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"fairytale_armor3_cavalry"
+			],
+			"objdata": {
+				"TypeName": "fairytale_armor3_cavalry",
+				"ZombieClass": "ZombieCavalryKnight",
+				"Properties": "RTID(ZombieFairytaleCavalryKnightDefault@ZombieProperties)",
+				"ResourceGroups": [
+					"ZombieFairyTaleCavalryGroup",
+					"ZombieDarkBasicGroup"
+				],
+				"AudioGroups": [
+					"ZombieFairyTaleCavalryAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_CavalryKnight",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_CAVALRY",
+				"HomeWorld": "fairytale"
+			}
+		},
+		{
+			"aliases": [
+				"ZombieFairytaleCavalryDefault"
+			],
+			"objclass": "ZombieCavalryProps",
+			"objdata": {
+				"ArmDropFraction": -1,
+				"ArtCenter": {
+					"x": 106,
+					"y": 130
+				},
+				"AlmanacOffset": {
+					"x": 2.5,
+					"y": 20
+				},
+				"StreetOffset": {
+					"x": -2,
+					"y": -1
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 15,
+					"mX": -55,
+					"mY": 0
+				},
+				"BuckRect": {
+					"mHeight": 125,
+					"mWidth": 30,
+					"mX": -45,
+					"mY": 10
+				},
+				"HorseEnterSpeed": 0.16,
+				"HorsePawLocation": 810,
+				"HorseRunSpeed": 1,
+				"ZombieTypeToSpawn": "fairytale_armor3_cavalry",
+				"ZombieTypeSpawnDistance": 3,
+				"CanSpawnGridItem": false,
+				"GridItemToSpawn": "whitecrater",
+				"HorseRunMultiplier": 0.3,
+				"HorseWalkMultiplier": 0.15,
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"EatDPS": 100,
+				"LanceDamage": 500,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 125,
+					"mWidth": 105,
+					"mX": -15,
+					"mY": 10
+				},
+				"Hitpoints": 1300,
+				"HypnoshroomEffectOffset": {
+					"x": 70,
+					"y": 50
+				},
+				"IsValidPinchTarget": false,
+				"MetallicBodyParts": true,
+				"NormalDeathOnExplosion": true,
+				"NormalDeathWhenMowed": true,
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "BullRunSpeed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": -5,
+					"y": 0,
+					"z": 1.2
+				},
+				"ShadowScaling": {
+					"x": 2,
+					"y": 1
+				},
+				"SkipHeadDropState": true,
+				"Speed": 0.16,
+				"WavePointCost": 1200,
+				"Weight": 1000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness5"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed1"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieFairytaleCavalryKnightDefault"
+			],
+			"objclass": "ZombiePropertySheet",
+			"objdata": {
+				"ArtCenter": {
+					"x": 100,
+					"y": 130
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 270,
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.2
+				},
+				"Speed": 0.185,
+				"WavePointCost": 600,
+				"Weight": 4500,
+				"ZombieArmorProps": [
+					"RTID(ShoulderArmorDefault@ArmorTypes)",
+					"RTID(CrownDefault@ArmorTypes)"
+				],
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness6"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+
+
+* Guardgantuar
+
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"fairytale_gargantuar"
+			],
+			"objdata": {
+				"TypeName": "fairytale_gargantuar",
+				"ZombieClass": "ZombieFairytaleGargantuar",
+				"Properties": "RTID(ZombieFairytaleGargantuar@ZombieProperties)",
+				"ResourceGroups": [
+					"ZombieFairyTaleGargantuarGroup",
+					"ZombieFairyTaleImpGroup",
+					"ZombieGargantuarEffects",
+					"ZombieBronzeEffects",
+					"ZombieFairyTaleCavalryGroup",
+					"ZombieCavalryGroup",
+					"ZombieDarkBasicGroup"
+				],
+				"AudioGroups": [
+					"ZombiePirateGargantuarAudio",
+					"ZombiePirateImpAudio",
+					"ZombieCowboyGargantuarAudio",
+					"ZombieCowboyBullRiderAudio",
+					"ZombieGlobalGargantuarAudio",
+					"ZombieRomanShieldAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_Gargantuar",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_GARGANTUAR",
+				"HomeWorld": "fairytale"
+			}
+		},
+		{
+			"aliases": [
+				"ZombieFairytaleGargantuar"
+			],
+			"objclass": "ZombieFairytaleGargantuarProps",
+			"objdata": {
+				"ImpType": "fairytale_imp", (replace with idiot for no imp version)
+				"AlmanacOffset": {
+					"x": 20,
+					"y": 70
+				},
+				"AlmanacScale": 0.8,
+				"ArmDropFraction": -1,
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"StreetOffset": {
+					"x": -2,
+					"y": -1
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 30,
+					"mX": 0,
+					"mY": 10
+				},
+				"ConditionImmunities": [
+					{
+						"Condition": "affectEatdps"
+					}
+				],
+				"CanBeFlickedOff": false,
+				"CanSpawnPlantFood": false,
+				"Cost": 150,
+				"EatDPS": 0,
+				"ExplodesWhenMowed": true,
+				"FlickIsLaneRestricted": true,
+				"IsValidPinchTarget": false,
+				"GroundTrackName": "ground_swatch",
+              "HealthThresholdToImpAmmoLayers": [
+                    {
+                        "HealthPercentThrowImp": 0,
+                        "ProjectileLayersToHide": [
+                            "zombie_imp_skull",
+                            "zombie_imp_jaw",
+                            "zombie_imp_arm_inner_lower",
+                            "zombie_imp_arm_inner_upper",
+                            "zombie_imp_arm_outer_lower",
+                            "zombie_imp_arm_outer_upper_01",
+                            "zombie_imp_arm_outer_upper_02",
+                            "zombie_imp_arms_outer_upper",
+                            "zombie_imp_eye",
+                            "zombie_imp_eye_sm",
+                            "zombie_imp_hand_inner",
+                            "zombie_imp_hand_outer",
+                            "zombie_imp_leg_inner_lower",
+                            "zombie_imp_leg_inner_upper",
+                            "zombie_imp_leg_outer_lower",
+                            "zombie_imp_leg_outer_upper",
+                            "zombie_imp_pupil",
+                            "zombie_imp_torso",
+                            "zombie_imp_waist",
+                            "zombie_imp_toe_outer",
+                            "zombie_net_animation",
+                            "zombie_imp_head_top",
+                            "zombie_imp_helm_jaw",
+                            "zombie_imp_helm_jaw_lion_fur",
+                            "zombie_imp_dress",
+                            "zombie_imp_skirt1",
+                            "zombie_imp_skirt2",
+                            "zombie_imp_skirt3",
+                            "zombie_imp_skirt4",
+                            "zombie_imp_skirt5",
+                            "zombie_imp_skirt6"
+                        ]
+                    }
+                ], (for no imp version leave this empty to make the ash not include the imp)
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 62,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 3600,
+				"HypnoshroomEffectOffset": {
+					"x": 0,
+					"y": 120
+				},
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "SmashDamage"
+					}
+				],
+				"ShadowOffset": {
+					"x": 20,
+					"y": -10,
+					"z": 1.4
+				},
+				"ShadowScaling": {
+					"x": 2,
+					"y": 2
+				},
+				"Size": "large",
+				"SkipHeadDropState": true,
+				"SmashDamage": 1500,
+				"SmashDuration": 2,
+				"SoundOnAsh": "Play_Zomb_Global_Gargantuar_Mvmt_Death_Ash",
+				"SoundOnElectrocute": "Play_Zomb_Global_Gargantuar_Mvmt_Shock",
+				"SoundOnIdle": "Play_Zomb_Tutorial_Gargantuar_Mvmt_Idle",
+				"Speed": 0.2,
+				"ZombieArmorProps": [
+					"RTID(GuardgantuarCrownDefault@ArmorTypes)",
+					"RTID(GuardgantuarShieldDefault@ArmorTypes)",
+					"RTID(GuardgantuarShieldBeltDefault@ArmorTypes)",
+					"RTID(GargantuarJawFix@ArmorTypes)"
+				], (for no im version, add GuardgantuarNoImp armor)
+				"StaticArtImageAsset": "IMAGE_GARGANTUAR",
+				"WavePointCost": 2500,
+				"Weight": 3000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness7"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ArmorPropertySheet",
+			"aliases": [
+				"GuardgantuarCrownDefault"
+			],
+			"objdata": {
+				"ArmorType": "Crown",
+				"BaseHealth": 1800.0,
+				"ArmorFlags": [
+					"damageable",
+					"droppable",
+					"metallic",
+					"helm",
+					"corrosive"
+				],
+				"ArmorLayers": [
+					"Zombie_gargantuar_helmet",
+					"Zombie_gargantuar_helmet_damage1"
+				],
+				"ArmorLayerHealth": [
+					0.5
+				],
+				"ImpactSoundEvent": "Play_impact_shieldhit",
+				"DropSoundEvent": "Play_Zomb_Roman_Shield_Break"
+			}
+		},
+		{
+			"objclass": "ArmorPropertySheet",
+			"aliases": [
+				"GuardgantuarShieldDefault"
+			],
+			"objdata": {
+				"ArmorType": "CowboyHat",
+				"BaseHealth": 1800.0,
+				"ArmorFlags": [
+					"droppable",
+					"passdamage",
+					"helm",
+					"corrosive"
+				],
+				"ArmorLayers": [
+					"Zombie_gargantuar_shield_attached"
+				],
+				"ArmorLayerHealth": [
+					1.0
+				],
+				"ParticleLayerOverride": [
+					"particle_shield"
+				],
+				"DropSoundEvent": "Play_Zomb_Roman_Shield_Break"
+			}
+		},
+		{
+			"objclass": "ArmorPropertySheet",
+			"aliases": [
+				"GuardgantuarShieldBeltDefault"
+			],
+			"objdata": {
+				"ArmorType": "CowboyHat",
+				"BaseHealth": 1800.0,
+				"ArmorFlags": [
+                  "passdamage",
+                  "helm",
+                  "droppable",
+					"corrosive"
+				],
+				"ArmorLayers": [
+					"Zombie_gargantuar_shieldbelt"
+				],
+				"ArmorLayerHealth": [
+					1.0
+				]
+			}
+		},
+
+
+* Queen Imp
+
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"fairytale_imp"
+			],
+			"objdata": {
+				"TypeName": "fairytale_imp",
+				"ZombieClass": "ZombieFairytaleImp",
+				"Properties": "RTID(ZombieFairytaleImpDefault@ZombieProperties)",
+				"ResourceGroups": [
+					"ZombieFairyTaleImpGroup",
+					"ZombieFairyTaleCavalryGroup",
+					"ZombieCavalryGroup",
+					"ZombieDarkBasicGroup"
+				],
+				"AudioGroups": [
+					"ZombieGlobalGargantuarAudio",
+					"ZombieFairyTaleImpAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_Imp",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_IMP",
+				"HomeWorld": "fairytale",
+				"Placeable": true
+			}
+		},
+		{
+			"aliases": [
+				"ZombieFairytaleImpDefault"
+			],
+			"objclass": "ZombieFairytaleImpProps",
+			"objdata": {
+				"EscapeSpeed": 0.5,
+				"ArtCenter": {
+					"x": 102,
+					"y": 124
+				},
+				"AlmanacOffset": {
+					"x": 5
+				},
+				"AttackRect": {
+					"mHeight": 80,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"HitRect": {
+					"mHeight": 80,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"ConditionImmunities": [
+                  {
+						"Condition": "affectEatdps"
+                  },
+                  {
+						"Condition": "eatdpsUp"
+                  }
+				],
+				"HypnoshroomEffectOffset": {
+					"x": 0,
+					"y": 48
+				},
+				"CanSpawnPlantFood": false,
+				"CanSurrender": false,
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"Hitpoints": 350,
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 0.8
+				},
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					}
+				],
+				"Speed": 0.22,
+				"WavePointCost": 500,
+				"Weight": 0,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness3"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed5"
+					}
+				]
+			}
+		},
+
+
+*Mirror Queen
+
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"fairytale_mirrorqueen"
+			],
+			"objdata": {
+				"TypeName": "fairytale_mirrorqueen",
+				"ZombieClass": "ZombieFairytaleMirror",
+				"Properties": "RTID(ZombieFairytaleMirrorQueenDefault@ZombieProperties)",
+				"ResourceGroups": [
+					"ZombieMirrorQueenGroup",
+					"SleepingPlantEffect"
+				],
+				"AudioGroups": [
+					"PlantHeadbutterAudio",
+					"ZombieMirrorQueenAudio"
+                ],
+				"AnimRigClass": "ZombieAnimRig_FairytaleMirror",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_MIRROR_QUEEN",
+				"HomeWorld": "fairytale",
+				"IsBasicZombie": true
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"fairytale_mirrorqueen_veteran"
+			],
+			"objdata": {
+				"TypeName": "fairytale_mirrorqueen_veteran",
+				"ZombieClass": "ZombieFairytaleMirror",
+				"Properties": "RTID(ZombieFairytaleMirrorQueenVeteranDefault@ZombieProperties)",
+				"ResourceGroups": [
+					"ZombieMirrorQueenGroup",
+					"EffectsPowerCards",
+					"SleepingPlantEffect"
+				],
+				"AudioGroups": [
+					"PlantHeadbutterAudio",
+					"ZombieMirrorQueenAudio"
+                ],
+				"AnimRigClass": "ZombieAnimRig_FairytaleMirror",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_MIRROR_QUEEN_ELITE",
+				"HomeWorld": "fairytale",
+				"IsBasicZombie": true
+			}
+		},
+		{
+			"aliases": [
+				"ZombieFairytaleMirrorQueenDefault"
+			],
+			"objclass": "ZombieFairytaleMirrorProps",
+			"objdata": {
+				"Actions": [
+					"RTID(ZombieFairytaleMirrorQueenMirrorDisable@ZombieActions)",
+					"RTID(ZombieFairytaleMirrorQueenSleepify@ZombieActions)"
+				],
+				"MirrorDisableStartTime": 10,
+				"SleepifyStartTime": 10,
+				"MirrorDisableBetweenTime": 7.5,
+				"SleepifyBetweenTime": 7.5,
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"AlmanacOffset": {
+					"x": 10
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"ConditionImmunities": [
+					{
+						"Condition": "poisoned"
+					},
+					{
+						"Condition": "contagiouspoison"
+					},
+					{
+						"Condition": "decaypoison"
+					}
+				],
+				"CanSpawnPlantFood": true,
+				"CanSurrender": true,
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"Hitpoints": 1000,
+				"ShadowOffset": {
+					"x": 20,
+					"y": 0,
+					"z": 1.2
+				},
+				"ShadowScaling": {
+					"x": 1.4,
+					"y": 1
+				},
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					}
+				],
+				"Speed": 0.2,
+				"WavePointCost": 1000,
+				"Weight": 2000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness5"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieFairytaleMirrorQueenVeteranDefault"
+			],
+			"objclass": "ZombieFairytaleMirrorProps",
+			"objdata": {
+				"Actions": [
+					"RTID(ZombieFairytaleMirrorQueenVeteranMirrorDisable@ZombieActions)",
+					"RTID(ZombieFairytaleMirrorQueenVeteranSleepify@ZombieActions)"
+				],
+				"MirrorDisableStartTime": 10,
+				"SleepifyStartTime": 10,
+				"MirrorDisableBetweenTime": 7.5,
+				"SleepifyBetweenTime": 7.5,
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"AlmanacOffset": {
+					"x": 10
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"ConditionImmunities": [
+					{
+						"Condition": "poisoned"
+					},
+					{
+						"Condition": "contagiouspoison"
+					},
+					{
+						"Condition": "decaypoison"
+					}
+				],
+				"CanSpawnPlantFood": true,
+				"CanSurrender": true,
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"Hitpoints": 1500,
+				"ShadowOffset": {
+					"x": 20,
+					"y": 0,
+					"z": 1.2
+				},
+				"ShadowScaling": {
+					"x": 1.4,
+					"y": 1
+				},
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					}
+				],
+				"Speed": 0.24,
+				"WavePointCost": 1500,
+				"Weight": 1500,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness6"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed3"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieFairytaleMirrorDisableActionDefinition",
+			"aliases": [
+				"ZombieFairytaleMirrorQueenMirrorDisable"
+			],
+			"objdata": {
+				"NumberOfMirrorsToDisable": 1,
+				"DisableTime": 20,
+				"ActionAnimation": "skill1"
+			}
+		},
+		{
+			"objclass": "ZombieFairytaleMirrorSleepifyActionDefinition",
+			"aliases": [
+				"ZombieFairytaleMirrorQueenSleepify"
+			],
+			"objdata": {
+				"NumberOfPlantsToSleepify": 1,
+				"ActionAnimation": "skill2",
+				"IgnorePlantConditions": [
+                  "sleepify",
+                  "coffeewake",
+                  "stunnedbyzombielove",
+                  "nofiring",
+                  "net",
+                  "paralysed",
+                  "invincible",
+                  "stun",
+                  "icecubed",
+                  "squidified",
+                  "sheeped",
+                  "sauced",
+                  "froggy"
+              ],
+				"Projectile": "RTID(FairytaleMirrorQueenApple@ProjectileTypes)"
+			}
+		},
+		{
+			"objclass": "ZombieFairytaleMirrorDisableActionDefinition",
+			"aliases": [
+				"ZombieFairytaleMirrorQueenVeteranMirrorDisable"
+			],
+			"objdata": {
+				"NumberOfMirrorsToDisable": 1,
+				"DisableTime": 25,
+				"ActionAnimation": "skill1"
+			}
+		},
+		{
+			"objclass": "ZombieFairytaleMirrorSleepifyActionDefinition",
+			"aliases": [
+				"ZombieFairytaleMirrorQueenVeteranSleepify"
+			],
+			"objdata": {
+				"NumberOfPlantsToSleepify": 1,
+				"ActionAnimation": "skill2",
+				"IgnorePlantConditions": [
+                  "sleepify",
+                  "coffeewake",
+                  "stunnedbyzombielove",
+                  "nofiring",
+                  "net",
+                  "paralysed",
+                  "invincible",
+                  "stun",
+                  "icecubed",
+                  "squidified",
+                  "sheeped",
+                  "sauced",
+                  "froggy"
+              ],
+				"Projectile": "RTID(FairytaleMirrorQueenVeteranApple@ProjectileTypes)"
+			}
+		},
+		{
+			"objclass": "PlantConditionProjectileProps",
+			"aliases": [
+				"FairytaleMirrorQueenApple"
+			],
+			"objdata": {
+				"ClassName": "PlantConditionProjectile",
+				"BaseDamage": 25,
+				"CannotAffectInvinciblePlants": true,
+				"CollisionFlags": [
+					"ground",
+					"plants",
+					"normal_plants",
+					"tall_plants"
+				],
+				"DamageFlags": [
+					"lobbed",
+					"catapult"
+				],
+				"PlantConds": [
+					{
+						"Condition": "sleepify",
+						"Duration": {
+							"Min": 20,
+							"Max": 20
+						}
+					}
+				],
+				"CannotAffectPlants": {
+					"ListType": "excludelist",
+					"List": [
+						"shadowshroom",
+						"unused_45",
+						"poisonpeashooter",
+						"pokra",
+						"puffball",
+						"thymewarp",
+						"noctarinecloud",
+						"teleportatomine",
+						"steam_blueprints",
+						"blackhole",
+						"blackhole_plantfood",
+						"holiday_present_randomizer",
+						"snapdragon_hmzomboss",
+						"carnie_minigame_coconutcannon"
+                    ]
+				},
+				"InitialVelocity": [
+					{
+						"Min": 400.0,
+						"Max": 500.0
+					},
+					{
+						"Min": -10.0,
+						"Max": 10.0
+					},
+					{
+						"Min": 500.0,
+						"Max": 700.0
+					}
+				],
+				"InitialAcceleration": [
+					{
+						"Min": 0.0,
+						"Max": 0.0
+					},
+					{
+						"Min": 0.0,
+						"Max": 0.0
+					},
+					{
+						"Min": -10.0,
+						"Max": -10.0
+					}
+				],
+				"InitialScale": {
+					"Min": 1.0,
+					"Max": 1.0
+				},
+				"AttachedPAM": "POPANIM_EFFECTS_ZOMBIE_MIRROR_QUEEN_APPLE",
+				"AttachedPAMOffset": {
+					"x": -100,
+					"y": -100
+				},
+				"AttachedPAMAnimationToPlay": [
+					"idle_flying"
+				],
+				"ImpactPAM": "POPANIM_EFFECTS_ZOMBIE_MIRROR_QUEEN_APPLE_HIT",
+				"ImpactPAMAnimationToPlay": [
+					"hit"
+				],
+				"ImpactOffset": [
+					{
+						"Min": -20.0,
+						"Max": -20.0
+					},
+					{
+						"Min": 20.0,
+						"Max": 20.0
+					}
+				],
+				"CollisionRect": {
+					"mX": -10.0,
+					"mY": -10.0,
+					"mWidth": 20.0,
+					"mHeight": 20.0
+				},
+				"ImpactSoundEvent": "Play_Plant_HeadbutterLettuce_Attack"
+			}
+		},
+		{
+			"objclass": "PlantConditionProjectileProps",
+			"aliases": [
+				"FairytaleMirrorQueenVeteranApple"
+			],
+			"objdata": {
+				"ClassName": "PlantConditionProjectile",
+				"BaseDamage": 40,
+				"CannotAffectInvinciblePlants": true,
+				"CollisionFlags": [
+					"ground",
+					"plants",
+					"normal_plants",
+					"tall_plants"
+				],
+				"DamageFlags": [
+					"lobbed",
+					"catapult"
+				],
+				"PlantConds": [
+					{
+						"Condition": "sleepify",
+						"Duration": {
+							"Min": 25,
+							"Max": 25
+						}
+					},
+					{
+						"Condition": "greedy",
+						"Duration": {
+							"Min": 40,
+							"Max": 40
+						}
+					}
+				],
+				"CannotAffectPlants": {
+					"ListType": "excludelist",
+					"List": [
+						"shadowshroom",
+						"unused_45",
+						"poisonpeashooter",
+						"pokra",
+						"puffball",
+						"thymewarp",
+						"noctarinecloud",
+						"teleportatomine",
+						"steam_blueprints",
+						"blackhole",
+						"blackhole_plantfood",
+						"holiday_present_randomizer",
+						"snapdragon_hmzomboss",
+						"carnie_minigame_coconutcannon"
+                    ]
+				},
+				"InitialVelocity": [
+					{
+						"Min": 400.0,
+						"Max": 500.0
+					},
+					{
+						"Min": -10.0,
+						"Max": 10.0
+					},
+					{
+						"Min": 500.0,
+						"Max": 700.0
+					}
+				],
+				"InitialAcceleration": [
+					{
+						"Min": 0.0,
+						"Max": 0.0
+					},
+					{
+						"Min": 0.0,
+						"Max": 0.0
+					},
+					{
+						"Min": -10.0,
+						"Max": -10.0
+					}
+				],
+				"InitialScale": {
+					"Min": 1.0,
+					"Max": 1.0
+				},
+				"AttachedPAM": "POPANIM_EFFECTS_ZOMBIE_MIRROR_QUEEN_APPLE_ELITE",
+				"AttachedPAMOffset": {
+					"x": -100,
+					"y": -100
+				},
+				"AttachedPAMAnimationToPlay": [
+					"idle_flying"
+				],
+				"ImpactPAM": "POPANIM_EFFECTS_ZOMBIE_MIRROR_QUEEN_APPLE_HIT_ELITE",
+				"ImpactPAMAnimationToPlay": [
+					"hit"
+				],
+				"ImpactOffset": [
+					{
+						"Min": -20.0,
+						"Max": -20.0
+					},
+					{
+						"Min": 20.0,
+						"Max": 20.0
+					}
+				],
+				"CollisionRect": {
+					"mX": -10.0,
+					"mY": -10.0,
+					"mWidth": 20.0,
+					"mHeight": 20.0
+				},
+				"ImpactSoundEvent": "Play_Plant_HeadbutterLettuce_Attack"
+			}
+		},
+
+
+* Big Bad Wolf and Impig
+
+
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"fairytale_wolf"
+			],
+			"objdata": {
+				"TypeName": "fairytale_wolf",
+				"ZombieClass": "ZombieFairytaleWolf",
+				"Properties": "RTID(ZombieFairytaleWolfDefault@ZombieProperties)",
+				"ResourceGroups": [
+					"ZombieFairyTaleWolfGroup",
+					"FairyTaleHouses",
+					"ZombieFairyTaleThreeLittlePigsGroup",
+					"ZombieChiefEffects"
+				],
+				"AudioGroups": [
+					"ZombieIceAgeTroglobiteAudio",
+					"ZombieIceAgeChiefAudio",
+					"ZombieCarnieGargantuarAudio",
+					"ZombieRomanMedusaAudio",
+					"ZombieFairyTaleWolfAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_Troglobite",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_WOLF",
+				"HomeWorld": "fairytale",
+				"Placeable": true
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"fairytale_imp_armor1"
+			],
+			"objdata": {
+				"TypeName": "fairytale_imp_armor1",
+				"ZombieClass": "ZombieImp",
+				"Properties": "RTID(ZombieFairyTaleImpArmor1Default@ZombieProperties)",
+				"ResourceGroups": [
+					"ZombieFairyTaleThreeLittlePigsGroup"
+				],
+				"AudioGroups": [
+					"ZombieGlobalGargantuarAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_Imp",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_IMP_ARMOR1", (replace 1 with 2 and 4 for other armor)
+				"HomeWorld": "fairytale",
+				"Placeable": true
+			}
+		},
+		{
+			"aliases": [
+				"ZombieFairytaleWolfDefault"
+			],
+			"objclass": "ZombieFairytaleWolfProps",
+			"objdata": {
+				"Actions": [
+					"RTID(ZombieFairytaleWolfGridItemPushAction@ZombieActions)"
+				],
+				"NumberOfIceblocksToSpawnWith": 3,
+				"ConditionsToApply":  [
+					"strawhoused",
+					"woodhoused",
+                  "brickhoused"
+              ],
+				"ImpTypes":  [
+					"fairytale_imp_armor1",
+					"fairytale_imp_armor2",
+                  "fairytale_imp_armor4"
+              ],
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 470,
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 10,
+					"y": 0,
+					"z": 1.2
+				},
+				"Speed": 0.185,
+				"WavePointCost": 1600,
+				"Weight": 2000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness3"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieFairyTaleImpArmor1Default"
+			],
+			"objclass": "ZombiePropertySheet",
+			"objdata": {
+				"ArtCenter": {
+					"x": 102,
+					"y": 124
+				},
+				"AttackRect": {
+					"mHeight": 80,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": false,
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 80,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 190,
+				"HypnoshroomEffectOffset": {
+					"x": 0,
+					"y": 48
+				},
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 0.8
+				},
+				"Size": "imp",
+				"Speed": 0.22,
+				"WavePointCost": 250, (450 for bucket, 750 for brick)
+				"Weight": 3000, (4000 for bucket)
+				"ZombieArmorProps": [
+					"RTID(ConeDefault@ArmorTypes)"
+				], (replace Cone with Bucket and Brick for other armor)
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness3"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombiePushGridItemActionDefinition",
+			"aliases": [
+				"ZombieFairytaleWolfGridItemPushAction"
+			],
+			"objdata": {
+				"PushableGridItems": {
+					"ListType": "includelist",
+					"List": [
+						"fairytale_house_straw",
+						"fairytale_house_wood",
+						"fairytale_house_brick"
+					]
+				},
+				"PushBlockingGridItems": {
+					"ListType": "includelist",
+					"List": [
+						"gravestone_tutorial",
+						"gravestone_egypt",
+						"gravestone_pirate",
+						"gravestone_cowboy",
+						"gravestone_future",
+						"gravestone_dark",
+						"gravestone_tutorial2",
+						"gravestone_egypt2",
+						"gravestone_pirate2",
+						"gravestone_cowboy2",
+						"gravestone_future2",
+						"gravestone_dark2",
+						"gravestoneSunOnDestruction",
+						"gravestonePlantfoodOnDestruction",
+						"gravestone_iceage",
+						"gravestone_lostcity",
+                      "gravestone_eighties",
+						"gravestone_iceage2",
+						"gravestone_lostcity2",
+                      "gravestone_eighties2",
+						"gravestone_battlez",
+						"gravestone_battlez_sun",
+						"gravestone_holiday",
+						"gravestone_imppear",
+                      "gravestoneZombieOnDestruction",
+                      "gravestoneZombieTimeSpawner",
+                      "gravestoneZombieTimeSpawner_cone",
+                      "gravestoneZombieTimeSpawner_bucket",
+                      "gravestoneShortcut",
+                      "gravestone_beach",
+                      "gravestone_dino",
+						"gravestone_gravedropper",
+						"pumpkin_scarecrow",
+						"railcart_tutorial",
+						"railcart_cowboy",
+						"railcart_egypt",
+						"railcart_pirate",
+						"railcart_future",
+						"railcart_steam",
+						"holoshield",
+						"moonflowershield",
+						"surfboard",
+						"tent",
+						"backpack",
+						"planttarget_squid",
+						"slider_up",
+						"slider_down",
+						"slider_up_modern",
+						"slider_down_modern",
+						"invisible_slider_up",
+						"invisible_slider_down",
+						"zomboss_iceage_glacier_block",
+						"speaker_zomboss",
+						"rock",
+						"harvest_rock",
+						"presentSunOnDestruction",
+						"presentPlantfoodOnDestruction",
+						"presentPlantOnDestruction",
+						"presentSunOnDestruction_valentines",
+						"presentPlantfoodOnDestruction_valentines",
+						"presentPlantOnDestruction_valentines",
+						"presentSunOnDestruction_birthdayz",
+                      "presentPlantfoodOnDestruction_birthdayz",
+                      "presentPlantOnDestruction_birthdayz",
+                      "presentZombieOnDestruction",
+                      "presentZombieOnDestruction_valentines",
+						"presentZombieOnDestruction_birthdayz",
+                      "present",
+                      "present_valentines",
+						"present_birthdayz",
+                      "present2",
+                      "present_valentines2",
+						"present_birthdayz2",
+                      "fireworks",
+						"steam_backpack",
+						"hero_backpack",
+						"jackinthebox_teeth",
+						"jackinthebox_teeth_jumpscare",
+						"jackinthebox_balls",
+						"jackinthebox_balls_jumpscare",
+						"jackinthebox_candy_hp",
+						"jackinthebox_candy_hp_jumpscare",
+						"jackinthebox_candy_speed",
+						"jackinthebox_candy_speed_jumpscare",
+                      "jackinthebox_monkeys",
+                      "jackinthebox_monkeys_jumpscare",
+						"jackinthebox_teddy",
+						"jackinthebox_teddy_jumpscare",
+						"jackinthebox_sniffer",
+						"jackinthebox_sniffer_jumpscare",
+						"jackinthebox_gargantuar",
+						"jackinthebox_gargantuar_jumpscare",
+						"houseshield",
+						"servant_table",
+						"servant_table_besom",
+						"servant_table_bell",
+						"servant_table_tea",
+						"marketcardbox",
+						"marketcardbox_speedracermower",
+						"marketcardbox_iceburgfrenzy",
+						"marketcardbox_gumexplosion",
+                      "marketcardbox_yetihaunted",
+                      "marketcardbox_greedymarket",
+						"marketcardbox_popsmart",
+						"marketcardbox_highvoltagepoles",
+						"marketcardbox_undeaddefence",
+						"marketcardbox_peashootervacation",
+						"marketcardbox_destructionaesthetics",
+						"marketcardbox_buildaline",
+						"marketcardbox_sunflourshing",
+						"marketcardbox_laststand",
+						"marketcardbox_sos",
+						"marketcardbox_plant",
+						"marketcardbox_zombie",
+						"fairytale_gargantuar_shield",
+						"fairytale_cauldron",
+						"fairytale_cauldron_1",
+						"fairytale_cauldron_2",
+						"fairytale_cauldron_3",
+						"fairytale_cauldron_4",
+						"fairytale_cauldron_5",
+						"fairytale_cauldron_6",
+						"fairytale_cauldron_7",
+						"fairytale_cauldron_8",
+						"fairytale_cauldron_9",
+						"fairytale_cauldron_10",
+						"fairytale_cauldron_levelgen"
+					]
+				},
+				"NotSquashedPlants": {
+					"ListType": "includelist",
+					"List": [
+						"potatomine",
+						"primalpotatomine",
+						"noctarinecloud"
+					]
+				},
+				"RelocationDuration": 0.5,
+				"PushRectangle": {
+					"mX": 15,
+					"mY": 0,
+					"mWidth": 65,
+					"mHeight": 95
+				}
+			}
+		},
+
+
+* Frog Sorceress
+
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"fairytale_witch"
+			],
+			"objdata": {
+				"TypeName": "fairytale_witch",
+				"ZombieClass": "ZombieFairytaleWitch",
+				"Properties": "RTID(ZombieFairytaleWitchDefault@ZombieProperties)",
+				"ResourceGroups": [
+					"ZombieFairyTaleWitchGroup",
+					"ZombieDarkWizardGroup",
+					"PlantWitchFrog"
+				],
+				"AudioGroups": [
+					"ZombieFairyTaleWitchAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_FairytaleWitch",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_WITCH",
+				"HomeWorld": "fairytale",
+				"IsBasicZombie": true
+			}
+		},
+		{
+			"aliases": [
+				"ZombieFairytaleWitchDefault"
+			],
+			"objclass": "ZombieFairytaleWitchProps",
+			"objdata": {
+				"Actions": [
+					"RTID(ZombieFairytaleWitchZap@ZombieActions)"
+				],
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"StreetOffset": {
+					"x": -2,
+					"y": -1
+				},
+				"ArtCenterBurnEffectOffset": {
+					"x": 20,
+					"y": 10
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 20,
+					"mX": -20,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"EatDPS": 200,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"ConditionImmunities": [
+                  {
+						"Condition": "affectEatdps"
+                  }
+				],
+				"Hitpoints": 490,
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 10,
+					"y": 0,
+					"z": 1.2
+				},
+				"Speed": 0.12,
+				"WavePointCost": 1200,
+				"Weight": 2000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness3"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed0"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieFairytaleWitchZapActionDefinition",
+			"aliases": [
+				"ZombieFairytaleWitchZap"
+			],
+			"objdata": {
+				"TimeBeforeFirst": {
+					"Min": 7.0,
+					"Max": 9.0
+				},
+				"TimeBetween": {
+					"Min": 11.0,
+					"Max": 14.0
+				},
+				"SoundOnActivate": "Play_RaZombie_WandActivate",
+				"ProjectilePopAnim": "POPANIM_EFFECTS_DARK_WIZARD_LIGHTNINGBOLT"
+			}
+		},
+(POPANIM_PLANT_FROG frog animation)
+
+
+* Card Queen Imp
+
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"fairytale_imp_miniboss_phase1"
+			],
+			"objdata": {
+				"TypeName": "fairytale_imp_miniboss_phase1",
+				"ZombieClass": "ZombieGeneralCaesar",
+				"Properties": "RTID(ZombieFairytaleImpMinibossPhase1@ZombieProperties)",
+				"ResourceGroups": [
+					"ZombieFairyTaleCardQueenGroup",
+					"FairyTaleFog",
+					"SleepingPlantEffect",
+					"ZombieFairyTaleCavalryGroup",
+					"ZombieCavalryGroup",
+					"ZombieDarkBasicGroup",
+					"ZombieFairyTaleChesireGroup",
+					"GridItemFairyTaleCards",
+					"CarnieMinigameGroup",
+					"ZombieFairyTaleBasicGroup",
+					"PlantPuffshroom",
+					"PlantBlockoli",
+					"PlantSapfling",
+					"PlantStallia",
+					"PlantStalliaEffects",
+					"PlantWitchHazel",
+					"PlantWitchHazelEffects",
+					"ZombieDummyGroup"
+				],
+				"AudioGroups": [
+					"AudioJoust",
+					"ZombieGlobalGargantuarAudio",
+					"ZombieCarnieMagicianAudio",
+					"CarnieGeneralAudioGroup",
+					"ZombieRomanMedusaAudio",
+					"PlantPuffShroomAudio",
+					"PlantStalliaAudio",
+					"ZombieSkyCityBattlePlaneAudio",
+					"ZombieRomanCaesarAudio",
+					"ZombieDarkAgesKingAudio",
+					"ZombieFairyTaleImpAudio",
+					"ZombieFairyTaleChesireAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_GeneralCaesar",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_IMP_MINIBOSS",
+				"HomeWorld": "fairytale",
+				"Placeable": true
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"fairytale_imp_miniboss_phase2"
+			],
+			"objdata": {
+				"TypeName": "fairytale_imp_miniboss_phase2",
+				"DisplayTypeName": "fairytale_imp_miniboss_phase1",
+				"ZombieClass": "ZombieFairytaleImpQueen",
+				"Properties": "RTID(ZombieFairytaleImpMinibossPhase2@ZombieProperties)",
+				"ResourceGroups": [
+					"ZombieFairyTaleCardQueenGroup",
+					"ZombieFairyTaleCavalryGroup",
+					"ZombieCavalryGroup",
+					"ZombieDarkBasicGroup"
+				],
+				"AudioGroups": [
+					"AudioJoust",
+					"ZombieGlobalGargantuarAudio",
+					"ZombieFairyTaleImpAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_Imp",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_IMP_MINIBOSS",
+				"HomeWorld": "fairytale",
+				"Placeable": true
+			}
+		},
+		{
+			"aliases": [
+				"ZombieFairytaleImpMinibossPhase1"
+			],
+			"objclass": "ZombieGeneralCaesarProps",
+			"objdata": {
+				"Actions": [
+					"RTID(ZombieFairytaleImpMinibossWalkOn@ZombieActions)",
+					"RTID(ZombieFairytaleImpMinibossCardSummon@ZombieActions)",
+					"RTID(ZombieFairytaleImpMinibossRest@ZombieActions)",
+					"RTID(ZombieFairytaleImpMinibossRest2@ZombieActions)",
+					"RTID(ZombieFairytaleImpMinibossSummon@ZombieActions)",
+					"RTID(ZombieFairytaleImpMinibossSpawnFog@ZombieActions)",
+					"RTID(ZombieFairytaleImpMinibossSleepifyPlant@ZombieActions)",
+					"RTID(ZombieFairytaleImpMinibossSwitchLane@ZombieActions)",
+					"RTID(ZombieFairytaleImpMinibossPhaseChange@ZombieActions)"
+				],
+				"LifetimeSeconds": 999999,
+				"ArtScale": 1.25,
+				"AlmanacOffset": {
+					"x": -15,
+					"y": -35
+				},
+				"AlmanacScale": 1.25,
+				"ArtCenter": {
+					"x": 102,
+					"y": 124
+				},
+				"StreetOffset": {
+					"x": -5,
+					"y": -1
+				},
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 0.8
+				},
+				"ConditionImmunities": [
+					{
+						"Condition": "chill"
+					},
+					{
+						"Condition": "begoniachilled"
+					},
+					{
+						"Condition": "begoniafire"
+					},
+					{
+						"Condition": "begoniamixed"
+					},
+					{
+						"Condition": "freeze"
+					},
+					{
+						"Condition": "stalled"
+					},
+					{
+						"Condition": "dazeystunned"
+					},
+					{
+						"Condition": "stackableslow"
+					},
+					{
+						"Condition": "sapped"
+					},
+					{
+						"Condition": "stun"
+					},
+					{
+						"Condition": "loquatstunned"
+					},
+					{
+						"Condition": "blockolistunned"
+					},
+					{
+						"Condition": "solarflared"
+                  },
+					{
+						"Condition": "butter"
+					},
+					{
+						"Condition": "poisoned"
+					},
+					{
+						"Condition": "decaypoison"
+					},
+					{
+						"Condition": "contagiouspoison"
+					},
+					{
+						"Condition": "speedup1"
+					},
+					{
+						"Condition": "speedup2"
+					},
+					{
+						"Condition": "speedup3"
+					},
+					{
+						"Condition": "speedup4"
+					},
+					{
+						"Condition": "terrified"
+					},
+					{
+						"Condition": "potionspeed1"
+					},
+					{
+						"Condition": "potionspeed2"
+					},
+					{
+						"Condition": "potionspeed3"
+					},
+					{
+						"Condition": "potiontoughness1"
+					},
+					{
+						"Condition": "potiontoughness2"
+					},
+					{
+						"Condition": "potiontoughness3"
+					},
+					{
+						"Condition": "potionsuper1"
+					},
+					{
+						"Condition": "potionsuper2"
+					},
+					{
+						"Condition": "potionsuper3"
+					},
+					{
+						"Condition": "speeddown1"
+					},
+					{
+						"Condition": "speeddown2"
+					},
+					{
+						"Condition": "speeddown3"
+					},
+					{
+						"Condition": "speeddown4"
+					},
+					{
+						"Condition": "affectEatdps"
+					},
+					{
+						"Condition": "popsmart"
+                  },
+                  {
+						"Condition": "eatdpsUp"
+                  },
+					{
+						"Condition": "stickybombed"
+					},
+					{
+						"Condition": "suncarrier50"
+					},
+					{
+						"Condition": "suncarrier100"
+                  },
+                  {
+						"Condition": "suncarrier250"
+                  },
+					{
+						"Condition": "icecubed"
+					}
+				],
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 60,
+					"mX": 0,
+					"mY": 0
+				},
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 62,
+					"mX": 10,
+					"mY": 10
+				},
+				"CollideHypnotizedZombies": "ignore",
+				"FoeEatDamageReflectPct": 1.0,
+				"FireDamageMultiplier": 0.25,
+				"CanSpawnPlantFood": false,
+				"PowerUpDamageModifier": 0.25,
+				"Cost": 150,
+				"GroundTrackName": "ground_swatch",
+				"Hitpoints": 10000,
+				"Speed": 0.5,
+				"WavePointCost": 10000,
+				"Weight": 1000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness7"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed3"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieFairytaleImpMinibossPhase2"
+			],
+			"objclass": "ZombieFairytaleImpQueenProps",
+			"objdata": {
+				"SoundOnDeath": "Play_UI_Joust_youlose_anim",
+				"SoundOnAsh": "Play_UI_Joust_youlose_anim",
+				"EscapeSpeed": 0.25,
+				"SpawnMessage": "[WARNING_FAIRYTALE_IMP_MINIBOSS_ESCAPE]",
+				"MessageDuration": 20,
+				"DisableMessageOnDeath": true,
+				"ArtScale": 1.25,
+				"ArtCenter": {
+					"x": 102,
+					"y": 124
+				},
+				"StreetOffset": {
+					"x": -5,
+					"y": -1
+				},
+				"AttackRect": {
+					"mHeight": 80,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"HitRect": {
+					"mHeight": 80,
+					"mWidth": 32,
+					"mX": 10,
+					"mY": 10
+				},
+				"HypnoshroomEffectOffset": {
+					"x": 0,
+					"y": 48
+				},
+				"CanSpawnPlantFood": false,
+				"CanSurrender": false,
+				"CanBePlantTossedStrong": false,
+				"CanBePlantTossedWeak": false,
+				"NormalDeathWhenMowed": true,
+				"PowerUpDamageModifier": 0.25,
+				"CanBeFlicked": false,
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"Hitpoints": 850,
+				"FoeEatDamageReflectPct": 1.0,
+				"FireDamageMultiplier": 0.25,
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 0.8
+				},
+				"ConditionImmunities": [
+					{
+						"Condition": "chill"
+					},
+					{
+						"Condition": "begoniachilled"
+					},
+					{
+						"Condition": "begoniafire"
+					},
+					{
+						"Condition": "begoniamixed"
+					},
+					{
+						"Condition": "freeze"
+					},
+					{
+						"Condition": "stalled"
+					},
+					{
+						"Condition": "dazeystunned"
+					},
+					{
+						"Condition": "stackableslow"
+					},
+					{
+						"Condition": "sapped"
+					},
+					{
+						"Condition": "stun"
+					},
+					{
+						"Condition": "loquatstunned"
+					},
+					{
+						"Condition": "blockolistunned"
+					},
+					{
+						"Condition": "solarflared"
+                    },
+					{
+						"Condition": "butter"
+					},
+					{
+						"Condition": "shrinking"
+					},
+					{
+						"Condition": "shrunken"
+					},
+					{
+						"Condition": "poisoned"
+					},
+					{
+						"Condition": "decaypoison"
+					},
+					{
+						"Condition": "contagiouspoison"
+					},
+					{
+						"Condition": "speedup1"
+					},
+					{
+						"Condition": "speedup2"
+					},
+					{
+						"Condition": "speedup3"
+					},
+					{
+						"Condition": "speedup4"
+					},
+					{
+						"Condition": "terrified"
+					},
+					{
+						"Condition": "potionspeed1"
+					},
+					{
+						"Condition": "potionspeed2"
+					},
+					{
+						"Condition": "potionspeed3"
+					},
+					{
+						"Condition": "potiontoughness1"
+					},
+					{
+						"Condition": "potiontoughness2"
+					},
+					{
+						"Condition": "potiontoughness3"
+					},
+					{
+						"Condition": "potionsuper1"
+					},
+					{
+						"Condition": "potionsuper2"
+					},
+					{
+						"Condition": "potionsuper3"
+					},
+					{
+						"Condition": "sunbeaned"
+					},
+					{
+						"Condition": "haunted"
+					},
+					{
+						"Condition": "icecubed"
+					},
+					{
+						"Condition": "speeddown1"
+					},
+					{
+						"Condition": "speeddown2"
+					},
+					{
+						"Condition": "speeddown3"
+					},
+					{
+						"Condition": "speeddown4"
+					},
+					{
+						"Condition": "bloomingheartdebuff"
+					},
+					{
+						"Condition": "gummed"
+					},
+					{
+						"Condition": "iceblocked"
+					},
+					{
+						"Condition": "present_boxed"
+					},
+					{
+						"Condition": "stoneblocked"
+					},
+					{
+						"Condition": "affectEatdps"
+					},
+					{
+						"Condition": "popsmart"
+                    },
+                  {
+						"Condition": "eatdpsUp"
+                  },
+					{
+						"Condition": "stickybombed"
+					},
+					{
+						"Condition": "suncarrier50"
+					},
+					{
+						"Condition": "suncarrier100"
+                  },
+                  {
+						"Condition": "suncarrier250"
+                  },
+					{
+						"Condition": "icecubed"
+					},
+					{
+						"Condition": "present_boxed"
+					}
+				],
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					}
+				],
+				"Speed": 0.25,
+				"WavePointCost": 1000,
+				"Weight": 2000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness7"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed3"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieWalkActionDefinition",
+			"aliases": [
+				"ZombieFairytaleImpMinibossWalkOn"
+			],
+			"objdata": {
+				"Weight": 999999999,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"Phase": "Entering",
+				"SoundOnStart": "Play_Joust_FUE_Welcome_Music_Stinger",
+				"StopAtColumn": 5,
+				"TransitionAtStart": false,
+				"TransitionAnimation": "idle",
+				"HasTransition": true,
+				"CanPickAgain": false
+			}
+		},
+		{
+			"objclass": "ZombieSpawnGridItemActionDefinition",
+			"aliases": [
+				"ZombieFairytaleImpMinibossCardSummon"
+			],
+			"objdata": {
+				"Weight": 1,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"Phase": "Entering",
+				"PhaseAfter": "Attacking",
+				"SpawnAnimation": "summon",
+				"SpawnDelay": 1.5,
+				"Pool": [
+					{
+						"Count": 1,
+						"Type": "RTID(fairytale_card_acehearts@GridItemTypes)"
+					},
+					{
+						"Count": 2,
+						"Type": "RTID(fairytale_card_10diamonds@GridItemTypes)"
+					},
+					{
+						"Count": 2,
+						"Type": "RTID(fairytale_card_jackspades@GridItemTypes)"
+					}
+				],
+				"SpawnPositions": [
+					{
+						"mX": 5,
+						"mY": 0
+					},
+					{
+						"mX": 5,
+						"mY": 1
+					},
+					{
+						"mX": 5,
+						"mY": 2
+					},
+					{
+						"mX": 5,
+						"mY": 3
+					},
+					{
+						"mX": 5,
+						"mY": 4
+					}
+				],
+				"DestroyPositions": [],
+				"UseActionToSpawn": false,
+				"SpawnActionName": "use_action",
+				"SpawnEffectAnimID": "POPANIM_EFFECTS_WITCH_HAZEL_ATTACK_CARNIE",
+				"SpawnEffectAnimPlay": "animation",
+				"SpawnEffectOffset": {
+					"x": -65,
+					"y": -50
+				},
+				"SoundOnStart": "Play_Zombie_Roman_Medusa_Petrify",
+				"DestroyEffectAnimID": "",
+				"DestroyEffectAnimPlay": "",
+				"DestroyEffectOffset": {
+					"x": 0,
+					"y": 0
+				}
+			}
+		},
+		{
+			"objclass": "ZombiePlayAnimationActionDefinition",
+			"aliases": [
+				"ZombieFairytaleImpMinibossRest"
+			],
+			"objdata": {
+				"Weight": 999999999,
+				"RepeatMin": 1,
+				"RepeatMax": 1,
+				"Phase": "Attacking",
+				"AnimationToPlay": "idle",
+				"CanPickAgain": false
+			}
+		},
+		{
+			"objclass": "ZombieSpawnGridItemActionDefinition",
+			"aliases": [
+				"ZombieFairytaleImpMinibossSpawnFog"
+			],
+			"objdata": {
+				"Weight": 10,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"Phase": "Attacking",
+				"PhaseAfter": "Retreat",
+				"SpawnAnimation": "summon",
+				"SpawnDelay": 0.5,
+				"Pool": [
+					{
+						"Count": 3,
+						"Type": "RTID(fairytale_fog_white@GridItemTypes)"
+					},
+					{
+						"Count": 12,
+						"Type": "RTID(sewer_effects_dummy@GridItemTypes)"
+					}
+				],
+				"SpawnPositions": [
+					{
+						"mX": 6,
+						"mY": 0
+					},
+					{
+						"mX": 6,
+						"mY": 1
+					},
+					{
+						"mX": 6,
+						"mY": 2
+					},
+					{
+						"mX": 6,
+						"mY": 3
+					},
+					{
+						"mX": 6,
+						"mY": 4
+					},
+					{
+						"mX": 7,
+						"mY": 0
+					},
+					{
+						"mX": 7,
+						"mY": 1
+					},
+					{
+						"mX": 7,
+						"mY": 2
+					},
+					{
+						"mX": 7,
+						"mY": 3
+					},
+					{
+						"mX": 7,
+						"mY": 4
+					},
+					{
+						"mX": 8,
+						"mY": 0
+					},
+					{
+						"mX": 8,
+						"mY": 1
+					},
+					{
+						"mX": 8,
+						"mY": 2
+					},
+					{
+						"mX": 8,
+						"mY": 3
+					},
+					{
+						"mX": 8,
+						"mY": 4
+					}
+				],
+				"DestroyPositions": [],
+				"UseActionToSpawn": false,
+				"SpawnActionName": "use_action",
+				"SpawnEffectAnimID": "",
+				"SpawnEffectAnimPlay": "animation",
+				"SpawnEffectOffset": {
+					"x": -99999,
+					"y": -99999
+				},
+				"SoundOnStart": "Play_UI_Grave_Spawn",
+				"DestroyEffectAnimID": "",
+				"DestroyEffectAnimPlay": "",
+				"DestroyEffectOffset": {
+					"x": 0,
+					"y": 0
+				}
+			}
+		},
+		{
+			"objclass": "ZombieSpawnGridItemActionDefinition",
+			"aliases": [
+				"ZombieFairytaleImpMinibossSleepifyPlant"
+			],
+			"objdata": {
+				"Weight": 14,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"Phase": "Attacking",
+				"PhaseAfter": "Retreat",
+				"SpawnAnimation": "summon",
+				"SpawnDelay": 0.5,
+				"Pool": [
+					{
+						"Count": 2,
+						"Type": "RTID(fairytale_sleepify_traptile@GridItemTypes)"
+					},
+					{
+						"Count": 23,
+						"Type": "RTID(sewer_effects_dummy@GridItemTypes)"
+					}
+				],
+				"SpawnPositions": [
+					{
+						"mX": 0,
+						"mY": 0
+					},
+					{
+						"mX": 0,
+						"mY": 1
+					},
+					{
+						"mX": 0,
+						"mY": 2
+					},
+					{
+						"mX": 0,
+						"mY": 3
+					},
+					{
+						"mX": 0,
+						"mY": 4
+					},
+					{
+						"mX": 1,
+						"mY": 0
+					},
+					{
+						"mX": 1,
+						"mY": 1
+					},
+					{
+						"mX": 1,
+						"mY": 2
+					},
+					{
+						"mX": 1,
+						"mY": 3
+					},
+					{
+						"mX": 1,
+						"mY": 4
+					},
+					{
+						"mX": 2,
+						"mY": 0
+					},
+					{
+						"mX": 2,
+						"mY": 1
+					},
+					{
+						"mX": 2,
+						"mY": 2
+					},
+					{
+						"mX": 2,
+						"mY": 3
+					},
+					{
+						"mX": 2,
+						"mY": 4
+					},
+					{
+						"mX": 3,
+						"mY": 0
+					},
+					{
+						"mX": 3,
+						"mY": 1
+					},
+					{
+						"mX": 3,
+						"mY": 2
+					},
+					{
+						"mX": 3,
+						"mY": 3
+					},
+					{
+						"mX": 3,
+						"mY": 4
+					},
+					{
+						"mX": 4,
+						"mY": 0
+					},
+					{
+						"mX": 4,
+						"mY": 1
+					},
+					{
+						"mX": 4,
+						"mY": 2
+					},
+					{
+						"mX": 4,
+						"mY": 3
+					},
+					{
+						"mX": 4,
+						"mY": 4
+					}
+				],
+				"DestroyPositions": [
+					{
+						"mX": 0,
+						"mY": 0
+					},
+					{
+						"mX": 0,
+						"mY": 1
+					},
+					{
+						"mX": 0,
+						"mY": 2
+					},
+					{
+						"mX": 0,
+						"mY": 3
+					},
+					{
+						"mX": 0,
+						"mY": 4
+					},
+					{
+						"mX": 1,
+						"mY": 0
+					},
+					{
+						"mX": 1,
+						"mY": 1
+					},
+					{
+						"mX": 1,
+						"mY": 2
+					},
+					{
+						"mX": 1,
+						"mY": 3
+					},
+					{
+						"mX": 1,
+						"mY": 4
+					},
+					{
+						"mX": 2,
+						"mY": 0
+					},
+					{
+						"mX": 2,
+						"mY": 1
+					},
+					{
+						"mX": 2,
+						"mY": 2
+					},
+					{
+						"mX": 2,
+						"mY": 3
+					},
+					{
+						"mX": 2,
+						"mY": 4
+					},
+					{
+						"mX": 3,
+						"mY": 0
+					},
+					{
+						"mX": 3,
+						"mY": 1
+					},
+					{
+						"mX": 3,
+						"mY": 2
+					},
+					{
+						"mX": 3,
+						"mY": 3
+					},
+					{
+						"mX": 3,
+						"mY": 4
+					},
+					{
+						"mX": 4,
+						"mY": 0
+					},
+					{
+						"mX": 4,
+						"mY": 1
+					},
+					{
+						"mX": 4,
+						"mY": 2
+					},
+					{
+						"mX": 4,
+						"mY": 3
+					},
+					{
+						"mX": 4,
+						"mY": 4
+					}
+				],
+				"DestroyTypenames": {
+					"ListType": "includelist",
+					"List": [
+						"fairytale_sleepify_traptile"
+					]
+				},
+				"UseActionToSpawn": false,
+				"SpawnActionName": "use_action",
+				"SpawnEffectAnimID": "",
+				"SpawnEffectAnimPlay": "",
+				"SpawnEffectOffset": {
+					"x": -99999,
+					"y": -99999
+				},
+				"SoundOnStart": "Play_Zombie_Roman_Medusa_Petrify",
+				"DestroyEffectAnimID": "",
+				"DestroyEffectAnimPlay": "",
+				"DestroyEffectOffset": {
+					"x": -99999,
+					"y": -99999
+				}
+			}
+		},
+		{
+			"objclass": "ZombiePlayAnimationActionDefinition",
+			"aliases": [
+				"ZombieFairytaleImpMinibossRest2"
+			],
+			"objdata": {
+				"Weight": 999999999,
+				"RepeatMin": 1,
+				"RepeatMax": 1,
+				"Phase": "Retreat",
+				"AnimationToPlay": "idle",
+				"CanPickAgain": false
+			}
+		},
+		{
+			"objclass": "ZombieDropZombiesOnBoardActionDefinition",
+			"aliases": [
+				"ZombieFairytaleImpMinibossSummon"
+			],
+			"objdata": {
+				"Weight": 1,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"ColumnEnd": "0",
+				"ColumnStart": "0",
+				"MinSpawn": "1",
+				"MaxSpawn": "1",
+				"CanPickAgain": false,
+				"CenterOnInstigator": true,
+				"ZombieNames": [
+					"fairytale_imp_miniboss_phase1_summon"
+				],
+				"ZombieWeights": [
+					150
+				],
+				"Phase": "Retreat",
+				"PhaseAfter": "RetreatInjured",
+				"TimeBeforeSpawn": 0,
+				"ZombieFallTime": 0,
+				"RampUpAnimation": "",
+				"LoopingAnimation": "summon",
+				"RampDownAnimation": "idle",
+				"EffectTypeToShow": "",
+				"DropAudioEvent": "Play_Zombie_Roman_Caesar_Attack"
+			}
+		},
+		{
+			"objclass": "ZombieDropZombiesOnBoardActionDefinition",
+			"aliases": [
+				"ZombieFairytaleImpMinibossSwitchLane"
+			],
+			"objdata": {
+				"Weight": 1,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"ColumnEnd": "0",
+				"ColumnStart": "0",
+				"MinSpawn": "1",
+				"MaxSpawn": "1",
+				"ZombieNames": [
+					"fairytale_imp_miniboss_consultant"
+				],
+				"ZombieWeights": [
+					100
+				],
+				"TimeBeforeSpawn": 0,
+				"ZombieFallTime": 0.5,
+				"Phase": "RetreatInjured",
+				"PhaseAfter": "Attacking",
+				"CenterOnInstigator": true,
+				"RampUpAnimation": "",
+				"LoopingAnimation": "walk",
+				"RampDownAnimation": "",
+				"EffectTypeToShow": "",
+				"DropAudioEvent": "Play_Zombie_Roman_Caesar_Walk"
+			}
+		},
+		{
+			"objclass": "ZombieDropActionDefinition",
+			"aliases": [
+				"ZombieFairytaleImpMinibossPhaseChange"
+			],
+			"objdata": {
+				"Weight": 1,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"Phase": "Dying",
+				"PhaseAfter": "Destroy",
+				"Invulnerable": "true",
+				"Animation": "",
+				"SoundOnStart": "Play_Zomb_SkyCity_Fighter_FallVO",
+				"AwardDrop": "RTID(ZombieFairytaleImpMinibossPhaseChangeDrop@.)"
+			}
+		},
+		{
+			"objclass": "ZombieDropProps",
+			"aliases": [
+				"ZombieFairytaleImpMinibossPhaseChangeDrop"
+			],
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "fairytale_imp_miniboss_phase2",
+						"Hypnotized": false,
+						"SpawnGridXDelta": 0,
+						"TossDuration": 0.01,
+						"TossApexHeight": 0.01
+					},
+					{
+						"Type": "fairytale_mirror_remover",
+						"Hypnotized": true,
+						"SpawnGridXDelta": 5,
+						"TossDuration": 0.01,
+						"TossApexHeight": 0.01
+					},
+					{
+						"Type": "fairytale_imp_miniboss_card_spawner_acehearts",
+						"Hypnotized": false,
+						"SpawnGridXDelta": 1,
+						"TossDuration": 0.01,
+						"TossApexHeight": 0.01
+					},
+					{
+						"Type": "fairytale_imp_miniboss_card_spawner_10diamonds",
+						"Hypnotized": false,
+						"SpawnGridXDelta": 2,
+						"TossDuration": 0.01,
+						"TossApexHeight": 0.01
+					},
+					{
+						"Type": "fairytale_imp_miniboss_card_spawner_jackspades",
+						"Hypnotized": false,
+						"SpawnGridXDelta": 3,
+						"TossDuration": 0.01,
+						"TossApexHeight": 0.01
+					},
+					{
+						"Type": "card_spawn_effect",
+						"Hypnotized": true,
+						"SpawnGridXDelta": 1,
+						"TossDuration": 0.01,
+						"TossApexHeight": 0.01
+					},
+					{
+						"Type": "card_spawn_effect",
+						"Hypnotized": true,
+						"SpawnGridXDelta": 2,
+						"TossDuration": 0.01,
+						"TossApexHeight": 0.01
+					},
+					{
+						"Type": "card_spawn_effect",
+						"Hypnotized": true,
+						"SpawnGridXDelta": 3,
+						"TossDuration": 0.01,
+						"TossApexHeight": 0.01
+					},
+					{
+						"Type": "fairytale_cavalry",
+						"Hypnotized": false,
+						"SpawnGridXDelta": 6,
+						"TossGridYDelta": 1,
+						"TossDuration": 0.01,
+						"TossApexHeight": 0.01
+					},
+					{
+						"Type": "fairytale_cavalry",
+						"Hypnotized": false,
+						"SpawnGridXDelta": 6,
+						"TossGridYDelta": -1,
+						"TossDuration": 0.01,
+						"TossApexHeight": 0.01
+					}
+				]
+			}
+		},
+
+
+* Nanny's Nyctalopic Nightmare-tron
+
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"zombossmech_fairytale"
+			],
+			"objdata": {
+				"TypeName": "zombossmech_fairytale",
+				"ZombieClass": "ZombieZombossMech_Hydra",
+				"Properties": "RTID(ZombieZombossMechFairytale@ZombieProperties)",
+				"ResourceGroups": [
+					"ZombieZombossMech_HydraGroup",
+					"ZombossCommonGroup",
+					"PlantWitchHazel",
+					"PlantWitchHazelEffects",
+					"FairyTaleFog",
+					"SleepingPlantEffect",
+					"GridItemFairyTaleCards",
+					"CarnieMinigameGroup",
+					"GridItemCarnieCards",
+					"ZombieFairyTaleBasicGroup",
+					"PlantPuffshroom",
+					"PlantBlockoli",
+					"ZombieFairyTaleWitchGroup",
+					"ZombieDarkWizardGroup",
+					"PlantWitchFrog",
+					"ZombieDummyGroup"
+				],
+				"AudioGroups": [
+					"ZombossGlobalAudio",
+					"ZombossDarkAgesAudio",
+					"ZombieCarnieMagicianAudio",
+					"PlantPuffShroomAudio",
+					"CarnieGeneralAudioGroup",
+					"ZombieZombossMech_HydraAudio",
+					"ZombossBeachAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_ZombossMech_Hydra",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBOSS_HYDRA",
+				"HomeWorld": "fairytale",
+				"AlmanacBackdropName": "fairytalenight",
+				"Placeable": false
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"zombossmech_fairytale_head_top"
+			],
+			"objdata": {
+				"TypeName": "zombossmech_fairytale_head_top",
+				"ZombieClass": "ZombossHydraHeadTop",
+				"Properties": "RTID(ZombossMechFairytaleHeadTop@ZombieProperties)",
+				"ResourceGroups": [
+					"ZombieZombossMech_HydraGroup",
+					"ZombossCommonGroup",
+					"FairyTaleFog",
+					"SleepingPlantEffect"
+				],
+				"AudioGroups": [
+					"ZombossGlobalAudio",
+					"ZombossDarkAgesAudio",
+					"ZombieZombossMech_HydraAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_HydraHeadTop",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBOSS_HYDRA_HEAD1",
+				"HomeWorld": "fairytale",
+				"Placeable": false
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"zombossmech_fairytale_head_bottom"
+			],
+			"objdata": {
+				"TypeName": "zombossmech_fairytale_head_bottom",
+				"ZombieClass": "ZombossHydraHeadBottom",
+				"Properties": "RTID(ZombossMechFairytaleHeadBottom@ZombieProperties)",
+				"ResourceGroups": [
+					"ZombieZombossMech_HydraGroup",
+					"ZombossCommonGroup",
+					"PlantWitchHazel",
+					"PlantWitchHazelEffects",
+					"FairyTaleFog",
+					"SleepingPlantEffect",
+					"GridItemFairyTaleCards",
+					"CarnieMinigameGroup",
+					"ZombieFairyTaleBasicGroup",
+					"PlantPuffshroom",
+					"PlantBlockoli",
+					"ZombieDummyGroup"
+				],
+				"AudioGroups": [
+					"ZombossGlobalAudio",
+					"ZombossDarkAgesAudio",
+					"ZombieCarnieMagicianAudio",
+					"PlantPuffShroomAudio",
+					"CarnieGeneralAudioGroup",
+					"ZombieZombossMech_HydraAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_HydraHeadBottom",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBOSS_HYDRA_HEAD2",
+				"HomeWorld": "fairytale",
+				"Placeable": false
+			}
+		},
+		{
+			"aliases": [
+				"ZombieZombossMechFairytale"
+			],
+			"objclass": "ZombieZombossMechHydraProps",
+			"objdata": {
+				"AlmanacOffset": {
+					"x": 65,
+					"y": 100
+				},
+				"AlmanacScale": 0.75,
+				"ArtCenter": {
+					"x": 30,
+					"y": 160
+				},
+				"AttackRect": {
+					"mHeight": 125,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanBeFlicked": false,
+				"CanBePlantTossedStrong": false,
+				"CanBePlantTossedWeak": false,
+				"CanSpawnPlantFood": false,
+				"CanTriggerZombieWin": false,
+				"CrosshairAnimation": "missile_lock_reticle",
+				"CrosshairPopAnim": "POPANIM_EFFECTS_ZOMBOSS_MISSILE_EXPLOSION_DARK",
+				"FoeEatDamageReflectPct": 0.5,
+				"GridExtents": {
+					"mX": 3,
+					"mY": 2
+				},
+				"GroundTrackName": "ground_swatch",
+				"HideDuringIntro": true,
+				"HitRect": {
+					"mHeight": 340,
+					"mWidth": 115,
+					"mX": 30,
+					"mY": 10
+				},
+				"IsValidPinchTarget": false,
+				"MaxColumn": 7,
+				"MinColumn": 1,
+				"PowerUpDamageModifier": 0.25,
+				"RocketAnimation": "missile",
+				"RocketExplosionAnimation": "missile_explosion",
+				"ShadowOffset": {
+					"x": 55,
+					"y": -35,
+					"z": 0.8
+				},
+				"ShadowScaling": {
+					"x": 4.5,
+					"y": 4.5
+				},
+				"SkipHeadDropState": true,
+				"ArmDropFraction": -1,
+				"Speed": 0.1,
+				"SquashGridItems": false,
+				"SquashZombies": true,
+				"ConditionImmunities": [
+					{
+						"Condition": "stun"
+					},
+					{
+						"Condition": "chill"
+					},
+					{
+						"Condition": "freeze"
+					},
+					{
+						"Condition": "blockolistunned"
+					},
+					{
+						"Condition": "loquatstunned"
+					},
+					{
+						"Condition": "potionspeed2"
+					},
+					{
+						"Condition": "potiontoughness2"
+					},
+					{
+						"Condition": "potionsuper2"
+					},
+                  {
+						"Condition": "allergic"
+                  }
+				],
+				"ProjectilesToIgnore": [
+					"RTID(FairytaleAceHearts@ProjectileTypes)",
+					"RTID(Fairytale10Diamonds@ProjectileTypes)",
+					"RTID(FairytaleJackSpades@ProjectileTypes)",
+					"RTID(FairytaleClubKing@ProjectileTypes)"
+				],
+				"ShieldBusters": [
+					"RTID(FairytaleAceQueen@ProjectileTypes)"
+				],
+				"PostIntroActions": [
+					"RTID(ZombossFairytaleShield1@ZombieActions)"
+				],
+				"DoActionFirst": [
+					"RTID(ZombossFairytaleShield2@ZombieActions)",
+					"RTID(ZombossFairytaleShield3@ZombieActions)"
+				],
+				"ActionFirstPhase": [
+					1,
+					2
+				],
+				"MiniPhaseActions": [
+					[
+						"RTID(ZombossFairytaleWalk1@ZombieActions)",
+						"RTID(ZombossFairytaleMiniSpawn1@ZombieActions)"
+					],
+					[
+						"RTID(ZombossFairytaleWalk1@ZombieActions)",
+						"RTID(ZombossFairytaleMiniSpawn2@ZombieActions)",
+						"RTID(ZombossFairytaleSpit1@ZombieActions)"
+					],
+					[
+						"RTID(ZombossFairytaleWalk1@ZombieActions)",
+						"RTID(ZombossFairytaleMiniSpawn3@ZombieActions)",
+						"RTID(ZombossFairytaleSpit1@ZombieActions)"
+					]
+				],
+				"Stages": [
+					{
+						"Actions": [
+							"RTID(ZombossFairytaleWalk1@ZombieActions)",
+							"RTID(ZombossFairytaleSpawn1@ZombieActions)",
+							"RTID(ZombossFairytaleChesireSpawn1@ZombieActions)",
+							"RTID(ZombossFairytaleSpit1@ZombieActions)"
+						],
+						"AnimRateModifier": 1,
+						"ChilledDurationFromFrozen": 10,
+						"DamageIndexFull": 0,
+						"DamageIndexHalf": 0,
+						"HitPoints": 6500,
+						"IdleTime": {
+							"Max": 2,
+							"Min": 1.5
+						},
+						"RetreatAction": "RTID(ZombossFairytaleRetreatWalk1@ZombieActions)",
+						"StunDamageScale": 1.25,
+						"StunStaggerBackMovement": 80,
+						"StunStaggerBackTime": 0.4,
+						"StunTime": 0.5
+					},
+					{
+						"Actions": [
+							"RTID(ZombossFairytaleWalk1@ZombieActions)",
+							"RTID(ZombossFairytaleSpawn2@ZombieActions)",
+							"RTID(ZombossFairytaleChesireSpawn2@ZombieActions)",
+							"RTID(ZombossFairytaleGargSpawn1@ZombieActions)",
+							"RTID(ZombossFairytaleWolfSpawn1@ZombieActions)",
+							"RTID(ZombossFairytaleSpit1@ZombieActions)",
+							"RTID(ZombossFairytaleSuction1@ZombieActions)"
+						],
+						"AnimRateModifier": 0.9,
+						"ChilledDurationFromFrozen": 10,
+						"DamageIndexFull": 3,
+						"DamageIndexHalf": 3,
+						"HitPoints": 8500,
+						"IdleTime": {
+							"Max": 2,
+							"Min": 1
+						},
+						"RetreatAction": "RTID(ZombossFairytaleRetreatWalk1@ZombieActions)",
+						"StunDamageScale": 1.25,
+						"StunStaggerBackMovement": 80,
+						"StunStaggerBackTime": 0.4,
+						"StunTime": 0.5
+					},
+					{
+						"Actions": [
+							"RTID(ZombossFairytaleWalk1@ZombieActions)",
+							"RTID(ZombossFairytaleSpawn3@ZombieActions)",
+							"RTID(ZombossFairytaleChesireSpawn1@ZombieActions)",
+							"RTID(ZombossFairytaleWolfSpawn2@ZombieActions)",
+							"RTID(ZombossFairytaleCavalrySpawn1@ZombieActions)",
+							"RTID(ZombossFairytaleSpit2@ZombieActions)",
+							"RTID(ZombossFairytaleSuction1@ZombieActions)"
+						],
+						"AnimRateModifier": 0.85,
+						"ChilledDurationFromFrozen": 10,
+						"DamageIndexFull": 6,
+						"DamageIndexHalf": 6,
+						"HitPoints": 10000,
+						"IdleTime": {
+							"Max": 1.5,
+							"Min": 1.3
+						},
+						"RetreatAction": "RTID(ZombossFairytaleRetreatWalk1@ZombieActions)",
+						"StunDamageScale": 1.25,
+						"StunStaggerBackMovement": 80,
+						"StunStaggerBackTime": 0.4,
+						"StunTime": 0.5
+					}
+				],
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness8"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed3"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombossMechFairytaleHeadTop"
+			],
+			"objclass": "ZombossHydraHeadTopProps",
+			"objdata": {
+				"Actions": [
+					"RTID(ZombossMechFairytaleHeadTopSpawnFog@ZombieActions)"
+				],
+				"SmokeSpawnStartTime": 40,
+				"SmokeSpawnBetweenTime": 21,
+				"SoundOnDeath": "Play_Zomb_Global_Zomboss_Death_Sparks",
+				"ArtCenter": {
+					"x": 90,
+					"y": 175
+				},
+				"AttackRect": {
+					"mHeight": 125,
+					"mWidth": 20,
+					"mX": -75,
+					"mY": 0
+				},
+				"HitRect": {
+					"mHeight": 100,
+					"mWidth": 50,
+					"mX": -75,
+					"mY": 10
+				},
+				"ProjectilesToIgnore": [
+					"RTID(FairytaleAceHearts@ProjectileTypes)",
+					"RTID(Fairytale10Diamonds@ProjectileTypes)",
+					"RTID(FairytaleJackSpades@ProjectileTypes)",
+					"RTID(FairytaleClubKing@ProjectileTypes)"
+				],
+				"ConditionImmunities": [
+					{
+						"Condition": "stun"
+					},
+					{
+						"Condition": "chill"
+					},
+					{
+						"Condition": "freeze"
+					},
+					{
+						"Condition": "blockolistunned"
+					},
+					{
+						"Condition": "loquatstunned"
+					},
+					{
+						"Condition": "potionspeed2"
+					},
+					{
+						"Condition": "potiontoughness2"
+					},
+					{
+						"Condition": "potionsuper2"
+					},
+                  {
+						"Condition": "allergic"
+                  }
+				],
+				"SkipHeadDropState": true,
+				"ArmDropFraction": -1,
+				"CanSurrender": true,
+				"CanBeFlicked": false,
+				"CanBePlantTossedStrong": false,
+				"CanBePlantTossedWeak": false,
+				"CanSpawnPlantFood": false,
+				"CanTriggerZombieWin": false,
+				"IsValidPinchTarget": false,
+				"FoeEatDamageReflectPct": 0.5,
+				"PowerUpDamageModifier": 0.25,
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"Hitpoints": 7500,
+				"ShadowOffset": {
+					"x": -50,
+					"y": 25,
+					"z": 1.2
+				},
+				"ShadowScaling": {
+					"x": 2.5,
+					"y": 2.5
+				},
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					}
+				],
+				"Speed": 0.185,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness5"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombossMechFairytaleHeadBottom"
+			],
+			"objclass": "ZombossHydraHeadBottomProps",
+			"objdata": {
+				"Layers": [
+					["eye_spinning_red", "acehearts_big", "acehearts_small"],
+					["eye_spinning_red", "diamonds10_big", "diamonds10_small"],
+					["eye_spinning_black", "spadesjack_big", "spadesjack_small"],
+					["eye_spinning_black", "clubkings_big", "clubkings_small"]
+				],
+				"Actions": [
+					"RTID(ZombossMechFairytaleHeadBottomCardSpawnAceHearts@ZombieActions)",
+					"RTID(ZombossMechFairytaleHeadBottomCardSpawn10Diamonds@ZombieActions)",
+					"RTID(ZombossMechFairytaleHeadBottomCardSpawnJackSpades@ZombieActions)",
+					"RTID(ZombossMechFairytaleHeadBottomCardSpawnClubKing@ZombieActions)"
+				],
+				"CardSpawnStartTime": 46,
+				"CardSpawnBetweenTime": 24,
+				"SoundOnDeath": "Play_Zomb_Global_Zomboss_Death_Sparks",
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"AttackRect": {
+					"mHeight": 120,
+					"mWidth": 20,
+					"mX": -75,
+					"mY": 0
+				},
+				"HitRect": {
+					"mHeight": 100,
+					"mWidth": 50,
+					"mX": -75,
+					"mY": 10
+				},
+				"ProjectilesToIgnore": [
+					"RTID(FairytaleAceHearts@ProjectileTypes)",
+					"RTID(Fairytale10Diamonds@ProjectileTypes)",
+					"RTID(FairytaleJackSpades@ProjectileTypes)",
+					"RTID(FairytaleClubKing@ProjectileTypes)"
+				],
+				"ConditionImmunities": [
+					{
+						"Condition": "stun"
+					},
+					{
+						"Condition": "chill"
+					},
+					{
+						"Condition": "freeze"
+					},
+					{
+						"Condition": "blockolistunned"
+					},
+					{
+						"Condition": "loquatstunned"
+					},
+					{
+						"Condition": "potionspeed2"
+					},
+					{
+						"Condition": "potiontoughness2"
+					},
+					{
+						"Condition": "potionsuper2"
+					},
+                  {
+						"Condition": "allergic"
+                  }
+				],
+				"SkipHeadDropState": true,
+				"ArmDropFraction": -1,
+				"CanSurrender": true,
+				"CanBeFlicked": false,
+				"CanBePlantTossedStrong": false,
+				"CanBePlantTossedWeak": false,
+				"CanSpawnPlantFood": false,
+				"CanTriggerZombieWin": false,
+				"IsValidPinchTarget": false,
+				"FoeEatDamageReflectPct": 0.5,
+				"PowerUpDamageModifier": 0.25,
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"Hitpoints": 7500,
+				"ShadowOffset": {
+					"x": -50,
+					"y": 0,
+					"z": 1.2
+				},
+				"ShadowScaling": {
+					"x": 2.5,
+					"y": 2.5
+				},
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					}
+				],
+				"Speed": 0.185,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness5"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombossHydraShieldActionDefinition",
+			"aliases": [
+				"ZombossFairytaleShield1"
+			],
+			"objdata": {
+				"ShieldActivateDelay": 1,
+				"ShieldHp": 7000,
+				"ShieldAnim": "summoning"
+			}
+		},
+		{
+			"objclass": "ZombossHydraShieldActionDefinition",
+			"aliases": [
+				"ZombossFairytaleShield2"
+			],
+			"objdata": {
+				"ShieldActivateDelay": 1,
+				"ShieldHp": 8500,
+				"ShieldAnim": "summoning"
+			}
+		},
+		{
+			"objclass": "ZombossHydraShieldActionDefinition",
+			"aliases": [
+				"ZombossFairytaleShield3"
+			],
+			"objdata": {
+				"ShieldActivateDelay": 1,
+				"ShieldHp": 10000,
+				"ShieldAnim": "summoning"
+			}
+		},
+		{
+			"objclass": "ZombossHydraSpitActionDefinition",
+			"aliases": [
+				"ZombossFairytaleSpit1"
+			],
+			"objdata": {
+				"FirstSpitInterval": 0.5,
+				"Weight": 5,
+				"SpitInterval": 0.5,
+				"MinColumn": 2,
+				"MaxColumn": 6,
+				"SpitProjectile": "RTID(HydraPoisonSpit@ProjectileTypes)"
+			}
+		},
+		{
+			"objclass": "ZombossHydraSpitActionDefinition",
+			"aliases": [
+				"ZombossFairytaleSpit2"
+			],
+			"objdata": {
+				"FirstSpitInterval": 0.5,
+				"Weight": 5,
+				"SpitInterval": 0.4,
+				"MinColumn": 2,
+				"MaxColumn": 6,
+				"SpitProjectile": "RTID(HydraPoisonSpit@ProjectileTypes)"
+			}
+		},
+		{
+			"objclass": "ZombossHydraSpawnActionDefinition",
+			"aliases": [
+				"ZombossFairytaleMiniSpawn1"
+			],
+			"objdata": {
+				"Weight": 20,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 400,
+					"Max": 1000
+				},
+				"SpawnZombieTypes": [
+					"fairytale",
+					"fairytale_armor1",
+					"fairytale_imp_hearts"
+				],
+				"SpawnStartTime": 1.0,
+				"SpawnEndTime": 1.5,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99999,
+					"Max": 99999
+				},
+				"SpawnDistanceVariance": 10
+			}
+		},
+		{
+			"objclass": "ZombossHydraSpawnActionDefinition",
+			"aliases": [
+				"ZombossFairytaleSpawn1"
+			],
+			"objdata": {
+				"Weight": 20,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 600,
+					"Max": 2000
+				},
+				"SpawnZombieTypes": [
+					"fairytale_diamonds",
+					"fairytale_armor1",
+					"fairytale_diamonds_armor2_zomboss",
+					"fairytale_imp_hearts",
+					"fairytale_spades",
+					"fairytale_clubs_armor1_zomboss",
+					"fairytale_spades_armor2_zomboss",
+					"fairytale_imp_clubs"
+				],
+				"SpawnStartTime": 1.0,
+				"SpawnEndTime": 1.5,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99999,
+					"Max": 99999
+				},
+				"SpawnDistanceVariance": 20
+			}
+		},
+		{
+			"objclass": "ZombossHydraSpawnActionDefinition",
+			"aliases": [
+				"ZombossFairytaleMiniSpawn2"
+			],
+			"objdata": {
+				"Weight": 20,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 800,
+					"Max": 3500
+				},
+				"SpawnZombieTypes": [
+					"fairytale_armor2",
+					"fairytale_armor1",
+					"fairytale_imp_hearts"
+				],
+				"SpawnStartTime": 1.0,
+				"SpawnEndTime": 1.5,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99999,
+					"Max": 99999
+				},
+				"SpawnDistanceVariance": 10
+			}
+		},
+		
+		{
+			"objclass": "ZombossHydraSpawnActionDefinition",
+			"aliases": [
+				"ZombossFairytaleSpawn2"
+			],
+			"objdata": {
+				"Weight": 20,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 800,
+					"Max": 2600
+				},
+				"SpawnZombieTypes": [
+					"fairytale_diamonds",
+					"fairytale_armor1",
+					"fairytale_diamonds_armor2_zomboss",
+					"fairytale_imp_hearts",
+					"fairytale_spades",
+					"fairytale_clubs_armor1_zomboss",
+					"fairytale_spades_armor2_zomboss",
+					"fairytale_imp_clubs"
+				],
+				"SpawnStartTime": 1.0,
+				"SpawnEndTime": 1.5,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99999,
+					"Max": 99999
+				},
+				"SpawnDistanceVariance": 20
+			}
+		},
+		{
+			"objclass": "ZombossHydraSpawnActionDefinition",
+			"aliases": [
+				"ZombossFairytaleGargSpawn1"
+			],
+			"objdata": {
+				"Weight": 7,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 2500,
+					"Max": 2500
+				},
+				"SpawnZombieTypes": [
+					"fairytale_gargantuar"
+				],
+				"SpawnStartTime": 1.0,
+				"SpawnEndTime": 1.5,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99999,
+					"Max": 99999
+				},
+				"SpawnDistanceVariance": 20
+			}
+		},
+		{
+			"objclass": "ZombossHydraSpawnActionDefinition",
+			"aliases": [
+				"ZombossFairytaleMiniSpawn3"
+			],
+			"objdata": {
+				"Weight": 30,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 2000,
+					"Max": 6200
+				},
+				"SpawnZombieTypes": [
+					"fairytale_witch",
+					"fairytale_armor1",
+					"fairytale_imp_hearts"
+				],
+				"SpawnStartTime": 1.0,
+				"SpawnEndTime": 1.5,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99999,
+					"Max": 99999
+				},
+				"SpawnDistanceVariance": 10
+			}
+		},
+		{
+			"objclass": "ZombossHydraSpawnActionDefinition",
+			"aliases": [
+				"ZombossFairytaleSpawn3"
+			],
+			"objdata": {
+				"Weight": 20,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"SpawnZombieWavePointRange": {
+					"Min": 800,
+					"Max": 3000
+				},
+				"SpawnZombieTypes": [
+					"fairytale_diamonds",
+					"fairytale_armor1",
+					"fairytale_diamonds_armor2_zomboss",
+					"fairytale_imp_hearts",
+					"fairytale_spades",
+					"fairytale_clubs_armor1_zomboss",
+					"fairytale_spades_armor2_zomboss",
+					"fairytale_imp_clubs",
+					"fairytale_witch"
+				],
+				"SpawnStartTime": 1.0,
+				"SpawnEndTime": 1.5,
+				"SpawnWavesBetweenPlantFood": {
+					"Min": 99999,
+					"Max": 99999
+				},
+				"SpawnDistanceVariance": 20
+			}
+		},
+		{
+			"objclass": "ZombieDropZombiesOnBoardActionDefinition",
+			"aliases": [
+				"ZombossFairytaleChesireSpawn1"
+			],
+			"objdata": {
+				"Weight": 10,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"ColumnEnd": "6",
+				"ColumnStart": "5",
+				"MinSpawn": "1",
+				"MaxSpawn": "2",
+				"ZombieNames": [
+					"fairytale_chesire"
+				],
+				"ZombieWeights": [
+					60
+				],
+				"TimeBeforeSpawn": 0,
+				"ZombieFallTime": 0,
+				"CenterOnInstigator": false,
+				"RampUpAnimation": "",
+				"LoopingAnimation": "summoning",
+				"RampDownAnimation": "",
+				"EffectTypeToShow": "",
+				"DropAudioEvent": ""
+			}
+		},
+		{
+			"objclass": "ZombieDropZombiesOnBoardActionDefinition",
+			"aliases": [
+				"ZombossFairytaleChesireSpawn2"
+			],
+			"objdata": {
+				"Weight": 5,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"ColumnEnd": "6",
+				"ColumnStart": "5",
+				"MinSpawn": "3",
+				"MaxSpawn": "4",
+				"ZombieNames": [
+					"fairytale_chesire"
+				],
+				"ZombieWeights": [
+					60
+				],
+				"TimeBeforeSpawn": 0,
+				"ZombieFallTime": 0,
+				"CenterOnInstigator": false,
+				"RampUpAnimation": "",
+				"LoopingAnimation": "summoning",
+				"RampDownAnimation": "",
+				"EffectTypeToShow": "",
+				"DropAudioEvent": ""
+			}
+		},
+		{
+			"objclass": "ZombieDropZombiesOnBoardActionDefinition",
+			"aliases": [
+				"ZombossFairytaleWolfSpawn1"
+			],
+			"objdata": {
+				"Weight": 15,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"ColumnEnd": "10",
+				"ColumnStart": "10",
+				"MinSpawn": "1",
+				"MaxSpawn": "2",
+				"ZombieNames": [
+					"fairytale_wolf_straw",
+					"fairytale_wolf_wood"
+				],
+				"ZombieWeights": [
+					60,
+					30
+				],
+				"TimeBeforeSpawn": 0,
+				"ZombieFallTime": 0,
+				"CenterOnInstigator": false,
+				"RampUpAnimation": "",
+				"LoopingAnimation": "summoning",
+				"RampDownAnimation": "",
+				"EffectTypeToShow": "",
+				"DropAudioEvent": ""
+			}
+		},
+		{
+			"objclass": "ZombieDropZombiesOnBoardActionDefinition",
+			"aliases": [
+				"ZombossFairytaleWolfSpawn2"
+			],
+			"objdata": {
+				"Weight": 15,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"ColumnEnd": "10",
+				"ColumnStart": "10",
+				"MinSpawn": "1",
+				"MaxSpawn": "2",
+				"ZombieNames": [
+					"fairytale_wolf_straw",
+					"fairytale_wolf_wood",
+					"fairytale_wolf_brick"
+				],
+				"ZombieWeights": [
+					60,
+					30,
+					20
+				],
+				"TimeBeforeSpawn": 0,
+				"ZombieFallTime": 0,
+				"CenterOnInstigator": false,
+				"RampUpAnimation": "",
+				"LoopingAnimation": "summoning",
+				"RampDownAnimation": "",
+				"EffectTypeToShow": "",
+				"DropAudioEvent": ""
+			}
+		},
+		{
+			"objclass": "ZombieDropZombiesOnBoardActionDefinition",
+			"aliases": [
+				"ZombossFairytaleCavalrySpawn1"
+			],
+			"objdata": {
+				"Weight": 10,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"ColumnEnd": "11",
+				"ColumnStart": "11",
+				"MinSpawn": "1",
+				"MaxSpawn": "2",
+				"ZombieNames": [
+					"fairytale_cavalry",
+					"fairytale_mirrorqueen"
+				],
+				"ZombieWeights": [
+					60,
+					30
+				],
+				"TimeBeforeSpawn": 1,
+				"ZombieFallTime": 0,
+				"CenterOnInstigator": false,
+				"RampUpAnimation": "",
+				"LoopingAnimation": "summoning",
+				"RampDownAnimation": "",
+				"EffectTypeToShow": "",
+				"DropAudioEvent": ""
+			}
+		},
+		{
+			"objclass": "ZombossHydraWalkActionDefinition",
+			"aliases": [
+				"ZombossFairytaleWalk1"
+			],
+			"objdata": {
+				"Weight": 4,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"WalkVerticalChance": 1,
+				"WalkPreferSquashChance": 0
+			}
+		},
+		{
+			"objclass": "ZombossHydraWalkActionDefinition",
+			"aliases": [
+				"ZombossFairytaleRetreatWalk1"
+			],
+			"objdata": {
+				"Weight": 4,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"WalkVerticalChance": 0,
+				"WalkPreferSquashChance": 1,
+				"WalkDuration": 1.5
+			}
+		},
+		{
+			"objclass": "ZombossHydraSuctionActionDefinition",
+			"aliases": [
+				"ZombossFairytaleSuction1"
+			],
+			"objdata": {
+				"Weight": 5
+			}
+		},
+		{
+			"objclass": "ZombossHydraHeadTopSmokeActionDefinition",
+			"aliases": [
+				"ZombossMechFairytaleHeadTopSpawnFog"
+			],
+			"objdata": {
+				"Weight": 10,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"ActionAnimation": "smoke",
+				"NumberOfFogToSpawn": 4,
+				"MinColumn": 0,
+				"MaxColumn": 6
+			}
+		},
+		{
+			"objclass": "ZombieDropZombiesOnBoardActionDefinition",
+			"aliases": [
+				"ZombossMechFairytaleHeadBottomCardSpawnAceHearts"
+			],
+			"objdata": {
+				"Weight": 10,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"ColumnEnd": "20",
+				"ColumnStart": "20",
+				"MinSpawn": "1",
+				"MaxSpawn": "1",
+				"ZombieNames": [
+					"zombossmech_fairytale_head_bottom_acehearts"
+				],
+				"ZombieWeights": [
+					100
+				],
+				"TimeBeforeSpawn": 1.5,
+				"ZombieFallTime": 0,
+				"RampUpAnimation": "",
+				"LoopingAnimation": "cardspawn",
+				"RampDownAnimation": "",
+				"EffectTypeToShow": "",
+				"DropAudioEvent": ""
+			}
+		},
+		{
+			"objclass": "ZombieDropZombiesOnBoardActionDefinition",
+			"aliases": [
+				"ZombossMechFairytaleHeadBottomCardSpawn10Diamonds"
+			],
+			"objdata": {
+				"Weight": 10,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"ColumnEnd": "20",
+				"ColumnStart": "20",
+				"MinSpawn": "1",
+				"MaxSpawn": "1",
+				"ZombieNames": [
+					"zombossmech_fairytale_head_bottom_10diamonds"
+				],
+				"ZombieWeights": [
+					100
+				],
+				"TimeBeforeSpawn": 1.5,
+				"ZombieFallTime": 0,
+				"RampUpAnimation": "",
+				"LoopingAnimation": "cardspawn",
+				"RampDownAnimation": "",
+				"EffectTypeToShow": "",
+				"DropAudioEvent": ""
+			}
+		},
+		{
+			"objclass": "ZombieDropZombiesOnBoardActionDefinition",
+			"aliases": [
+				"ZombossMechFairytaleHeadBottomCardSpawnJackSpades"
+			],
+			"objdata": {
+				"Weight": 10,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"ColumnEnd": "20",
+				"ColumnStart": "20",
+				"MinSpawn": "1",
+				"MaxSpawn": "1",
+				"ZombieNames": [
+					"zombossmech_fairytale_head_bottom_jackspades"
+				],
+				"ZombieWeights": [
+					100
+				],
+				"TimeBeforeSpawn": 1.5,
+				"ZombieFallTime": 0,
+				"RampUpAnimation": "",
+				"LoopingAnimation": "cardspawn",
+				"RampDownAnimation": "",
+				"EffectTypeToShow": "",
+				"DropAudioEvent": ""
+			}
+		},
+		{
+			"objclass": "ZombieDropZombiesOnBoardActionDefinition",
+			"aliases": [
+				"ZombossMechFairytaleHeadBottomCardSpawnClubKing"
+			],
+			"objdata": {
+				"Weight": 10,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"ColumnEnd": "20",
+				"ColumnStart": "20",
+				"MinSpawn": "1",
+				"MaxSpawn": "1",
+				"ZombieNames": [
+					"zombossmech_fairytale_head_bottom_clubking"
+				],
+				"ZombieWeights": [
+					100
+				],
+				"TimeBeforeSpawn": 1.5,
+				"ZombieFallTime": 0,
+				"RampUpAnimation": "",
+				"LoopingAnimation": "cardspawn",
+				"RampDownAnimation": "",
+				"EffectTypeToShow": "",
+				"DropAudioEvent": ""
+			}
+		},
+		{
+			"objclass": "PoisonSpitProjectileProps",
+			"aliases": [
+				"HydraPoisonSpit"
+			],
+			"objdata": {
+				"AppearDelay": 1,
+				"GridItemSpawn": "fairytale_hydra_poison",
+				"BaseDamage": 0,
+				"ClassName": "PoisonSpitProjectile",
+				"DamageFlags": [
+					"shooter"
+				],
+				"CollisionFlags": [
+					"ground"
+				],
+				"HasShadow": false,
+				"InitialVelocity": [
+					{
+						"Min": 0.0,
+						"Max": 0.0
+					},
+					{
+						"Min": 0.0,
+						"Max": 0.0
+					},
+					{
+						"Min": -500.0,
+						"Max": -500.0
+					}
+				],
+				"InitialScale": {
+					"Min": 1.0,
+					"Max": 1.0
+				},
+				"AttachedPAM": "POPANIM_EFFECTS_ZOMBOSS_HYDRA_EFFECT",
+				"AttachedPAMOffset": {
+					"x": -92.5,
+					"y": -111.5
+				},
+				"AttachedPAMAnimationToPlay": [
+					"dy01"
+				],
+				"CollisionRect": {
+					"mX": -15.0,
+					"mY": -15.0,
+					"mWidth": 30.0,
+					"mHeight": 30.0
+				},
+				"ImpactSoundEvent": "Play_Splat"
+			}
+		},

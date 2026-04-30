@@ -12,6 +12,7 @@
         <div class="header">
             <h1>Custom Zombie Maker</h1>
             <p>Edit PvZ2 zombie properties</p>
+            <p style="font-size: 0.8em; color: #aaa; margin-top: 6px;">Flow: 1) Select base zombie 2) Edit tabs 3) Generate JSON</p>
         </div>
 
         <div class="content">
@@ -34,14 +35,18 @@
 
             <!-- Main Content -->
             <div class="main">
+                <div id="emptyState" style="padding: 12px; border: 1px solid #3a3a3a; background: #252525; margin-bottom: 12px; border-radius: 4px; color: #bbb;">
+                    Select a base zombie from the left to start editing.
+                </div>
+
                 <div id="editorContainer" class="hidden">
                     <div class="tabs">
-                        <div class="tab active" onclick="switchTab('type')">Zombie Type</div>
+                        <div class="tab active" onclick="switchTab('type')">Type</div>
                         <div class="tab" onclick="switchTab('props')">Properties</div>
                         <div class="tab" onclick="switchTab('actions')">Actions</div>
                         <div class="tab" onclick="switchTab('armor')">Armors</div>
                         <div class="tab" onclick="switchTab('projectile')">Projectiles</div>
-                        <div class="tab" onclick="switchTab('output')">Generated JSON</div>
+                        <div class="tab" onclick="switchTab('output')">Output JSON</div>
                         <div class="tab" onclick="switchTab('raw')">Raw JSON Files</div>
                     </div>
 

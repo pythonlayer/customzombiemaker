@@ -1,0 +1,1171 @@
+{
+  "#comment": "Modern Day template with weighted ambush selection and portal spawn support.",
+  "comment": "Modern Day | ELM: Ver-14 [RFL v1.4.1]",
+  "level_name": "Samines Challenge - Modern Lunatic",
+  "output_file": "modern13.json",
+  "json_indent": 2,
+  "zombie_sources": {
+    "types_file": "ZOMBIETYPES_UPDATED.json",
+    "props_file": "ZOMBIEPROPERTIES_UPDATED.json"
+  },
+  "wave_settings": {
+    "flag_interval": 8,
+    "flag_count": 3,
+    "starting_points": 1,
+    "point_increment": 1.75,
+    "flag_bonus": 5,
+    "greediness_range": [0.4, 0.7],
+    "plantfood_mode": "interval_jittered",
+    "plantfood_interval": 8,
+    "plantfood_per_interval": 1,
+    "starting_sun": 50,
+    "spawn_row_range": [
+      1,
+      5
+    ],
+    "force_spawn_each_zombie_once": false
+  },
+  "zombie_pool": [
+    "tutorial",
+    "tutorial_armor1",
+    "tutorial_armor2",
+    "tutorial_armor4",
+    "tutorial_flag",
+    "tutorial_flag_veteran",
+    "tutorial_imp",
+    "tutorial_gargantuar",
+
+    "modern_newspaper",
+    "newspaper_veteran",
+    "modern_balloon",
+    "modern_allstar",
+    "modern_superfanimp",
+    "modern_berserker",
+
+
+    "mummy_flag",
+    "mummy_flag_veteran",
+    "ra",
+    "camel_onehump",
+    "camel_twohump",
+    "camel_manyhump",
+    "explorer",
+    "explorer_veteran",
+    "tomb_raiser",
+    "pharaoh",
+    "egypt_gargantuar",
+    "tutorial_balloon",
+    "pirate_flag",
+    "pirate_flag_veteran",
+    "swashbuckler",
+    "seagull",
+    "pelican",
+    "barrelroller",
+    "barrelroller_explosive",
+    "cannon",
+    "pirate_captain",
+    "pirate_gargantuar",
+
+
+    "prospector",
+    "piano",
+    "poncho",
+    "chicken_farmer",
+    "west_bull",
+    "west_bull_veteran",
+    "cowboy_gargantuar",
+
+    "future_flag",
+    "future_flag_veteran",
+    "future_jetpack",
+    "future_imp",
+    "future_jetpack_veteran",
+    "future_protector",
+    "future_protector_generator",
+    "mech_cone",
+    "disco_mech",
+    "football_mech",
+    "future_gargantuar",
+
+
+    "dark_armor3",
+    "dark_flag",
+    "dark_flag_veteran",
+    "dark_imp",
+    "dark_juggler",
+    "dark_wizard",
+    "dark_wizard_veteran",
+    "dark_king",
+    "dark_robber",
+    "dark_imp_dragon",
+    "dark_gargantuar",
+    "dark_explorer",
+
+
+    "beach_fem",
+    "beach_flag",
+    "beach_flag_veteran",
+    "beach_snorkel",
+    "beach_snorkel_veteran",
+    "beach_surfer",
+    "beach_octopus",
+    "beach_gargantuar",
+
+
+    "iceage_armor3",
+    "iceage_flag",
+    "iceage_flag_veteran",
+    "iceage_hunter",
+    "iceage_hunter_veteran",
+    "iceage_dodo",
+    "iceage_dodo_veteran",
+    "iceage_imp",
+    "iceage_troglobite",
+    "iceage_troglobite_basic",
+    "iceage_weaselhoarder",
+    "iceage_gargantuar",
+
+
+    "lostcity_flag",
+    "lostcity_flag_veteran",
+    "lostcity_excavator",
+    "lostcity_jane",
+    "lostcity_lostpilot",
+    "lostcity_imp",
+    "lostcity_bug",
+    "lostcity_impporter",
+    "lostcity_relichunter",
+    "lostcity_crystalskull",
+    "lostcity_crystalskull_veteran",
+    "lostcity_explorer",
+    "lostcity_gargantuar",
+
+    "eighties_flag",
+    "eighties_flag_veteran",
+    "eighties_punk",
+    "eighties_punk_veteran",
+    "eighties_glitter",
+    "eighties_mc",
+    "eighties_imp",
+    "eighties_breakdancer",
+    "eighties_arcade",
+    "eighties_boombox",
+    "eighties_gargantuar",
+    "cowboy",
+    "dark",
+    "dino_armor3",
+    "dino_flag",
+    "dino_flag_veteran",
+    "dino_imp",
+    "dino_bully",
+    "dino_bully_veteran",
+    "dino_pterry",
+    "dino_gargantuar",
+    "dino_eggstealer",
+    "dino_imposter"
+],
+  "zombie_variant_groups": {
+    "tutorial_armor1": [
+      "tutorial_armor1",
+        "mummy_armor1",
+        "pirate_armor1",
+        "cowboy_armor1",
+        "future_armor1",
+        "dark_armor1",
+        "beach_armor1",
+        "beach_fem_armor1",
+        "iceage_armor1",
+        "lostcity_armor1",
+        "lostcity_bug_armor1",
+        "eighties_armor1",
+        "dino_armor1"
+    ],
+    "tutorial_armor2": [
+        "mummy_armor2",
+        "tutorial_armor2",
+        "pirate_armor2",
+        "cowboy_armor2",
+        "future_armor2",
+        "dark_armor2",
+        "beach_armor2",
+        "beach_fem_armor2",
+        "iceage_armor2",
+        "lostcity_armor2",
+        "lostcity_bug_armor2",
+        "eighties_armor2",
+        "dino_armor2"
+    ],
+    "tutorial_armor4": [
+        "mummy_armor4",
+        "tutorial_armor4",
+        "pirate_armor4",
+        "cowboy_armor4",
+        "future_armor4",
+        "dark_armor4",
+        "beach_armor4",
+        "beach_fem_armor4",
+        "iceage_armor4",
+        "lostcity_armor4",
+        "eighties_armor4",
+        "dino_armor4"
+    ],
+
+    "eighties_bass": [
+        "eighties_bass",
+        "eighties_bass_c7",
+        "eighties_bass_c6",
+        "eighties_bass_c4",
+        "eighties_bass_c3"
+    ]
+},
+  "jam_style_overrides": {
+    "eighties_glitter": "jam_pop",
+    "eighties_arcade": "jam_8bit",
+    "eighties_breakdancer": "jam_rap",
+    "eighties_mc": "jam_rap",
+    "eighties_punk": "jam_punk",
+    "eighties_imp": "jam_metal",
+    "eighties_gargantuar": "jam_metal",
+    "eighties_bass": "jam_metal"
+  },
+  "jams": {
+    "enabled": true,
+    "all_active": true,
+    "start_wave": 1,
+    "supported_stage_modules": [
+      "RTID(ModernStage@LevelModules)"
+    ],
+    "available_jams": [
+      "jam_pop",
+      "jam_rap",
+      "jam_punk",
+      "jam_8bit",
+      "jam_metal"
+    ]
+  },
+  "zombie_wave_rules": [
+    {
+      "zombie": "piano",
+      "requires_any": [
+        "cowboy",
+        "cowboy_armor1",
+        "cowboy_armor2",
+        "cowboy_armor4"
+      ],
+      "requires_any_count_range": [1, 5],
+      "followup_wave_count_range": [1, 2],
+      "followup_requires_any_count_range": [1, 5]
+    },
+    {
+      "zombie": "dark_king",
+      "requires_any": [
+        "dark",
+        "dark_armor1",
+        "dark_armor2",
+        "dark_armor3",
+        "dark_armor4"
+      ],
+      "requires_any_count_range": [1, 5],
+      "followup_wave_count_range": [1, 2],
+      "followup_requires_any_count_range": [1, 5]
+    },
+    {
+      "zombie": "iceage_hunter",
+      "requires_any": [
+        "iceage_troglobite_basic"
+      ]
+    },
+    {
+      "zombie": "eighties_punk_veteran",
+      "requires_any": [
+        "eighties_boombox"
+      ]
+    }
+  ],
+  "zombie_pool_basics": [
+    "tutorial",
+    "tutorial_armor1",
+    "tutorial_armor2",
+    "tutorial_armor4",
+    "modern_newspaper",
+    "tutorial_balloon",
+    "modern_allstar",
+    "modern_superfanimp"
+  ],
+  "zombie_pool_non_basics": [
+    "mummy_flag",
+    "mummy_flag_veteran",
+    "ra",
+    "camel_onehump",
+    "camel_twohump",
+    "camel_manyhump",
+    "explorer",
+    "explorer_veteran",
+    "tomb_raiser",
+    "pharaoh",
+    "egypt_imp",
+    "egypt_gargantuar",
+    "pirate_flag",
+    "pirate_flag_veteran",
+    "swashbuckler",
+    "seagull",
+    "pelican",
+    "barrelroller",
+    "barrelroller_explosive",
+    "cannon",
+    "pirate_captain",
+    "pirate_gargantuar",
+    "prospector",
+    "piano",
+    "poncho",
+    "chicken_farmer",
+    "west_bull",
+    "west_bull_veteran",
+    "cowboy_gargantuar",
+    "future_flag",
+    "future_flag_veteran",
+    "future_jetpack",
+    "future_jetpack_veteran",
+    "future_protector",
+    "future_protector_generator",
+    "mech_cone",
+    "future_imp",
+    "disco_mech",
+    "football_mech",
+    "future_gargantuar",
+    "dark_armor3",
+    "dark_flag",
+    "dark_flag_veteran",
+    "dark_imp",
+    "dark_juggler",
+    "dark_wizard",
+    "dark_wizard_veteran",
+    "dark_king",
+    "dark_robber",
+    "dark_imp_dragon",
+    "dark_gargantuar",
+    "dark_explorer",
+    "beach_fem",
+    "beach_flag",
+    "beach_flag_veteran",
+    "beach_snorkel",
+    "beach_snorkel_veteran",
+    "beach_surfer",
+    "beach_imp",
+    "beach_octopus",
+    "beach_greaser_imp",
+    "beach_gargantuar",
+    "iceage_armor3",
+    "iceage_flag",
+    "iceage_flag_veteran",
+    "iceage_hunter",
+    "iceage_hunter_veteran",
+    "iceage_dodo",
+    "iceage_dodo_veteran",
+    "iceage_imp",
+    "iceage_troglobite",
+    "iceage_weaselhoarder",
+    "iceage_gargantuar",
+    "lostcity_flag",
+    "lostcity_flag_veteran",
+    "lostcity_excavator",
+    "lostcity_jane",
+    "lostcity_lostpilot",
+    "lostcity_imp",
+    "lostcity_bug",
+    "lostcity_impporter",
+    "lostcity_relichunter",
+    "lostcity_crystalskull",
+    "lostcity_crystalskull_veteran",
+    "lostcity_explorer",
+    "lostcity_gargantuar",
+    "eighties_flag",
+    "eighties_flag_veteran",
+    "eighties_punk",
+    "eighties_punk_veteran",
+    "eighties_glitter",
+    "eighties_mc",
+    "eighties_imp",
+    "eighties_breakdancer",
+    "eighties_arcade",
+    "eighties_boombox",
+    "eighties_gargantuar",
+    "cowboy",
+    "cowboy_armor1",
+    "cowboy_armor2",
+    "cowboy_armor4",
+    "cowboy_flag",
+    "cowboy_flag_veteran",
+    "dark",
+    "dino_armor3",
+    "dino_flag",
+    "dino_flag_veteran",
+    "dino_imp",
+    "dino_eggshell",
+    "dino_bully",
+    "dino_bully_veteran",
+    "dino_gargantuar",
+    "dino_eggstealer",
+    "dino_imposter"
+  ],
+  "non_basics_per_flag": 3,
+  "non_basics_pool_mode": "refresh_per_flag",
+  "non_basics_retained_per_flag": 1,
+  "events": {
+    "ambush_chance": 0.35,
+    "max_per_wave": 2,
+    "market": {
+      "enabled": false
+    },
+    "raidpty": {
+      "enabled": true,
+      "weight": 0.45,
+      "raidpty_alias_prefix": "RaidingParty",
+      "swashbuckler_point_cost": 1.5,
+      "min_swashbucklers": 2,
+      "max_swashbucklers": 6,
+      "group_size": 1,
+      "time_between_groups_range": [
+        0.25,
+        2.25
+      ]
+    },
+    "Parrotrousle": {
+      "enabled": false
+    },
+    "sun_crash": {
+      "enabled": false
+    },
+    "imp_ambushes": [
+      {
+        "enabled": true,
+        "weight": 0.7,
+        "event_name": "spider_rain",
+        "alias_prefix": "SpiderRain",
+        "zombie_pool": ["future_imp"],
+        "zombies_per_spawner_range": [1,4],
+        "point_cost": 1,
+        "column_start_range": [3,5],
+        "column_end": 8,
+        "group_size": 1,
+        "time_between_groups": "0.35",
+        "zombie_fall_time": "2.0",
+        "wave_start_message": "Spider Rain!",
+        "consume_wave_points": true
+      },
+      {
+        "enabled": true,
+        "weight": 0.2,
+        "event_name": "superfan_rain",
+        "alias_prefix": "SpiderRain",
+        "zombie_pool": ["modern_superfanimp"],
+        "zombies_per_spawner_range": [1,2],
+        "point_cost": 1,
+        "column_start_range": [4,6],
+        "column_end": 8,
+        "group_size": 1,
+        "time_between_groups": "0.4",
+        "zombie_fall_time": "1.8",
+        "wave_start_message": "Super Fan Rain!",
+        "consume_wave_points": true
+      }
+    ],
+    "parachute_rains": [
+      {
+        "enabled": true,
+        "weight": 0.45,
+        "event_name": "stampede",
+        "alias_prefix": "ParaRain",
+        "spider_zombie_name": "west_bull",
+        "count_mode": "points_based",
+        "min_count": 1,
+        "max_count": 4,
+        "column_start_range": [
+          10,
+          10
+        ],
+        "column_end_range": [
+          11,
+          11
+        ],
+        "group_size": 1,
+        "time_between_groups": "0.2",
+        "zombie_fall_time": "1.5",
+        "wave_start_message": "Stampede!",
+        "consume_wave_points": true,
+        "enforce_points_budget": true
+      },
+      {
+        "enabled": true,
+        "event_name": "pilot_drop",
+        "alias_prefix": "ParaRain",
+        "spider_zombie_name": "lostcity_lostpilot",
+        "count_mode": "points_based",
+        "min_count": 2,
+        "max_count": 5,
+        "column_start_range": [
+          4,
+          5
+        ],
+        "column_end_range": [
+          6,
+          7
+        ],
+        "GroupSize": 1,
+        "TimeBetweenGroups": "0.2",
+        "ZombieFallTime": "1.6",
+        "WaveStartMessage": "Parachute Rain!"
+      }
+    ],
+    "sandstorm_ambushes": [
+      {
+        "enabled": true,
+        "weight": 1,
+        "event_name": "sandstorm_random",
+        "alias_prefix": "Sandstorm",
+        "storm_type": "sandstorm",
+        "additional_plantfood": "0",
+        "time_between_groups": 0.5,
+        "group_size": 1,
+        "spawners_per_trigger_range": [
+          1,
+          3
+        ],
+        "columns": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "unique_columns_per_trigger": false,
+        "zombies_per_spawner_range": [
+          1,
+          3
+        ],
+        "allow_duplicate_zombies": true,
+        "zombie_choice_greediness": 0.5,
+        "use_wave_points_budget": true,
+        "consume_wave_points": true,
+        "enforce_budget": true,
+        "points_budget_ratio_range": [
+          0.2,
+          0.75
+        ],
+        "zombie_pool": [
+          "mummy",
+          "mummy_armor1",
+          "mummy_armor2",
+          "mummy_armor4",
+          "egypt_imp",
+          "ra"
+        ]
+      }
+    ],
+    "generated_portals": {
+      "enabled": true,
+      "portal_count_range": [
+        3,
+        10
+      ],
+      "zombies_per_portal_range": [
+        3,
+        8
+      ],
+      "group_modes": [
+        "same_world",
+        "same_suffix"
+      ],
+      "default_world": "modern",
+      "resource_groups": [
+        "ModernPortalGroup"
+      ],
+      "zombie_pool": [
+        "tutorial",
+    "tutorial_armor1",
+    "tutorial_armor2",
+    "tutorial_armor4",
+    "tutorial_flag",
+    "tutorial_flag_veteran",
+    "tutorial_imp",
+    "tutorial_gargantuar",
+
+    "modern_newspaper",
+    "newspaper_veteran",
+    "modern_balloon",
+    "modern_allstar",
+    "modern_superfanimp",
+    "modern_berserker",
+
+
+    "mummy_flag",
+    "mummy_flag_veteran",
+    "ra",
+    "camel_onehump",
+    "camel_twohump",
+    "camel_manyhump",
+    "explorer",
+    "explorer_veteran",
+    "tomb_raiser",
+    "pharaoh",
+    "egypt_gargantuar",
+    "tutorial_balloon",
+    "pirate_flag",
+    "pirate_flag_veteran",
+    "swashbuckler",
+    "seagull",
+    "pelican",
+    "barrelroller",
+    "barrelroller_explosive",
+    "cannon",
+    "pirate_captain",
+    "pirate_gargantuar",
+
+
+    "prospector",
+    "piano",
+    "poncho",
+    "chicken_farmer",
+    "west_bull",
+    "west_bull_veteran",
+    "cowboy_gargantuar",
+
+    "future_flag",
+    "future_flag_veteran",
+    "future_jetpack",
+    "future_imp",
+    "future_jetpack_veteran",
+    "future_protector",
+    "future_protector_generator",
+    "mech_cone",
+    "disco_mech",
+    "football_mech",
+    "future_gargantuar",
+
+
+    "dark_armor3",
+    "dark_flag",
+    "dark_flag_veteran",
+    "dark_imp",
+    "dark_juggler",
+    "dark_wizard",
+    "dark_wizard_veteran",
+    "dark_king",
+    "dark_robber",
+    "dark_imp_dragon",
+    "dark_gargantuar",
+    "dark_explorer",
+
+
+    "beach_fem",
+    "beach_flag",
+    "beach_flag_veteran",
+    "beach_snorkel",
+    "beach_snorkel_veteran",
+    "beach_surfer",
+    "beach_octopus",
+    "beach_gargantuar",
+
+
+    "iceage_armor3",
+    "iceage_flag",
+    "iceage_flag_veteran",
+    "iceage_hunter",
+    "iceage_hunter_veteran",
+    "iceage_dodo",
+    "iceage_dodo_veteran",
+    "iceage_imp",
+    "iceage_troglobite",
+    "iceage_troglobite_basic",
+    "iceage_weaselhoarder",
+    "iceage_gargantuar",
+
+
+    "lostcity_flag",
+    "lostcity_flag_veteran",
+    "lostcity_excavator",
+    "lostcity_jane",
+    "lostcity_lostpilot",
+    "lostcity_imp",
+    "lostcity_bug",
+    "lostcity_impporter",
+    "lostcity_relichunter",
+    "lostcity_crystalskull",
+    "lostcity_crystalskull_veteran",
+    "lostcity_explorer",
+    "lostcity_gargantuar",
+
+    "eighties_flag",
+    "eighties_flag_veteran",
+    "eighties_punk",
+    "eighties_punk_veteran",
+    "eighties_glitter",
+    "eighties_mc",
+    "eighties_imp",
+    "eighties_breakdancer",
+    "eighties_arcade",
+    "eighties_boombox",
+    "eighties_gargantuar",
+    "cowboy",
+    "dark",
+    "dino_armor3",
+    "dino_flag",
+    "dino_flag_veteran",
+    "dino_imp",
+    "dino_bully",
+    "dino_bully_veteran",
+    "dino_pterry",
+    "dino_gargantuar",
+    "dino_eggstealer",
+    "dino_imposter"
+      ],
+      "time_between_spawns": {
+        "Min": 10,
+        "Max": 12
+      },
+      "hitpoints": 600,
+      "zombie_spawn_method": "NonRandomShuffled",
+      "zombie_spawn_point_offset": 15
+    },
+    "portal_spawns": [],
+    "grid_spawns": [
+      {
+        "enabled": true,
+        "weight": 1.0,
+        "event_name": "generated_portals",
+        "alias_prefix": "GridSpawn",
+        "grid_pool_source": "generated_portals",
+        "position_count_range": [
+          1,
+          5
+        ],
+        "spawn_x_range": [
+          5,
+          8
+        ],
+        "spawn_y_range": [
+          0,
+          4
+        ],
+        "unique_positions": true,
+        "displace_plants": true,
+        "random_placement": false,
+        "point_cost": 1
+      },
+      {
+        "enabled": true,
+        "weight": 1,
+        "event_name": "modern_graves",
+        "alias_prefix": "GridSpawn",
+        "grid_pool": [
+          {
+            "count": 99,
+            "type_name": "gravestone_tutorial"
+          }
+        ],
+        "positions": [
+          {
+            "x": 0,
+            "y": 0
+          },
+          {
+            "x": 6,
+            "y": 1
+          },
+          {
+            "x": 5,
+            "y": 3
+          },
+          {
+            "x": 8,
+            "y": 4
+          }
+        ],
+        "spawn_effect": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "spawn_sound_id": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+        "displace_plants": true,
+        "random_placement": true,
+        "shake_screen": false,
+        "grid_classes_to_destroy": []
+      },
+      {
+        "enabled": true,
+        "weight": 0.14,
+        "event_name": "jurassic_panic_flings",
+        "alias_prefix": "GridSpawn",
+        "grid_pool": [
+          {
+            "count": 45,
+            "type_name": "dino_stampede_shuffler"
+          },
+          {
+            "count": 45,
+            "type_name": "dino_stampede_damager4"
+          }
+        ],
+        "random_placement": true,
+        "spawn_x_range": [0,8],
+        "spawn_y_range": [0,4],
+        "position_count_range": [9,9],
+        "displace_plants": true,
+        "shake_screen": true,
+        "grid_classes_to_destroy": [],
+        "point_cost": 1,
+        "consume_wave_points": true
+      }
+    ],
+    "low_tides": [
+      {
+        "enabled": false,
+        "weight": 0.3,
+        "event_name": "low_tide_pair",
+        "alias_prefix": "LowTide",
+        "zombie_pool": [
+          "beach",
+          "beach_fem"
+        ],
+        "zombies_per_spawner_range": [
+          2,
+          4
+        ],
+        "use_wave_points_budget": true,
+        "points_budget_ratio_range": [
+          0.2,
+          0.6
+        ],
+        "zombie_choice_greediness": 0.5,
+        "allow_duplicate_zombies": true,
+        "consume_wave_points": true,
+        "enforce_budget": true,
+        "column_start": 5,
+        "column_end": 7,
+        "group_size": 1,
+        "time_between_groups": "0.05",
+        "wave_start_message": "Low Tide!"
+      }
+    ],
+    "necromancy_spawns": [
+      {
+        "enabled": true,
+        "weight": 1,
+        "event_name": "modern_grave_necro",
+        "alias_prefix": "Necro",
+        "additional_plantfood": "0",
+        "grid_types": [
+          "gravestone_tutorial",
+          "gravestone_egypt",
+          "gravestone_pirate",
+          "gravestone_cowboy",
+          "gravestone_future",
+          "gravestone_iceage",
+          "gravestone_eighties",
+          "gravestoneSunOnDestruction"
+        ],
+        "wave_start_message": "Necromancy!",
+        "zombie_spawn_wait_time": 0,
+        "suppress_if_no_grid_items_found": false,
+        "zombie_pool": [
+          {
+            "zombie_name": "tutorial",
+            "weight": 1.2
+          },
+          {
+            "zombie_name": "tutorial_armor1",
+            "weight": 1.0
+          },
+          {
+            "zombie_name": "tutorial_armor2",
+            "weight": 0.85
+          },
+          {
+            "zombie_name": "tutorial_armor4",
+            "weight": 0.65
+          },
+          {
+            "zombie_name": "modern_newspaper",
+            "weight": 0.8
+          },
+          {
+            "zombie_name": "newspaper_veteran",
+            "weight": 0.5
+          },
+          {
+            "zombie_name": "modern_berserker",
+            "weight": 0.45
+          }
+        ],
+        "zombie_count_range": [
+          1,
+          4
+        ],
+        "allow_duplicate_zombies": true,
+        "use_wave_points_budget": true,
+        "points_budget_ratio_range": [
+          0.2,
+          0.55
+        ],
+        "consume_wave_points": true,
+        "enforce_budget": true
+      },
+      {
+        "enabled": true,
+        "weight": 0.12,
+        "event_name": "jurassic_panic_effects",
+        "alias_prefix": "JMPanic",
+        "additional_plantfood": "0",
+        "grid_types": [
+          "dino_stampede_shuffler",
+          "dino_stampede_damager4"
+        ],
+        "wave_start_message": "Jurassic Panic!",
+        "zombie_spawn_wait_time": "0",
+        "zombies": [
+          {
+            "Type": "RTID(idiot@ZombieTypes)"
+          }
+        ]
+      }
+    ],
+    "dino_ambushes": [
+      {
+        "enabled": true,
+        "weight": 0.2,
+        "event_name": "raptor_ptero",
+        "alias_prefix": "Dino",
+        "dino_count": 2,
+        "allow_duplicate_dinos": false,
+        "dinos": [
+          {
+            "dino_type": "raptor",
+            "weight": 1
+          },
+          {
+            "dino_type": "ptero",
+            "weight": 1
+          }
+        ],
+        "point_cost": 1,
+        "consume_wave_points": true
+      },
+      {
+        "enabled": true,
+        "weight": 0.16,
+        "event_name": "heavy_dinos",
+        "alias_prefix": "Dino",
+        "dino_count": 2,
+        "allow_duplicate_dinos": false,
+        "dinos": [
+          {
+            "dino_type": "tyranno",
+            "weight": 1
+          },
+          {
+            "dino_type": "ankylo",
+            "weight": 1
+          }
+        ],
+        "point_cost": 1,
+        "consume_wave_points": true
+      },
+      {
+        "enabled": true,
+        "weight": 0.12,
+        "event_name": "stego_pair",
+        "alias_prefix": "Dino",
+        "dino_count": 2,
+        "allow_duplicate_dinos": true,
+        "dinos": [
+          {
+            "dino_type": "stego",
+            "weight": 1
+          }
+        ],
+        "point_cost": 1,
+        "consume_wave_points": true
+      }
+    ]
+  },
+  "aliases": {
+    "seed_bank": "SeedBank",
+    "escalation": "Escalation",
+    "wave_manager_module": "NewWaves",
+    "wave_manager": "WaveManager",
+    "wave_prefix": "Wave"
+  },
+  "level_definition": {
+    "Description": "{PLAYER}'s Trip to Modern Day!",
+    "FirstRewardParam": "moneybag",
+    "AddBonusStartingSun": true,
+    "NormalPresentTable": "egypt_normal_01",
+    "ShinyPresentTable": "egypt_shiny_01",
+    "Loot": "RTID(DefaultLoot@LevelModules)",
+    "ResourceGroupNames": [
+      "DelayLoad_Background_Beach",
+      "ZombieTreadmillBrainGroup",
+      "DelayLoad_Background_Beach_Compressed",
+      "PlantMoonFlowerEffects",
+      "Tombstone_Dark_Special",
+      "Tombstone_Dark_Effects",
+      "GridItemCarnieCards",
+      "UI_GameOver"
+    ],
+    "Modules": [
+      "RTID(OffScreenZombiesCoinOverride@LevelModules)",
+      "RTID(StandardIntro@LevelModules)",
+      "RTID(SeedBank@CurrentLevel)",
+      "RTID(Escalation@CurrentLevel)",
+      "RTID(NewWaves@CurrentLevel)",
+      "RTID(DefaultSunDropper@LevelModules)",
+      "RTID(ZombiesDeadWinCon@LevelModules)",
+      "RTID(DefaultZombieWinCondition@LevelModules)",
+      "RTID(JamZombiesModule@LevelModules)"
+    ],
+    "StageModule": "RTID(ModernStage@LevelModules)"
+  },
+  "seed_bank": {
+    "PresetPlantList": [],
+    "PlantIncludeList": [],
+    "PlantExcludeList": [],
+    "SelectionMethod": "chooser"
+  },
+  "escalation": {
+    "PlantfoodToSpawnCount": 0,
+    "StartingPoints": 0,
+    "PointIncrementPerWave": 0
+  },
+  "wave_manager_module": {},
+  "wave_manager": {
+    "SuppressFlagZombie": false
+  },
+  "initial_grid_items": {
+    "enabled": true,
+    "alias": "GI",
+    "module_rtid": "RTID(GI@CurrentLevel)",
+    "allow_overlap": false,
+    "x_range": [
+      0,
+      8
+    ],
+    "y_range": [
+      0,
+      4
+    ],
+    "total_count_range": [
+      4,
+      11
+    ],
+    "disallowed_total_counts": [
+      1
+    ],
+    "types": [
+      {
+        "type_options": [
+          {
+            "type_name": "gravestone_tutorial",
+            "weight": 4
+          },
+          {
+            "type_name": "gravestone_egypt",
+            "weight": 1
+          },
+          {
+            "type_name": "gravestone_pirate",
+            "weight": 1
+          },
+          {
+            "type_name": "gravestone_cowboy",
+            "weight": 1
+          },
+          {
+            "type_name": "gravestone_future",
+            "weight": 1
+          },
+          {
+            "type_name": "gravestone_iceage",
+            "weight": 1
+          },
+          {
+            "type_name": "gravestone_eighties",
+            "weight": 1
+          }
+        ],
+        "count_range": [
+          4,
+          7
+        ],
+        "placement_mode": "random_cells"
+      },
+      {
+        "type_name": "goldtile",
+        "count_range": [
+          0,
+          4
+        ],
+        "placement_mode": "pattern_columns",
+        "patterns": [
+          "00100",
+          "10101",
+          "01010",
+          "10001"
+        ],
+        "column_regions": [
+          "back",
+          "middle",
+          "front"
+        ]
+      },
+      {
+        "type_options": [
+          {
+            "type_name": "powertile_beta",
+            "weight": 1
+          },
+          {
+            "type_name": "powertile_alpha",
+            "weight": 1
+          },
+          {
+            "type_name": "powertile_gamma",
+            "weight": 1
+          },
+          {
+            "type_name": "powertile_delta",
+            "weight": 1
+          }
+        ],
+        "count_range": [
+          0,
+          5
+        ],
+        "disallowed_counts": [
+          1
+        ],
+        "placement_mode": "pattern_columns",
+        "patterns": [
+          "10101",
+          "01010",
+          "10001"
+        ],
+        "column_regions": [
+          "back",
+          "middle"
+        ]
+      },
+      {
+        "type_name": "tar",
+        "count_range": [
+          0,
+          4
+        ],
+        "placement_mode": "random_cells",
+        "column_regions": [
+          "middle",
+          "front"
+        ]
+      }
+    ]
+  },
+  "append_empty_object": true,
+  "version": 1
+}

@@ -1,0 +1,1863 @@
+* Poker Cards
+
+		{
+			"objclass": "GridItemType",
+			"aliases": [
+				"fairytale_card_acehearts"
+			],
+			"objdata": {
+				"TypeName": "fairytale_card_acehearts",
+				"GridItemClass": "GridItemFairytaleCard",
+				"Properties": "RTID(GridItemFairytaleAceHeartsProps@GridItemProps)",
+				"ResourceGroups": [
+					"GridItemCarnieCards",
+					"GridItemFairyTaleCards",
+					"CarnieMinigameGroup",
+					"ZombieCarnieMagicianAudio",
+					"CarnieGeneralAudioGroup"
+				]
+			}
+		},
+		{
+			"objclass": "GridItemType",
+			"aliases": [
+				"fairytale_card_10diamonds"
+			],
+			"objdata": {
+				"TypeName": "fairytale_card_10diamonds",
+				"GridItemClass": "GridItemFairytaleCard",
+				"Properties": "RTID(GridItemFairytale10DiamondsProps@GridItemProps)",
+				"ResourceGroups": [
+					"GridItemCarnieCards",
+					"GridItemFairyTaleCards",
+					"CarnieMinigameGroup",
+					"ZombieCarnieMagicianAudio",
+					"CarnieGeneralAudioGroup",
+					"ZombieFairyTaleBasicGroup",
+					"PlantPuffshroom",
+					"PlantPuffShroomAudio"
+				]
+			}
+		},
+		{
+			"objclass": "GridItemType",
+			"aliases": [
+				"fairytale_card_jackspades"
+			],
+			"objdata": {
+				"TypeName": "fairytale_card_jackspades",
+				"GridItemClass": "GridItemFairytaleCard",
+				"Properties": "RTID(GridItemFairytaleJackSpadesProps@GridItemProps)",
+				"ResourceGroups": [
+					"GridItemCarnieCards",
+					"GridItemFairyTaleCards",
+					"CarnieMinigameGroup",
+					"ZombieCarnieMagicianAudio",
+					"CarnieGeneralAudioGroup",
+					"PlantBlockoli",
+					"FairyTaleFog",
+					"SleepingPlantEffect"
+				]
+			}
+		},
+		{
+			"objclass": "GridItemType",
+			"aliases": [
+				"fairytale_card_clubking"
+			],
+			"objdata": {
+				"TypeName": "fairytale_card_clubking",
+				"GridItemClass": "GridItemFairytaleCard",
+				"Properties": "RTID(GridItemFairytaleClubKingProps@GridItemProps)",
+				"ResourceGroups": [
+					"GridItemCarnieCards",
+					"GridItemFairyTaleCards",
+					"CarnieMinigameGroup",
+					"ZombieCarnieMagicianAudio",
+					"CarnieGeneralAudioGroup"
+				]
+			}
+		},
+		{
+			"objclass": "GridItemType",
+			"aliases": [
+				"fairytale_card_acequeen"
+			],
+			"objdata": {
+				"TypeName": "fairytale_card_acequeen",
+				"GridItemClass": "GridItemFairytaleCard",
+				"Properties": "RTID(GridItemFairytaleAceQueenProps@GridItemProps)",
+				"ResourceGroups": [
+					"GridItemCarnieCards",
+					"GridItemFairyTaleCards",
+					"CarnieMinigameGroup",
+					"ZombieCarnieMagicianAudio",
+					"CarnieGeneralAudioGroup",
+					"FairyTaleFog",
+					"SleepingPlantEffect"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"GridItemFairytaleAceHeartsProps"
+			],
+			"objclass": "GridItemFairytaleCardProps",
+			"objdata": {
+				"Height": "ground",
+				"PopAnim": "POPANIM_EFFECTS_FAIRYTALE_CARD_HEARTS",
+				"PopAnimRenderOffset": {
+					"x": 96,
+					"y": 139
+				},
+				"PopAnimRigClass": "EffectAnimRig_SwitchTile",
+				"ProjectileFireOriginOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"ProjectileTypeToSpawn": "RTID(FairytaleAceHearts@ProjectileTypes)",
+				"TileBaseAnimation": "bouldertile",
+				"TimeBetweenTriggersInSeconds": 30,
+				"TriggerRect": {
+					"mHeight": 60,
+					"mWidth": 30,
+					"mX": -15,
+					"mY": -60
+				},
+				"TriggeringEntityTypes": [
+					"zombie"
+				],
+				"AllowActivate": {
+					"ListType": "includelist",
+					"List": [
+					    "fairytale",
+					    "fairytale_armor1",
+					    "fairytale_armor2",
+					    "fairytale_flag",
+					    "fairytale_flag_armor1",
+					    "fairytale_flag_armor2",
+					    "fairytale_flag_veteran",
+					    "fairytale_flag_veteran_armor1",
+					    "fairytale_flag_veteran_armor2",
+					    "fairytale_imp",
+					    "fairytale_witch",
+					    "fairytale_imp_hearts",
+					    "fairytale_imp_miniboss_phase1",
+					    "fairytale_imp_miniboss_phase2",
+					    "valentines",
+					    "valentines_armor1",
+					    "valentines_armor2",
+					    "valentines_flag",
+					    "valentines_gargantuar",
+					    "valentines_imp",
+					    "valentines_imp_inz",
+					    "valentines_jane",
+					    "valentines_balloon",
+					    "valentines_superfanimp",
+					    "valentines_superfanimp_inz",
+					    "summer_boombox",
+					    "summer_boombox_ballad",
+					    "plantagenet_princess",
+					    "pirate_gargantuar",
+					    "pirate_gargantuar_inz",
+					    "summer_gargantuar",
+					    "rift_gargantuar",
+					    "greatzucchini_gargantuar",
+					    "zombotany_magicshroom",
+					    "foodfight_zombotany_magicshroom",
+					    "valentines_zombotany_peashooter",
+					    "valentines_zombotany_repeater",
+					    "valentines_zombotany_pepperpult",
+					    "valentines_zombotany_iceburg",
+					    "valentines_zombotany_frozenpear",
+					    "valentines_zombotany_wallnut",
+					    "valentines_zombotany_tallnut",
+					    "modern_newspaper",
+					    "newspaper_veteran",
+					    "bighead_newspaper",
+					    "lunar_newspaper"
+					]
+				}
+			}
+		},
+		{
+			"aliases": [
+				"GridItemFairytale10DiamondsProps"
+			],
+			"objclass": "GridItemFairytaleCardProps",
+			"objdata": {
+				"Height": "ground",
+				"PopAnim": "POPANIM_EFFECTS_FAIRYTALE_CARD_DIAMONDS",
+				"PopAnimRenderOffset": {
+					"x": 96,
+					"y": 139
+				},
+				"PopAnimRigClass": "EffectAnimRig_SwitchTile",
+				"ProjectileFireOriginOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"ProjectileTypeToSpawn": "RTID(Fairytale10Diamonds@ProjectileTypes)",
+				"TileBaseAnimation": "bouldertile",
+				"TimeBetweenTriggersInSeconds": 30,
+				"TriggerRect": {
+					"mHeight": 60,
+					"mWidth": 30,
+					"mX": -15,
+					"mY": -60
+				},
+				"TriggeringEntityTypes": [
+					"zombie"
+				],
+				"AllowActivate": {
+					"ListType": "includelist",
+					"List": [
+					    "fairytale_diamonds",
+					    "fairytale_diamonds_armor1",
+					    "fairytale_diamonds_armor2",
+					    "fairytale_diamonds_flag",
+					    "fairytale_diamonds_flag_armor1",
+					    "fairytale_diamonds_flag_armor2",
+					    "fairytale_diamonds_flag_veteran",
+					    "fairytale_diamonds_flag_veteran_armor1",
+					    "fairytale_diamonds_flag_veteran_armor2",
+					    "fairytale_cavalry",
+					    "fairytale_armor3_cavalry",
+					    "fairytale_mirrorqueen",
+					    "fairytale_mirrorqueen_veteran",
+					    "fairytale_imp_diamonds",
+					    "fairytale_imp_miniboss_phase1",
+					    "fairytale_imp_miniboss_phase2",
+					    "piano",
+					    "piano_inz",
+					    "disco_mech",
+					    "disco_mech_inz",
+					    "feastivus_poncho",
+					    "feastivus_poncho_plate",
+					    "feastivus_poncho_no_plate",
+					    "lunar_moneytree",
+					    "lunar_relichunter",
+					    "lunar_relichunter_c4",
+					    "lunar_relichunter_c5",
+					    "lunar_relichunter_c6",
+					    "lunar_relichunter_badluck",
+					    "lunar_relichunter_basic",
+					    "lunar_bandit",
+					    "lunar_bandit_c4",
+					    "lunar_bandit_c5",
+					    "lunar_bandit_c6",
+					    "lunar_bandit_badluck",
+					    "lunar_bandit_basic",
+					    "wealth_god",
+					    "lunar_wealth_god",
+					    "zombotany_magicshroom",
+					    "foodfight_zombotany_magicshroom"
+					]
+				}
+			}
+		},
+		{
+			"aliases": [
+				"GridItemFairytaleJackSpadesProps"
+			],
+			"objclass": "GridItemFairytaleCardProps",
+			"objdata": {
+				"Height": "ground",
+				"PopAnim": "POPANIM_EFFECTS_FAIRYTALE_CARD_SPADES",
+				"PopAnimRenderOffset": {
+					"x": 96,
+					"y": 139
+				},
+				"PopAnimRigClass": "EffectAnimRig_SwitchTile",
+				"ProjectileFireOriginOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"ProjectileTypeToSpawn": "RTID(FairytaleJackSpades@ProjectileTypes)",
+				"TileBaseAnimation": "bouldertile",
+				"TimeBetweenTriggersInSeconds": 30,
+				"TriggerRect": {
+					"mHeight": 60,
+					"mWidth": 30,
+					"mX": -15,
+					"mY": -60
+				},
+				"TriggeringEntityTypes": [
+					"zombie"
+				],
+				"AllowActivate": {
+					"ListType": "includelist",
+					"List": [
+					    "fairytale_spades",
+					    "fairytale_spades_armor1",
+					    "fairytale_spades_armor2",
+					    "fairytale_spades_flag",
+					    "fairytale_spades_flag_armor1",
+					    "fairytale_spades_flag_armor2",
+					    "fairytale_spades_flag_veteran",
+					    "fairytale_spades_flag_veteran_armor1",
+					    "fairytale_spades_flag_veteran_armor2",
+					    "fairytale_gargantuar",
+					    "fairytale_gargantuar_reg",
+					    "fairytale_imp_spades",
+					    "fairytale_chesire",
+					    "fairytale_imp_miniboss_phase1",
+					    "fairytale_imp_miniboss_phase2",
+					    "lostcity_excavator",
+					    "lostcity_excavator_inz",
+					    "rift_excavator",
+					    "zombotany_magicshroom",
+					    "foodfight_zombotany_magicshroom" 
+					]
+				}
+			}
+		},
+		{
+			"aliases": [
+				"GridItemFairytaleClubKingProps"
+			],
+			"objclass": "GridItemFairytaleCardProps",
+			"objdata": {
+				"Height": "ground",
+				"PopAnim": "POPANIM_EFFECTS_FAIRYTALE_CARD_CLUBS",
+				"PopAnimRenderOffset": {
+					"x": 96,
+					"y": 139
+				},
+				"PopAnimRigClass": "EffectAnimRig_SwitchTile",
+				"ProjectileFireOriginOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"ProjectileTypeToSpawn": "RTID(FairytaleClubKing@ProjectileTypes)",
+				"TileBaseAnimation": "bouldertile",
+				"TimeBetweenTriggersInSeconds": 30,
+				"TriggerRect": {
+					"mHeight": 60,
+					"mWidth": 30,
+					"mX": -15,
+					"mY": -60
+				},
+				"TriggeringEntityTypes": [
+					"zombie"
+				],
+				"AllowActivate": {
+					"ListType": "includelist",
+					"List": [
+					    "fairytale_clubs",
+					    "fairytale_clubs_armor1",
+					    "fairytale_clubs_armor2",
+					    "fairytale_clubs_flag",
+					    "fairytale_clubs_flag_armor1",
+					    "fairytale_clubs_flag_armor2",
+					    "fairytale_clubs_flag_veteran",
+					    "fairytale_clubs_flag_veteran_armor1",
+					    "fairytale_clubs_flag_veteran_armor2",
+					    "fairytale_wolf",
+					    "fairytale_wolf_straw",
+					    "fairytale_wolf_wood",
+					    "fairytale_wolf_brick",
+					    "fairytale_wolf_straw_wood",
+					    "fairytale_wolf_straw_brick",
+					    "fairytale_wolf_wood_brick",
+					    "fairytale_wolf_basic",
+					    "fairytale_imp_armor1",
+					    "fairytale_imp_armor2",
+					    "fairytale_imp_armor4",
+					    "fairytale_imp_clubs",
+					    "fairytale_imp_miniboss_phase1",
+					    "fairytale_imp_miniboss_phase2",
+					    "stpatrick",
+					    "stpatrick_armor1",
+					    "stpatrick_armor2",
+					    "stpatrick_flag",
+					    "stpatrick_gargantuar",
+					    "stpatrick_gargantuar_metal",
+					    "stpatrick_ra",
+					    "stpatrick_glitter",
+					    "stpatrick_glitter_pop",
+					    "stpatrick_punk",
+					    "stpatrick_punk_punk",
+					    "leprachaun_imp",
+					    "leprachaun_imp_inz",
+					    "leprachaun_dodo",
+					    "zombotany_magicshroom",
+					    "foodfight_zombotany_magicshroom",
+					    "stpatrick_zombotany_peashooter",
+					    "iceage_hunter",
+					    "iceage_hunter_inz",
+					    "iceage_hunter_veteran",
+					    "iceage_hunter_veteran_inz"
+					]
+				}
+			}
+		},
+		{
+			"aliases": [
+				"GridItemFairytaleAceQueenProps"
+			],
+			"objclass": "GridItemFairytaleCardProps",
+			"objdata": {
+				"Height": "ground",
+				"PopAnim": "POPANIM_EFFECTS_FAIRYTALE_CARD_ACEQUEEN",
+				"PopAnimRenderOffset": {
+					"x": 96,
+					"y": 139
+				},
+				"PopAnimRigClass": "EffectAnimRig_SwitchTile",
+				"ProjectileFireOriginOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"ProjectileTypeToSpawn": "RTID(FairytaleAceQueen@ProjectileTypes)",
+				"TileBaseAnimation": "bouldertile",
+				"TimeBetweenTriggersInSeconds": 30,
+				"TriggerRect": {
+					"mHeight": 60,
+					"mWidth": 30,
+					"mX": -15,
+					"mY": -60
+				},
+				"TriggeringEntityTypes": [
+					"zombie"
+				],
+				"AllowActivate": {
+					"ListType": "includelist",
+					"List": [
+					    "fairytale",
+					    "fairytale_armor1",
+					    "fairytale_armor2",
+					    "fairytale_flag",
+					    "fairytale_flag_armor1",
+					    "fairytale_flag_armor2",
+					    "fairytale_flag_veteran",
+					    "fairytale_flag_veteran_armor1",
+					    "fairytale_flag_veteran_armor2",
+					    "fairytale_imp",
+					    "fairytale_imp_hearts",
+					    "fairytale_witch",
+					    "fairytale_imp_miniboss_phase1",
+					    "fairytale_imp_miniboss_phase2",
+					    "valentines",
+					    "valentines_armor1",
+					    "valentines_armor2",
+					    "valentines_flag",
+					    "valentines_gargantuar",
+					    "valentines_imp",
+					    "valentines_imp_inz",
+					    "valentines_jane",
+					    "valentines_balloon",
+					    "valentines_superfanimp",
+					    "valentines_superfanimp_inz",
+					    "summer_boombox",
+					    "summer_boombox_ballad",
+					    "plantagenet_princess",
+					    "pirate_gargantuar",
+					    "pirate_gargantuar_inz",
+					    "summer_gargantuar",
+					    "rift_gargantuar",
+					    "greatzucchini_gargantuar",
+					    "zombotany_magicshroom",
+					    "foodfight_zombotany_magicshroom",
+					    "valentines_zombotany_peashooter",
+					    "valentines_zombotany_repeater",
+					    "valentines_zombotany_pepperpult",
+					    "valentines_zombotany_iceburg",
+					    "valentines_zombotany_frozenpear",
+					    "valentines_zombotany_wallnut",
+					    "valentines_zombotany_tallnut",
+					    "modern_newspaper",
+					    "newspaper_veteran",
+					    "bighead_newspaper",
+					    "lunar_newspaper"
+					]
+				}
+			}
+		},
+		{
+			"objclass": "FairytaleHeartsProjectileProps",
+			"aliases": [
+				"FairytaleAceHearts"
+			],
+			"objdata": {
+				"ClassName": "FairytaleHeartsProjectile",
+				"PlantDamage": 2500,
+				"BaseDamage": 1500,
+				"SplashDamage": 500,
+				"SplashRadius": 1.1,
+				"DamageFlags": [
+					"shooter"
+				],
+				"CollisionFlags": [
+					"griditems",
+					"normal_plants",
+					"tall_plants",
+					"ground_zombies",
+					"off_ground_zombies"
+				],
+				"InitialVelocity": [
+					{
+						"Min": -75.0,
+						"Max": -75.0
+					},
+					{
+						"Min": 0.0,
+						"Max": 0.0
+					},
+					{
+						"Min": 0.0,
+						"Max": 0.0
+					}
+				],
+				"AttachedPAM": "POPANIM_EFFECTS_FAIRYTALE_PROJECTILE_HEARTS",
+				"AttachedPAMOffset": {
+					"x": -100,
+					"y": -130
+				},
+				"AttachedPAMAnimationToPlay": [
+					"animation"
+				],
+				"CollisionRect": {
+					"mX": -15.0,
+					"mY": -15.0,
+					"mWidth": 30.0,
+					"mHeight": 30.0
+				},
+				"ImpactSoundEvent": "",
+				"ImpactPAM": "POPANIM_EFFECTS_CARNIVAL_POOF",
+				"ImpactPAMAnimationToPlay": [
+					"animation2"
+				],
+				"ImpactOffset": [
+					{
+						"Min": 60.0,
+						"Max": 60.0
+					},
+					{
+						"Min": 0.0,
+						"Max": 0.0
+					}
+				]
+			}
+		},
+		{
+			"objclass": "CarnieCardProjectileProps",
+			"aliases": [
+				"Fairytale10Diamonds"
+			],
+			"objdata": {
+				"ClassName": "CarnieCardProjectile",
+				"IgnoresTiger": true,
+				"FriendlyFire": false,
+				"DamageFlags": [
+					"shooter"
+				],
+				"BaseDamage": 1,
+				"CollisionFlags": [
+					"griditems",
+					"normal_plants",
+					"tall_plants",
+					"ground_zombies",
+					"off_ground_zombies"
+				],
+				"InitialVelocity": [
+					{
+						"Min": -75.0,
+						"Max": -75.0
+					},
+					{
+						"Min": 0,
+						"Max": 0
+					},
+					{
+						"Min": 0,
+						"Max": 0
+					}
+				],
+				"ImpactSoundEvent": "",
+				"ImpactPAM": "POPANIM_EFFECTS_CARNIVAL_POOF",
+				"ImpactPAMAnimationToPlay": [
+					"animation2"
+				],
+				"ImpactOffset": [
+					{
+						"Min": 75.0,
+						"Max": 75.0
+					},
+					{
+						"Min": 0.0,
+						"Max": 0.0
+					}
+				],
+				"InitialScale": {
+					"Min": 1.0,
+					"Max": 1.0
+				},
+				"AttachedPAM": "POPANIM_EFFECTS_FAIRYTALE_PROJECTILE_DIAMONDS",
+				"AttachedPAMOffset": {
+					"x": -100,
+					"y": -130
+				},
+				"AttachedPAMAnimationToPlay": [
+					"animation"
+				],
+				"CollisionRect": {
+					"mX": -20.0,
+					"mY": -20.0,
+					"mWidth": 40.0,
+					"mHeight": 40.0
+				},
+				"PetrificationArea": {
+					"mX": -50.0,
+					"mY": -50.0,
+					"mWidth": 100.0,
+					"mHeight": 100.0
+				},
+				"PetrifiedHealthMultiplier": 2,
+				"PetrifiedZombieType": "fairytale_diamonds",
+				"TransformPlantType": "puffshroom",
+				"CannotPlantTransform": {
+					"ListType": "includelist",
+					"List": []
+				},
+				"CannotZombieTransform": {
+					"ListType": "excludelist",
+					"List": [
+						"carnie_magician",
+						"carnie_magician_badluck",
+						"treasureyeti",
+						"treasureyeti_noloot",
+						"holiday_treasureyeti",
+						"holiday_treasureyeti_noloot",
+						"joustyeti",
+						"iceage_chief_miniboss_phase2",
+						"miniboss_impfinity",
+						"hero_crystalskull",
+						"feastivus_multplicity",
+						"halloween_multplicity",
+						"birthday_multplicity",
+						"stpaddy_multplicity",
+						"valentines_multplicity",
+						"foodfight_multplicity",
+					    "fairytale_imp_miniboss_phase2"
+					]
+				},
+				"CannotBePetrified": {
+					"ListType": "includelist",
+					"List": [
+						"ZombiePirateParrot",
+						"ZombieCarnieDove",
+						"ZombiePirateBarrel",
+						"ZombieHamsterBall",
+						"ZombiePirateCannon",
+						"ZombieRomanBallista",
+						"ZombieStatue",
+						"ZombieGeneralBase",
+						"ZombieGargantuar",
+						"ZombieLostCityGargantuar",
+						"ZombieZombossMech",
+						"ZombieGum",
+						"ZombieTigerGrassTiger",
+						"ZombieTurkeypultBasic",
+						"ZombieIrisBird",
+						"ZombieZoybeanPodGargantuar",
+						"ZombieSkyCityTwinsPlane",
+						"ZombieSkyCityPlaneSegment",
+						"ZombieSkyCityArbiter",
+						"ZombieRiftWeasel",
+						"ZombieBeachTrash",
+						"ZombossSkyCityElectrode",
+						"ZombossHydraHeadTop",
+						"ZombossHydraHeadBottom"
+					]
+				}
+			}
+		},
+		{
+			"objclass": "FairytaleFogSpawnerProjectileProps",
+			"aliases": [
+				"FairytaleJackSpades"
+			],
+			"objdata": {
+				"ClassName": "FairytaleFogSpawnerProjectile",
+				"BaseDamage": 0.01,
+				"SplashDamage": 0.01,
+				"SplashRadius": 1.1,
+				"SpecialDamage": 0,
+				"GridItemToSpawn": "RTID(fairytale_fog_blue@GridItemTypes)",
+				"GridItemsThatPreventGIOnImpact": {
+					"ListType": "includelist",
+					"List": []
+				},
+				"OnlySpawnGIAsZombieProjectile": true,
+				"CollisionFlags": [
+					"griditems",
+					"normal_plants",
+					"tall_plants",
+					"ground_zombies",
+					"off_ground_zombies"
+				],
+				"DamageFlags": [
+					"shooter"
+				],
+				"Conditions": [
+					{
+						"Condition": "stun",
+						"Duration": {
+							"Min": 20.0,
+							"Max": 20.0
+						}
+					},
+					{
+						"Condition": "blockolistunned",
+						"Duration": {
+							"Min": 20.0,
+							"Max": 20.0
+						}
+					}
+				],
+				"InitialVelocity": [
+					{
+						"Min": -75,
+						"Max": -75
+					},
+					{
+						"Min": 0,
+						"Max": 0
+					},
+					{
+						"Min": 0.0,
+						"Max": 0.0
+					}
+				],
+				"InitialScale": {
+					"Min": 1.0,
+					"Max": 1.0
+				},
+				"AttachedPAM": "POPANIM_EFFECTS_FAIRYTALE_PROJECTILE_SPADES",
+				"AttachedPAMOffset": {
+					"x": -100,
+					"y": -130
+				},
+				"AttachedPAMAnimationToPlay": [
+					"animation"
+				],
+				"ImpactPAM": "POPANIM_EFFECTS_CARNIVAL_POOF",
+				"ImpactPAMAnimationToPlay": [
+					"animation2"
+				],
+				"ImpactOffset": [
+					{
+						"Min": 60.0,
+						"Max": 60.0
+					},
+					{
+						"Min": 0,
+						"Max": 0
+					}
+				],
+				"CollisionRect": {
+					"mX": -15.0,
+					"mY": -15.0,
+					"mWidth": 30.0,
+					"mHeight": 30.0
+				}
+			}
+		},
+		{
+			"objclass": "PlantConditionProjectileProps",
+			"aliases": [
+				"FairytaleClubKing"
+			],
+			"objdata": {
+				"ClassName": "PlantConditionProjectile",
+				"BaseDamage": 0.01,
+				"SplashDamage": 0.01,
+				"SplashRadius": 1.6,
+				"IgnoresTiger": true,
+				"CannotAffectInvinciblePlants": true,
+				"EnablePlantSplash": true,
+				"DamageFlags": [
+					"shooter"
+				],
+				"CollisionFlags": [
+					"griditems",
+					"normal_plants",
+					"tall_plants",
+					"ground_zombies",
+					"off_ground_zombies"
+				],
+				"Conditions": [
+					{
+						"Condition": "freeze",
+						"Duration": {
+							"Min": 10.0,
+							"Max": 10.0
+						}
+					},
+					{
+						"Condition": "chill",
+						"Duration": {
+							"Min": 20.0,
+							"Max": 20.0
+						}
+					}
+				],
+				"PlantConds": [
+					{
+						"Condition": "chilled_no_effect",
+						"Duration": {
+							"Min": 20,
+							"Max": 20
+						}
+					}
+				],
+				"CannotAffectPlants": {
+					"ListType": "excludelist",
+					"List": [
+						"iceburg",
+						"snowpea",
+						"snapdragon",
+						"iceweed",
+						"wintermelon",
+						"hotpotato",
+						"pepperpult",
+						"hurrikale",
+						"firepeashooter",
+						"lavaguava",
+						"thymewarp",
+						"hotdate",
+						"noctarinecloud",
+						"boingsetta",
+						"jackolantern",
+						"torchwood",
+						"hollybarrierleaf",
+						"coldsnapdragon",
+						"missiletoe",
+						"wasabiwhip",
+						"inferno",
+						"meteorflower",
+						"icycurrant",
+						"frozenpear",
+						"missiletoast",
+						"iceburg_zomboss",
+						"boostjackolantern",
+						"steam_blueprints",
+						"herotorchwood",
+						"herojackolantern",
+						"snapdragon_hmzomboss",
+						"carnie_minigame_coconutcannon"
+					]
+				},
+				"CannotConditionZombies": {
+					"ListType": "excludelist",
+					"List": [
+						"carnie_magician",
+						"carnie_magician_badluck",
+						"tigergrass_tiger",
+						"imppear_imp_summoner",
+						"imppear_imp_summoner_impus"
+					]
+				},
+				"InitialVelocity": [
+					{
+						"Min": -75.0,
+						"Max": -75.0
+					},
+					{
+						"Min": 0.0,
+						"Max": 0.0
+					},
+					{
+						"Min": 0.0,
+						"Max": 0.0
+					}
+				],
+				"InitialScale": {
+					"Min": 1.0,
+					"Max": 1.0
+				},
+				"AttachedPAM": "POPANIM_EFFECTS_FAIRYTALE_PROJECTILE_CLUBS",
+				"AttachedPAMOffset": {
+					"x": -100,
+					"y": -130
+				},
+				"AttachedPAMAnimationToPlay": [
+					"animation"
+				],
+				"CollisionRect": {
+					"mX": -15.0,
+					"mY": -15.0,
+					"mWidth": 30.0,
+					"mHeight": 30.0
+				},
+				"ImpactSoundEvent": "",
+				"ImpactPAM": "POPANIM_EFFECTS_CARNIVAL_POOF",
+				"ImpactPAMAnimationToPlay": [
+					"animation2"
+				],
+				"ImpactOffset": [
+					{
+						"Min": 60.0,
+						"Max": 60.0
+					},
+					{
+						"Min": 0.0,
+						"Max": 0.0
+					}
+				]
+			}
+		},
+		{
+			"objclass": "FairytaleFogSpawnerProjectileProps",
+			"aliases": [
+				"FairytaleAceQueen"
+			],
+			"objdata": {
+				"ClassName": "FairytaleFogSpawnerProjectile",
+				"BaseDamage": 20000,
+				"SpecialDamage": 1500,
+				"SpecialClasses": {
+					"ListType": "includelist",
+					"List": [
+						"ZombieZombossMech",
+						"ZombossHydraHeadTop",
+						"ZombossHydraHeadBottom"
+					]
+				},
+				"GridItemToSpawn": "RTID(fairytale_fog_white@GridItemTypes)",
+				"GridItemsThatPreventGIOnImpact": {
+					"ListType": "includelist",
+					"List": []
+				},
+				"OnlySpawnGIAsZombieProjectile": true,
+				"CollisionFlags": [
+					"griditems",
+					"normal_plants",
+					"tall_plants",
+					"ground_zombies",
+					"off_ground_zombies"
+				],
+				"DamageFlags": [
+					"shooter"
+				],
+				"InitialVelocity": [
+					{
+						"Min": -50,
+						"Max": -50
+					},
+					{
+						"Min": 0,
+						"Max": 0
+					},
+					{
+						"Min": 0.0,
+						"Max": 0.0
+					}
+				],
+				"InitialScale": {
+					"Min": 1.0,
+					"Max": 1.0
+				},
+				"AttachedPAM": "POPANIM_EFFECTS_FAIRYTALE_PROJECTILE_ACEQUEEN",
+				"AttachedPAMOffset": {
+					"x": -100,
+					"y": -130
+				},
+				"AttachedPAMAnimationToPlay": [
+					"animation"
+				],
+				"ImpactPAM": "POPANIM_EFFECTS_CARNIVAL_POOF",
+				"ImpactPAMAnimationToPlay": [
+					"animation2"
+				],
+				"ImpactOffset": [
+					{
+						"Min": 60.0,
+						"Max": 60.0
+					},
+					{
+						"Min": 0,
+						"Max": 0
+					}
+				],
+				"CollisionRect": {
+					"mX": -15.0,
+					"mY": -15.0,
+					"mWidth": 30.0,
+					"mHeight": 30.0
+				}
+			}
+		},
+
+
+* Magic Fog
+
+		{
+			"objclass": "GridItemType",
+			"aliases": [
+				"fairytale_fog_blue"
+			],
+			"objdata": {
+				"TypeName": "fairytale_fog_blue",
+				"GridItemClass": "GridItemEntityTargetingGround",
+				"Properties": "RTID(GridItemFairytaleFogBlue@GridItemProps)",
+				"ResourceGroups": [
+					"FairyTaleFog",
+					"SleepingPlantEffect"
+				]
+			}
+		},
+		{
+			"objclass": "GridItemType",
+			"aliases": [
+				"fairytale_fog_pink"
+			],
+			"objdata": {
+				"TypeName": "fairytale_fog_pink",
+				"GridItemClass": "GridItemEntityTargetingGround",
+				"Properties": "RTID(GridItemFairytaleFogPink@GridItemProps)",
+				"ResourceGroups": [
+					"FairyTaleFog",
+					"SleepingPlantEffect"
+				]
+			}
+		},
+		{
+			"objclass": "GridItemType",
+			"aliases": [
+				"fairytale_fog_white"
+			],
+			"objdata": {
+				"TypeName": "fairytale_fog_white",
+				"GridItemClass": "GridItemEntityTargetingGround",
+				"Properties": "RTID(GridItemFairytaleFogWhite@GridItemProps)",
+				"ResourceGroups": [
+					"FairyTaleFog",
+					"SleepingPlantEffect"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"GridItemFairytaleFogBlue"
+			],
+			"objclass": "GridItemEntityTargetingGroundProps",
+			"objdata": {
+				"UseFogLayering": true,
+				"FogAlpha": 0.75,
+				"Height": "ground",
+				"Lifetime": 20,
+				"InitialCooldownMultiplier": 2,
+				"PopAnim": "POPANIM_EFFECTS_FAIRY_TALE_FOG",
+				"PopAnimRenderOffset": {
+					"x": 96,
+					"y": 125
+				},
+				"PopAnimSpawnAnim": "fog_blue_enter",
+				"PopAnimDeathAnim": "fog_blue_leave",
+				"PopAnimIdleAnim": "fog_blue_idle1",
+				"HitRectOffsetWidth": -30,
+				"HitRectOffsetX": 15,
+				"Hitpoints": 99999,
+				"IgnorePlantConditions": [
+                  "coffeewake"
+              ],
+				"Actions": [
+					{
+						"Type": "healing",
+						"TargetArea": "rect",
+						"TeamsToAffect": [
+							"zombies",
+							"plants"
+						],
+						"EntitiesToAffect": [
+							"zombie"
+						],
+						"SecondsBetweenEffects": 1.0,
+						"RangeInGridSquares": 0.5,
+						"Damage": 0,
+						"ZConditions": [
+							{
+								"Condition": "potionspeed2",
+								"Duration": {
+									"Min": 20.0,
+									"Max": 20.0
+								}
+							}
+						]
+					},
+					{
+						"Type": "damage",
+						"TargetArea": "rect",
+						"TeamsToAffect": [
+							"plants"
+						],
+						"EntitiesToAffect": [
+							"plant"
+						],
+						"SecondsBetweenEffects": 1.0,
+						"RangeInGridSquares": 0.5,
+						"PConditions": [
+							{
+								"Condition": "sleepify",
+								"Duration": {
+									"Min": 1.5,
+									"Max": 1.5
+								}
+							}
+						]
+					}
+				],
+				"Teams": []
+			}
+		},
+		{
+			"aliases": [
+				"GridItemFairytaleFogPink"
+			],
+			"objclass": "GridItemEntityTargetingGroundProps",
+			"objdata": {
+				"UseFogLayering": true,
+				"FogAlpha": 0.75,
+				"Height": "ground",
+				"Lifetime": 20,
+				"InitialCooldownMultiplier": 2,
+				"PopAnim": "POPANIM_EFFECTS_FAIRY_TALE_FOG",
+				"PopAnimRenderOffset": {
+					"x": 96,
+					"y": 125
+				},
+				"PopAnimSpawnAnim": "fog_purple_enter",
+				"PopAnimDeathAnim": "fog_purple_leave",
+				"PopAnimIdleAnim": "fog_purple_idle1",
+				"HitRectOffsetWidth": -30,
+				"HitRectOffsetX": 15,
+				"Hitpoints": 999999,
+				"IgnorePlantConditions": [
+                  "coffeewake"
+              ],
+				"Actions": [
+					{
+						"Type": "healing",
+						"TargetArea": "rect",
+						"TeamsToAffect": [
+							"zombies",
+							"plants"
+						],
+						"EntitiesToAffect": [
+							"zombie"
+						],
+						"SecondsBetweenEffects": 1.0,
+						"RangeInGridSquares": 0.5,
+						"Damage": 0,
+						"ZConditions": [
+							{
+								"Condition": "potiontoughness2",
+								"Duration": {
+									"Min": 20.0,
+									"Max": 20.0
+								}
+							}
+						]
+					},
+					{
+						"Type": "damage",
+						"TargetArea": "rect",
+						"TeamsToAffect": [
+							"plants"
+						],
+						"EntitiesToAffect": [
+							"plant"
+						],
+						"SecondsBetweenEffects": 1.0,
+						"RangeInGridSquares": 0.5,
+						"PConditions": [
+							{
+								"Condition": "sleepify",
+								"Duration": {
+									"Min": 1.5,
+									"Max": 1.5
+								}
+							}
+						]
+					}
+				],
+				"Teams": []
+			}
+		},
+		{
+			"aliases": [
+				"GridItemFairytaleFogWhite"
+			],
+			"objclass": "GridItemEntityTargetingGroundProps",
+			"objdata": {
+				"UseFogLayering": true,
+				"FogAlpha": 0.75,
+				"Height": "ground",
+				"Lifetime": 20,
+				"InitialCooldownMultiplier": 2,
+				"PopAnim": "POPANIM_EFFECTS_FAIRY_TALE_FOG",
+				"PopAnimRenderOffset": {
+					"x": 96,
+					"y": 125
+				},
+				"PopAnimSpawnAnim": "fog_white_enter",
+				"PopAnimDeathAnim": "fog_white_leave",
+				"PopAnimIdleAnim": "fog_white_idle1",
+				"HitRectOffsetWidth": -30,
+				"HitRectOffsetX": 15,
+				"Hitpoints": 999999,
+				"IgnorePlantConditions": [
+                  "coffeewake"
+              ],
+				"Actions": [
+					{
+						"Type": "healing",
+						"TargetArea": "rect",
+						"TeamsToAffect": [
+							"zombies",
+							"plants"
+						],
+						"EntitiesToAffect": [
+							"zombie"
+						],
+						"SecondsBetweenEffects": 1.0,
+						"RangeInGridSquares": 0.5,
+						"Damage": 0,
+						"ZConditions": [
+							{
+								"Condition": "potionsuper2",
+								"Duration": {
+									"Min": 20.0,
+									"Max": 20.0
+								}
+							}
+						]
+					},
+					{
+						"Type": "damage",
+						"TargetArea": "rect",
+						"TeamsToAffect": [
+							"plants"
+						],
+						"EntitiesToAffect": [
+							"plant"
+						],
+						"SecondsBetweenEffects": 1.0,
+						"RangeInGridSquares": 0.5,
+						"PConditions": [
+							{
+								"Condition": "sleepify",
+								"Duration": {
+									"Min": 1.5,
+									"Max": 1.5
+								}
+							}
+						]
+					}
+				],
+				"Teams": []
+			}
+		},
+
+
+* Impis Houses
+
+		{
+			"objclass": "GridItemType",
+			"aliases": [
+				"fairytale_house_straw"
+			],
+			"objdata": {
+				"TypeName": "fairytale_house_straw",
+				"GridItemClass": "GridItemZombieConditionTarget",
+				"Properties": "RTID(GridItemFairyTaleHouse_Straw@GridItemProps)",
+				"ResourceGroups": [
+					"FairyTaleHouses",
+					"ZombieCarnieGargantuarAudio"
+				]
+			}
+		},
+		{
+			"objclass": "GridItemType",
+			"aliases": [
+				"fairytale_house_wood"
+			],
+			"objdata": {
+				"TypeName": "fairytale_house_wood",
+				"GridItemClass": "GridItemZombieConditionTarget",
+				"Properties": "RTID(GridItemFairyTaleHouse_Wood@GridItemProps)",
+				"ResourceGroups": [
+					"FairyTaleHouses",
+					"ZombiePirateImpAudio"
+				]
+			}
+		},
+		{
+			"objclass": "GridItemType",
+			"aliases": [
+				"fairytale_house_brick"
+			],
+			"objdata": {
+				"TypeName": "fairytale_house_brick",
+				"GridItemClass": "GridItemZombieConditionTarget",
+				"Properties": "RTID(GridItemFairyTaleHouse_Brick@GridItemProps)",
+				"ResourceGroups": [
+					"FairyTaleHouses",
+					"ZombieRomanMedusaAudio"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"GridItemFairyTaleHouse_Straw"
+			],
+			"objclass": "GridItemBoardEntityConditionTargetProps",
+			"objdata": {
+				"BreakEffect": "POPANIM_EFFECTS_FAIRYTALE_HOUSE_STRAW_DEGRADE",
+				"BreakEffectSound": "Play_Zombie_Carnival_Imp_Die",
+				"DamagePhases": {
+					"Phases": [
+						{
+							"Layers": [
+								"ice_block_damage0"
+							],
+							"StartAtHealthPercent": 0.6
+						},
+						{
+							"Layers": [
+								"ice_block_damage1"
+							],
+							"StartAtHealthPercent": 0.3
+						},
+						{
+							"Layers": [
+								"ice_block_damage2"
+							],
+							"StartAtHealthPercent": 0
+						}
+					]
+				},
+				"HitRectOffsetWidth": -30,
+				"HitRectOffsetX": 15,
+				"Hitpoints": 350,
+				"PlantingRestrictions": {
+					"BlockedPlantingReason": "PLANTING_NOT_ON_ICEBLOCKS",
+					"List": [],
+					"ListType": "includelist"
+				},
+				"PopAnim": "POPANIM_EFFECTS_FAIRYTALE_HOUSE_STRAW",
+				"PopAnimIdleAnim": "idle",
+				"PopAnimRenderOffset": {
+					"x": 100,
+					"y": 125
+				},
+				"PopAnimSpawnAnim": "idle"
+			}
+		},
+		{
+			"aliases": [
+				"GridItemFairyTaleHouse_Wood"
+			],
+			"objclass": "GridItemBoardEntityConditionTargetProps",
+			"objdata": {
+				"BreakEffect": "POPANIM_EFFECTS_FAIRYTALE_HOUSE_WOOD_DEGRADE",
+				"BreakEffectSound": "Play_BarrelBreak",
+				"DamagePhases": {
+					"Phases": [
+						{
+							"Layers": [
+								"ice_block_damage0"
+							],
+							"StartAtHealthPercent": 0.6
+						},
+						{
+							"Layers": [
+								"ice_block_damage1"
+							],
+							"StartAtHealthPercent": 0.3
+						},
+						{
+							"Layers": [
+								"ice_block_damage2"
+							],
+							"StartAtHealthPercent": 0
+						}
+					]
+				},
+				"HitRectOffsetWidth": -30,
+				"HitRectOffsetX": 15,
+				"Hitpoints": 500,
+				"PlantingRestrictions": {
+					"BlockedPlantingReason": "PLANTING_NOT_ON_ICEBLOCKS",
+					"List": [],
+					"ListType": "includelist"
+				},
+				"PopAnim": "POPANIM_EFFECTS_FAIRYTALE_HOUSE_WOOD",
+				"PopAnimIdleAnim": "idle",
+				"PopAnimRenderOffset": {
+					"x": 105,
+					"y": 125
+				},
+				"PopAnimSpawnAnim": "idle"
+			}
+		},
+		{
+			"aliases": [
+				"GridItemFairyTaleHouse_Brick"
+			],
+			"objclass": "GridItemBoardEntityConditionTargetProps",
+			"objdata": {
+				"BreakEffect": "POPANIM_EFFECTS_FAIRYTALE_HOUSE_BRICK_DEGRADE",
+				"BreakEffectSound": "Play_Zombie_Roman_Medusa_Break_Statue",
+				"DamagePhases": {
+					"Phases": [
+						{
+							"Layers": [
+								"ice_block_damage0"
+							],
+							"StartAtHealthPercent": 0.6
+						},
+						{
+							"Layers": [
+								"ice_block_damage1"
+							],
+							"StartAtHealthPercent": 0.3
+						},
+						{
+							"Layers": [
+								"ice_block_damage2"
+							],
+							"StartAtHealthPercent": 0
+						}
+					]
+				},
+				"HitRectOffsetWidth": -30,
+				"HitRectOffsetX": 15,
+				"Hitpoints": 750,
+				"PlantingRestrictions": {
+					"BlockedPlantingReason": "PLANTING_NOT_ON_ICEBLOCKS",
+					"List": [],
+					"ListType": "includelist"
+				},
+				"PopAnim": "POPANIM_EFFECTS_FAIRYTALE_HOUSE_BRICK",
+				"PopAnimIdleAnim": "idle",
+				"PopAnimRenderOffset": {
+					"x": 110,
+					"y": 125
+				},
+				"PopAnimSpawnAnim": "idle"
+			}
+		},
+
+
+* Card Queen Imp sleeping spell
+
+		{
+			"objclass": "GridItemType",
+			"aliases": [
+				"fairytale_sleepify_traptile"
+			],
+			"objdata": {
+				"TypeName": "fairytale_sleepify_traptile",
+				"GridItemClass": "GridItemProjectileTrap",
+				"Properties": "RTID(FairytaleSleepifyTrapTile@GridItemProps)",
+				"ResourceGroups": [
+					"SleepingPlantEffect",
+					"ZombieDummyGroup"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"FairytaleSleepifyTrapTile"
+			],
+			"objclass": "GridItemProjectileTrapProps",
+			"objdata": {
+				"Height": "ground",
+				"PopAnim": "POPANIM_ZOMBIE_DUMMY",
+				"PopAnimRenderOffset": {
+					"x": 99999,
+					"y": 99999
+				},
+				"PopAnimRigClass": "EffectAnimRig_SwitchTile",
+				"ProjectileFireOriginOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"ProjectileTypeToSpawn": "RTID(FairytaleMinibossSleepSpell@ProjectileTypes)",
+				"TileBaseAnimation": "bouldertile",
+				"TimeBetweenTriggersInSeconds": 99999,
+				"TriggerRect": {
+					"mHeight": 60,
+					"mWidth": 30,
+					"mX": -15,
+					"mY": -60
+				},
+				"TriggeringEntityTypes": [
+					"griditem"
+				]
+			}
+		},
+		{
+			"objclass": "PlantConditionProjectileProps",
+			"aliases": [
+				"FairytaleMinibossSleepSpell"
+			],
+			"objdata": {
+				"ClassName": "PlantConditionProjectile",
+				"BaseDamage": 0,
+				"CannotAffectInvinciblePlants": true,
+				"CollisionFlags": [
+					"ground",
+					"plants",
+					"normal_plants",
+					"tall_plants"
+				],
+				"DamageFlags": [
+					"shooter"
+				],
+				"PlantConds": [
+					{
+						"Condition": "sleepify",
+						"Duration": {
+							"Min": 30,
+							"Max": 30
+						}
+					}
+				],
+				"CannotAffectPlants": {
+					"ListType": "excludelist",
+					"List": []
+				},
+				"InitialVelocity": [
+					{
+						"Min": 0.0,
+						"Max": 0.0
+					},
+					{
+						"Min": 0.0,
+						"Max": 0.0
+					},
+					{
+						"Min": -500.0,
+						"Max": -500.0
+					}
+				],
+				"CollisionRect": {
+					"mX": -10.0,
+					"mY": -10.0,
+					"mWidth": 20.0,
+					"mHeight": 20.0
+				},
+				"ImpactSoundEvent": "Play_Plant_Stallia_Attack",
+                "ImpactPAM": "POPANIM_EFFECTS_STALLIA_PF_EFFECT",
+                "ImpactPAMAnimationToPlay": [
+                    "animation"
+                ],
+                "ImpactOffset": [
+                    {
+                        "Min": 0.0,
+                        "Max": 0.0
+                    },
+                    {
+                        "Min": -30.0,
+                        "Max": -30.0
+                    }
+                ]
+			}
+		},
+
+
+* Magic Mirror
+
+		{
+			"objclass": "GridItemType",
+			"aliases": [
+				"mirror"
+			],
+			"objdata": {
+				"TypeName": "mirror",
+				"GridItemClass": "GridItemFairytaleMirror",
+				"ResourceGroups": [
+					"GridItemMagicMirror",
+					"GridItemZombiePotionAudio",
+					"AudioFairyTale"
+				],
+				"Properties": "RTID(GridItemFairytaleMirrorDefault@GridItemProps)"
+			}
+		},
+		{
+			"aliases": [
+				"GridItemFairytaleMirrorDefault"
+			],
+			"objclass": "GridItemFairytaleMirrorProps",
+			"objdata": {
+				"PopAnimRenderOffset": {
+					"x": 70,
+					"y": 140
+				},
+				"PopAnimRenderScale": {
+					"x": 0.9,
+					"y": 0.9
+				},
+				"MinReflectVelocity": 350,
+				"HitRectOffsetWidth": 5,
+				"HitRectOffsetX": 0,
+				"Hitpoints": 999999999,
+				"SwapCooldown": 7.5,
+				"PopAnim": "POPANIM_EFFECTS_MAGICMIRROR",
+				"BreakEffectSound": "Play_Plant_Potion_Crushed_Glass_Any",
+				"ProjectilesToReflect": [
+					"RTID(FairytaleAceHearts@ProjectileTypes)",
+					"RTID(Fairytale10Diamonds@ProjectileTypes)",
+					"RTID(FairytaleJackSpades@ProjectileTypes)",
+					"RTID(FairytaleClubKing@ProjectileTypes)",
+					"RTID(FairytaleAceQueen@ProjectileTypes)",
+					"RTID(CarnieCardMagicSun@ProjectileTypes)",
+					"RTID(CarnieCardMagicPF@ProjectileTypes)",
+					"RTID(CarnieCardMagicFreeze@ProjectileTypes)",
+					"RTID(CarnieCardMagicGod@ProjectileTypes)",
+					"RTID(CarnieCardMagicBasic@ProjectileTypes)",
+					"RTID(CarnieCardMagicArmor2@ProjectileTypes)",
+					"RTID(CarnieCardMagicArmor4@ProjectileTypes)",
+					"RTID(CarnieCardMagicFlag@ProjectileTypes)",
+					"RTID(CarnieCardMagicMirror@ProjectileTypes)",
+					"RTID(GreatZucchiniDefault@ProjectileTypes)",
+					"RTID(CarnieCardMagicZomboss@ProjectileTypes)",
+					"RTID(MagnifyingGrassPoweredShot@ProjectileTypes)",
+					"RTID(MirrorProjectileTemplate1@CurrentLevel)",
+					"RTID(MirrorProjectileTemplate2@CurrentLevel)",
+					"RTID(MirrorProjectileTemplate3@CurrentLevel)",
+					"RTID(MirrorProjectileTemplate4@CurrentLevel)",
+					"RTID(MirrorProjectileTemplate5@CurrentLevel)",
+					"RTID(MirrorProjectileTemplate6@CurrentLevel)",
+					"RTID(MirrorProjectileTemplate7@CurrentLevel)",
+					"RTID(MirrorProjectileTemplate8@CurrentLevel)",
+					"RTID(MirrorProjectileTemplate9@CurrentLevel)",
+					"RTID(MirrorProjectileTemplate10@CurrentLevel)"
+				],
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		},
+
+
+* Guardgantuar's Shield
+
+		{
+			"objclass": "GridItemType",
+			"aliases": [
+				"fairytale_gargantuar_shield",
+				"heavy_shield"
+			],
+			"objdata": {
+				"TypeName": "fairytale_gargantuar_shield",
+				"GridItemClass": "GridItemSurfboard",
+				"ResourceGroups": [
+					"ZombieFairyTaleGargantuarGroup",
+					"ZombieRomanShieldAudio"
+				],
+				"Properties": "RTID(GridItemFairytaleGargantaurShieldDefault@GridItemProps)"
+			}
+		},
+		{
+			"aliases": [
+				"GridItemFairytaleGargantaurShieldDefault"
+			],
+			"objclass": "GridItemSurfboardProps",
+			"objdata": {
+				"ArtCenter": {
+					"x": 98,
+					"y": 120
+				},
+				"BreakEffect": "POPANIM_EFFECTS_HEAVY_SHIELD_PARTICLES",
+				"BreakEffectSound": "Play_Zomb_Roman_Shield_Break",
+				"DamageStateCount": 3,
+				"HitRectOffsetWidth": -30,
+				"HitRectOffsetX": 15,
+				"Hitpoints": 10000,
+				"PopAnim": "POPANIM_EFFECTS_HEAVY_SHIELD",
+				"PopAnimRigClass": "SurfboardAnimRig",
+				"CanBeEatenByGravebuster": false,
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					}
+				]
+			}
+		},
+
+
+* Cauldron
+
+		{
+			"aliases": [
+				"GridSpawn"
+			],
+			"objclass": "SpawnCauldronWaveActionProps",
+			"objdata": {
+				"GravestonePool": [
+					{
+						"Count": 1,
+						"Type": "RTID(fairytale_cauldron@GridItemTypes)"
+					}
+				],
+				"SpawnPositionsPool": [
+					{
+						"mX": 3,
+						"mY": 2
+					}
+				],
+				"SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+				"SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise",
+				"DisplacePlants": true,
+				"RandomPlacement": false,
+				"ShakeScreen": false,
+				"GridClassesToDestroy": []
+			}
+		},
+		{
+			"objclass": "GridItemType",
+			"aliases": [
+				"fairytale_cauldron"
+			],
+			"objdata": {
+				"TypeName": "fairytale_cauldron",
+				"GridItemClass": "GridItemCauldron",
+				"ResourceGroups": [
+					"FairyTaleCauldron",
+					"AudioFairyTale"
+				],
+				"Properties": "RTID(GridItemFairyTaleCauldronProps@CurrentLevel)"
+			}
+		},
+		{
+			"aliases": [
+				"GridItemFairyTaleCauldronProps"
+			],
+			"objclass": "CauldronPropertySheet",
+			"objdata": {
+				"PopAnimRenderOffset": {
+					"x": 80,
+					"y": 100
+				},
+				"HitRectOffsetWidth": -30,
+				"HitRectOffsetX": 15,
+				"Hitpoints": 700,
+				"PacketsToSpawnMin": 6,
+				"PacketsToSpawnMax": 6,
+				"PlantingRestrictions": {
+					"BlockedPlantingReason": "PLANTING_NOT_ON_CRATERS",
+					"List": [],
+					"ListType": "includelist"
+				},
+				"PlantsToSpawn": [
+					"potatochip",
+					"puffshroom",
+					"stunion",
+					"buttercup",
+					"spikeweed",
+					"lightningreed",
+					"escaperoot",
+					"imppear",
+					"sapfling",
+					"murkadamia",
+					"magnifyinggrass",
+					"tumbleweed",
+					"aloe",
+					"gloomvine",
+					"blastberry",
+					"springbean",
+					"gumnut",
+					"unused_43",
+					"potatomine",
+					"shrinkingviolet",
+					"boingsetta"
+				],
+				"Weights": [
+					28,
+					23,
+					7,
+					7,
+					7,
+					5,
+					4,
+					7,
+					6,
+					5,
+					2,
+					21,
+					7,
+					7,
+					4,
+					6,
+					4,
+					5,
+					3,
+					1,
+					6
+				],
+				"SpawnCooldown": {
+					"Min": 5,
+					"Max": 5.5
+				},
+				"PopAnim": "POPANIM_EVENT_HEIAN_BOX_WIZARD_CRUCIBLE"
+			}
+		},
+
+
+* Hydra Poison
+
+		{
+			"objclass": "GridItemType",
+			"aliases": [
+				"fairytale_hydra_poison"
+			],
+			"objdata": {
+				"TypeName": "fairytale_hydra_poison",
+				"GridItemClass": "GridItemPoisonSpit",
+				"ResourceGroups": [
+					"ZombieZombossMech_HydraGroup"
+				],
+				"Properties": "RTID(GridItemFairyTaleHydraPoisonProps@GridItemProps)"
+			}
+		},
+		{
+			"aliases": [
+				"GridItemFairyTaleHydraPoisonProps"
+			],
+			"objclass": "GridItemPoisonSpitProps",
+			"objdata": {
+				"Height": "ground",
+				"Lifetime": 20,
+				"PercentageDPS": 13,
+				"PopAnim": "POPANIM_EFFECTS_ZOMBOSS_HYDRA_EFFECT",
+				"PopAnimRenderOffset": {
+					"x": 100,
+					"y": 120
+				},
+				"PopAnimSpawnAnim": "dy02",
+				"PopAnimDeathAnim": "dy03",
+				"PopAnimIdleAnim": "dy04",
+				"HitRectOffsetWidth": -30,
+				"HitRectOffsetX": 15,
+				"Hitpoints": 99999
+			}
+		},

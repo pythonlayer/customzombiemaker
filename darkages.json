@@ -1,0 +1,264 @@
+{
+  "#comment": "Dark Ages template",
+  "comment": "Dark Ages | ELM: Ver-14 [RFL v1.4.1]",
+  "level_name": "Dark Ages",
+  "output_file": "dark1.json",
+  "json_indent": 2,
+  "zombie_sources": {
+    "types_file": "ZOMBIETYPES_UPDATED.json",
+    "props_file": "ZOMBIEPROPERTIES_UPDATED.json"
+  },
+  "wave_settings": {
+    "starting_points": 1,
+    "point_increment": 1.5,
+    "flag_bonus": 7,
+    "greediness_range": [0.4, 0.7],
+    "min_pf": 3,
+    "max_pf": 5,
+    "starting_sun": 50,
+    "spawn_row_range": [
+      1,
+      5
+    ],
+    "force_spawn_each_zombie_once": false
+  },
+  "zombie_pool": [
+    "dark",
+    "dark_armor1",
+    "dark_armor2",
+    "dark_armor3",
+    "dark_armor4",
+    "dark_flag",
+    "dark_flag_veteran",
+    "dark_imp",
+    "dark_juggler",
+    "dark_wizard",
+    "dark_wizard_veteran",
+    "dark_king",
+    "dark_robber",
+    "dark_imp_dragon",
+    "dark_gargantuar",
+    "dark_explorer"
+  ],
+  "zombie_wave_rules": [
+    {
+      "zombie": "dark_juggler",
+      "requires_any": [
+        "dark",
+        "dark_armor1",
+        "dark_armor2",
+        "dark_armor3"
+      ]
+    }
+  ],
+  "events": {
+    "ambush_chance": 0.5,
+    "max_per_wave": 2,
+    "market": {
+      "enabled": false
+    },
+    "raidpty": {
+      "enabled": false
+    },
+    "Parrotrousle": {
+      "enabled": false
+    },
+    "sun_crash": {
+      "enabled": false
+    },
+    "imp_ambushes": [],
+    "sandstorm_ambushes": [],
+    "necromancy_spawns": [
+      {
+        "enabled": true,
+        "event_name": "gravestone_dark_necro",
+        "alias_prefix": "Necro",
+        "grid_types": [
+          "gravestone_dark",
+          "gravestoneSunOnDestruction",
+          "gravestonePlantfoodOnDestruction"
+        ],
+        "zombie_pool": [
+          "dark",
+          "dark_armor1",
+          "dark_armor2",
+          "dark_imp",
+          "dark_armor3",
+          "dark_wizard",
+            "dark_armor4",
+            "dark_imp_dragon",
+            "dark_juggler"
+        ],
+        "use_wave_points_budget": true,
+        "consume_wave_points": true,
+        "enforce_budget": true,
+        "points_budget_ratio_range": [
+          0.1,
+          0.3
+        ],
+        "zombie_count_range": [
+          1,
+          2
+        ],
+        "allow_duplicate_zombies": false,
+        "wave_start_message": "Necromancy!",
+        "zombie_spawn_wait_time": 0,
+        "suppress_if_no_grid_items_found": false,
+        "additional_plantfood": "0"
+      }
+    ],
+    "grid_spawns": [
+      {
+        "enabled": true,
+        "event_name": "dark_gravestone_spawn",
+        "alias_prefix": "GridSpawn",
+        "grid_pool": [
+          {
+            "type": "gravestone_dark",
+            "weight": 1
+          },
+          {
+            "type": "gravestoneSunOnDestruction",
+            "weight": 0.25
+          },
+          {
+            "type": "gravestonePlantfoodOnDestruction",
+            "weight": 0.0625
+          }
+        ],
+        "spawn_x_range": [
+          1,
+          9
+        ],
+        "spawn_y_range": [
+          0,
+          4
+        ],
+        "position_count_range": [
+          1,
+          5
+        ],
+        "allow_overlap": false,
+        "point_cost": 2,
+        "spawn_effect": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT"
+      }
+    ]
+  },
+  "aliases": {
+    "seed_bank": "SeedBank",
+    "escalation": "Escalation",
+    "wave_manager_module": "NewWaves",
+    "wave_manager": "WaveManager",
+    "wave_prefix": "Wave",
+    "rails": "Rails"
+  },
+  "level_definition": {
+    "Description": "{PLAYER}'s Trip to Modern Day!",
+    "FirstRewardParam": "moneybag",
+    "AddBonusStartingSun": true,
+    "NormalPresentTable": "egypt_normal_01",
+    "ShinyPresentTable": "egypt_shiny_01",
+    "Loot": "RTID(DefaultLoot@LevelModules)",
+    "ResourceGroupNames": [
+      "DelayLoad_Background_Beach",
+      "ZombieTreadmillBrainGroup",
+      "DelayLoad_Background_Beach_Compressed",
+      "PlantMoonFlowerEffects",
+      "Tombstone_Dark_Special",
+      "Tombstone_Dark_Effects",
+      "GridItemCarnieCards",
+      "UI_GameOver"
+    ],
+    "Modules": [
+      "RTID(OffScreenZombiesCoinOverride@LevelModules)",
+      "RTID(DarkMowers@LevelModules)",
+      "RTID(StandardIntro@LevelModules)",
+      "RTID(SeedBank@CurrentLevel)",
+      "RTID(Escalation@CurrentLevel)",
+      "RTID(NewWaves@CurrentLevel)",
+      "RTID(ZombiesDeadWinCon@LevelModules)",
+      "RTID(DefaultZombieWinCondition@LevelModules)"
+    ],
+    "StageModule": "RTID(DarkStage@LevelModules)"
+  },
+  "seed_bank": {
+    "PresetPlantList": [],
+    "PlantIncludeList": [],
+    "PlantExcludeList": [],
+    "SelectionMethod": "chooser"
+  },
+  "escalation": {
+    "PlantfoodToSpawnCount": 0,
+    "StartingPoints": 0,
+    "PointIncrementPerWave": 0
+  },
+  "wave_manager_module": {},
+  "wave_manager": {
+    "SuppressFlagZombie": false
+  },
+  "initial_grid_items": {
+    "enabled": true,
+    "alias": "GI",
+    "module_rtid": "RTID(GI@CurrentLevel)",
+    "allow_overlap": false,
+    "x_range": [
+      2,
+      7
+    ],
+    "y_range": [
+      0,
+      4
+    ],
+    "total_count_range": [
+      4,
+      6
+    ],
+    "pool": [
+      {
+        "type_name": "gravestone_dark",
+        "min_count": 1,
+        "max_count": 10,
+        "weight": 2,
+        "x_range": [
+          1,
+          9
+        ],
+        "y_range": [
+          0,
+          4
+        ]
+      },
+      {
+        "type_name": "gravestoneSunOnDestruction",
+        "min_count": 0,
+        "max_count": 2,
+        "weight": 1,
+        "x_range": [
+          1,
+          9
+        ],
+        "y_range": [
+          0,
+          4
+        ]
+      },
+      {
+        "type_name": "gravestonePlantfoodOnDestruction",
+        "min_count": 0,
+        "max_count": 1,
+        "weight": 0.5,
+        "x_range": [
+          1,
+          9
+        ],
+        "y_range": [
+          0,
+          4
+        ]
+      }
+    ]
+  },
+  "railcarts": {},
+  "append_empty_object": true,
+  "version": 1
+}

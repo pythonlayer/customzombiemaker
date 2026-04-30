@@ -1,0 +1,316 @@
+{
+  "#comment": "Big Wave Beach template tuned for a 16-wave beach level with tides, helper tiles, and optional future hooks like aquatic-ascent style grid spawns.",
+  "comment": "Big Wave Beach | ELM: Ver-14 [RFL v1.4.1]",
+  "level_name": "Big Wave Beach",
+  "output_file": "beach1.json",
+  "json_indent": 2,
+  "zombie_sources": {
+    "types_file": "ZOMBIETYPES_UPDATED.json",
+    "props_file": "ZOMBIEPROPERTIES_UPDATED.json"
+  },
+  "required_modules": [
+    "PowerTileModule",
+    "GoldTileModule"
+  ],
+  "wave_settings": {
+    "wave_count": 16,
+    "flag_interval": 8,
+    "flag_count": 2,
+    "starting_points": 1.5,
+    "point_increment": 1.75,
+    "flag_bonus": 4,
+    "greediness_range": [
+      0.3,
+      0.6
+    ],
+    "plantfood_mode": "interval_jittered",
+    "plantfood_interval": 8,
+    "plantfood_per_interval": 1,
+    "plantfood_avoid_flag_waves": true,
+    "starting_sun": 100,
+    "spawn_row_range": [
+      1,
+      5
+    ],
+    "force_spawn_each_zombie_once": false
+  },
+  "zombie_pool": [
+    "beach",
+    "beach_armor1",
+    "beach_armor2",
+    "beach_armor4",
+    "beach_flag",
+    "beach_flag_veteran",
+    "beach_imp",
+    "beach_snorkel",
+    "beach_snorkel_veteran",
+    "beach_surfer",
+    "beach_octopus",
+    "beach_fisherman",
+    "beach_shell",
+    "beach_shell_shield",
+    "beach_gargantuar",
+    "beach_garbage_normal",
+    "beach_garbage_weak",
+    "beach_garbage_strong",
+    "beach_garbage_imp"
+  ],
+  "exclude_from_waves": [
+    "beach_garbage_imp",
+    "beach_garbage_normal",
+    "beach_garbage_weak",
+    "beach_garbage_strong"
+  ],
+  "zombie_variant_groups": {
+    "beach": [
+      "beach",
+      "beach_fem"
+    ],
+    "beach_armor1": [
+      "beach_armor1",
+      "beach_fem_armor1"
+    ],
+    "beach_armor2": [
+      "beach_armor2",
+      "beach_fem_armor2"
+    ],
+    "beach_armor4": [
+      "beach_armor4",
+      "beach_fem_armor4"
+    ]
+  },
+  "zombie_wave_rules": [],
+  "events": {
+    "ambush_chance": 0.6,
+    "max_per_wave": 6,
+    "market": {
+      "enabled": false
+    },
+    "raidpty": {
+      "enabled": false
+    },
+    "Parrotrousle": {
+      "enabled": false
+    },
+    "sun_crash": {
+      "enabled": false
+    },
+    "imp_ambushes": [],
+    "parachute_rains": [],
+    "storm_ambushes": [],
+    "sandstorm_ambushes": [],
+    "snowstorm_ambushes": [],
+    "portal_spawns": [],
+    "grid_spawns": [
+      
+    ],
+    "frost_winds": [],
+    "low_tides": [
+      {
+        "enabled": true,
+        "weight": 1,
+        "event_name": "shoreline_shuffle",
+        "alias_prefix": "LowTide",
+        "zombie_pool": [
+          "beach_garbage_normal",
+          "beach_garbage_weak",
+          "beach_garbage_strong",
+          "beach_garbage_imp"
+        ],
+        "zombies_per_spawner_range": [
+          2,
+          3
+        ],
+        "use_wave_points_budget": true,
+        "points_budget_ratio_range": [
+          0.18,
+          0.42
+        ],
+        "zombie_choice_greediness": 0.38,
+        "allow_duplicate_zombies": true,
+        "consume_wave_points": true,
+        "enforce_budget": true,
+        "column_start": 5,
+        "column_end": 7,
+        "group_size": 2,
+        "time_between_groups": "0.05",
+        "wave_start_message": "Low Tide!"
+      },
+      {
+        "enabled": true,
+        "weight":1.5,
+        "event_name": "shoreline_shuffle",
+        "alias_prefix": "LowTide",
+        "zombie_pool": [
+          "beach",
+          "beach_armor1",
+          "beach_armor2",
+          "beach_imp",
+          "beach_snorkel",
+          "beach_octopus",
+          "beach_armor4"
+        ],
+        "zombies_per_spawner_range": [
+          2,
+          3
+        ],
+        "use_wave_points_budget": true,
+        "points_budget_ratio_range": [
+          0.18,
+          0.42
+        ],
+        "zombie_choice_greediness": 0.38,
+        "allow_duplicate_zombies": true,
+        "consume_wave_points": true,
+        "enforce_budget": true,
+        "column_start": 5,
+        "column_end": 7,
+        "group_size": 1,
+        "time_between_groups": "0.05",
+        "wave_start_message": "Low Tide!"
+      }
+    ],
+    "necromancy_spawns": [],
+    "dino_ambushes": [],
+    "tide_changes": [
+      {
+        "enabled": true,
+        "weight": 0.3,
+        "event_name": "slight_pullback",
+        "alias_prefix": "Tide",
+        "dry_lane_count_range": [
+          2,
+          4
+        ],
+        "change_type": "absolute"
+      },
+      {
+        "enabled": true,
+        "weight": 0.3,
+        "event_name": "gentle_pullback",
+        "alias_prefix": "Tide",
+        "dry_lane_count_range": [
+          3,
+          5
+        ],
+        "change_type": "absolute"
+      },
+      {
+        "enabled": true,
+        "weight": 0.4,
+        "event_name": "deep_pullback",
+        "alias_prefix": "Tide",
+        "dry_lane_count_range": [
+          4,
+          6
+        ],
+        "change_type": "absolute"
+      }
+    ]
+  },
+  "aliases": {
+    "seed_bank": "SeedBank",
+    "escalation": "Escalation",
+    "wave_manager_module": "NewWaves",
+    "wave_manager": "WaveManager",
+    "wave_prefix": "Wave"
+  },
+  "level_definition": {
+    "Description": "{PLAYER}'s Trip to Big Wave Beach!",
+    "FirstRewardParam": "moneybag",
+    "AddBonusStartingSun": true,
+    "NormalPresentTable": "egypt_normal_01",
+    "ShinyPresentTable": "egypt_shiny_01",
+    "Loot": "RTID(DefaultLoot@LevelModules)",
+    "ResourceGroupNames": [
+      "DelayLoad_Background_Beach",
+      "ZombieTreadmillBrainGroup",
+      "DelayLoad_Background_Beach_Compressed",
+      "Tombstone_Dark_Special",
+      "Tombstone_Dark_Effects",
+      "UI_GameOver"
+    ],
+    "Modules": [
+      "RTID(OffScreenZombiesCoinOverride@LevelModules)",
+      "RTID(BeachMowers@LevelModules)",
+      "RTID(StandardIntro@LevelModules)",
+      "RTID(SeedBank@CurrentLevel)",
+      "RTID(Escalation@CurrentLevel)",
+      "RTID(NewWaves@CurrentLevel)",
+      "RTID(DefaultSunDropper@LevelModules)",
+      "RTID(ZombiesDeadWinCon@LevelModules)",
+      "RTID(DefaultZombieWinCondition@LevelModules)"
+    ],
+    "StageModule": "RTID(BeachStage@LevelModules)"
+  },
+  "seed_bank": {
+    "PresetPlantList": [],
+    "PlantIncludeList": [],
+    "PlantExcludeList": [],
+    "SelectionMethod": "chooser"
+  },
+  "escalation": {
+    "PlantfoodToSpawnCount": 0,
+    "StartingPoints": 0,
+    "PointIncrementPerWave": 0
+  },
+  "wave_manager_module": {},
+  "wave_manager": {
+    "SuppressFlagZombie": false
+  },
+  "initial_tide": {
+    "enabled": true,
+    "alias": "InitialTide",
+    "module_rtid": "RTID(InitialTide@CurrentLevel)",
+    "starting_wave_location_range": [2, 6],
+    "show_tide_marker": true
+  },
+  "initial_grid_items": {
+    "enabled": true,
+    "alias": "GI",
+    "module_rtid": "RTID(GI@CurrentLevel)",
+    "allow_overlap": false,
+    "x_range": [
+      0,
+      8
+    ],
+    "y_range": [
+      0,
+      4
+    ],
+    "column_regions": {
+      "back": [
+        0,
+        4
+      ],
+      "middle": [
+        3,
+        5
+      ],
+      "front": [
+        5,
+        8
+      ]
+    },
+    "types": [
+      {
+        "type_options": [
+          {
+            "type_name": "gravestone_pirate2",
+            "weight": 5
+          }
+        ],
+        "count_range": [
+          0,
+          4
+        ],
+        "disallowed_counts": [
+          1
+        ],
+        "placement_mode": "random_cells"
+      }
+    ]
+  },
+  "append_empty_object": true,
+  "version": 1
+}

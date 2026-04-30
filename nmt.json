@@ -1,0 +1,282 @@
+{
+  "#comment": "Neon Mixtape Tour template",
+  "#note_missing_aliases": "Skipped missing local aliases: eighties_flag_armor1, eighties_flag_armor2, eighties_flag_veteran_armor4, eighties_arcade_8bit",
+  "comment": "Neon Mixtape Tour | ELM: Ver-14 [RFL v1.4.1]",
+  "level_name": "Neon Mixtape Tour",
+  "output_file": "eighties2.json",
+  "json_indent": 2,
+  "zombie_sources": {
+    "types_file": "ZOMBIETYPES_UPDATED.json",
+    "props_file": "ZOMBIEPROPERTIES_UPDATED.json"
+  },
+  "wave_settings": {
+    "flag_interval": 10,
+    "flag_count": 11,
+    "starting_points": 2,
+    "point_increment": 1.75,
+    "flag_bonus": 8,
+    "greediness_range": [0.18, 0.59],
+    "min_pf": 2,
+    "max_pf": 5,
+    "starting_sun": 50,
+    "spawn_row_range": [
+      1,
+      5
+    ],
+    "force_spawn_each_zombie_once": false
+  },
+  "zombie_pool": [
+    "eighties",
+    "eighties_armor1",
+    "eighties_armor2",
+    "eighties_armor4",
+    "eighties_flag",
+    "eighties_flag_veteran",
+    "eighties_punk",
+    "eighties_punk_veteran",
+    "eighties_glitter",
+    "eighties_mc",
+    "eighties_imp",
+    "eighties_breakdancer",
+    "eighties_arcade",
+    "eighties_arcade_basic",
+    "eighties_8bit",
+    "eighties_8bit_armor1",
+    "eighties_8bit_armor2",
+    "eighties_boombox",
+    "eighties_gargantuar",
+    "eighties_bass_basic",
+    "eighties_bass"
+  ],
+  "zombie_variant_groups": {
+    "eighties_bass": [
+      "eighties_bass",
+      "eighties_bass_c7",
+      "eighties_bass_c6",
+      "eighties_bass_c4",
+      "eighties_bass_c3"
+    ]
+  },
+  "jam_style_overrides": {
+    "eighties_glitter": "jam_pop",
+    "eighties_arcade": "jam_8bit",
+    "eighties_arcade_basic": "jam_8bit",
+    "eighties_8bit": "jam_8bit",
+    "eighties_8bit_armor1": "jam_8bit",
+    "eighties_8bit_armor2": "jam_8bit",
+    "eighties_breakdancer": "jam_rap",
+    "eighties_mc": "jam_rap",
+    "eighties_punk": "jam_punk",
+    "eighties_imp": "jam_metal",
+    "eighties_gargantuar": "jam_metal",
+    "eighties_bass": "jam_metal"
+  },
+  "jams": {
+    "enabled": true,
+    "available_jams": [
+      "jam_pop",
+      "jam_rap",
+      "jam_punk",
+      "jam_8bit",
+      "jam_metal"
+    ],
+    "preferred_pick_chance": 0.85,
+    "off_jam_suppression_chance": 0.75,
+    "start_wave": 2,
+    "segment_length_range": [
+      2,
+      6
+    ],
+    "gap_wave_range": [
+      0,
+      0
+    ],
+    "allow_repeat": false
+  },
+  "zombie_wave_rules": [
+    {
+      "zombie": "eighties_punk_veteran",
+      "requires_any": [
+        "eighties_boombox"
+      ]
+    }
+  ],
+  
+  "events": {
+    "ambush_chance": 0.25,
+    "max_per_wave": 1,
+    "market": {
+      "enabled": false
+    },
+    "raidpty": {
+      "enabled": false
+    },
+    "Parrotrousle": {
+      "enabled": false
+    },
+    "sun_crash": {
+      "enabled": false
+    },
+    "imp_ambushes": [
+      {
+        "enabled": true,
+        "weight": 1.0,
+        "spider_zombie_name": "eighties_imp",
+        "wave_start_message": "Mosh Pit!"
+      }
+    ],
+    "parachute_rains": [],
+    "sandstorm_ambushes": [],
+    "portal_spawns": [],
+    "low_tides": [],
+    "necromancy_spawns": [],
+    "dino_ambushes": [],
+    "grid_spawns": [
+      {
+        "enabled": true,
+        "weight": 1.0,
+        "event_name": "neon_graves",
+        "alias_prefix": "GridSpawn",
+        "grid_pool": [
+          {
+            "count": 99,
+            "type_name": "gravestone_eighties"
+          }
+        ],
+        "spawn_x_range": [
+          3,
+          8
+        ],
+        "spawn_y_range": [
+          0,
+          4
+        ],
+        "position_count_range": [
+          1,
+          3
+        ],
+        "unique_positions": true,
+        "displace_plants": true,
+        "random_placement": true,
+        "shake_screen": false,
+        "grid_classes_to_destroy": [],
+        "point_cost": 1,
+        "SpawnEffectAnimID":"POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "consume_wave_points": true
+      }
+    ]
+  },
+  "aliases": {
+    "seed_bank": "SeedBank",
+    "escalation": "Escalation",
+    "wave_manager_module": "NewWaves",
+    "wave_manager": "WaveManager",
+    "wave_prefix": "Wave"
+  },
+  "level_definition": {
+    "Description": "{PLAYER}'s Trip to Neon Mixtape Tour!",
+    "FirstRewardParam": "moneybag",
+    "AddBonusStartingSun": true,
+    "NormalPresentTable": "egypt_normal_01",
+    "ShinyPresentTable": "egypt_shiny_01",
+    "Loot": "RTID(DefaultLoot@LevelModules)",
+    "ResourceGroupNames": [
+      "ZombieTreadmillBrainGroup",
+      "UI_GameOver"
+    ],
+    "Modules": [
+      "RTID(OffScreenZombiesCoinOverride@LevelModules)",
+      "RTID(EightiesMowers@LevelModules)",
+      "RTID(StandardIntro@LevelModules)",
+      "RTID(SeedBank@CurrentLevel)",
+      "RTID(Escalation@CurrentLevel)",
+      "RTID(NewWaves@CurrentLevel)",
+      "RTID(DefaultSunDropper@LevelModules)",
+      "RTID(ZombiesDeadWinCon@LevelModules)",
+      "RTID(DefaultZombieWinCondition@LevelModules)"
+    ],
+    "StageModule": "RTID(EightiesStage@LevelModules)"
+  },
+  "seed_bank": {
+    "PresetPlantList": [],
+    "PlantIncludeList": [],
+    "PlantExcludeList": [],
+    "SelectionMethod": "chooser"
+  },
+  "escalation": {
+    "PlantfoodToSpawnCount": 0,
+    "StartingPoints": 0,
+    "PointIncrementPerWave": 0
+  },
+  "wave_manager_module": {},
+  "wave_manager": {
+    "SuppressFlagZombie": false
+  },
+  "initial_grid_items": {
+    "enabled": true,
+    "alias": "GI",
+    "module_rtid": "RTID(GI@CurrentLevel)",
+    "allow_overlap": false,
+    "x_range": [
+      0,
+      8
+    ],
+    "y_range": [
+      0,
+      4
+    ],
+    "total_count_range": [
+      4,
+      7
+    ],
+    "disallowed_total_counts": [
+      1,
+      2,
+      3
+    ],
+    "pool": [
+      {
+        "type_name": "gravestone_eighties",
+        "min_count": 2,
+        "max_count": 4,
+        "weight": 2.5,
+        "placement_mode": "random_cells",
+        "x_range": [0, 8]
+      },
+      {
+        "type_name": "eightiesarcadecabinet",
+        "count_range": [
+          0,
+          2
+        ],
+        "weight": 0.5,
+        "placement_mode": "pattern_columns",
+        "patterns": [
+          "00100",
+          "10101",
+          "01010",
+          "10001"
+        ],
+        "x_range": [4, 8]
+      },
+      {
+        "type_name": "speaker",
+        "count_range": [
+          0,
+          4
+        ],
+        "weight": 0.75,
+        "placement_mode": "pattern_columns",
+        "patterns": [
+          "00100",
+          "10101",
+          "01010",
+          "10001"
+        ],
+        "x_range": [3, 8]
+      }
+    ]
+  },
+  "append_empty_object": true,
+  "version": 1
+}

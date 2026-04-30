@@ -1,0 +1,181 @@
+{
+  "#comment": "Template for merge_zombies.py. Edit this file to control generation.",
+  "comment": "DIE | ELM: Ver-14 [RFL v1.4.1]",
+  "level_name": "Pirate Seas",
+  "output_file": "pirate1.json",
+  "json_indent": 2,
+  "zombie_sources": {
+    "types_file": "ZOMBIETYPES_UPDATED.json",
+    "props_file": "ZOMBIEPROPERTIES_UPDATED.json"
+  },
+  "wave_settings": {
+    "starting_points": 1,
+    "point_increment": 1.5,
+    "flag_bonus": 7,
+    "greediness_range": [0.3, 0.6],
+    "min_pf": 2,
+    "max_pf": 5,
+    "starting_sun": 50,
+    "spawn_row_range": [
+      1,
+      5
+    ],
+    "planks":true,
+    "force_spawn_each_zombie_once": false
+  },
+  "zombie_pool": [
+    "pirate","pirate_armor1","pirate_armor2","swashbuckler","seagull","pirate_gargantuar","cannon","pirate_captain","pelican","barrelroller","pirate_imp","barrelroller_explosive","pirate_armor4"
+  ],
+  "events": {
+    "ambush_chance": 0.5,
+    "max_per_wave": 1,
+    "market": {
+      "enabled": false
+    },
+    "sun_crash": {
+      "enabled": false
+    },
+    "raidpty": {
+      "enabled": false,
+      "raidpty_alias_prefix": "RaidingParty",
+      "swashbuckler_point_cost": 1.5,
+      "min_swashbucklers": 2,
+      "max_swashbucklers": 20,
+      "group_size": 1,
+      "time_between_groups_range": [
+        0.25,
+        4.0
+      ]
+    },
+    "imp_ambushes": [],
+    "sandstorm_ambushes": [
+      {
+        "enabled": false,
+        "event_name": "sandstorm_random",
+        "alias_prefix": "Sandstorm",
+        "storm_type": "sandstorm",
+        "additional_plantfood": "0",
+        "time_between_groups": 0.5,
+        "group_size": 1,
+        "spawners_per_trigger_range": [
+          1,
+          3
+        ],
+        "columns": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "unique_columns_per_trigger": false,
+        "zombies_per_spawner_range": [
+          1,
+          3
+        ],
+        "allow_duplicate_zombies": true,
+        "zombie_choice_greediness": 0.5,
+        "use_wave_points_budget": true,
+        "consume_wave_points": true,
+        "enforce_budget": true,
+        "points_budget_ratio_range": [
+          0.2,
+          0.75
+        ],
+        "zombie_pool": [
+          "mummy","mummy_armor1","mummy_armor2","mummy_armor4","egypt_imp","ra"
+        ]
+      }
+    ]
+  },
+  "aliases": {
+    "seed_bank": "SeedBank",
+    "escalation": "Escalation",
+    "wave_manager_module": "NewWaves",
+    "wave_manager": "WaveManager",
+    "wave_prefix": "Wave"
+  },
+  "level_definition": {
+    "Description": "{PLAYER}'s Trip to Pirate Seas!",
+    "FirstRewardParam": "moneybag",
+    "AddBonusStartingSun": true,
+    "NormalPresentTable": "egypt_normal_01",
+    "ShinyPresentTable": "egypt_shiny_01",
+    "Loot": "RTID(DefaultLoot@LevelModules)",
+    "ResourceGroupNames": [
+      "DelayLoad_Background_Beach",
+      "ZombieTreadmillBrainGroup",
+      "DelayLoad_Background_Beach_Compressed",
+      "PlantMoonFlowerEffects",
+      "Tombstone_Dark_Special",
+      "Tombstone_Dark_Effects",
+      "GridItemCarnieCards",
+      "UI_GameOver"
+    ],
+    "Modules": [
+      "RTID(OffScreenZombiesCoinOverride@LevelModules)",
+      "RTID(PirateMowers@LevelModules)",
+      "RTID(StandardIntro@LevelModules)",
+      "RTID(SeedBank@CurrentLevel)",
+      "RTID(Escalation@CurrentLevel)",
+      "RTID(NewWaves@CurrentLevel)",
+      "RTID(DefaultSunDropper@LevelModules)",
+      "RTID(ZombiesDeadWinCon@LevelModules)",
+      "RTID(DefaultZombieWinCondition@LevelModules)",
+       "RTID(PiratePlanks@CurrentLevel)"
+    ],
+    "StageModule": "RTID(PirateStage@LevelModules)"
+  },
+  "seed_bank": {
+    "PresetPlantList": [],
+    "PlantIncludeList": [],
+    "PlantExcludeList": [],
+    "SelectionMethod": "chooser"
+  },
+  "escalation": {
+    "PlantfoodToSpawnCount": 0,
+    "StartingPoints": 0,
+    "PointIncrementPerWave": 0
+  },
+  "wave_manager_module": {},
+  "wave_manager": {
+    "SuppressFlagZombie": false
+  },
+  "initial_grid_items": {
+    "enabled": false,
+    "alias": "GI",
+    "module_rtid": "RTID(GI@CurrentLevel)",
+    "allow_overlap": false,
+    "x_range": [
+      2,
+      7
+    ],
+    "y_range": [
+      0,
+      4
+    ],
+    "total_count_range": [
+      9,
+      12
+    ],
+    "pool": [
+      {
+        "type_name": "gravestone_egypt",
+        "min_count": 1,
+        "max_count": 12,
+        "weight": 1,
+        "x_range": [
+          1,
+          9
+        ],
+        "y_range": [
+          0,
+          4
+        ]
+      }
+    ]
+  },
+  "append_empty_object": true,
+  "version": 1
+}

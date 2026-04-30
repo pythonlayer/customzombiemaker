@@ -1,0 +1,2524 @@
+{
+  "#comment": "Dark Ages | ELM: Ver-14 [RFL v1.4.1]",
+  "#zombies": "dark, dark_armor1, dark_armor2, dark_armor3, dark_armor4, dark_explorer, dark_flag, dark_flag_veteran, dark_gargantuar, dark_imp, dark_imp_dragon, dark_juggler, dark_king, dark_robber, dark_wizard, dark_wizard_veteran",
+  "objects": [
+    {
+      "objclass": "LevelDefinition",
+      "objdata": {
+        "Description": "{PLAYER}'s Trip to Modern Day!",
+        "FirstRewardParam": "moneybag",
+        "AddBonusStartingSun": true,
+        "NormalPresentTable": "egypt_normal_01",
+        "ShinyPresentTable": "egypt_shiny_01",
+        "Loot": "RTID(DefaultLoot@LevelModules)",
+        "ResourceGroupNames": [
+          "DelayLoad_Background_Beach",
+          "ZombieTreadmillBrainGroup",
+          "DelayLoad_Background_Beach_Compressed",
+          "PlantMoonFlowerEffects",
+          "Tombstone_Dark_Special",
+          "Tombstone_Dark_Effects",
+          "GridItemCarnieCards",
+          "UI_GameOver"
+        ],
+        "Modules": [
+          "RTID(OffScreenZombiesCoinOverride@LevelModules)",
+          "RTID(DarkMowers@LevelModules)",
+          "RTID(StandardIntro@LevelModules)",
+          "RTID(SeedBank@CurrentLevel)",
+          "RTID(Escalation@CurrentLevel)",
+          "RTID(NewWaves@CurrentLevel)",
+          "RTID(ZombiesDeadWinCon@LevelModules)",
+          "RTID(DefaultZombieWinCondition@LevelModules)",
+          "RTID(GI@CurrentLevel)"
+        ],
+        "StageModule": "RTID(DarkStage@LevelModules)",
+        "Name": "Dark Ages",
+        "StartingSun": 50
+      }
+    },
+    {
+      "aliases": [
+        "SeedBank"
+      ],
+      "objclass": "SeedBankProperties",
+      "objdata": {
+        "PresetPlantList": [],
+        "PlantIncludeList": [],
+        "PlantExcludeList": [],
+        "SelectionMethod": "chooser"
+      }
+    },
+    {
+      "aliases": [
+        "Escalation"
+      ],
+      "objclass": "LevelEscalationModuleProperties",
+      "objdata": {
+        "PlantfoodToSpawnCount": 0,
+        "StartingPoints": 0,
+        "PointIncrementPerWave": 0,
+        "FlagCount": 4,
+        "WavesPerFlag": 7,
+        "WaveManagerProps": "RTID(WaveManager@CurrentLevel)",
+        "ZombiePool": [
+          "RTID(dark@ZombieTypes)",
+          "RTID(dark_armor1@ZombieTypes)",
+          "RTID(dark_armor2@ZombieTypes)",
+          "RTID(dark_armor3@ZombieTypes)",
+          "RTID(dark_armor4@ZombieTypes)",
+          "RTID(dark_flag@ZombieTypes)",
+          "RTID(dark_flag_veteran@ZombieTypes)",
+          "RTID(dark_imp@ZombieTypes)",
+          "RTID(dark_juggler@ZombieTypes)",
+          "RTID(dark_wizard@ZombieTypes)",
+          "RTID(dark_wizard_veteran@ZombieTypes)",
+          "RTID(dark_king@ZombieTypes)",
+          "RTID(dark_robber@ZombieTypes)",
+          "RTID(dark_imp_dragon@ZombieTypes)",
+          "RTID(dark_gargantuar@ZombieTypes)",
+          "RTID(dark_explorer@ZombieTypes)"
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "NewWaves"
+      ],
+      "objclass": "WaveManagerModuleProperties",
+      "objdata": {}
+    },
+    {
+      "aliases": [
+        "WaveManager"
+      ],
+      "objclass": "WaveManagerProperties",
+      "objdata": {
+        "SuppressFlagZombie": false,
+        "FlagWaveInterval": 7,
+        "WaveCount": 28,
+        "Waves": [
+          [
+            "RTID(Wave1@.)"
+          ],
+          [
+            "RTID(Wave2@.)"
+          ],
+          [
+            "RTID(Wave3@.)"
+          ],
+          [
+            "RTID(Wave4@.)"
+          ],
+          [
+            "RTID(Wave5@.)"
+          ],
+          [
+            "RTID(Wave6@.)",
+            "RTID(Necro6_1_gravestone_dark_necro@.)",
+            "RTID(GridSpawn6_2_dark_gravestone_spawn@.)"
+          ],
+          [
+            "RTID(Wave7@.)"
+          ],
+          [
+            "RTID(Wave8@.)",
+            "RTID(GridSpawn8_1_dark_gravestone_spawn@.)"
+          ],
+          [
+            "RTID(Wave9@.)",
+            "RTID(GridSpawn9_1_dark_gravestone_spawn@.)",
+            "RTID(Necro9_2_gravestone_dark_necro@.)"
+          ],
+          [
+            "RTID(Wave10@.)"
+          ],
+          [
+            "RTID(Wave11@.)",
+            "RTID(GridSpawn11_1_dark_gravestone_spawn@.)"
+          ],
+          [
+            "RTID(Wave12@.)",
+            "RTID(Necro12_1_gravestone_dark_necro@.)",
+            "RTID(Necro12_2_gravestone_dark_necro@.)"
+          ],
+          [
+            "RTID(Wave13@.)",
+            "RTID(GridSpawn13_1_dark_gravestone_spawn@.)",
+            "RTID(Necro13_2_gravestone_dark_necro@.)"
+          ],
+          [
+            "RTID(Wave14@.)",
+            "RTID(GridSpawn14_1_dark_gravestone_spawn@.)",
+            "RTID(GridSpawn14_2_dark_gravestone_spawn@.)"
+          ],
+          [
+            "RTID(Wave15@.)",
+            "RTID(Necro15_1_gravestone_dark_necro@.)",
+            "RTID(Necro15_2_gravestone_dark_necro@.)"
+          ],
+          [
+            "RTID(Wave16@.)",
+            "RTID(Necro16_1_gravestone_dark_necro@.)",
+            "RTID(GridSpawn16_2_dark_gravestone_spawn@.)"
+          ],
+          [
+            "RTID(Wave17@.)",
+            "RTID(GridSpawn17_1_dark_gravestone_spawn@.)"
+          ],
+          [
+            "RTID(Wave18@.)"
+          ],
+          [
+            "RTID(Wave19@.)",
+            "RTID(GridSpawn19_1_dark_gravestone_spawn@.)",
+            "RTID(Necro19_2_gravestone_dark_necro@.)"
+          ],
+          [
+            "RTID(Wave20@.)",
+            "RTID(Necro20_1_gravestone_dark_necro@.)",
+            "RTID(Necro20_2_gravestone_dark_necro@.)"
+          ],
+          [
+            "RTID(Wave21@.)",
+            "RTID(Necro21_1_gravestone_dark_necro@.)",
+            "RTID(Necro21_2_gravestone_dark_necro@.)"
+          ],
+          [
+            "RTID(Wave22@.)",
+            "RTID(GridSpawn22_1_dark_gravestone_spawn@.)"
+          ],
+          [
+            "RTID(Wave23@.)"
+          ],
+          [
+            "RTID(Wave24@.)",
+            "RTID(GridSpawn24_1_dark_gravestone_spawn@.)"
+          ],
+          [
+            "RTID(Wave25@.)",
+            "RTID(GridSpawn25_1_dark_gravestone_spawn@.)",
+            "RTID(Necro25_2_gravestone_dark_necro@.)"
+          ],
+          [
+            "RTID(Wave26@.)",
+            "RTID(Necro26_1_gravestone_dark_necro@.)",
+            "RTID(GridSpawn26_2_dark_gravestone_spawn@.)"
+          ],
+          [
+            "RTID(Wave27@.)",
+            "RTID(Necro27_1_gravestone_dark_necro@.)"
+          ],
+          [
+            "RTID(Wave28@.)",
+            "RTID(Necro28_1_gravestone_dark_necro@.)"
+          ]
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave1"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "4",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave2"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(dark_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave3"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(dark@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(dark@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark_imp@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave4"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(dark_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(dark_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave5"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(dark_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_imp@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark_imp@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave6"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(dark_armor4@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_imp_dragon@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave7"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "4",
+            "Type": "RTID(dark_flag_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_flag_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(dark_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark_explorer@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave8"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(dark_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark_imp_dragon@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_imp@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave9"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "5",
+            "Type": "RTID(dark_juggler@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(dark@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave10"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(dark_wizard@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark_imp_dragon@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark_imp_dragon@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave11"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(dark_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(dark_imp_dragon@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_imp_dragon@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_imp@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(dark@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave12"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Row": "4",
+            "Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(dark_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(dark_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave13"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(dark_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_gargantuar@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave14"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(dark_flag@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark_imp@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_imp_dragon@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(dark_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(dark_imp_dragon@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark_imp_dragon@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(dark_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_flag@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_imp_dragon@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(dark_flag@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark_imp_dragon@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(dark_flag@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_imp@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark_flag@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave15"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(dark_imp_dragon@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark_imp_dragon@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark_imp_dragon@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(dark_imp@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(dark_imp@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark_imp@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave16"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(dark_armor4@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_king@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave17"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(dark_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark_wizard@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave18"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "4",
+            "Type": "RTID(dark_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_armor3@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark_wizard@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark_armor3@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave19"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_imp@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(dark@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_imp@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_imp@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_imp@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark_imp@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave20"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(dark_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark_imp_dragon@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark_imp@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_imp_dragon@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(dark@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(dark_imp@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_imp_dragon@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark_imp@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark_imp@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(dark@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave21"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_juggler@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_king@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(dark_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_explorer@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave22"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "4",
+            "Type": "RTID(dark_armor3@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_wizard@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark_king@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_juggler@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark_explorer@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave23"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(dark_armor3@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_juggler@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark_king@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_wizard@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave24"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "5",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(dark_imp@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(dark_imp@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_imp_dragon@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark_imp_dragon@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark_imp_dragon@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(dark_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark_imp@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark_imp@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_imp@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(dark@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave25"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 1,
+        "Zombies": [
+          {
+            "Row": "3",
+            "Type": "RTID(dark_king@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark_king@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_armor3@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave26"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(dark_armor3@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark_king@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_wizard_veteran@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_juggler@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_juggler@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark_king@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_imp_dragon@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave27"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "2",
+            "Type": "RTID(dark_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_imp@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_armor1@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark_imp@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark_imp@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_imp@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(dark_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_imp@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark_armor2@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(dark_imp@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(dark_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_robber@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(dark_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_imp_dragon@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark_imp_dragon@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(dark_imp@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark_imp@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Wave28"
+      ],
+      "objclass": "SpawnZombiesJitteredWaveActionProps",
+      "objdata": {
+        "AdditionalPlantfood": 0,
+        "Zombies": [
+          {
+            "Row": "1",
+            "Type": "RTID(dark_gargantuar@ZombieTypes)"
+          },
+          {
+            "Row": "2",
+            "Type": "RTID(dark_armor4@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark_wizard@ZombieTypes)"
+          },
+          {
+            "Row": "5",
+            "Type": "RTID(dark_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_armor3@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "1",
+            "Type": "RTID(dark_explorer@ZombieTypes)"
+          },
+          {
+            "Row": "4",
+            "Type": "RTID(dark_imp_dragon@ZombieTypes)"
+          },
+          {
+            "Row": "3",
+            "Type": "RTID(dark_flag_veteran@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Necro6_1_gravestone_dark_necro"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "WaveStartMessage": "Necromancy!",
+        "ZombieSpawnWaitTime": 0,
+        "SuppressActionIfNoGridItemsFound": false,
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(gravestone_dark@GridItemTypes)",
+          "RTID(gravestoneSunOnDestruction@GridItemTypes)",
+          "RTID(gravestonePlantfoodOnDestruction@GridItemTypes)"
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(dark@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "GridSpawn6_2_dark_gravestone_spawn"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "GravestonePool": [
+          {
+            "Count": 1.0,
+            "Type": "RTID(gravestone_dark@GridItemTypes)"
+          },
+          {
+            "Count": 0.25,
+            "Type": "RTID(gravestoneSunOnDestruction@GridItemTypes)"
+          },
+          {
+            "Count": 0.0625,
+            "Type": "RTID(gravestonePlantfoodOnDestruction@GridItemTypes)"
+          }
+        ],
+        "SpawnPositionsPool": [
+          {
+            "mX": 4,
+            "mY": 2
+          },
+          {
+            "mX": 1,
+            "mY": 0
+          },
+          {
+            "mX": 2,
+            "mY": 1
+          },
+          {
+            "mX": 9,
+            "mY": 2
+          }
+        ],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": true,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+      }
+    },
+    {
+      "aliases": [
+        "GridSpawn8_1_dark_gravestone_spawn"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "GravestonePool": [
+          {
+            "Count": 1.0,
+            "Type": "RTID(gravestone_dark@GridItemTypes)"
+          },
+          {
+            "Count": 0.25,
+            "Type": "RTID(gravestoneSunOnDestruction@GridItemTypes)"
+          },
+          {
+            "Count": 0.0625,
+            "Type": "RTID(gravestonePlantfoodOnDestruction@GridItemTypes)"
+          }
+        ],
+        "SpawnPositionsPool": [
+          {
+            "mX": 1,
+            "mY": 4
+          }
+        ],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": true,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+      }
+    },
+    {
+      "aliases": [
+        "GridSpawn9_1_dark_gravestone_spawn"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "GravestonePool": [
+          {
+            "Count": 1.0,
+            "Type": "RTID(gravestone_dark@GridItemTypes)"
+          },
+          {
+            "Count": 0.25,
+            "Type": "RTID(gravestoneSunOnDestruction@GridItemTypes)"
+          },
+          {
+            "Count": 0.0625,
+            "Type": "RTID(gravestonePlantfoodOnDestruction@GridItemTypes)"
+          }
+        ],
+        "SpawnPositionsPool": [
+          {
+            "mX": 7,
+            "mY": 2
+          },
+          {
+            "mX": 3,
+            "mY": 0
+          },
+          {
+            "mX": 8,
+            "mY": 3
+          }
+        ],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": true,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+      }
+    },
+    {
+      "aliases": [
+        "Necro9_2_gravestone_dark_necro"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "WaveStartMessage": "Necromancy!",
+        "ZombieSpawnWaitTime": 0,
+        "SuppressActionIfNoGridItemsFound": false,
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(gravestone_dark@GridItemTypes)",
+          "RTID(gravestoneSunOnDestruction@GridItemTypes)",
+          "RTID(gravestonePlantfoodOnDestruction@GridItemTypes)"
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(dark@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "GridSpawn11_1_dark_gravestone_spawn"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "GravestonePool": [
+          {
+            "Count": 1.0,
+            "Type": "RTID(gravestone_dark@GridItemTypes)"
+          },
+          {
+            "Count": 0.25,
+            "Type": "RTID(gravestoneSunOnDestruction@GridItemTypes)"
+          },
+          {
+            "Count": 0.0625,
+            "Type": "RTID(gravestonePlantfoodOnDestruction@GridItemTypes)"
+          }
+        ],
+        "SpawnPositionsPool": [
+          {
+            "mX": 4,
+            "mY": 4
+          }
+        ],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": true,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+      }
+    },
+    {
+      "aliases": [
+        "Necro12_1_gravestone_dark_necro"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "WaveStartMessage": "Necromancy!",
+        "ZombieSpawnWaitTime": 0,
+        "SuppressActionIfNoGridItemsFound": false,
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(gravestone_dark@GridItemTypes)",
+          "RTID(gravestoneSunOnDestruction@GridItemTypes)",
+          "RTID(gravestonePlantfoodOnDestruction@GridItemTypes)"
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(dark_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Necro12_2_gravestone_dark_necro"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "WaveStartMessage": "Necromancy!",
+        "ZombieSpawnWaitTime": 0,
+        "SuppressActionIfNoGridItemsFound": false,
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(gravestone_dark@GridItemTypes)",
+          "RTID(gravestoneSunOnDestruction@GridItemTypes)",
+          "RTID(gravestonePlantfoodOnDestruction@GridItemTypes)"
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(dark_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "GridSpawn13_1_dark_gravestone_spawn"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "GravestonePool": [
+          {
+            "Count": 1.0,
+            "Type": "RTID(gravestone_dark@GridItemTypes)"
+          },
+          {
+            "Count": 0.25,
+            "Type": "RTID(gravestoneSunOnDestruction@GridItemTypes)"
+          },
+          {
+            "Count": 0.0625,
+            "Type": "RTID(gravestonePlantfoodOnDestruction@GridItemTypes)"
+          }
+        ],
+        "SpawnPositionsPool": [
+          {
+            "mX": 9,
+            "mY": 1
+          },
+          {
+            "mX": 7,
+            "mY": 2
+          },
+          {
+            "mX": 9,
+            "mY": 2
+          }
+        ],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": true,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+      }
+    },
+    {
+      "aliases": [
+        "Necro13_2_gravestone_dark_necro"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "WaveStartMessage": "Necromancy!",
+        "ZombieSpawnWaitTime": 0,
+        "SuppressActionIfNoGridItemsFound": false,
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(gravestone_dark@GridItemTypes)",
+          "RTID(gravestoneSunOnDestruction@GridItemTypes)",
+          "RTID(gravestonePlantfoodOnDestruction@GridItemTypes)"
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(dark@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "GridSpawn14_1_dark_gravestone_spawn"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "GravestonePool": [
+          {
+            "Count": 1.0,
+            "Type": "RTID(gravestone_dark@GridItemTypes)"
+          },
+          {
+            "Count": 0.25,
+            "Type": "RTID(gravestoneSunOnDestruction@GridItemTypes)"
+          },
+          {
+            "Count": 0.0625,
+            "Type": "RTID(gravestonePlantfoodOnDestruction@GridItemTypes)"
+          }
+        ],
+        "SpawnPositionsPool": [
+          {
+            "mX": 7,
+            "mY": 4
+          },
+          {
+            "mX": 2,
+            "mY": 2
+          },
+          {
+            "mX": 1,
+            "mY": 1
+          },
+          {
+            "mX": 5,
+            "mY": 0
+          },
+          {
+            "mX": 4,
+            "mY": 3
+          }
+        ],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": true,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+      }
+    },
+    {
+      "aliases": [
+        "GridSpawn14_2_dark_gravestone_spawn"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "GravestonePool": [
+          {
+            "Count": 1.0,
+            "Type": "RTID(gravestone_dark@GridItemTypes)"
+          },
+          {
+            "Count": 0.25,
+            "Type": "RTID(gravestoneSunOnDestruction@GridItemTypes)"
+          },
+          {
+            "Count": 0.0625,
+            "Type": "RTID(gravestonePlantfoodOnDestruction@GridItemTypes)"
+          }
+        ],
+        "SpawnPositionsPool": [
+          {
+            "mX": 1,
+            "mY": 0
+          },
+          {
+            "mX": 8,
+            "mY": 1
+          }
+        ],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": true,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+      }
+    },
+    {
+      "aliases": [
+        "Necro15_1_gravestone_dark_necro"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "WaveStartMessage": "Necromancy!",
+        "ZombieSpawnWaitTime": 0,
+        "SuppressActionIfNoGridItemsFound": false,
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(gravestone_dark@GridItemTypes)",
+          "RTID(gravestoneSunOnDestruction@GridItemTypes)",
+          "RTID(gravestonePlantfoodOnDestruction@GridItemTypes)"
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(dark@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Necro15_2_gravestone_dark_necro"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "WaveStartMessage": "Necromancy!",
+        "ZombieSpawnWaitTime": 0,
+        "SuppressActionIfNoGridItemsFound": false,
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(gravestone_dark@GridItemTypes)",
+          "RTID(gravestoneSunOnDestruction@GridItemTypes)",
+          "RTID(gravestonePlantfoodOnDestruction@GridItemTypes)"
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(dark_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Necro16_1_gravestone_dark_necro"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "WaveStartMessage": "Necromancy!",
+        "ZombieSpawnWaitTime": 0,
+        "SuppressActionIfNoGridItemsFound": false,
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(gravestone_dark@GridItemTypes)",
+          "RTID(gravestoneSunOnDestruction@GridItemTypes)",
+          "RTID(gravestonePlantfoodOnDestruction@GridItemTypes)"
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(dark_imp_dragon@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_imp@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "GridSpawn16_2_dark_gravestone_spawn"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "GravestonePool": [
+          {
+            "Count": 1.0,
+            "Type": "RTID(gravestone_dark@GridItemTypes)"
+          },
+          {
+            "Count": 0.25,
+            "Type": "RTID(gravestoneSunOnDestruction@GridItemTypes)"
+          },
+          {
+            "Count": 0.0625,
+            "Type": "RTID(gravestonePlantfoodOnDestruction@GridItemTypes)"
+          }
+        ],
+        "SpawnPositionsPool": [
+          {
+            "mX": 1,
+            "mY": 3
+          }
+        ],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": true,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+      }
+    },
+    {
+      "aliases": [
+        "GridSpawn17_1_dark_gravestone_spawn"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "GravestonePool": [
+          {
+            "Count": 1.0,
+            "Type": "RTID(gravestone_dark@GridItemTypes)"
+          },
+          {
+            "Count": 0.25,
+            "Type": "RTID(gravestoneSunOnDestruction@GridItemTypes)"
+          },
+          {
+            "Count": 0.0625,
+            "Type": "RTID(gravestonePlantfoodOnDestruction@GridItemTypes)"
+          }
+        ],
+        "SpawnPositionsPool": [
+          {
+            "mX": 9,
+            "mY": 2
+          },
+          {
+            "mX": 2,
+            "mY": 2
+          },
+          {
+            "mX": 8,
+            "mY": 3
+          },
+          {
+            "mX": 9,
+            "mY": 3
+          }
+        ],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": true,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+      }
+    },
+    {
+      "aliases": [
+        "GridSpawn19_1_dark_gravestone_spawn"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "GravestonePool": [
+          {
+            "Count": 1.0,
+            "Type": "RTID(gravestone_dark@GridItemTypes)"
+          },
+          {
+            "Count": 0.25,
+            "Type": "RTID(gravestoneSunOnDestruction@GridItemTypes)"
+          },
+          {
+            "Count": 0.0625,
+            "Type": "RTID(gravestonePlantfoodOnDestruction@GridItemTypes)"
+          }
+        ],
+        "SpawnPositionsPool": [
+          {
+            "mX": 4,
+            "mY": 0
+          },
+          {
+            "mX": 2,
+            "mY": 0
+          },
+          {
+            "mX": 8,
+            "mY": 4
+          },
+          {
+            "mX": 2,
+            "mY": 3
+          },
+          {
+            "mX": 7,
+            "mY": 1
+          }
+        ],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": true,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+      }
+    },
+    {
+      "aliases": [
+        "Necro19_2_gravestone_dark_necro"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "WaveStartMessage": "Necromancy!",
+        "ZombieSpawnWaitTime": 0,
+        "SuppressActionIfNoGridItemsFound": false,
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(gravestone_dark@GridItemTypes)",
+          "RTID(gravestoneSunOnDestruction@GridItemTypes)",
+          "RTID(gravestonePlantfoodOnDestruction@GridItemTypes)"
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(dark_imp_dragon@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_imp@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Necro20_1_gravestone_dark_necro"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "WaveStartMessage": "Necromancy!",
+        "ZombieSpawnWaitTime": 0,
+        "SuppressActionIfNoGridItemsFound": false,
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(gravestone_dark@GridItemTypes)",
+          "RTID(gravestoneSunOnDestruction@GridItemTypes)",
+          "RTID(gravestonePlantfoodOnDestruction@GridItemTypes)"
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(dark_imp_dragon@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Necro20_2_gravestone_dark_necro"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "WaveStartMessage": "Necromancy!",
+        "ZombieSpawnWaitTime": 0,
+        "SuppressActionIfNoGridItemsFound": false,
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(gravestone_dark@GridItemTypes)",
+          "RTID(gravestoneSunOnDestruction@GridItemTypes)",
+          "RTID(gravestonePlantfoodOnDestruction@GridItemTypes)"
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(dark_imp@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Necro21_1_gravestone_dark_necro"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "WaveStartMessage": "Necromancy!",
+        "ZombieSpawnWaitTime": 0,
+        "SuppressActionIfNoGridItemsFound": false,
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(gravestone_dark@GridItemTypes)",
+          "RTID(gravestoneSunOnDestruction@GridItemTypes)",
+          "RTID(gravestonePlantfoodOnDestruction@GridItemTypes)"
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(dark_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Necro21_2_gravestone_dark_necro"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "WaveStartMessage": "Necromancy!",
+        "ZombieSpawnWaitTime": 0,
+        "SuppressActionIfNoGridItemsFound": false,
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(gravestone_dark@GridItemTypes)",
+          "RTID(gravestoneSunOnDestruction@GridItemTypes)",
+          "RTID(gravestonePlantfoodOnDestruction@GridItemTypes)"
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(dark_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "GridSpawn22_1_dark_gravestone_spawn"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "GravestonePool": [
+          {
+            "Count": 1.0,
+            "Type": "RTID(gravestone_dark@GridItemTypes)"
+          },
+          {
+            "Count": 0.25,
+            "Type": "RTID(gravestoneSunOnDestruction@GridItemTypes)"
+          },
+          {
+            "Count": 0.0625,
+            "Type": "RTID(gravestonePlantfoodOnDestruction@GridItemTypes)"
+          }
+        ],
+        "SpawnPositionsPool": [
+          {
+            "mX": 7,
+            "mY": 3
+          }
+        ],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": true,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+      }
+    },
+    {
+      "aliases": [
+        "GridSpawn24_1_dark_gravestone_spawn"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "GravestonePool": [
+          {
+            "Count": 1.0,
+            "Type": "RTID(gravestone_dark@GridItemTypes)"
+          },
+          {
+            "Count": 0.25,
+            "Type": "RTID(gravestoneSunOnDestruction@GridItemTypes)"
+          },
+          {
+            "Count": 0.0625,
+            "Type": "RTID(gravestonePlantfoodOnDestruction@GridItemTypes)"
+          }
+        ],
+        "SpawnPositionsPool": [
+          {
+            "mX": 6,
+            "mY": 2
+          },
+          {
+            "mX": 7,
+            "mY": 0
+          }
+        ],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": true,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+      }
+    },
+    {
+      "aliases": [
+        "GridSpawn25_1_dark_gravestone_spawn"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "GravestonePool": [
+          {
+            "Count": 1.0,
+            "Type": "RTID(gravestone_dark@GridItemTypes)"
+          },
+          {
+            "Count": 0.25,
+            "Type": "RTID(gravestoneSunOnDestruction@GridItemTypes)"
+          },
+          {
+            "Count": 0.0625,
+            "Type": "RTID(gravestonePlantfoodOnDestruction@GridItemTypes)"
+          }
+        ],
+        "SpawnPositionsPool": [
+          {
+            "mX": 8,
+            "mY": 0
+          },
+          {
+            "mX": 8,
+            "mY": 2
+          },
+          {
+            "mX": 2,
+            "mY": 4
+          },
+          {
+            "mX": 1,
+            "mY": 1
+          }
+        ],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": true,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+      }
+    },
+    {
+      "aliases": [
+        "Necro25_2_gravestone_dark_necro"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "WaveStartMessage": "Necromancy!",
+        "ZombieSpawnWaitTime": 0,
+        "SuppressActionIfNoGridItemsFound": false,
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(gravestone_dark@GridItemTypes)",
+          "RTID(gravestoneSunOnDestruction@GridItemTypes)",
+          "RTID(gravestonePlantfoodOnDestruction@GridItemTypes)"
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(dark_juggler@ZombieTypes)"
+          },
+          {
+            "Type": "RTID(dark_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Necro26_1_gravestone_dark_necro"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "WaveStartMessage": "Necromancy!",
+        "ZombieSpawnWaitTime": 0,
+        "SuppressActionIfNoGridItemsFound": false,
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(gravestone_dark@GridItemTypes)",
+          "RTID(gravestoneSunOnDestruction@GridItemTypes)",
+          "RTID(gravestonePlantfoodOnDestruction@GridItemTypes)"
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(dark_armor1@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "GridSpawn26_2_dark_gravestone_spawn"
+      ],
+      "objclass": "SpawnGravestonesWaveActionProps",
+      "objdata": {
+        "GravestonePool": [
+          {
+            "Count": 1.0,
+            "Type": "RTID(gravestone_dark@GridItemTypes)"
+          },
+          {
+            "Count": 0.25,
+            "Type": "RTID(gravestoneSunOnDestruction@GridItemTypes)"
+          },
+          {
+            "Count": 0.0625,
+            "Type": "RTID(gravestonePlantfoodOnDestruction@GridItemTypes)"
+          }
+        ],
+        "SpawnPositionsPool": [
+          {
+            "mX": 4,
+            "mY": 1
+          },
+          {
+            "mX": 3,
+            "mY": 2
+          },
+          {
+            "mX": 9,
+            "mY": 0
+          },
+          {
+            "mX": 8,
+            "mY": 0
+          }
+        ],
+        "SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+        "SpawnSoundID": "",
+        "DisplacePlants": true,
+        "RandomPlacement": true,
+        "ShakeScreen": false,
+        "GridClassesToDestroy": []
+      }
+    },
+    {
+      "aliases": [
+        "Necro27_1_gravestone_dark_necro"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "WaveStartMessage": "Necromancy!",
+        "ZombieSpawnWaitTime": 0,
+        "SuppressActionIfNoGridItemsFound": false,
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(gravestone_dark@GridItemTypes)",
+          "RTID(gravestoneSunOnDestruction@GridItemTypes)",
+          "RTID(gravestonePlantfoodOnDestruction@GridItemTypes)"
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(dark_juggler@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Necro28_1_gravestone_dark_necro"
+      ],
+      "objclass": "SpawnZombiesFromGridItemSpawnerProps",
+      "objdata": {
+        "WaveStartMessage": "Necromancy!",
+        "ZombieSpawnWaitTime": 0,
+        "SuppressActionIfNoGridItemsFound": false,
+        "AdditionalPlantfood": "0",
+        "GridTypes": [
+          "RTID(gravestone_dark@GridItemTypes)",
+          "RTID(gravestoneSunOnDestruction@GridItemTypes)",
+          "RTID(gravestonePlantfoodOnDestruction@GridItemTypes)"
+        ],
+        "Zombies": [
+          {
+            "Type": "RTID(dark_imp@ZombieTypes)"
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "Rails"
+      ],
+      "objclass": "RailcartProperties",
+      "objdata": {
+        "RailcartType": "",
+        "Railcarts": [
+          {
+            "Column": 6,
+            "Row": 2
+          },
+          {
+            "Column": 8,
+            "Row": 1
+          },
+          {
+            "Column": 8,
+            "Row": 1
+          }
+        ],
+        "Rails": [
+          {
+            "Column": 6,
+            "RowEnd": 2,
+            "RowStart": 1
+          },
+          {
+            "Column": 8,
+            "RowEnd": 3,
+            "RowStart": 0
+          },
+          {
+            "Column": 8,
+            "RowEnd": 3,
+            "RowStart": 0
+          }
+        ]
+      }
+    },
+    {
+      "aliases": [
+        "GI"
+      ],
+      "objclass": "InitialGridItemProperties",
+      "objdata": {
+        "InitialGridItemPlacements": [
+          {
+            "GridX": 8,
+            "GridY": 2,
+            "TypeName": "gravestone_dark"
+          },
+          {
+            "GridX": 4,
+            "GridY": 0,
+            "TypeName": "gravestone_dark"
+          },
+          {
+            "GridX": 9,
+            "GridY": 0,
+            "TypeName": "gravestone_dark"
+          },
+          {
+            "GridX": 5,
+            "GridY": 0,
+            "TypeName": "gravestone_dark"
+          },
+          {
+            "GridX": 7,
+            "GridY": 3,
+            "TypeName": "gravestonePlantfoodOnDestruction"
+          },
+          {
+            "GridX": 4,
+            "GridY": 1,
+            "TypeName": "gravestone_dark"
+          }
+        ]
+      }
+    },
+    {}
+  ],
+  "version": 1
+}

@@ -1,0 +1,295 @@
+{
+  "#comment": "Modern Day template with weighted ambush selection and portal spawn support.",
+  "comment": "Modern Day | ELM: Ver-14 [RFL v1.4.1]",
+  "level_name": "Frost Bites your Caves",
+  "output_file": "pirate1.json",
+  "json_indent": 2,
+  "zombie_sources": {
+    "types_file": "ZOMBIETYPES_UPDATED.json",
+    "props_file": "ZOMBIEPROPERTIES_UPDATED.json"
+  },
+  "wave_settings": {
+    "flag_interval": 8,
+    "flag_count": 3,
+    "starting_points": 1,
+    "point_increment": 1.5,
+    "flag_bonus": 5,
+    "greediness_range": [0.3, 0.6],
+    "plantfood_mode": "interval_jittered",
+    "plantfood_interval": 8,
+    "plantfood_per_interval": 1,
+    "starting_sun": 50,
+    "spawn_row_range": [
+      1,
+      5
+    ],
+    "force_spawn_each_zombie_once": false
+  },
+  "zombie_pool": [
+    "iceage",
+    "iceage_armor1",
+    "iceage_armor2",
+    "iceage_armor3",
+    "iceage_armor4",
+    "iceage_flag",
+    "iceage_flag_veteran",
+    "iceage_hunter",
+    "iceage_hunter_veteran",
+    "iceage_dodo",
+    "iceage_dodo_veteran",
+    "iceage_imp",
+    "iceage_troglobite",
+    "iceage_weaselhoarder",
+    "iceage_gargantuar"
+],
+  "events": {
+    "ambush_chance": 0.35,
+    "max_per_wave": 2,
+    "market": {
+      "enabled": false
+    },
+    "Parrotrousle": {
+      "enabled": false
+    },
+    "sun_crash": {
+      "enabled": false
+    },
+    "storm_ambushes": [],
+    "sandstorm_ambushes": [],
+    "snowstorm_ambushes": [
+      {
+        "enabled": true,
+        "weight": 1,
+        "event_name": "snowstorm_random",
+        "alias_prefix": "Snowstorm",
+        "storm_type": "snowstorm",
+        "additional_plantfood": "0",
+        "time_between_groups": 0.5,
+        "group_size": 1,
+        "spawners_per_trigger_range": [
+          1,
+          2
+        ],
+        "columns": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "unique_columns_per_trigger": false,
+        "zombies_per_spawner_range": [
+          1,
+          2
+        ],
+        "allow_duplicate_zombies": true,
+        "zombie_choice_greediness": 0.45,
+        "use_wave_points_budget": true,
+        "consume_wave_points": true,
+        "enforce_budget": true,
+        "points_budget_ratio_range": [
+          0.2,
+          0.55
+        ],
+        "zombie_pool": [
+          "iceage",
+          "iceage_armor1",
+          "iceage_armor2",
+          "iceage_hunter",
+          "iceage_dodo",
+          "iceage_imp",
+          "iceage_troglobite"
+        ]
+      }
+    ],
+    "frost_winds": [
+      {
+        "enabled": true,
+        "weight": 1.1,
+        "rows": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "lane_count_range": [
+          1,
+          3
+        ],
+        "point_cost_per_lane": 0.75,
+        "consume_wave_points": true,
+        "enforce_budget": true,
+        "allow_partial_budget": true,
+        "pattern": "split"
+      }
+    ]
+  },
+  "aliases": {
+    "seed_bank": "SeedBank",
+    "escalation": "Escalation",
+    "wave_manager_module": "NewWaves",
+    "wave_manager": "WaveManager",
+    "wave_prefix": "Wave"
+  },
+  "level_definition": {
+    "Description": "{PLAYER}'s Trip to Modern Day!",
+    "FirstRewardParam": "moneybag",
+    "AddBonusStartingSun": true,
+    "NormalPresentTable": "egypt_normal_01",
+    "ShinyPresentTable": "egypt_shiny_01",
+    "Loot": "RTID(DefaultLoot@LevelModules)",
+    "ResourceGroupNames": [
+      "DelayLoad_Background_Beach",
+      "ZombieTreadmillBrainGroup",
+      "DelayLoad_Background_Beach_Compressed",
+      "PlantMoonFlowerEffects",
+      "Tombstone_Dark_Special",
+      "Tombstone_Dark_Effects",
+      "GridItemCarnieCards",
+      "UI_GameOver"
+    ],
+    "Modules": [
+      "RTID(OffScreenZombiesCoinOverride@LevelModules)",
+      "RTID(IceageMowers@LevelModules)",
+      "RTID(StandardIntro@LevelModules)",
+      "RTID(SeedBank@CurrentLevel)",
+      "RTID(Escalation@CurrentLevel)",
+      "RTID(NewWaves@CurrentLevel)",
+      "RTID(DefaultSunDropper@LevelModules)",
+      "RTID(ZombiesDeadWinCon@LevelModules)",
+      "RTID(DefaultZombieWinCondition@LevelModules)",
+      "RTID(JamZombiesModule@LevelModules)",
+      "RTID(IZP@CurrentLevel)"
+    ],
+    "StageModule": "RTID(IceageStage@LevelModules)"
+  },
+  "seed_bank": {
+    "PresetPlantList": [],
+    "PlantIncludeList": [],
+    "PlantExcludeList": [],
+    "SelectionMethod": "chooser"
+  },
+  "escalation": {
+    "PlantfoodToSpawnCount": 0,
+    "StartingPoints": 0,
+    "PointIncrementPerWave": 0
+  },
+  "wave_manager_module": {},
+  "wave_manager": {
+    "SuppressFlagZombie": false
+  },
+  "initial_grid_items": {
+    "enabled": true,
+    "alias": "GI",
+    "module_rtid": "RTID(GI@CurrentLevel)",
+    "allow_overlap": false,
+    "x_range": [
+      0,
+      8
+    ],
+    "y_range": [
+      0,
+      4
+    ],
+    "total_count_range": [
+      4,
+      10
+    ],
+    "disallowed_total_counts": [
+      1
+    ],
+    "types": [
+      {
+        "placement_mode": "slider_cells",
+        "up_type_name": "slider_up",
+        "down_type_name": "slider_down",
+        "up_weight": 1,
+        "down_weight": 1,
+        "count_range": [
+          2,
+          4
+        ],
+        "columns": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "max_attempts": 2000
+      },
+      {
+        "type_options": [
+          {
+            "type_name": "gravestone_iceage",
+            "weight": 1
+          }
+        ],
+        "count_range": [
+          0,
+          7
+        ],
+        "placement_mode": "random_cells"
+      }
+    ]
+  },
+  "initial_zombies": {
+    "enabled": true,
+    "alias": "IZP",
+    "condition": "icecubed",
+    "x_range": [
+      4,
+      8
+    ],
+    "y_range": [
+      0,
+      4
+    ],
+    "total_count_range": [
+      2,
+      4
+    ],
+    "disallowed_total_counts": [
+      1
+    ],
+    "allow_duplicate_zombies": true,
+    "cost_x_power": 3.0,
+    "min_position_weight": 0.12,
+    "pool": [
+      {
+        "zombie_name": "iceage",
+        "weight": 4
+      },
+      {
+        "zombie_name": "iceage_armor1",
+        "weight": 3
+      },
+      {
+        "zombie_name": "iceage_armor2",
+        "weight": 2
+      },
+      {
+        "zombie_name": "iceage_hunter",
+        "weight": 1.4
+      },
+      {
+        "zombie_name": "iceage_dodo",
+        "weight": 1.2
+      },
+      {
+        "zombie_name": "iceage_imp",
+        "weight": 1
+      },
+      {
+        "zombie_name": "iceage_troglobite",
+        "weight": 0.6
+      }
+    ]
+  },
+  "append_empty_object": true,
+  "version": 1
+}
