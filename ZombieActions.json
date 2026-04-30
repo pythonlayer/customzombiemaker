@@ -13912,211 +13912,210 @@
                 ]
             }
         },
-        
         {
-			"objclass": "ZombieWalkActionDefinition",
-			"aliases": [
-				"ZombieWealthGodWalkOn"
-			],
-			"objdata": {
-				"Weight": 1,
-				"RepeatMin": 0,
-				"RepeatMax": 0,
-				"Phase": "Entering",
-				"PhaseAfter": "Attacking",
-				"TransitionAtStart": false,
-				"TransitionAnimation": "landing",
-				"HasTransition": true,
-				"SoundOnStart": "Play_Zomb_Premium_Cardio_Enter",
-				"StopAtColumn": 7
-			}
-		},
-		{
-			"objclass": "ZombiePlayAnimationActionDefinition",
-			"aliases": [
-				"ZombieWealthGodWakeUp"
-			],
-			"objdata": {
-				"Weight": 1,
-				"RepeatMin": 0,
-				"RepeatMax": 0,
-				"Phase": "Stunned",
-				"PhaseAfter": "Attacking",
-				"AnimationToPlay": "landing"
-			}
-		},
-		{
-			"objclass": "ZombieDropActionDefinition",
-			"aliases": [
-				"ZombieWealthGodIdle"
-			],
-			"objdata": {
-				"Weight": 3,
-				"RepeatMin": 0,
-				"RepeatMax": 0,
-				"Phase": "Attacking",
-				"PhaseAfter": "Attacking",
-				"Invulnerable": false,
-				"Animation": "awake",
-				"AnimationToPlay": "awake",
-				"AwardDrop": "RTID(ZombieWealthGodChangeLaneDrops@.)"
-			}
-		},
-		{
-			"objclass": "ZombieDropProps",
-			"aliases": [
-				"ZombieWealthGodChangeLaneDrops"
-			],
-			"objdata": {
-				"Zombies": [
-					{
-						"Type": "wealth_god_consultant",
-						"Hypnotized": false,
-						"TossGridXDelta": 0,
-						"TossGridYDelta": 0,
-						"TossGridZDelta": -0.1,
-						"SpawnGridXDelta": 0,
-						"SpawnGridZDelta": 0.1,
-						"TossDuration": 0.1,
-						"TossApexHeight": 10
-					}
-				]
-			}
-		},
-		{
-			"objclass": "ZombieDropZombiesOnBoardActionDefinition",
-			"aliases": [
-				"ZombieWealthGodRainAction"
-			],
-			"objdata": {
-				"Weight": 2,
-				"RepeatMin": 0,
-				"RepeatMax": 0,
-				"ColumnEnd": "6",
-				"ColumnStart": "0",
-				"MinSpawn": "3",
-				"MaxSpawn": "3",
-				"ZombieNames": [
-					"wealthgod_rocket"
-				],
-				"ZombieWeights": [
-					100
-				],
-				"TimeBeforeSpawn": 1.25,
-				"ZombieFallTime": 0.5,
-				"Phase": "Attacking",
-				"PhaseAfter": "Attacking",
-				"RampUpAnimation": "",
-				"LoopingAnimation": "orbital_strike",
-				"RampDownAnimation": "",
-				"EffectTypeToShow": "",
-				"DropAudioEvent": ""
-			}
-		},
-		{
-			"objclass": "ZombieDropZombiesOnBoardActionDefinition",
-			"aliases": [
-				"ZombieWealthGodSummonAction"
-			],
-			"objdata": {
-				"Weight": 2,
-				"RepeatMin": 0,
-				"RepeatMax": 1,
-				"ColumnEnd": "8",
-				"ColumnStart": "7",
-				"MinSpawn": "3",
-				"MaxSpawn": "3",
-				"ZombieNames": [
-					"lunar_moneytree",
-					"lunar_armor2",
-					"lunar_armor1",
-					"lunar_superfanimp"
-				],
-				"ZombieWeights": [
-					45,
-					65,
-					80,
-					100
-				],
-				"TimeBeforeSpawn": 1.25,
-				"ZombieFallTime": 0,
-				"Phase": "Attacking",
-				"PhaseAfter": "Attacking",
-				"RiseFromGround": "true",
-				"RampUpAnimation": "",
-				"LoopingAnimation": "orbital_strike",
-				"RampDownAnimation": "",
-				"EffectTypeToShow": "",
-				"DropAudioEvent": ""
-			}
-		},
-		{
-			"objclass": "ZombieDropZombiesOnBoardActionDefinition",
-			"aliases": [
-				"ZombieWealthGodDragonDanceAction"
-			],
-			"objdata": {
-				"Weight": 2,
-				"RepeatMin": 0,
-				"RepeatMax": 0,
-				"ColumnEnd": "9",
-				"ColumnStart": "7",
-				"MinSpawn": "1",
-				"MaxSpawn": "3",
-				"ZombieNames": [
-					"lion_dance",
-					"lunar_camel_twohump",
-					"lunar_camel_onehump"
-				],
-				"ZombieWeights": [
-					15,
-					60,
-					100
-				],
-				"TimeBeforeSpawn": 1.25,
-				"ZombieFallTime": 0,
-				"Phase": "Attacking",
-				"PhaseAfter": "Attacking",
-				"RiseFromGround": "true",
-				"RampUpAnimation": "",
-				"LoopingAnimation": "orbital_strike",
-				"RampDownAnimation": "",
-				"EffectTypeToShow": "",
-				"DropAudioEvent": ""
-			}
-		},
-		{
-			"objclass": "ZombieDropZombiesOnBoardActionDefinition",
-			"aliases": [
-				"ZombieWealthGodBanditAction"
-			],
-			"objdata": {
-				"Weight": 1,
-				"RepeatMin": 0,
-				"RepeatMax": 0,
-				"Phase": "Attacking",
-				"ColumnEnd": "5",
-				"ColumnStart": "4",
-				"MinSpawn": "2",
-				"MaxSpawn": "3",
-				"ZombieNames": [
-					"lunar_bandit",
-					"lunar_relichunter"
-				],
-				"ZombieWeights": [
-					50,
-					50
-				],
-				"TimeBeforeSpawn": 0.0,
-				"ZombieFallTime": 0,
-				"RampUpAnimation": "",
-				"LoopingAnimation": "orbital_strike",
-				"RampDownAnimation": "",
-				"EffectTypeToShow": "",
-				"DropAudioEvent": ""
-			}
-		},
-		{
+            "objclass": "ZombieWalkActionDefinition",
+            "aliases": [
+                "ZombieWealthGodWalkOn"
+            ],
+            "objdata": {
+                "Weight": 1,
+                "RepeatMin": 0,
+                "RepeatMax": 0,
+                "Phase": "Entering",
+                "PhaseAfter": "Attacking",
+                "TransitionAtStart": false,
+                "TransitionAnimation": "landing",
+                "HasTransition": true,
+                "SoundOnStart": "Play_Zomb_Premium_Cardio_Enter",
+                "StopAtColumn": 7
+            }
+        },
+        {
+            "objclass": "ZombiePlayAnimationActionDefinition",
+            "aliases": [
+                "ZombieWealthGodWakeUp"
+            ],
+            "objdata": {
+                "Weight": 1,
+                "RepeatMin": 0,
+                "RepeatMax": 0,
+                "Phase": "Stunned",
+                "PhaseAfter": "Attacking",
+                "AnimationToPlay": "landing"
+            }
+        },
+        {
+            "objclass": "ZombieDropActionDefinition",
+            "aliases": [
+                "ZombieWealthGodIdle"
+            ],
+            "objdata": {
+                "Weight": 3,
+                "RepeatMin": 0,
+                "RepeatMax": 0,
+                "Phase": "Attacking",
+                "PhaseAfter": "Attacking",
+                "Invulnerable": false,
+                "Animation": "awake",
+                "AnimationToPlay": "awake",
+                "AwardDrop": "RTID(ZombieWealthGodChangeLaneDrops@.)"
+            }
+        },
+        {
+            "objclass": "ZombieDropProps",
+            "aliases": [
+                "ZombieWealthGodChangeLaneDrops"
+            ],
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "wealth_god_consultant",
+                        "Hypnotized": false,
+                        "TossGridXDelta": 0,
+                        "TossGridYDelta": 0,
+                        "TossGridZDelta": -0.1,
+                        "SpawnGridXDelta": 0,
+                        "SpawnGridZDelta": 0.1,
+                        "TossDuration": 0.1,
+                        "TossApexHeight": 10
+                    }
+                ]
+            }
+        },
+        {
+            "objclass": "ZombieDropZombiesOnBoardActionDefinition",
+            "aliases": [
+                "ZombieWealthGodRainAction"
+            ],
+            "objdata": {
+                "Weight": 2,
+                "RepeatMin": 0,
+                "RepeatMax": 0,
+                "ColumnEnd": "6",
+                "ColumnStart": "0",
+                "MinSpawn": "3",
+                "MaxSpawn": "3",
+                "ZombieNames": [
+                    "wealthgod_rocket"
+                ],
+                "ZombieWeights": [
+                    100
+                ],
+                "TimeBeforeSpawn": 1.25,
+                "ZombieFallTime": 0.5,
+                "Phase": "Attacking",
+                "PhaseAfter": "Attacking",
+                "RampUpAnimation": "",
+                "LoopingAnimation": "orbital_strike",
+                "RampDownAnimation": "",
+                "EffectTypeToShow": "",
+                "DropAudioEvent": ""
+            }
+        },
+        {
+            "objclass": "ZombieDropZombiesOnBoardActionDefinition",
+            "aliases": [
+                "ZombieWealthGodSummonAction"
+            ],
+            "objdata": {
+                "Weight": 2,
+                "RepeatMin": 0,
+                "RepeatMax": 1,
+                "ColumnEnd": "8",
+                "ColumnStart": "7",
+                "MinSpawn": "3",
+                "MaxSpawn": "3",
+                "ZombieNames": [
+                    "lunar_moneytree",
+                    "lunar_armor2",
+                    "lunar_armor1",
+                    "lunar_superfanimp"
+                ],
+                "ZombieWeights": [
+                    45,
+                    65,
+                    80,
+                    100
+                ],
+                "TimeBeforeSpawn": 1.25,
+                "ZombieFallTime": 0,
+                "Phase": "Attacking",
+                "PhaseAfter": "Attacking",
+                "RiseFromGround": "true",
+                "RampUpAnimation": "",
+                "LoopingAnimation": "orbital_strike",
+                "RampDownAnimation": "",
+                "EffectTypeToShow": "",
+                "DropAudioEvent": ""
+            }
+        },
+        {
+            "objclass": "ZombieDropZombiesOnBoardActionDefinition",
+            "aliases": [
+                "ZombieWealthGodDragonDanceAction"
+            ],
+            "objdata": {
+                "Weight": 2,
+                "RepeatMin": 0,
+                "RepeatMax": 0,
+                "ColumnEnd": "9",
+                "ColumnStart": "7",
+                "MinSpawn": "1",
+                "MaxSpawn": "3",
+                "ZombieNames": [
+                    "lion_dance",
+                    "lunar_camel_twohump",
+                    "lunar_camel_onehump"
+                ],
+                "ZombieWeights": [
+                    15,
+                    60,
+                    100
+                ],
+                "TimeBeforeSpawn": 1.25,
+                "ZombieFallTime": 0,
+                "Phase": "Attacking",
+                "PhaseAfter": "Attacking",
+                "RiseFromGround": "true",
+                "RampUpAnimation": "",
+                "LoopingAnimation": "orbital_strike",
+                "RampDownAnimation": "",
+                "EffectTypeToShow": "",
+                "DropAudioEvent": ""
+            }
+        },
+        {
+            "objclass": "ZombieDropZombiesOnBoardActionDefinition",
+            "aliases": [
+                "ZombieWealthGodBanditAction"
+            ],
+            "objdata": {
+                "Weight": 1,
+                "RepeatMin": 0,
+                "RepeatMax": 0,
+                "Phase": "Attacking",
+                "ColumnEnd": "5",
+                "ColumnStart": "4",
+                "MinSpawn": "2",
+                "MaxSpawn": "3",
+                "ZombieNames": [
+                    "lunar_bandit",
+                    "lunar_relichunter"
+                ],
+                "ZombieWeights": [
+                    50,
+                    50
+                ],
+                "TimeBeforeSpawn": 0.0,
+                "ZombieFallTime": 0,
+                "RampUpAnimation": "",
+                "LoopingAnimation": "orbital_strike",
+                "RampDownAnimation": "",
+                "EffectTypeToShow": "",
+                "DropAudioEvent": ""
+            }
+        },
+        {
             "objclass": "ZombieDropActionDefinition",
             "aliases": [
                 "ZombieWealthGodRetreatInjured"
@@ -14132,276 +14131,276 @@
             }
         },
         {
-			"objclass": "ZombieWalkActionDefinition",
-			"aliases": [
-				"ZombieWealthGodWalkOff"
-			],
-			"objdata": {
-				"Weight": 1,
-				"RepeatMin": 0,
-				"RepeatMax": 0,
-				"WalkBackwards": true,
-				"Phase": "Retreat",
-				"PhaseAfter": "Destroy",
-				"TransitionAtStart": true,
-				"TransitionAnimation": "die",
-				"HasTransition": true
-			}
-		},
-		{
-			"objclass": "ZombieDropProps",
-			"aliases": [
-				"ZombieWealthGodDrop"
-			],
-			"objdata": {
-				"Zombies": [
-					{
-						"Type": "wealthgod_spawner1",
-						"Hypnotized": false,
-						"TossGridYDelta": 0,
-						"SpawnGridXDelta": -3,
-						"TossDuration": 0.01,
-						"TossApexHeight": 0.01
-					}
-				]
-			}
-		},
+            "objclass": "ZombieWalkActionDefinition",
+            "aliases": [
+                "ZombieWealthGodWalkOff"
+            ],
+            "objdata": {
+                "Weight": 1,
+                "RepeatMin": 0,
+                "RepeatMax": 0,
+                "WalkBackwards": true,
+                "Phase": "Retreat",
+                "PhaseAfter": "Destroy",
+                "TransitionAtStart": true,
+                "TransitionAnimation": "die",
+                "HasTransition": true
+            }
+        },
         {
-			"objclass": "ZombieDropActionDefinition",
-			"aliases": [
-				"WealthGodSpawnerAction"
-			],
-			"objdata": {
-				"Weight": 1,
-				"RepeatMin": 0,
-				"RepeatMax": 0,
-				"Phase": "Entering",
-				"PhaseAfter": "Destroy",
-				"Animation": "",
-				"AwardDrop": "RTID(WealthGodSpawnerDrops@.)"
-			}
-		},
-		{
-			"objclass": "ZombieDropProps",
-			"aliases": [
-				"WealthGodSpawnerDrops"
-			],
-			"objdata": {
-				"Zombies": [
-					{
-						"Type": "wealthgod_spawner2",
-						"Hypnotized": true,
-						"TossGridYDelta": -1,
-						"SpawnGridXDelta": -1,
-						"TossDuration": 0.01,
-						"TossApexHeight": 0.01
-					}
-				]
-			}
-		},
-		{
-			"objclass": "ZombieDropZombiesOnBoardActionDefinition",
-			"aliases": [
-				"WealthGodSpawnerAction2"
-			],
-			"objdata": {
-				"Weight": 1,
-				"RepeatMin": 0,
-				"RepeatMax": 0,
-				"ColumnEnd": "6",
-				"ColumnStart": "6",
-				"MinSpawn": "3",
-				"MaxSpawn": "4",
-				"ZombieNames": [
-					"lunar_gargantuar"
-				],
-				"ZombieWeights": [
-					100
-				],
-				"TimeBeforeSpawn": 0,
-				"ZombieFallTime": 0,
-				"Phase": "Entering",
-				"PhaseAfter": "Destroy",
-				"CenterOnInstigator": false,
-				"RiseFromGround": "true",
-				"RampUpAnimation": "",
-				"LoopingAnimation": "idle",
-				"RampDownAnimation": "",
-				"EffectTypeToShow": "",
-				"DropAudioEvent": ""
-			}
-		},
-		{
-			"objclass": "ZombieProjectileActionDefinition",
-			"aliases": [
-				"ZombieWealthGodRocketTarget"
-			],
-			"objdata": {
-				"Weight": 10,
-				"RepeatMin": 0,
-				"RepeatMax": 0,
-				"Phase": "Entering",
-				"PhaseAfter": "Attacking",
-				"Projectile": "RTID(WealthGodTarget@ProjectileTypes)",
-				"OverrideProjectileAnimation": "die",
-				"ProjectileSound": "Play_Zomb_Egypt_Zomboss_Attack_Rush",
-				"SpawnOffset": {
-					"x": 0,
-					"y": 0,
-					"z": 0
-				}
-			}
-		},
-		{
-			"objclass": "ZombiePlayAnimationActionDefinition",
-			"aliases": [
-				"ZombieWealthGodRocketWait"
-			],
-			"objdata": {
-				"Weight": 10,
-				"RepeatMin": 100,
-				"RepeatMax": 100,
-				"Phase": "Attacking",
-				"PhaseAfter": "Stunned",
-				"AnimationToPlay": "die",
-				"CanPickAgain": false
-			}
-		},
-		{
-			"objclass": "ZombieProjectileActionDefinition",
-			"aliases": [
-				"ZombieWealthGodRocketLaunch"
-			],
-			"objdata": {
-				"Weight": 10,
-				"RepeatMin": 0,
-				"RepeatMax": 0,
-				"Phase": "Stunned",
-				"PhaseAfter": "Dying",
-				"Projectile": "RTID(WealthGodRocket@ProjectileTypes)",
-				"OverrideProjectileAnimation": "die",
-				"ProjectileSound": "Play_Zomb_Egypt_Zomboss_Attack_Rush",
-				"SpawnOffset": {
+            "objclass": "ZombieDropProps",
+            "aliases": [
+                "ZombieWealthGodDrop"
+            ],
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "wealthgod_spawner1",
+                        "Hypnotized": false,
+                        "TossGridYDelta": 0,
+                        "SpawnGridXDelta": -3,
+                        "TossDuration": 0.01,
+                        "TossApexHeight": 0.01
+                    }
+                ]
+            }
+        },
+        {
+            "objclass": "ZombieDropActionDefinition",
+            "aliases": [
+                "WealthGodSpawnerAction"
+            ],
+            "objdata": {
+                "Weight": 1,
+                "RepeatMin": 0,
+                "RepeatMax": 0,
+                "Phase": "Entering",
+                "PhaseAfter": "Destroy",
+                "Animation": "",
+                "AwardDrop": "RTID(WealthGodSpawnerDrops@.)"
+            }
+        },
+        {
+            "objclass": "ZombieDropProps",
+            "aliases": [
+                "WealthGodSpawnerDrops"
+            ],
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "wealthgod_spawner2",
+                        "Hypnotized": true,
+                        "TossGridYDelta": -1,
+                        "SpawnGridXDelta": -1,
+                        "TossDuration": 0.01,
+                        "TossApexHeight": 0.01
+                    }
+                ]
+            }
+        },
+        {
+            "objclass": "ZombieDropZombiesOnBoardActionDefinition",
+            "aliases": [
+                "WealthGodSpawnerAction2"
+            ],
+            "objdata": {
+                "Weight": 1,
+                "RepeatMin": 0,
+                "RepeatMax": 0,
+                "ColumnEnd": "6",
+                "ColumnStart": "6",
+                "MinSpawn": "3",
+                "MaxSpawn": "4",
+                "ZombieNames": [
+                    "lunar_gargantuar"
+                ],
+                "ZombieWeights": [
+                    100
+                ],
+                "TimeBeforeSpawn": 0,
+                "ZombieFallTime": 0,
+                "Phase": "Entering",
+                "PhaseAfter": "Destroy",
+                "CenterOnInstigator": false,
+                "RiseFromGround": "true",
+                "RampUpAnimation": "",
+                "LoopingAnimation": "idle",
+                "RampDownAnimation": "",
+                "EffectTypeToShow": "",
+                "DropAudioEvent": ""
+            }
+        },
+        {
+            "objclass": "ZombieProjectileActionDefinition",
+            "aliases": [
+                "ZombieWealthGodRocketTarget"
+            ],
+            "objdata": {
+                "Weight": 10,
+                "RepeatMin": 0,
+                "RepeatMax": 0,
+                "Phase": "Entering",
+                "PhaseAfter": "Attacking",
+                "Projectile": "RTID(WealthGodTarget@ProjectileTypes)",
+                "OverrideProjectileAnimation": "die",
+                "ProjectileSound": "Play_Zomb_Egypt_Zomboss_Attack_Rush",
+                "SpawnOffset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }
+            }
+        },
+        {
+            "objclass": "ZombiePlayAnimationActionDefinition",
+            "aliases": [
+                "ZombieWealthGodRocketWait"
+            ],
+            "objdata": {
+                "Weight": 10,
+                "RepeatMin": 100,
+                "RepeatMax": 100,
+                "Phase": "Attacking",
+                "PhaseAfter": "Stunned",
+                "AnimationToPlay": "die",
+                "CanPickAgain": false
+            }
+        },
+        {
+            "objclass": "ZombieProjectileActionDefinition",
+            "aliases": [
+                "ZombieWealthGodRocketLaunch"
+            ],
+            "objdata": {
+                "Weight": 10,
+                "RepeatMin": 0,
+                "RepeatMax": 0,
+                "Phase": "Stunned",
+                "PhaseAfter": "Dying",
+                "Projectile": "RTID(WealthGodRocket@ProjectileTypes)",
+                "OverrideProjectileAnimation": "die",
+                "ProjectileSound": "Play_Zomb_Egypt_Zomboss_Attack_Rush",
+                "SpawnOffset": {
                     "x": 10,
                     "y": 0,
                     "z": 0
                 }
-			}
-		},
-		{
-			"objclass": "ZombieDropActionDefinition",
-			"aliases": [
-				"ZombieWealthGodRocketYuanbaoDrop"
-			],
-			"objdata": {
-				"Weight": 10,
-				"RepeatMin": 0,
-				"RepeatMax": 0,
-				"Phase": "Dying",
-				"PhaseAfter": "Destroy",
-				"Invulnerable": "true",
-				"Animation": "die",
-				"AwardDrop": "RTID(ZombieWealthGodRocketYuanbao@.)",
-				"EffectPam": "",
-				"EffectAnim": "break_power_tier4",
-				"EffectOffsetX": 30,
-				"EffectOffsetY": 999
-			}
-		},
-		{
-			"objclass": "ZombieDropProps",
-			"aliases": [
-				"ZombieWealthGodRocketYuanbao"
-			],
-			"objdata": {
-				"Zombies": [
-					{
-						"Type": "lunar_money_type1",
-						"Hypnotized": false,
-						"SpawnGridXDelta": 0,
-						"TossGridYDelta": 0,
-						"TossDuration": 0,
-						"TossApexHeight": 0
-					}
-				]
-			}
-		},
-		{
-			"objclass": "ZombieDropActionDefinition",
-			"aliases": [
-				"ZombieWealthGodRocketYuanbaoDrop2"
-			],
-			"objdata": {
-				"Weight": 10,
-				"RepeatMin": 0,
-				"RepeatMax": 0,
-				"Phase": "Dying",
-				"PhaseAfter": "Destroy",
-				"Invulnerable": "true",
-				"Animation": "die",
-				"AwardDrop": "RTID(ZombieWealthGodRocketYuanbao2@.)",
-				"EffectPam": "",
-				"EffectAnim": "break_power_tier4",
-				"EffectOffsetX": 30,
-				"EffectOffsetY": 999
-			}
-		},
-		{
-			"objclass": "ZombieDropProps",
-			"aliases": [
-				"ZombieWealthGodRocketYuanbao2"
-			],
-			"objdata": {
-				"Zombies": [
-					{
-						"Type": "lunar_money_type2",
-						"Hypnotized": false,
-						"SpawnGridXDelta": 0,
-						"TossGridYDelta": 0,
-						"TossDuration": 0,
-						"TossApexHeight": 0
-					}
-				]
-			}
-		},
-		{
-			"objclass": "ZombieDropActionDefinition",
-			"aliases": [
-				"ZombieWealthGodRocketYuanbaoDrop3"
-			],
-			"objdata": {
-				"Weight": 10,
-				"RepeatMin": 0,
-				"RepeatMax": 0,
-				"Phase": "Dying",
-				"PhaseAfter": "Destroy",
-				"Invulnerable": "true",
-				"Animation": "die",
-				"AwardDrop": "RTID(ZombieWealthGodRocketYuanbao3@.)",
-				"EffectPam": "",
-				"EffectAnim": "break_power_tier4",
-				"EffectOffsetX": 30,
-				"EffectOffsetY": 999
-			}
-		},
-		{
-			"objclass": "ZombieDropProps",
-			"aliases": [
-				"ZombieWealthGodRocketYuanbao3"
-			],
-			"objdata": {
-				"Zombies": [
-					{
-						"Type": "lunar_money_type3",
-						"Hypnotized": false,
-						"SpawnGridXDelta": 0,
-						"TossGridYDelta": 0,
-						"TossDuration": 0,
-						"TossApexHeight": 0
-					}
-				]
-			}
-		},
+            }
+        },
+        {
+            "objclass": "ZombieDropActionDefinition",
+            "aliases": [
+                "ZombieWealthGodRocketYuanbaoDrop"
+            ],
+            "objdata": {
+                "Weight": 10,
+                "RepeatMin": 0,
+                "RepeatMax": 0,
+                "Phase": "Dying",
+                "PhaseAfter": "Destroy",
+                "Invulnerable": "true",
+                "Animation": "die",
+                "AwardDrop": "RTID(ZombieWealthGodRocketYuanbao@.)",
+                "EffectPam": "",
+                "EffectAnim": "break_power_tier4",
+                "EffectOffsetX": 30,
+                "EffectOffsetY": 999
+            }
+        },
+        {
+            "objclass": "ZombieDropProps",
+            "aliases": [
+                "ZombieWealthGodRocketYuanbao"
+            ],
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "lunar_money_type1",
+                        "Hypnotized": false,
+                        "SpawnGridXDelta": 0,
+                        "TossGridYDelta": 0,
+                        "TossDuration": 0,
+                        "TossApexHeight": 0
+                    }
+                ]
+            }
+        },
+        {
+            "objclass": "ZombieDropActionDefinition",
+            "aliases": [
+                "ZombieWealthGodRocketYuanbaoDrop2"
+            ],
+            "objdata": {
+                "Weight": 10,
+                "RepeatMin": 0,
+                "RepeatMax": 0,
+                "Phase": "Dying",
+                "PhaseAfter": "Destroy",
+                "Invulnerable": "true",
+                "Animation": "die",
+                "AwardDrop": "RTID(ZombieWealthGodRocketYuanbao2@.)",
+                "EffectPam": "",
+                "EffectAnim": "break_power_tier4",
+                "EffectOffsetX": 30,
+                "EffectOffsetY": 999
+            }
+        },
+        {
+            "objclass": "ZombieDropProps",
+            "aliases": [
+                "ZombieWealthGodRocketYuanbao2"
+            ],
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "lunar_money_type2",
+                        "Hypnotized": false,
+                        "SpawnGridXDelta": 0,
+                        "TossGridYDelta": 0,
+                        "TossDuration": 0,
+                        "TossApexHeight": 0
+                    }
+                ]
+            }
+        },
+        {
+            "objclass": "ZombieDropActionDefinition",
+            "aliases": [
+                "ZombieWealthGodRocketYuanbaoDrop3"
+            ],
+            "objdata": {
+                "Weight": 10,
+                "RepeatMin": 0,
+                "RepeatMax": 0,
+                "Phase": "Dying",
+                "PhaseAfter": "Destroy",
+                "Invulnerable": "true",
+                "Animation": "die",
+                "AwardDrop": "RTID(ZombieWealthGodRocketYuanbao3@.)",
+                "EffectPam": "",
+                "EffectAnim": "break_power_tier4",
+                "EffectOffsetX": 30,
+                "EffectOffsetY": 999
+            }
+        },
+        {
+            "objclass": "ZombieDropProps",
+            "aliases": [
+                "ZombieWealthGodRocketYuanbao3"
+            ],
+            "objdata": {
+                "Zombies": [
+                    {
+                        "Type": "lunar_money_type3",
+                        "Hypnotized": false,
+                        "SpawnGridXDelta": 0,
+                        "TossGridYDelta": 0,
+                        "TossDuration": 0,
+                        "TossApexHeight": 0
+                    }
+                ]
+            }
+        },
         {
             "objclass": "ZombieDropProps",
             "aliases": [
@@ -14487,6 +14486,429 @@
                         "SpawnGridZDelta": 0,
                         "TossDuration": 0,
                         "TossApexHeight": 0
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "ZombieSummerShellShield"
+            ],
+            "objclass": "ZombieBeachShellShieldProps",
+            "objdata": {
+                "ArtCenter": {
+                    "x": 90,
+                    "y": 125
+                },
+                "StreetOffset": {
+                    "x": -2,
+                    "y": -1
+                },
+                "Hitpoints": 270,
+                "AttackDPS": 0,
+                "HypnoAttackDPS": 0,
+                "EatDPS": 100,
+                "HelmAbsorbsOverflowDamage": true,
+                "NormalDeathWhenMowed": true,
+                "HitRect": {
+                    "mX": -5,
+                    "mY": 10,
+                    "mWidth": 75,
+                    "mHeight": 110
+                },
+                "AttackRect": {
+                    "mX": -5,
+                    "mY": 0,
+                    "mWidth": 75,
+                    "mHeight": 110
+                },
+                "HitRectLostShell": {
+                    "mX": 0,
+                    "mY": 10,
+                    "mWidth": 42,
+                    "mHeight": 125
+                },
+                "AttackRectLostShell": {
+                    "mX": 15,
+                    "mY": 0,
+                    "mWidth": 20,
+                    "mHeight": 125
+                },
+                "Cost": 150,
+                "ShadowOffset": {
+                    "x": 5,
+                    "y": 0,
+                    "z": 1.2
+                },
+                "CanSpawnPlantFood": true,
+                "CanSurrender": true,
+                "CanBePlantTossedStrong": false,
+                "CanBePlantTossedWeak": false,
+                "CanBeFlickedOff": false,
+                "ImmuneInShell": [
+                    {
+                        "Condition": "butter"
+                    },
+                    {
+                        "Condition": "shrinking"
+                    },
+                    {
+                        "Condition": "shrunken"
+                    },
+                    {
+                        "Condition": "freeze"
+                    },
+                    {
+                        "Condition": "chill"
+                    },
+                    {
+                        "Condition": "begoniafire"
+                    },
+                    {
+                        "Condition": "begoniachilled"
+                    },
+                    {
+                        "Condition": "begoniamixed"
+                    },
+                    {
+                        "Condition": "dazeystunned"
+                    },
+                    {
+                        "Condition": "stalled"
+                    },
+                    {
+                        "Condition": "sapped"
+                    },
+                    {
+                        "Condition": "stun"
+                    },
+                    {
+                        "Condition": "blockolistunned"
+                    },
+                    {
+                        "Condition": "solarflared"
+                    },
+                    {
+                        "Condition": "speeddown1"
+                    },
+                    {
+                        "Condition": "speeddown2"
+                    },
+                    {
+                        "Condition": "speeddown3"
+                    },
+                    {
+                        "Condition": "speeddown4"
+                    },
+                    {
+                        "Condition": "affectEatdps"
+                    },
+                    {
+                        "Condition": "eatdpsUp"
+                    }
+                ],
+                "ConditionImmunities": [
+                    {
+                        "Condition": "freeze",
+                        "Percent": 0.25
+                    },
+                    {
+                        "Condition": "chill",
+                        "Percent": 0.75
+                    },
+                    {
+                        "Condition": "begoniachilled",
+                        "Percent": 0.75
+                    }
+                ],
+                "GroundTrackName": "ground_swatch",
+                "Speed": 0.12,
+                "SpeedLostShell": 0.22,
+                "WavePointCost": 550,
+                "Weight": 3000,
+                "ZombieArmorProps": [
+                    "RTID(SummerFishDefault@ArmorTypes)",
+                    "RTID(SummerShellShieldDefault@ArmorTypes)"
+                ],
+                "ZombieStats": [
+                    {
+                        "Type": "toughness",
+                        "Value": "toughness7"
+                    },
+                    {
+                        "Type": "speed",
+                        "Value": "speed0"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "ZombieLunarNewspaperDefault"
+            ],
+            "objclass": "ZombieModernNewspaperProps",
+            "objdata": {
+                "ArtCenter": {
+                    "x": 100,
+                    "y": 130
+                },
+                "AttackRect": {
+                    "mHeight": 95,
+                    "mWidth": 20,
+                    "mX": 15,
+                    "mY": 0
+                },
+                "CanSpawnPlantFood": true,
+                "Cost": 150,
+                "EatDPS": 200,
+                "EnragedDamageScale": 4,
+                "EnragedSpeedScale": 4,
+                "GroundTrackName": "ground_swatch",
+                "HitRect": {
+                    "mHeight": 95,
+                    "mWidth": 32,
+                    "mX": 10,
+                    "mY": 10
+                },
+                "Hitpoints": 460,
+                "FireDamageMultiplier": 0.5,
+                "ScaledProps": [
+                    {
+                        "Arg1": 1.3,
+                        "Arg2": 0.05,
+                        "Formula": "standard",
+                        "Key": "Hitpoints"
+                    },
+                    {
+                        "Arg1": 1.3,
+                        "Arg2": 0.05,
+                        "Formula": "standard",
+                        "Key": "EatDPS"
+                    },
+                    {
+                        "Formula": "constant",
+                        "Key": "Speed"
+                    },
+                    {
+                        "Formula": "constant",
+                        "Key": "WavePointCost"
+                    }
+                ],
+                "ShadowOffset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 1.2
+                },
+                "Speed": 0.22,
+                "WavePointCost": 850,
+                "Weight": 4000,
+                "ZombieArmorProps": [
+                    "RTID(LunarNewspaperDefault@ArmorTypes)"
+                ],
+                "ZombieStats": [
+                    {
+                        "Type": "toughness",
+                        "Value": "toughness5"
+                    },
+                    {
+                        "Type": "speed",
+                        "Value": "speed2"
+                    }
+                ]
+            }
+        },
+        {
+            "objclass": "NewspaperArmorPropertySheet",
+            "aliases": [
+                "LunarNewspaperDefault"
+            ],
+            "objdata": {
+                "ClassName": "NewspaperArmor",
+                "ArmorType": "Newspaper",
+                "BaseHealth": 800.0,
+                "ArmorFlags": [
+                    "damageable",
+                    "corrosive"
+                ],
+                "ArmorLayers": [
+                    "_zombie_newspaper",
+                    "_zombie_newspaper_dmg1",
+                    "_zombie_newspaper_dmg2"
+                ],
+                "ArmorLayerHealth": [
+                    0.666,
+                    0.333
+                ],
+                "FireLayer": "",
+                "ImpactSoundEvent": "Play_Zomb_Modern_Newspaper_Paper_Impact",
+                "DropSoundEvent": ""
+            }
+        },
+        {
+            "aliases": [
+                "ZombieServantGirlGargantuar"
+            ],
+            "objclass": "ZombieGargantuarProps",
+            "objdata": {
+                "AlmanacOffset": {
+                    "x": 20,
+                    "y": 70
+                },
+                "AlmanacScale": 0.8,
+                "ArmDropFraction": -1,
+                "ArtCenter": {
+                    "x": 90,
+                    "y": 125
+                },
+                "StreetOffset": {
+                    "x": -2,
+                    "y": -1
+                },
+                "AttackRect": {
+                    "mHeight": 95,
+                    "mWidth": 30,
+                    "mX": 0,
+                    "mY": 10
+                },
+                "CanBeFlickedOff": false,
+                "CanSpawnPlantFood": false,
+                "Cost": 150,
+                "EatDPS": 0,
+                "ExplodesWhenMowed": true,
+                "FlickIsLaneRestricted": true,
+                "GroundTrackName": "ground_swatch",
+                "HealthThresholdToImpAmmoLayers": [
+                    {
+                        "HealthPercentThrowImp": 0.5,
+                        "ProjectileLayersToHide": [
+                            "_zombie_imp_head_top",
+                            "zombie_imp_skull",
+                            "zombie_imp_jaw",
+                            "Zombie_gargantuar_whiterope",
+                            "zombie_imp_arm_inner_lower",
+                            "zombie_imp_arm_inner_upper",
+                            "zombie_imp_arm_outer_lower",
+                            "zombie_imp_arm_outer_upper_01",
+                            "zombie_imp_arm_outer_upper_02",
+                            "zombie_imp_arms_outer_upper",
+                            "zombie_imp_eye",
+                            "zombie_imp_eye_sm",
+                            "zombie_imp_hand_inner",
+                            "zombie_imp_hand_outer",
+                            "zombie_imp_leg_inner_lower",
+                            "zombie_imp_leg_inner_upper",
+                            "zombie_imp_leg_outer_lower",
+                            "zombie_imp_leg_outer_upper",
+                            "zombie_imp_pupil",
+                            "zombie_imp_torso",
+                            "zombie_imp_waist",
+                            "zombie_imp_toe_outer",
+                            "zombie_imp_toe_inner"
+                        ]
+                    }
+                ],
+                "HitRect": {
+                    "mHeight": 95,
+                    "mWidth": 62,
+                    "mX": 10,
+                    "mY": 10
+                },
+                "ConditionImmunities": [
+                    {
+                        "Condition": "affectEatdps"
+                    },
+                    {
+                        "Condition": "poisoned"
+                    },
+                    {
+                        "Condition": "contagiouspoison"
+                    },
+                    {
+                        "Condition": "butter"
+                    },
+                    {
+                        "Condition": "blownoff"
+                    },
+                    {
+                        "Condition": "decaypoison"
+                    }
+                ],
+                "Hitpoints": 3600,
+                "HypnoshroomEffectOffset": {
+                    "x": 0,
+                    "y": 120
+                },
+                "ImpApex": 250,
+                "ImpFlightTime": 1.5,
+                "ImpSpawnOffset": {
+                    "x": -75,
+                    "y": 0,
+                    "z": 160
+                },
+                "ImpTargetColumn": 2,
+                "ImpType": "servant_imp",
+                "IsValidPinchTarget": false,
+                "MinPosXThrowImp": 400,
+                "ScaledProps": [
+                    {
+                        "Arg1": 1.3,
+                        "Arg2": 0.05,
+                        "Formula": "standard",
+                        "Key": "Hitpoints"
+                    },
+                    {
+                        "Arg1": 1.3,
+                        "Arg2": 0.05,
+                        "Formula": "standard",
+                        "Key": "EatDPS"
+                    },
+                    {
+                        "Formula": "constant",
+                        "Key": "Speed"
+                    },
+                    {
+                        "Formula": "constant",
+                        "Key": "WavePointCost"
+                    },
+                    {
+                        "Arg1": 1.3,
+                        "Arg2": 0.05,
+                        "Formula": "standard",
+                        "Key": "SmashDamage"
+                    }
+                ],
+                "ShadowOffset": {
+                    "x": 20,
+                    "y": -10,
+                    "z": 1.4
+                },
+                "ShadowScaling": {
+                    "x": 2,
+                    "y": 2
+                },
+                "Size": "large",
+                "SkipHeadDropState": true,
+                "SmashDamage": 1500,
+                "SmashDuration": 2,
+                "SoundOnAsh": "Play_Zomb_Global_Gargantuar_Mvmt_Death_Ash",
+                "SoundOnElectrocute": "Play_Zomb_Global_Gargantuar_Mvmt_Shock",
+                "SoundOnIdle": "Play_Zomb_Tutorial_Gargantuar_Mvmt_Idle",
+                "Speed": 0.24,
+                "ZombieArmorProps": [
+                    "RTID(GargantuarJawFix@ArmorTypes)"
+                ],
+                "StaticArtImageAsset": "IMAGE_GARGANTUAR",
+                "ThrowImpDuration": 1,
+                "WavePointCost": 1500,
+                "Weight": 3000,
+                "ZombieStats": [
+                    {
+                        "Type": "toughness",
+                        "Value": "toughness7"
+                    },
+                    {
+                        "Type": "speed",
+                        "Value": "speed3"
                     }
                 ]
             }

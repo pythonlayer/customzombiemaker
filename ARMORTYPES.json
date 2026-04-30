@@ -1037,6 +1037,61 @@
                 "ImpactSoundEvent": "",
                 "DropSoundEvent": ""
             }
+        },
+        {
+            "objclass": "ArmorPropertySheet",
+            "aliases": [
+                "SummerFishDefault"
+            ],
+            "objdata": {
+                "ArmorType": "CowboyHat",
+                "BaseHealth": 3000.0,
+                "ArmorFlags": [
+                    "damageable",
+                    "droppable",
+                    "passdamage",
+                    "corrosive"
+                ],
+                "ArmorLayers": [
+                    "fish_1",
+                    "fish_2",
+                    "fish_3"
+                ],
+                "ArmorLayerHealth": [
+                    0.66,
+                    0.33
+                ],
+                "ParticleLayerOverride": [
+                    "fish_3"
+                ]
+            }
+        },
+        {
+            "objclass": "ArmorPropertySheet",
+            "aliases": [
+                "SummerShellShieldDefault"
+            ],
+            "objdata": {
+                "ArmorType": "Sarcophagus",
+                "BaseHealth": 3000.0,
+                "ArmorFlags": [
+                    "damageable",
+                    "absorboverflow",
+                    "body",
+                    "corrosive"
+                ],
+                "ArmorLayers": [
+                    "shell_1",
+                    "shell_2",
+                    "shell_3"
+                ],
+                "ArmorLayerHealth": [
+                    0.666,
+                    0.333
+                ],
+                "ImpactSoundEvent": "Play_Plant_HeadbutterLettuce_Attack",
+                "DropSoundEvent": "Play_Zomb_Premium_Caketank_Explode_Tier_04"
+            }
         }
     ]
 }

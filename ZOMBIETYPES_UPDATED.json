@@ -18039,104 +18039,104 @@
             }
         },
         {
-			"objclass": "ZombieType",
-			"aliases": [
-				"lunar_wealth_god",
-				"endlesswealth"
-			],
-			"objdata": {
-				"TypeName": "lunar_wealth_god",
-				"ZombieClass": "ZombieGeneralZmech",
-				"Properties": "RTID(ZombieWealthGod@ZombieProperties)",
-				"ResourceGroups": [
-					"ZombieWealthGodGroup",
-					"ZombieEgyptZombossVeteranGroup",
-					"ZombieLNYBasicGroup",
-					"ZombieLNYDragonWallGroup",
-					"ZombieLNYSuperfanImpGroup",
-					"ZombieLunarSwashbucklerGroup",
-					"ZombieLunarGargantuarGroup",
-					"ZombieLunarImpGroup",
-					"ZombieMoneyTreeGroup",
-					"ZombieDummyGroup",
-					"Dirt_Spawn_Dirt"
-				],
-				"AudioGroups": [
-					"ZombieTreadmillAudio"
-				],
-				"AnimRigClass": "ZombieAnimRig_GeneralZmech",
-				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_WEALTH_GOD",
-				"AlmanacBackdropName": "lunar",
-				"HomeWorld": "tutorial",
-				"Placeable": true
-			}
-		},
+            "objclass": "ZombieType",
+            "aliases": [
+                "lunar_wealth_god",
+                "endlesswealth"
+            ],
+            "objdata": {
+                "TypeName": "lunar_wealth_god",
+                "ZombieClass": "ZombieGeneralZmech",
+                "Properties": "RTID(ZombieWealthGod@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieWealthGodGroup",
+                    "ZombieEgyptZombossVeteranGroup",
+                    "ZombieLNYBasicGroup",
+                    "ZombieLNYDragonWallGroup",
+                    "ZombieLNYSuperfanImpGroup",
+                    "ZombieLunarSwashbucklerGroup",
+                    "ZombieLunarGargantuarGroup",
+                    "ZombieLunarImpGroup",
+                    "ZombieMoneyTreeGroup",
+                    "ZombieDummyGroup",
+                    "Dirt_Spawn_Dirt"
+                ],
+                "AudioGroups": [
+                    "ZombieTreadmillAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_GeneralZmech",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_WEALTH_GOD",
+                "AlmanacBackdropName": "lunar",
+                "HomeWorld": "tutorial",
+                "Placeable": true
+            }
+        },
         {
-			"objclass": "ZombieType",
-			"aliases": [
-				"wealthgod_spawner1"
-			],
-			"objdata": {
-				"TypeName": "wealthgod_spawner1",
-				"ZombieClass": "ZombieCakeTank",
-				"Properties": "RTID(WealthGodSpawner1@ZombieProperties)",
-				"AnimRigClass": "ZombieAnimRig_CakeTank",
-				"PopAnim": "POPANIM_ZOMBIE_DUMMY",
-				"Placeable": true
-			}
-		},
-		{
-			"objclass": "ZombieType",
-			"aliases": [
-				"wealthgod_spawner2"
-			],
-			"objdata": {
-				"TypeName": "wealthgod_spawner2",
-				"ZombieClass": "ZombieCakeTank",
-				"Properties": "RTID(WealthGodSpawner2@ZombieProperties)",
-				"AnimRigClass": "ZombieAnimRig_CakeTank",
-				"PopAnim": "POPANIM_ZOMBIE_DUMMY",
-				"Placeable": true
-			}
-		},
-		{
-			"objclass": "ZombieType",
-			"aliases": [
-				"wealth_god_consultant"
-			],
-			"objdata": {
-				"TypeName": "wealth_god_consultant",
-				"ZombieClass": "ZombieZCorpConsultant",
-				"Properties": "RTID(WealthGodConsultantDefault@$ZombieProperties)",
-				"ResourceGroups": [
-					"ZombieZcorpConsultantGroup"
-				],
-				"AnimRigClass": "ZombieAnimRig_Consultant",
-				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_CORPORATE_CONSULTANT",
-				"HomeWorld": "tutorial",
-				"IsFemaleZombie": true
-			}
-		},
-		{
-			"objclass": "ZombieType",
-			"aliases": [
-				"wealthgod_rocket"
-			],
-			"objdata": {
-				"TypeName": "wealthgod_rocket",
-				"ZombieClass": "ZombieGeneralCaesar",
-				"Properties": "RTID(ZombieWealthGodRocket@ZombieProperties)",
-				"ResourceGroups": [
-					"ZombieDummyGroup",
-					"ZombieEgyptZombossVeteranGroup",
-					"ZombieMoneyTreeGroup"
-				],
-				"AnimRigClass": "ZombieAnimRig_GeneralCaesar",
-				"PopAnim": "POPANIM_ZOMBIE_DUMMY",
-				"HomeWorld": "rift1a",
-				"Placeable": true
-			}
-		},
+            "objclass": "ZombieType",
+            "aliases": [
+                "wealthgod_spawner1"
+            ],
+            "objdata": {
+                "TypeName": "wealthgod_spawner1",
+                "ZombieClass": "ZombieCakeTank",
+                "Properties": "RTID(WealthGodSpawner1@ZombieProperties)",
+                "AnimRigClass": "ZombieAnimRig_CakeTank",
+                "PopAnim": "POPANIM_ZOMBIE_DUMMY",
+                "Placeable": true
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "wealthgod_spawner2"
+            ],
+            "objdata": {
+                "TypeName": "wealthgod_spawner2",
+                "ZombieClass": "ZombieCakeTank",
+                "Properties": "RTID(WealthGodSpawner2@ZombieProperties)",
+                "AnimRigClass": "ZombieAnimRig_CakeTank",
+                "PopAnim": "POPANIM_ZOMBIE_DUMMY",
+                "Placeable": true
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "wealth_god_consultant"
+            ],
+            "objdata": {
+                "TypeName": "wealth_god_consultant",
+                "ZombieClass": "ZombieZCorpConsultant",
+                "Properties": "RTID(WealthGodConsultantDefault@$ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieZcorpConsultantGroup"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Consultant",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_CORPORATE_CONSULTANT",
+                "HomeWorld": "tutorial",
+                "IsFemaleZombie": true
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "wealthgod_rocket"
+            ],
+            "objdata": {
+                "TypeName": "wealthgod_rocket",
+                "ZombieClass": "ZombieGeneralCaesar",
+                "Properties": "RTID(ZombieWealthGodRocket@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieDummyGroup",
+                    "ZombieEgyptZombossVeteranGroup",
+                    "ZombieMoneyTreeGroup"
+                ],
+                "AnimRigClass": "ZombieAnimRig_GeneralCaesar",
+                "PopAnim": "POPANIM_ZOMBIE_DUMMY",
+                "HomeWorld": "rift1a",
+                "Placeable": true
+            }
+        },
         {
             "objclass": "ZombieType",
             "aliases": [
@@ -18159,6 +18159,54 @@
                 "HomeWorld": "zombotany",
                 "AlmanacBackdropName": "warp",
                 "IsBasicZombie": false
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "summer_shell_shield"
+            ],
+            "objdata": {
+                "TypeName": "summer_shell_shield",
+                "ZombieClass": "ZombieBeachShellShield",
+                "Properties": "RTID(ZombieSummerShellShield@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieSummerShellGroup",
+                    "ZombieDummyGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieRomanMedusaAudio",
+                    "ZombieEgyptCamelAudio",
+                    "PlantHeadbutterAudio",
+                    "ZombiePremiumCakeTank"
+                ],
+                "AnimRigClass": "ZombieAnimRig_BeachShellShield",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_SUMMER_SHELL_SHIELD",
+                "AlmanacBackdropName": "summernight",
+                "HomeWorld": "holiday",
+                "IsBasicZombie": false,
+                "Placeable": true
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "lunar_newspaper"
+            ],
+            "objdata": {
+                "TypeName": "lunar_newspaper",
+                "ZombieClass": "ZombieModernNewspaper",
+                "Properties": "RTID(ZombieLunarNewspaperDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieLNYNewspaperGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieModernNewspaperAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Newspaper",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_LNY_NEWSPAPER",
+                "AlmanacBackdropName": "lunar",
+                "HomeWorld": "holiday"
             }
         }
     ]
