@@ -18668,6 +18668,48 @@
                 "HomeWorld": "fairytale",
                 "Placeable": false
             }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_imp_hearts"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_imp_hearts",
+                "ZombieClass": "ZombieImp",
+                "Properties": "RTID",
+                "ResourceGroups": [
+                    "ZombieFairyTaleCardImpGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieGlobalGargantuarAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Imp",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_IMP_HEARTS",
+                "HomeWorld": "fairytale",
+                "Placeable": true
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_imp_armor1"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_imp_armor1",
+                "ZombieClass": "ZombieImp",
+                "Properties": "RTID",
+                "ResourceGroups": [
+                    "ZombieFairyTaleThreeLittlePigsGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieGlobalGargantuarAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Imp",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_IMP_ARMOR1",
+                "HomeWorld": "fairytale",
+                "Placeable": true
+            }
         }
     ]
 }

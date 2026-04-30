@@ -66468,405 +66468,405 @@
                     }
                 ]
             }
-        },{
-			"aliases":
-            [
-				"ZombieWealthGod"
-			],
-			"objclass": "ZombieGeneralZmechProps",
-			"objdata": {
-				"Actions": [
-					"RTID(ZombieWealthGodWalkOn@ZombieActions)",
-					"RTID(ZombieWealthGodWakeUp@ZombieActions)",
-					"RTID(ZombieWealthGodIdle@ZombieActions)",
-					"RTID(ZombieWealthGodRainAction@ZombieActions)",
-					"RTID(ZombieWealthGodSummonAction@ZombieActions)",
-					"RTID(ZombieWealthGodDragonDanceAction@ZombieActions)",
-					"RTID(ZombieWealthGodBanditAction@ZombieActions)",
-					"RTID(ZombieWealthGodRetreatInjured@ZombieActions)",
-					"RTID(ZombieWealthGodWalkOff@ZombieActions)"
-				],
-				"LifetimeSeconds": 999999999,
-				"GeneralPhase": 0,
-				"ScoreOverride": 1000,
-				"FireDamageMultiplier": 0.5,
-				"ConditionImmunities": [
-					{
-						"Condition": "butter"
-					},
-					{
-						"Condition": "poison"
-					}
-				],
-				"StreetSize": {
-					"x": 3,
-					"y": 2
-				},
-				"ArtCenter": {
-					"x": 100,
-					"y": 125
-				},
-				"AlmanacOffset": {
-					"x": 10
-				},
-				"ShadowOffset": {
-					"x": 0,
-					"y": 0,
-					"z": 1.2
-				},
-				"AttackRect": {
-					"mHeight": 95,
-					"mWidth": 60,
-					"mX": 0,
-					"mY": 0
-				},
-				"HitRect": {
-					"mX": 0,
-					"mY": 10,
-					"mWidth": 70,
-					"mHeight": 110
-				},
-				"CrosshairAnimation": "",
-				"CrosshairPopAnim": "POPANIM_EFFECTS_ZOMBIE_WEALTH_GOD_BULLET",
-				"RocketAnimation": "attack",
-				"RocketExplosionAnimation": "",
-				"CraterLifetime": 0,
-				"StunTime": 0,
-				"CollideHypnotizedZombies": "burn",
-				"CanSpawnPlantFood": false,
-				"Cost": 150,
-				"EatDPS": 100,
-				"GroundTrackName": "ground_swatch",
-				"Hitpoints": 7000,
-				"ScaledProps": [
-					{
-						"Arg1": 1.3,
-						"Arg2": 0.05,
-						"Formula": "standard",
-						"Key": "Hitpoints"
-					},
-					{
-						"Formula": "constant",
-						"Key": "Speed"
-					}
-				],
-				"Speed": 1.0,
-				"WavePointCost": 5000,
-				"Weight": 1500,
-				"ZombieStats": [
-					{
-						"Type": "toughness",
-						"Value": "toughness7"
-					},
-					{
-						"Type": "speed",
-						"Value": "speed0"
-					}
-				]
-			}
-		},
+        },
         {
-			"aliases": [
-				"WealthGodConsultantDefault"
-			],
-			"objclass": "ZombieZCorpConsultantProps",
-			"objdata": {
-				"ArtCenter": {
-					"x": 999999,
-					"y": 170
-				},
-				"ConditionImmunities": [
-					{
-						"Condition": "chill"
-					},
-					{
-						"Condition": "freeze"
-					},
-					{
-						"Condition": "stun"
-					},
-					{
-						"Condition": "stalled"
-					},
-					{
-						"Condition": "sapped"
-					},
-					{
-						"Condition": "poisoned"
-					},
-					{
-						"Condition": "shrinking"
-					},
-					{
-						"Condition": "shrunken"
-					},
-					{
-						"Condition": "contagiouspoison"
-					},
-					{
-						"Condition": "dazeystunned"
-					},
-					{
-						"Condition": "stackableslow"
-					}
-				],
-				"ArmDropFraction": -1,
-				"SkipHeadDropState": true,
-				"TimeToKillInSeconds": 0.5,
-				"ScoreOverride": 0.5,
-				"CanTriggerZombieWin": false,
-				"CanSurrender": true,
-				"ArtCenterBurnEffectOffset": {
-					"x": 0,
-					"y": -45
-				},
-				"AttackRect": {
-					"mHeight": 95,
-					"mWidth": 40,
-					"mX": 15,
-					"mY": 0
-				},
-				"CanSpawnPlantFood": true,
-				"Cost": 150,
-				"EatDPS": 0,
-				"ForwardShovePercentage": 0.0,
-				"ShoveHeight": 85.0,
-				"ShoveTime": 0.3,
-				"SlideTime": 0.3,
-				"SlideCooldown": 0.1,
-				"TimeBetweenDirectionChanges": 5,
-				"ShoveExcludeList": {
-					"ListType": "includelist",
-					"List": [
-						"ZombieGeneralZmech"
-					]
-				},
-				"GroundTrackName": "",
-				"HitRect": {
-					"mHeight": 95,
-					"mWidth": 32,
-					"mX": 10,
-					"mY": -999999
-				},
-				"Hitpoints": 999999,
-				"ShadowOffset": {
-					"x": 0,
-					"y": 0,
-					"z": 0
-				},
-				"Speed": 0.7
-			}
-		},
-		{
-			"aliases": [
-				"ZombieWealthGodRocket"
-			],
-			"objclass": "ZombieGeneralCaesarProps",
-			"objdata": {
-				"Actions": [
-					"RTID(ZombieWealthGodRocketTarget@ZombieActions)",
-					"RTID(ZombieWealthGodRocketWait@ZombieActions)",
-					"RTID(ZombieWealthGodRocketLaunch@ZombieActions)",
-					"RTID(ZombieWealthGodRocketYuanbaoDrop@ZombieActions)",
-					"RTID(ZombieWealthGodRocketYuanbaoDrop2@ZombieActions)",
-					"RTID(ZombieWealthGodRocketYuanbaoDrop3@ZombieActions)"
-				],
-				"ConditionImmunities": [
-					{
-						"Condition": "chill"
-					},
-					{
-						"Condition": "freeze"
-					},
-					{
-						"Condition": "stun"
-					},
-					{
-						"Condition": "stalled"
-					},
-					{
-						"Condition": "sapped"
-					},
-					{
-						"Condition": "poisoned"
-					},
-					{
-						"Condition": "contagiouspoison"
-					},
-					{
-						"Condition": "butter"
-					},
-					{
-						"Condition": "solarflared"
-					},
-					{
-						"Condition": "potionspeed1"
-					},
-					{
-						"Condition": "potionspeed2"
-					},
-					{
-						"Condition": "potionspeed3"
-					},
-					{
-						"Condition": "potiontoughness1"
-					},
-					{
-						"Condition": "potiontoughness2"
-					},
-					{
-						"Condition": "potiontoughness3"
-					},
-					{
-						"Condition": "terrified"
-					},
-					{
-						"Condition": "potionsuper1"
-					},
-					{
-						"Condition": "potionsuper2"
-					},
-					{
-						"Condition": "potionsuper3"
-					},
-					{
-						"Condition": "dazeystunned"
-					},
-					{
-						"Condition": "unsuspendable"
-					},
-					{
-						"Condition": "stackableslow"
-					}
-				],
-				"LifetimeSeconds": 69,
-				"ScoreOverride": 0.5,
-				"ArtCenter": {
-					"x": 99999,
-					"y": 99999
-				},
-				"ShadowOffset": {
-					"x": 0,
-					"y": 0,
-					"z": 0
-				},
-				"AttackRect": {
-					"mHeight": 95,
-					"mWidth": 60,
-					"mX": 0,
-					"mY": 99999
-				},
-				"HitRect": {
-					"mHeight": 95,
-					"mWidth": 62,
-					"mX": 10,
-					"mY": 99999
-				},
-				"CollideHypnotizedZombies": "ignore",
-				"EatDPS": 100,
-				"GroundTrackName": "ground_swatch",
-				"Hitpoints": 69000,
-				"Speed": 0.5
-			}
-		},
-		{
-			"aliases": [
-				"WealthGodSpawner1"
-			],
-			"objclass": "ZombieCakeTankProps",
-			"objdata": {
-				"Actions": [
-					"RTID(WealthGodSpawnerAction@ZombieActions)"
-				],
-				"LifetimeSeconds": 999999,
-				"IgnoreWaterLine": true,
-				"ArtCenter": {
-					"x": 90,
-					"y": 125
-				},
-				"ShadowOffset": {
-					"x": 0,
-					"y": 0,
-					"z": 0
-				},
-				"AttackRect": {
-					"mHeight": 95,
-					"mWidth": 110,
-					"mX": -9999,
-					"mY": 0
-				},
-				"HitRect": {
-					"mHeight": 0,
-					"mWidth": 0,
-					"mX": -99999,
-					"mY": -99999
-				},
-				"GroundTrackName": "ground_swatch",
-				"Hitpoints": 2,
-				"ScoreOverride": 0.5,
-				"CustomDamageSteps": [
-					{
-						"MaxDamagePercent": 1
-					},
-					{
-						"MaxDamagePercent": 0
-					}
-				],
-				"CollideHypnotizedZombies": "ignore",
-				"Speed": 0.5
-			}
-		},
-		{
-			"aliases": [
-				"WealthGodSpawner2"
-			],
-			"objclass": "ZombieCakeTankProps",
-			"objdata": {
-				"Actions": [
-					"RTID(WealthGodSpawnerAction2@ZombieActions)"
-				],
-				"LifetimeSeconds": 999999,
-				"IgnoreWaterLine": true,
-				"ArtCenter": {
-					"x": 90,
-					"y": 125
-				},
-				"ShadowOffset": {
-					"x": 0,
-					"y": 0,
-					"z": 0
-				},
-				"AttackRect": {
-					"mHeight": 95,
-					"mWidth": 110,
-					"mX": -9999,
-					"mY": 0
-				},
-				"HitRect": {
-					"mHeight": 0,
-					"mWidth": 0,
-					"mX": -99999,
-					"mY": -99999
-				},
-				"GroundTrackName": "ground_swatch",
-				"Hitpoints": 2,
-				"ScoreOverride": 0.5,
-				"CustomDamageSteps": [
-					{
-						"MaxDamagePercent": 1
-					},
-					{
-						"MaxDamagePercent": 0
-					}
-				],
-				"HypnoshroomEffectOffset": {
-					"x": 0,
-					"y": -99999
-				},
-				"CollideHypnotizedZombies": "ignore",
-				"Speed": 0.5
-			}
-		},
+            "aliases": [
+                "ZombieWealthGod"
+            ],
+            "objclass": "ZombieGeneralZmechProps",
+            "objdata": {
+                "Actions": [
+                    "RTID(ZombieWealthGodWalkOn@ZombieActions)",
+                    "RTID(ZombieWealthGodWakeUp@ZombieActions)",
+                    "RTID(ZombieWealthGodIdle@ZombieActions)",
+                    "RTID(ZombieWealthGodRainAction@ZombieActions)",
+                    "RTID(ZombieWealthGodSummonAction@ZombieActions)",
+                    "RTID(ZombieWealthGodDragonDanceAction@ZombieActions)",
+                    "RTID(ZombieWealthGodBanditAction@ZombieActions)",
+                    "RTID(ZombieWealthGodRetreatInjured@ZombieActions)",
+                    "RTID(ZombieWealthGodWalkOff@ZombieActions)"
+                ],
+                "LifetimeSeconds": 999999999,
+                "GeneralPhase": 0,
+                "ScoreOverride": 1000,
+                "FireDamageMultiplier": 0.5,
+                "ConditionImmunities": [
+                    {
+                        "Condition": "butter"
+                    },
+                    {
+                        "Condition": "poison"
+                    }
+                ],
+                "StreetSize": {
+                    "x": 3,
+                    "y": 2
+                },
+                "ArtCenter": {
+                    "x": 100,
+                    "y": 125
+                },
+                "AlmanacOffset": {
+                    "x": 10
+                },
+                "ShadowOffset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 1.2
+                },
+                "AttackRect": {
+                    "mHeight": 95,
+                    "mWidth": 60,
+                    "mX": 0,
+                    "mY": 0
+                },
+                "HitRect": {
+                    "mX": 0,
+                    "mY": 10,
+                    "mWidth": 70,
+                    "mHeight": 110
+                },
+                "CrosshairAnimation": "",
+                "CrosshairPopAnim": "POPANIM_EFFECTS_ZOMBIE_WEALTH_GOD_BULLET",
+                "RocketAnimation": "attack",
+                "RocketExplosionAnimation": "",
+                "CraterLifetime": 0,
+                "StunTime": 0,
+                "CollideHypnotizedZombies": "burn",
+                "CanSpawnPlantFood": false,
+                "Cost": 150,
+                "EatDPS": 100,
+                "GroundTrackName": "ground_swatch",
+                "Hitpoints": 7000,
+                "ScaledProps": [
+                    {
+                        "Arg1": 1.3,
+                        "Arg2": 0.05,
+                        "Formula": "standard",
+                        "Key": "Hitpoints"
+                    },
+                    {
+                        "Formula": "constant",
+                        "Key": "Speed"
+                    }
+                ],
+                "Speed": 1.0,
+                "WavePointCost": 5000,
+                "Weight": 1500,
+                "ZombieStats": [
+                    {
+                        "Type": "toughness",
+                        "Value": "toughness7"
+                    },
+                    {
+                        "Type": "speed",
+                        "Value": "speed0"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "WealthGodConsultantDefault"
+            ],
+            "objclass": "ZombieZCorpConsultantProps",
+            "objdata": {
+                "ArtCenter": {
+                    "x": 999999,
+                    "y": 170
+                },
+                "ConditionImmunities": [
+                    {
+                        "Condition": "chill"
+                    },
+                    {
+                        "Condition": "freeze"
+                    },
+                    {
+                        "Condition": "stun"
+                    },
+                    {
+                        "Condition": "stalled"
+                    },
+                    {
+                        "Condition": "sapped"
+                    },
+                    {
+                        "Condition": "poisoned"
+                    },
+                    {
+                        "Condition": "shrinking"
+                    },
+                    {
+                        "Condition": "shrunken"
+                    },
+                    {
+                        "Condition": "contagiouspoison"
+                    },
+                    {
+                        "Condition": "dazeystunned"
+                    },
+                    {
+                        "Condition": "stackableslow"
+                    }
+                ],
+                "ArmDropFraction": -1,
+                "SkipHeadDropState": true,
+                "TimeToKillInSeconds": 0.5,
+                "ScoreOverride": 0.5,
+                "CanTriggerZombieWin": false,
+                "CanSurrender": true,
+                "ArtCenterBurnEffectOffset": {
+                    "x": 0,
+                    "y": -45
+                },
+                "AttackRect": {
+                    "mHeight": 95,
+                    "mWidth": 40,
+                    "mX": 15,
+                    "mY": 0
+                },
+                "CanSpawnPlantFood": true,
+                "Cost": 150,
+                "EatDPS": 0,
+                "ForwardShovePercentage": 0.0,
+                "ShoveHeight": 85.0,
+                "ShoveTime": 0.3,
+                "SlideTime": 0.3,
+                "SlideCooldown": 0.1,
+                "TimeBetweenDirectionChanges": 5,
+                "ShoveExcludeList": {
+                    "ListType": "includelist",
+                    "List": [
+                        "ZombieGeneralZmech"
+                    ]
+                },
+                "GroundTrackName": "",
+                "HitRect": {
+                    "mHeight": 95,
+                    "mWidth": 32,
+                    "mX": 10,
+                    "mY": -999999
+                },
+                "Hitpoints": 999999,
+                "ShadowOffset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "Speed": 0.7
+            }
+        },
+        {
+            "aliases": [
+                "ZombieWealthGodRocket"
+            ],
+            "objclass": "ZombieGeneralCaesarProps",
+            "objdata": {
+                "Actions": [
+                    "RTID(ZombieWealthGodRocketTarget@ZombieActions)",
+                    "RTID(ZombieWealthGodRocketWait@ZombieActions)",
+                    "RTID(ZombieWealthGodRocketLaunch@ZombieActions)",
+                    "RTID(ZombieWealthGodRocketYuanbaoDrop@ZombieActions)",
+                    "RTID(ZombieWealthGodRocketYuanbaoDrop2@ZombieActions)",
+                    "RTID(ZombieWealthGodRocketYuanbaoDrop3@ZombieActions)"
+                ],
+                "ConditionImmunities": [
+                    {
+                        "Condition": "chill"
+                    },
+                    {
+                        "Condition": "freeze"
+                    },
+                    {
+                        "Condition": "stun"
+                    },
+                    {
+                        "Condition": "stalled"
+                    },
+                    {
+                        "Condition": "sapped"
+                    },
+                    {
+                        "Condition": "poisoned"
+                    },
+                    {
+                        "Condition": "contagiouspoison"
+                    },
+                    {
+                        "Condition": "butter"
+                    },
+                    {
+                        "Condition": "solarflared"
+                    },
+                    {
+                        "Condition": "potionspeed1"
+                    },
+                    {
+                        "Condition": "potionspeed2"
+                    },
+                    {
+                        "Condition": "potionspeed3"
+                    },
+                    {
+                        "Condition": "potiontoughness1"
+                    },
+                    {
+                        "Condition": "potiontoughness2"
+                    },
+                    {
+                        "Condition": "potiontoughness3"
+                    },
+                    {
+                        "Condition": "terrified"
+                    },
+                    {
+                        "Condition": "potionsuper1"
+                    },
+                    {
+                        "Condition": "potionsuper2"
+                    },
+                    {
+                        "Condition": "potionsuper3"
+                    },
+                    {
+                        "Condition": "dazeystunned"
+                    },
+                    {
+                        "Condition": "unsuspendable"
+                    },
+                    {
+                        "Condition": "stackableslow"
+                    }
+                ],
+                "LifetimeSeconds": 69,
+                "ScoreOverride": 0.5,
+                "ArtCenter": {
+                    "x": 99999,
+                    "y": 99999
+                },
+                "ShadowOffset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "AttackRect": {
+                    "mHeight": 95,
+                    "mWidth": 60,
+                    "mX": 0,
+                    "mY": 99999
+                },
+                "HitRect": {
+                    "mHeight": 95,
+                    "mWidth": 62,
+                    "mX": 10,
+                    "mY": 99999
+                },
+                "CollideHypnotizedZombies": "ignore",
+                "EatDPS": 100,
+                "GroundTrackName": "ground_swatch",
+                "Hitpoints": 69000,
+                "Speed": 0.5
+            }
+        },
+        {
+            "aliases": [
+                "WealthGodSpawner1"
+            ],
+            "objclass": "ZombieCakeTankProps",
+            "objdata": {
+                "Actions": [
+                    "RTID(WealthGodSpawnerAction@ZombieActions)"
+                ],
+                "LifetimeSeconds": 999999,
+                "IgnoreWaterLine": true,
+                "ArtCenter": {
+                    "x": 90,
+                    "y": 125
+                },
+                "ShadowOffset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "AttackRect": {
+                    "mHeight": 95,
+                    "mWidth": 110,
+                    "mX": -9999,
+                    "mY": 0
+                },
+                "HitRect": {
+                    "mHeight": 0,
+                    "mWidth": 0,
+                    "mX": -99999,
+                    "mY": -99999
+                },
+                "GroundTrackName": "ground_swatch",
+                "Hitpoints": 2,
+                "ScoreOverride": 0.5,
+                "CustomDamageSteps": [
+                    {
+                        "MaxDamagePercent": 1
+                    },
+                    {
+                        "MaxDamagePercent": 0
+                    }
+                ],
+                "CollideHypnotizedZombies": "ignore",
+                "Speed": 0.5
+            }
+        },
+        {
+            "aliases": [
+                "WealthGodSpawner2"
+            ],
+            "objclass": "ZombieCakeTankProps",
+            "objdata": {
+                "Actions": [
+                    "RTID(WealthGodSpawnerAction2@ZombieActions)"
+                ],
+                "LifetimeSeconds": 999999,
+                "IgnoreWaterLine": true,
+                "ArtCenter": {
+                    "x": 90,
+                    "y": 125
+                },
+                "ShadowOffset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "AttackRect": {
+                    "mHeight": 95,
+                    "mWidth": 110,
+                    "mX": -9999,
+                    "mY": 0
+                },
+                "HitRect": {
+                    "mHeight": 0,
+                    "mWidth": 0,
+                    "mX": -99999,
+                    "mY": -99999
+                },
+                "GroundTrackName": "ground_swatch",
+                "Hitpoints": 2,
+                "ScoreOverride": 0.5,
+                "CustomDamageSteps": [
+                    {
+                        "MaxDamagePercent": 1
+                    },
+                    {
+                        "MaxDamagePercent": 0
+                    }
+                ],
+                "HypnoshroomEffectOffset": {
+                    "x": 0,
+                    "y": -99999
+                },
+                "CollideHypnotizedZombies": "ignore",
+                "Speed": 0.5
+            }
+        },
         {
             "aliases": [
                 "ZombotanyLightningreed"
@@ -66969,6 +66969,232 @@
                     {
                         "Type": "toughness",
                         "Value": "toughness2"
+                    },
+                    {
+                        "Type": "speed",
+                        "Value": "speed2"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "ZombieFairyTaleDefault"
+            ],
+            "objclass": "ZombiePropertySheet",
+            "objdata": {
+                "ArtCenter": {
+                    "x": 90,
+                    "y": 125
+                },
+                "AttackRect": {
+                    "mHeight": 95,
+                    "mWidth": 20,
+                    "mX": 15,
+                    "mY": 0
+                },
+                "CanSpawnPlantFood": true,
+                "Cost": 150,
+                "EatDPS": 100,
+                "GroundTrackName": "ground_swatch",
+                "HitRect": {
+                    "mHeight": 95,
+                    "mWidth": 32,
+                    "mX": 10,
+                    "mY": 10
+                },
+                "Hitpoints": 190,
+                "ScaledProps": [
+                    {
+                        "Arg1": 1.3,
+                        "Arg2": 0.05,
+                        "Formula": "standard",
+                        "Key": "Hitpoints"
+                    },
+                    {
+                        "Arg1": 1.3,
+                        "Arg2": 0.05,
+                        "Formula": "standard",
+                        "Key": "EatDPS"
+                    },
+                    {
+                        "Formula": "constant",
+                        "Key": "Speed"
+                    },
+                    {
+                        "Formula": "constant",
+                        "Key": "WavePointCost"
+                    }
+                ],
+                "ShadowOffset": {
+                    "x": 5,
+                    "y": 0,
+                    "z": 1.4
+                },
+                "Speed": 0.185,
+                "WavePointCost": 100,
+                "Weight": 1000,
+                "ZombieArmorProps": [
+                    "RTID",
+                    "RTID",
+                    "RTID",
+                    "RTID",
+                    "RTID"
+                ],
+                "ZombieStats": [
+                    {
+                        "Type": "toughness",
+                        "Value": "toughness1"
+                    },
+                    {
+                        "Type": "speed",
+                        "Value": "speed2"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "ZombieFairytaleCavalryKnightDefault"
+            ],
+            "objclass": "ZombiePropertySheet",
+            "objdata": {
+                "ArtCenter": {
+                    "x": 100,
+                    "y": 130
+                },
+                "AttackRect": {
+                    "mHeight": 95,
+                    "mWidth": 20,
+                    "mX": 15,
+                    "mY": 0
+                },
+                "CanSpawnPlantFood": true,
+                "Cost": 150,
+                "EatDPS": 100,
+                "GroundTrackName": "ground_swatch",
+                "HitRect": {
+                    "mHeight": 95,
+                    "mWidth": 32,
+                    "mX": 10,
+                    "mY": 10
+                },
+                "Hitpoints": 270,
+                "ScaledProps": [
+                    {
+                        "Arg1": 1.3,
+                        "Arg2": 0.05,
+                        "Formula": "standard",
+                        "Key": "Hitpoints"
+                    },
+                    {
+                        "Arg1": 1.3,
+                        "Arg2": 0.05,
+                        "Formula": "standard",
+                        "Key": "EatDPS"
+                    },
+                    {
+                        "Formula": "constant",
+                        "Key": "Speed"
+                    },
+                    {
+                        "Formula": "constant",
+                        "Key": "WavePointCost"
+                    }
+                ],
+                "ShadowOffset": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 1.2
+                },
+                "Speed": 0.185,
+                "WavePointCost": 600,
+                "Weight": 4500,
+                "ZombieArmorProps": [
+                    "RTID",
+                    "RTID"
+                ],
+                "ZombieStats": [
+                    {
+                        "Type": "toughness",
+                        "Value": "toughness6"
+                    },
+                    {
+                        "Type": "speed",
+                        "Value": "speed2"
+                    }
+                ]
+            }
+        },
+        {
+            "aliases": [
+                "ZombieFairyTaleImpArmor1Default"
+            ],
+            "objclass": "ZombiePropertySheet",
+            "objdata": {
+                "ArtCenter": {
+                    "x": 102,
+                    "y": 124
+                },
+                "AttackRect": {
+                    "mHeight": 80,
+                    "mWidth": 20,
+                    "mX": 15,
+                    "mY": 0
+                },
+                "CanSpawnPlantFood": false,
+                "Cost": 150,
+                "EatDPS": 100,
+                "GroundTrackName": "ground_swatch",
+                "HitRect": {
+                    "mHeight": 80,
+                    "mWidth": 32,
+                    "mX": 10,
+                    "mY": 10
+                },
+                "Hitpoints": 190,
+                "HypnoshroomEffectOffset": {
+                    "x": 0,
+                    "y": 48
+                },
+                "ScaledProps": [
+                    {
+                        "Arg1": 1.3,
+                        "Arg2": 0.05,
+                        "Formula": "standard",
+                        "Key": "Hitpoints"
+                    },
+                    {
+                        "Arg1": 1.3,
+                        "Arg2": 0.05,
+                        "Formula": "standard",
+                        "Key": "EatDPS"
+                    },
+                    {
+                        "Formula": "constant",
+                        "Key": "Speed"
+                    },
+                    {
+                        "Formula": "constant",
+                        "Key": "WavePointCost"
+                    }
+                ],
+                "ShadowOffset": {
+                    "x": 5,
+                    "y": 0,
+                    "z": 0.8
+                },
+                "Size": "imp",
+                "Speed": 0.22,
+                "WavePointCost": 250,
+                "Weight": 3000,
+                "ZombieArmorProps": [
+                    "RTID"
+                ],
+                "ZombieStats": [
+                    {
+                        "Type": "toughness",
+                        "Value": "toughness3"
                     },
                     {
                         "Type": "speed",

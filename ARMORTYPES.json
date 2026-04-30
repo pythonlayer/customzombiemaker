@@ -1190,6 +1190,30 @@
                     1.0
                 ]
             }
+        },
+        {
+            "objclass": "ArmorPropertySheet",
+            "aliases": [
+                "FairytaleCardHeartsDefault"
+            ],
+            "objdata": {
+                "ArmorType": "ShoulderArmor",
+                "BaseHealth": 1,
+                "ArmorFlags": [
+                    "passdamage",
+                    "invincible"
+                ],
+                "ArmorLayers": [
+                    "nothing",
+                    "card_hearts",
+                    "card_clubs",
+                    "card_diamonds",
+                    "card_spades"
+                ],
+                "ArmorLayerHealth": [
+                    1.0
+                ]
+            }
         }
     ]
 }
