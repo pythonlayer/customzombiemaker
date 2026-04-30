@@ -541,6 +541,10 @@ let allZombieTypes = [];
 
             // Show editor and build forms
             document.getElementById('editorContainer').classList.remove('hidden');
+            const emptyState = document.getElementById('emptyState');
+            if (emptyState) {
+                emptyState.classList.add('hidden');
+            }
             buildPropertyForms();
         }
 

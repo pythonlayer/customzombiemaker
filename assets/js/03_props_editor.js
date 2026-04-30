@@ -259,6 +259,42 @@
                 if (!('ChillInsteadOfFreeze' in defaultPropsData)) defaultPropsData['ChillInsteadOfFreeze'] = false;
             }
 
+            // Add new zombie property fields requested for advanced zombies
+            const advancedFields = [
+                { key: 'IgnoreWaterLine', type: 'boolean', defaultValue: false },
+                { key: 'SkipHeadDropState', type: 'boolean', defaultValue: false },
+                { key: 'ArmDropFraction', type: 'number', defaultValue: 0 },
+                { key: 'ShrunkenScale', type: 'number', defaultValue: 1 },
+                { key: 'TimeToKillInSeconds', type: 'number', defaultValue: 999999999 },
+                { key: 'TimeToKillSeconds', type: 'number', defaultValue: 999999999 },
+                { key: 'SoundOnIdle', type: 'text', defaultValue: '' },
+                { key: 'SoundOnWalk', type: 'text', defaultValue: '' },
+                { key: 'SoundOnEat', type: 'text', defaultValue: '' },
+                { key: 'SoundOnTakeDamage', type: 'text', defaultValue: '' },
+                { key: 'SoundOnAsh', type: 'text', defaultValue: '' },
+                { key: 'SoundOnElectrocute', type: 'text', defaultValue: '' },
+                { key: 'SoundOnDeath', type: 'text', defaultValue: '' }
+            ];
+
+            advancedFields.forEach(field => {
+                if (!(field.key in editedPropsData)) {
+                    const group = document.createElement('div');
+                    group.className = 'form-group';
+                    let inputHtml;
+                    if (field.type === 'boolean') {
+                        inputHtml = `<input type="checkbox" data-props-key="${field.key}" onchange="updatePropsData(this)" ${field.defaultValue ? 'checked' : ''}>`;
+                    } else if (field.type === 'number') {
+                        inputHtml = `<input type="number" data-props-key="${field.key}" value="${field.defaultValue}" step="0.01" onchange="updatePropsData(this)">`;
+                    } else {
+                        inputHtml = `<input type="text" data-props-key="${field.key}" value="${field.defaultValue}" onchange="updatePropsData(this)">`;
+                    }
+                    group.innerHTML = `<label>${field.key}</label>${inputHtml}`;
+                    container.appendChild(group);
+                    editedPropsData[field.key] = field.defaultValue;
+                    if (!(field.key in defaultPropsData)) defaultPropsData[field.key] = field.defaultValue;
+                }
+            });
+
             // Add FireDamageMultiplier if not present
             if (!('FireDamageMultiplier' in editedPropsData)) {
                 const group = document.createElement('div');

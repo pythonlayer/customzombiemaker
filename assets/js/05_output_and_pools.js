@@ -578,6 +578,8 @@
 
             const editor = document.getElementById('editorContainer');
             if (editor) editor.classList.remove('hidden');
+            const emptyState = document.getElementById('emptyState');
+            if (emptyState) emptyState.classList.add('hidden');
 
             buildPropertyForms();
             switchTab('props');
