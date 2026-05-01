@@ -17,13 +17,10 @@
                 "CollisionFlags": [
                     "none"
                 ],
-                "#comment": "none, ground_zombies, off_ground_zombies, dying_zombies, griditems, plants, ground, all_zombies, everything",
+                "#comment": "This ImpactOffset affects both the particle and the PAM",
                 "DamageFlags": [
                     "none"
                 ],
-                "#comment": "none, bypass_shield, hits_shield_and_body, hits_only_shield, lightning, no_flash, doesnt_leave_body, fire, rolling, lobbed, shooter",
-                "#comment": " 'shooter' and 'catapult' should be mutually exclusive.  'lobbed' and 'shooter' can coexist, or not.  'catapult' should be a strict subset of 'lobbed'.",
-                "#comment": " See bloomerang (lobbed, shooter), banana (lobbed only), cabbagepult (lobbed, catapult), and peashooter (shooter only) for examples.",
                 "DiesOnImpact": true,
                 "InitialVelocity": [
                     {
@@ -114,8 +111,7 @@
                         "Min": 0.0,
                         "Max": 0.0
                     }
-                ],
-                "#comment": "This ImpactOffset affects both the particle and the PAM"
+                ]
             }
         },
         {
@@ -268,7 +264,7 @@
             "objdata": {
                 "ClassName": "SnapPeaMedusaProjectile",
                 "DamageFlags": [
-                    "shooter"
+                    "none"
                 ],
                 "BaseDamage": 400,
                 "CollisionFlags": [
@@ -276,9 +272,6 @@
                     "ground_zombies",
                     "off_ground_zombies",
                     "ground"
-                ],
-                "DamageFlags": [
-                    "none"
                 ],
                 "InitialVelocity": [
                     {
@@ -3671,7 +3664,7 @@
                     "x": -100.0,
                     "y": -87.5
                 },
-                "#comment": "Pick a location in the FLA, scale by -1/2",
+                "#comment": "Then mWidth, mHeight = the width and height of the rect scaled by half",
                 "AttachedPAMAnimationToPlay": [
                     "animation",
                     "animation2",
@@ -3690,9 +3683,6 @@
                     "mWidth": 40.0,
                     "mHeight": 40.0
                 },
-                "#comment": "To pick values for CollisionRect start by identifying a collision rect in the FLA file.",
-                "#comment": "Then mX, mY = the vector to the top left of the rect from your pivot point (= AttachedPAMOffset * -2) scaled by 1/2",
-                "#comment": "Then mWidth, mHeight = the width and height of the rect scaled by half",
                 "ImpactOffset": [
                     {
                         "Min": 0.0,
@@ -3746,7 +3736,7 @@
                     "x": -100.0,
                     "y": -87.5
                 },
-                "#comment": "Pick a location in the FLA, scale by -1/2",
+                "#comment": "Then mWidth, mHeight = the width and height of the rect scaled by half",
                 "AttachedPAMAnimationToPlay": [
                     "animation"
                 ],
@@ -3761,9 +3751,6 @@
                     "mWidth": 37.5,
                     "mHeight": 11.5
                 },
-                "#comment": "To pick values for CollisionRect start by identifying a collision rect in the FLA file.",
-                "#comment": "Then mX, mY = the vector to the top left of the rect from your pivot point (= AttachedPAMOffset * -2) scaled by 1/2",
-                "#comment": "Then mWidth, mHeight = the width and height of the rect scaled by half",
                 "ImpactOffset": [
                     {
                         "Min": 0.0,
@@ -3865,7 +3852,7 @@
             "objdata": {
                 "ClassName": "ZombieParticleProjectile",
                 "DamageFlags": [
-                    "shooter"
+                    "none"
                 ],
                 "BaseDamage": 400,
                 "CollisionFlags": [
@@ -3873,9 +3860,6 @@
                     "ground_zombies",
                     "off_ground_zombies",
                     "ground"
-                ],
-                "DamageFlags": [
-                    "none"
                 ],
                 "InitialVelocity": [
                     {
@@ -7992,8 +7976,6 @@
                     "mWidth": 40.0,
                     "mHeight": 40.0
                 },
-                "#comment": "To pick values for CollisionRect start by identifying a collision rect in the FLA file.",
-                "#comment": "Then mX, mY = the vector to the top left of the rect from your pivot point (= AttachedPAMOffset * -2) scaled by 1/2",
                 "#comment": "Then mWidth, mHeight = the width and height of the rect scaled by half",
                 "ShieldType": "hollybarrierleaf",
                 "MaxRotationsPerSecond": 1.4,
@@ -8077,8 +8059,6 @@
                     "mWidth": 40.0,
                     "mHeight": 40.0
                 },
-                "#comment": "To pick values for CollisionRect start by identifying a collision rect in the FLA file.",
-                "#comment": "Then mX, mY = the vector to the top left of the rect from your pivot point (= AttachedPAMOffset * -2) scaled by 1/2",
                 "#comment": "Then mWidth, mHeight = the width and height of the rect scaled by half",
                 "ShieldType": "hollybarrierleafplantfood",
                 "MaxRotationsPerSecond": 1.4,
@@ -10157,7 +10137,7 @@
                     "x": -100.0,
                     "y": -87.5
                 },
-                "#comment": "Pick a location in the FLA, scale by -1/2",
+                "#comment": "Then mWidth, mHeight = the width and height of the rect scaled by half",
                 "AttachedPAMAnimationToPlay": [
                     "animation",
                     "animation2",
@@ -10182,9 +10162,6 @@
                     "mWidth": 40.0,
                     "mHeight": 40.0
                 },
-                "#comment": "To pick values for CollisionRect start by identifying a collision rect in the FLA file.",
-                "#comment": "Then mX, mY = the vector to the top left of the rect from your pivot point (= AttachedPAMOffset * -2) scaled by 1/2",
-                "#comment": "Then mWidth, mHeight = the width and height of the rect scaled by half",
                 "ImpactOffset": [
                     {
                         "Min": 0.0,
@@ -10238,7 +10215,7 @@
                     "x": -100.0,
                     "y": -87.5
                 },
-                "#comment": "Pick a location in the FLA, scale by -1/2",
+                "#comment": "Then mWidth, mHeight = the width and height of the rect scaled by half",
                 "AttachedPAMAnimationToPlay": [
                     "animation",
                     "animation2",
@@ -10263,9 +10240,6 @@
                     "mWidth": 40.0,
                     "mHeight": 40.0
                 },
-                "#comment": "To pick values for CollisionRect start by identifying a collision rect in the FLA file.",
-                "#comment": "Then mX, mY = the vector to the top left of the rect from your pivot point (= AttachedPAMOffset * -2) scaled by 1/2",
-                "#comment": "Then mWidth, mHeight = the width and height of the rect scaled by half",
                 "ImpactOffset": [
                     {
                         "Min": 0.0,
@@ -11510,17 +11484,14 @@
                 "ClassName": "HelpdeskLaptopProjectile",
                 "BaseDamage": 1000,
                 "DamageFlags": [
-                    "shooter"
+                    "lobbed",
+                    "catapult",
+                    "all_zombies"
                 ],
                 "CollisionFlags": [
                     "ground",
                     "ground_zombies",
                     "off_ground_zombies"
-                ],
-                "DamageFlags": [
-                    "lobbed",
-                    "catapult",
-                    "all_zombies"
                 ],
                 "InitialVelocity": [
                     {
@@ -12301,7 +12272,6 @@
                     "mWidth": 30.0,
                     "mHeight": 30.0
                 },
-                "ImpactShowsAtZombieFeet": true,
                 "ImpactSoundEvent": "Play_CabbagePult_Impact",
                 "ImpactPAM": "POPANIM_EFFECTS_TIGER_GRASS_HIT_FX",
                 "ImpactPAMAnimationToPlay": [
@@ -12327,13 +12297,10 @@
             "objdata": {
                 "ClassName": "TigerGrassProjectile",
                 "BaseDamage": 0,
-                "DamageFlags": [
-                    "shooter"
-                ],
+                "DamageFlags": [],
                 "CollisionFlags": [
                     "normal_plants"
                 ],
-                "DamageFlags": [],
                 "HasShadow": true,
                 "InitialVelocity": [
                     {
@@ -12400,6 +12367,286 @@
                     }
                 ]
             }
+        },
+  {
+    "objclass": "PlantConditionProjectileProps",
+    "aliases": [
+      "FairytaleMirrorQueenApple"
+    ],
+    "objdata": {
+      "ClassName": "PlantConditionProjectile",
+      "BaseDamage": 25,
+      "CannotAffectInvinciblePlants": true,
+      "CollisionFlags": [
+        "ground",
+        "plants",
+        "normal_plants",
+        "tall_plants"
+      ],
+      "DamageFlags": [
+        "lobbed",
+        "catapult"
+      ],
+      "PlantConds": [
+        {
+          "Condition": "sleepify",
+          "Duration": {
+            "Min": 20,
+            "Max": 20
+          }
         }
+      ],
+      "CannotAffectPlants": {
+        "ListType": "excludelist",
+        "List": [
+          "shadowshroom",
+          "unused_45",
+          "poisonpeashooter",
+          "pokra",
+          "puffball",
+          "thymewarp",
+          "noctarinecloud",
+          "teleportatomine",
+          "steam_blueprints",
+          "blackhole",
+          "blackhole_plantfood",
+          "holiday_present_randomizer",
+          "snapdragon_hmzomboss",
+          "carnie_minigame_coconutcannon"
+        ]
+      },
+      "InitialVelocity": [
+        {
+          "Min": 400.0,
+          "Max": 500.0
+        },
+        {
+          "Min": -10.0,
+          "Max": 10.0
+        },
+        {
+          "Min": 500.0,
+          "Max": 700.0
+        }
+      ],
+      "InitialAcceleration": [
+        {
+          "Min": 0.0,
+          "Max": 0.0
+        },
+        {
+          "Min": 0.0,
+          "Max": 0.0
+        },
+        {
+          "Min": -10.0,
+          "Max": -10.0
+        }
+      ],
+      "InitialScale": {
+        "Min": 1.0,
+        "Max": 1.0
+      },
+      "AttachedPAM": "POPANIM_EFFECTS_ZOMBIE_MIRROR_QUEEN_APPLE",
+      "AttachedPAMOffset": {
+        "x": -100,
+        "y": -100
+      },
+      "AttachedPAMAnimationToPlay": [
+        "idle_flying"
+      ],
+      "ImpactPAM": "POPANIM_EFFECTS_ZOMBIE_MIRROR_QUEEN_APPLE_HIT",
+      "ImpactPAMAnimationToPlay": [
+        "hit"
+      ],
+      "ImpactOffset": [
+        {
+          "Min": -20.0,
+          "Max": -20.0
+        },
+        {
+          "Min": 20.0,
+          "Max": 20.0
+        }
+      ],
+      "CollisionRect": {
+        "mX": -10.0,
+        "mY": -10.0,
+        "mWidth": 20.0,
+        "mHeight": 20.0
+      },
+      "ImpactSoundEvent": "Play_Plant_HeadbutterLettuce_Attack"
+    }
+  },
+  {
+    "objclass": "PlantConditionProjectileProps",
+    "aliases": [
+      "FairytaleMirrorQueenVeteranApple"
+    ],
+    "objdata": {
+      "ClassName": "PlantConditionProjectile",
+      "BaseDamage": 40,
+      "CannotAffectInvinciblePlants": true,
+      "CollisionFlags": [
+        "ground",
+        "plants",
+        "normal_plants",
+        "tall_plants"
+      ],
+      "DamageFlags": [
+        "lobbed",
+        "catapult"
+      ],
+      "PlantConds": [
+        {
+          "Condition": "sleepify",
+          "Duration": {
+            "Min": 25,
+            "Max": 25
+          }
+        },
+        {
+          "Condition": "greedy",
+          "Duration": {
+            "Min": 40,
+            "Max": 40
+          }
+        }
+      ],
+      "CannotAffectPlants": {
+        "ListType": "excludelist",
+        "List": [
+          "shadowshroom",
+          "unused_45",
+          "poisonpeashooter",
+          "pokra",
+          "puffball",
+          "thymewarp",
+          "noctarinecloud",
+          "teleportatomine",
+          "steam_blueprints",
+          "blackhole",
+          "blackhole_plantfood",
+          "holiday_present_randomizer",
+          "snapdragon_hmzomboss",
+          "carnie_minigame_coconutcannon"
+        ]
+      },
+      "InitialVelocity": [
+        {
+          "Min": 400.0,
+          "Max": 500.0
+        },
+        {
+          "Min": -10.0,
+          "Max": 10.0
+        },
+        {
+          "Min": 500.0,
+          "Max": 700.0
+        }
+      ],
+      "InitialAcceleration": [
+        {
+          "Min": 0.0,
+          "Max": 0.0
+        },
+        {
+          "Min": 0.0,
+          "Max": 0.0
+        },
+        {
+          "Min": -10.0,
+          "Max": -10.0
+        }
+      ],
+      "InitialScale": {
+        "Min": 1.0,
+        "Max": 1.0
+      },
+      "AttachedPAM": "POPANIM_EFFECTS_ZOMBIE_MIRROR_QUEEN_APPLE_ELITE",
+      "AttachedPAMOffset": {
+        "x": -100,
+        "y": -100
+      },
+      "AttachedPAMAnimationToPlay": [
+        "idle_flying"
+      ],
+      "ImpactPAM": "POPANIM_EFFECTS_ZOMBIE_MIRROR_QUEEN_APPLE_HIT_ELITE",
+      "ImpactPAMAnimationToPlay": [
+        "hit"
+      ],
+      "ImpactOffset": [
+        {
+          "Min": -20.0,
+          "Max": -20.0
+        },
+        {
+          "Min": 20.0,
+          "Max": 20.0
+        }
+      ],
+      "CollisionRect": {
+        "mX": -10.0,
+        "mY": -10.0,
+        "mWidth": 20.0,
+        "mHeight": 20.0
+      },
+      "ImpactSoundEvent": "Play_Plant_HeadbutterLettuce_Attack"
+    }
+  },
+  {
+    "objclass": "PoisonSpitProjectileProps",
+    "aliases": [
+      "HydraPoisonSpit"
+    ],
+    "objdata": {
+      "AppearDelay": 1,
+      "GridItemSpawn": "fairytale_hydra_poison",
+      "BaseDamage": 0,
+      "ClassName": "PoisonSpitProjectile",
+      "DamageFlags": [
+        "shooter"
+      ],
+      "CollisionFlags": [
+        "ground"
+      ],
+      "HasShadow": false,
+      "InitialVelocity": [
+        {
+          "Min": 0.0,
+          "Max": 0.0
+        },
+        {
+          "Min": 0.0,
+          "Max": 0.0
+        },
+        {
+          "Min": -500.0,
+          "Max": -500.0
+        }
+      ],
+      "InitialScale": {
+        "Min": 1.0,
+        "Max": 1.0
+      },
+      "AttachedPAM": "POPANIM_EFFECTS_ZOMBOSS_HYDRA_EFFECT",
+      "AttachedPAMOffset": {
+        "x": -92.5,
+        "y": -111.5
+      },
+      "AttachedPAMAnimationToPlay": [
+        "dy01"
+      ],
+      "CollisionRect": {
+        "mX": -15.0,
+        "mY": -15.0,
+        "mWidth": 30.0,
+        "mHeight": 30.0
+      },
+      "ImpactSoundEvent": "Play_Splat"
+    }
+  }
+
     ]
 }
