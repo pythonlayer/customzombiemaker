@@ -6,26 +6,6 @@
             "#comment": "####### Tutorial Zombies #######",
             "objclass": "ZombieType",
             "aliases": [
-                "idiot"
-            ],
-            "objdata": {
-                "TypeName": "tutorial",
-                "ZombieClass": "ZombieBasic",
-                "Properties": "RTID(ZombieTutorialDefault@ZombieProperties)",
-                "ResourceGroups": [
-                    "ZombieTutorialGroup"
-                ],
-                "AudioGroups": [],
-                "AnimRigClass": "ZombieAnimRig_Tutorial",
-                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_TUTORIAL",
-                "HomeWorld": "modern",
-                "IsBasicZombie": true
-            }
-        },
-        {
-            "#comment": "####### Tutorial Zombies #######",
-            "objclass": "ZombieType",
-            "aliases": [
                 "tutorial"
             ],
             "objdata": {
@@ -19465,6 +19445,829 @@
       "HomeWorld": "holiday"
     }
   },
+  {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_armor1"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_armor1",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieFairyTaleArmor1Default@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleBasicGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_ARMOR1",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": true
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_armor2"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_armor2",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieFairyTaleArmor2Default@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleBasicGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_ARMOR2",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": true
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_flag_armor1"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_flag_armor1",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieFairyTaleFlagArmor1Default@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleBasicGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_FLAG_ARMOR1",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": true,
+                "FlagType": "flag_normal"
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_flag_armor2"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_flag_armor2",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieFairyTaleFlagArmor2Default@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleBasicGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_FLAG_ARMOR2",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": true,
+                "FlagType": "flag_normal"
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_flag_veteran_armor1"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_flag_veteran_armor1",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieFairyTaleFlagVeteranArmor1Default@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleBasicGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_RALLY_ARMOR1",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": true,
+                "FlagType": "flag_veteran"
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_flag_veteran_armor2"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_flag_veteran_armor2",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieFairyTaleFlagVeteranArmor2Default@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleBasicGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_RALLY_ARMOR2",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": true,
+                "FlagType": "flag_veteran"
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_clubs"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_clubs",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieFairyTaleClubsDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleBasicGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_CLUBS",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": true
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_diamonds"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_diamonds",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieFairyTaleDiamondsDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleBasicGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_DIAMONDS",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": true
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_spades"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_spades",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieFairyTaleSpadesDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleBasicGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_SPADES",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": true
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_clubs_armor1"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_clubs_armor1",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieFairyTaleClubs_armor1Default@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleBasicGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_CLUBS_ARMOR1",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": true
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_clubs_armor2"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_clubs_armor2",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieFairyTaleClubs_armor2Default@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleBasicGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_CLUBS_ARMOR2",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": true
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_diamonds_armor1"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_diamonds_armor1",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieFairyTaleDiamonds_armor1Default@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleBasicGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_DIAMONDS_ARMOR1",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": true
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_diamonds_armor2"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_diamonds_armor2",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieFairyTaleDiamonds_armor2Default@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleBasicGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_DIAMONDS_ARMOR2",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": true
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_spades_armor1"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_spades_armor1",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieFairyTaleSpades_armor1Default@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleBasicGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_SPADES_ARMOR1",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": true
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_spades_armor2"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_spades_armor2",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieFairyTaleSpades_armor2Default@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleBasicGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_SPADES_ARMOR2",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": true
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_clubs_flag"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_clubs_flag",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieFairyTaleClubsFlagDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleBasicGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_CLUBS_FLAG",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": true,
+                "FlagType": "flag_normal"
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_clubs_flag_armor1"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_clubs_flag_armor1",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieFairyTaleClubsFlagArmor1Default@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleBasicGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_CLUBS_FLAG_ARMOR1",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": true,
+                "FlagType": "flag_normal"
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_clubs_flag_armor2"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_clubs_flag_armor2",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieFairyTaleClubsFlagArmor2Default@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleBasicGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_CLUBS_FLAG_ARMOR2",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": true,
+                "FlagType": "flag_normal"
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_diamonds_flag"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_diamonds_flag",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieFairyTaleDiamondsFlagDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleBasicGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_DIAMONDS_FLAG",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": true,
+                "FlagType": "flag_normal"
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_diamonds_flag_armor1"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_diamonds_flag_armor1",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieFairyTaleDiamondsFlagArmor1Default@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleBasicGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_DIAMONDS_FLAG_ARMOR1",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": true,
+                "FlagType": "flag_normal"
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_diamonds_flag_armor2"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_diamonds_flag_armor2",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieFairyTaleDiamondsFlagArmor2Default@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleBasicGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_DIAMONDS_FLAG_ARMOR2",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": true,
+                "FlagType": "flag_normal"
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_spades_flag"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_spades_flag",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieFairyTaleSpadesFlagDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleBasicGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_SPADES_FLAG",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": true,
+                "FlagType": "flag_normal"
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_spades_flag_armor1"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_spades_flag_armor1",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieFairyTaleSpadesFlagArmor1Default@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleBasicGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_SPADES_FLAG_ARMOR1",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": true,
+                "FlagType": "flag_normal"
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_spades_flag_armor2"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_spades_flag_armor2",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieFairyTaleSpadesFlagArmor2Default@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleBasicGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_SPADES_FLAG_ARMOR2",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": true,
+                "FlagType": "flag_normal"
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_clubs_flag_veteran"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_clubs_flag_veteran",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieFairyTaleClubsFlagVeteranDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleBasicGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_CLUBS_RALLY",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": true,
+                "FlagType": "flag_veteran"
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_clubs_flag_veteran_armor1"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_clubs_flag_veteran_armor1",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieFairyTaleClubsFlagVeteranArmor1Default@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleBasicGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_CLUBS_RALLY_ARMOR1",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": true,
+                "FlagType": "flag_veteran"
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_clubs_flag_veteran_armor2"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_clubs_flag_veteran_armor2",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieFairyTaleClubsFlagVeteranArmor2Default@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleBasicGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_CLUBS_RALLY_ARMOR2",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": true,
+                "FlagType": "flag_veteran"
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_diamonds_flag_veteran"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_diamonds_flag_veteran",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieFairyTaleDiamondsFlagVeteranDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleBasicGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_DIAMONDS_RALLY",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": true,
+                "FlagType": "flag_veteran"
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_diamonds_flag_veteran_armor1"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_diamonds_flag_veteran_armor1",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieFairyTaleDiamondsFlagVeteranArmor1Default@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleBasicGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_DIAMONDS_RALLY_ARMOR1",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": true,
+                "FlagType": "flag_veteran"
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_diamonds_flag_veteran_armor2"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_diamonds_flag_veteran_armor2",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieFairyTaleDiamondsFlagVeteranArmor2Default@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleBasicGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_DIAMONDS_RALLY_ARMOR2",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": true,
+                "FlagType": "flag_veteran"
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_spades_flag_veteran"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_spades_flag_veteran",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieFairyTaleSpadesFlagVeteranDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleBasicGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_SPADES_RALLY",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": true,
+                "FlagType": "flag_veteran"
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_spades_flag_veteran_armor1"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_spades_flag_veteran_armor1",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieFairyTaleSpadesFlagVeteranArmor1Default@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleBasicGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_SPADES_RALLY_ARMOR1",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": true,
+                "FlagType": "flag_veteran"
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_spades_flag_veteran_armor2"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_spades_flag_veteran_armor2",
+                "ZombieClass": "ZombieBasic",
+                "Properties": "RTID(ZombieFairyTaleSpadesFlagVeteranArmor2Default@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleBasicGroup"
+                ],
+                "AudioGroups": [],
+                "AnimRigClass": "ZombieAnimRig_Tutorial",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_SPADES_RALLY_ARMOR2",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": true,
+                "FlagType": "flag_veteran"
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_gargantuar_reg"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_gargantuar_reg",
+                "ZombieClass": "ZombieFairytaleGargantuar",
+                "Properties": "RTID(ZombieFairytaleGargantuarReg@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleGargantuarGroup",
+                    "ZombieGargantuarEffects",
+                    "ZombieBronzeEffects"
+                ],
+                "AudioGroups": [
+                    "ZombiePirateGargantuarAudio",
+                    "ZombieGlobalGargantuarAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Gargantuar",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_GARGANTUAR_REG",
+                "HomeWorld": "fairytale",
+                "Placeable": true
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_imp_clubs"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_imp_clubs",
+                "ZombieClass": "ZombieImp",
+                "Properties": "RTID(ZombieTutorialImpDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleCardImpGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieGlobalGargantuarAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Imp",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_IMP_CLUBS",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": false,
+                "Placeable": true
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_imp_diamonds"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_imp_diamonds",
+                "ZombieClass": "ZombieImp",
+                "Properties": "RTID(ZombieTutorialImpDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleCardImpGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieGlobalGargantuarAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Imp",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_IMP_DIAMONDS",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": false,
+                "Placeable": true
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_imp_spades"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_imp_spades",
+                "ZombieClass": "ZombieImp",
+                "Properties": "RTID(ZombieTutorialImpDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleCardImpGroup"
+                ],
+                "AudioGroups": [
+                    "ZombieGlobalGargantuarAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Imp",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_IMP_SPADES",
+                "HomeWorld": "fairytale",
+                "IsBasicZombie": false,
+                "Placeable": true
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_wolf_straw_wood"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_wolf_straw_wood",
+                "ZombieClass": "ZombieFairytaleWolf",
+                "Properties": "RTID(ZombieFairyTaleWolfStrawWoodDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleWolfGroup",
+                    "FairyTaleHouses",
+                    "ZombieFairyTaleThreeLittlePigsGroup",
+                    "ZombieChiefEffects"
+                ],
+                "AudioGroups": [
+                    "ZombieIceAgeTroglobiteAudio",
+                    "ZombieIceAgeChiefAudio",
+                    "ZombieCarnieGargantuarAudio",
+                    "ZombieRomanMedusaAudio",
+                    "ZombieFairyTaleWolfAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Troglobite",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_WOLF_WOOD",
+                "HomeWorld": "fairytale",
+                "Placeable": true
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_wolf_straw_brick"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_wolf_straw_brick",
+                "ZombieClass": "ZombieFairytaleWolf",
+                "Properties": "RTID(ZombieFairyTaleWolfStrawBrickDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleWolfGroup",
+                    "FairyTaleHouses",
+                    "ZombieFairyTaleThreeLittlePigsGroup",
+                    "ZombieChiefEffects"
+                ],
+                "AudioGroups": [
+                    "ZombieIceAgeTroglobiteAudio",
+                    "ZombieIceAgeChiefAudio",
+                    "ZombieCarnieGargantuarAudio",
+                    "ZombieRomanMedusaAudio",
+                    "ZombieFairyTaleWolfAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Troglobite",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_WOLF_BRICK",
+                "HomeWorld": "fairytale",
+                "Placeable": true
+            }
+        },
+        {
+            "objclass": "ZombieType",
+            "aliases": [
+                "fairytale_wolf_wood_brick"
+            ],
+            "objdata": {
+                "TypeName": "fairytale_wolf_wood_brick",
+                "ZombieClass": "ZombieFairytaleWolf",
+                "Properties": "RTID(ZombieFairyTaleWolfWoodBrickDefault@ZombieProperties)",
+                "ResourceGroups": [
+                    "ZombieFairyTaleWolfGroup",
+                    "FairyTaleHouses",
+                    "ZombieFairyTaleThreeLittlePigsGroup",
+                    "ZombieChiefEffects"
+                ],
+                "AudioGroups": [
+                    "ZombieIceAgeTroglobiteAudio",
+                    "ZombieIceAgeChiefAudio",
+                    "ZombieCarnieGargantuarAudio",
+                    "ZombieRomanMedusaAudio",
+                    "ZombieFairyTaleWolfAudio"
+                ],
+                "AnimRigClass": "ZombieAnimRig_Troglobite",
+                "PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_WOLF_BRICK",
+                "HomeWorld": "fairytale",
+                "Placeable": true
+            }
+        },
   {
     "objclass": "ZombieType",
     "aliases": [
